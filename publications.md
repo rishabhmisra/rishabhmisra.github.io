@@ -9,14 +9,14 @@ permalink: /publications/
 ### Research Papers<a name="papers"></a>
 
 
-* [ACL'19](http://www.acl2019.org/EN/index.xhtml)
+* [**ACL'19**](http://www.acl2019.org/EN/index.xhtml)
 
   * **Fine-Grained Spoiler Detection from Large-Scale Review Corpora**
   
     Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
-  * [Paper](https://arxiv.org/pdf/1905.13416.pdf) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| <span style="color:red"> **Media** </span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
+  * [Paper](https://arxiv.org/pdf/1905.13416.pdf) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
 
-* [RecSys'18](https://recsys.acm.org/recsys18/)
+* [**RecSys'18**](https://recsys.acm.org/recsys18/)
 
   * **Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces** 
   
@@ -24,7 +24,7 @@ permalink: /publications/
   * [Paper](http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf) \| [Code](https://github.com/rishabhmisra/Product-Catalog-Size-Recommendation-Framework) \| [Datasets](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation)
 
 
-* [MUSE'15](https://www.kde.cs.uni-kassel.de/ws/muse2015)
+* [**MUSE'15**](https://www.kde.cs.uni-kassel.de/ws/muse2015)
 
   * **Scalable Bayesian Matrix Factorization**
   
@@ -32,7 +32,7 @@ permalink: /publications/
   * [Paper](https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Bayesian-Matrix-Factorization)
   
 
-* Pre-print
+* **Pre-print**
 
   * **Scalable Variational Bayesian Factorization Machine**
   
@@ -53,12 +53,12 @@ permalink: /publications/
 
 * [**News Headlines Dataset For Sarcasm Detection**](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home) \[**Released**: June 2018\]
 
-  * Past studies in Sarcasm Detection mostly make use of Twitter datasets collected using hashtag based supervision but such datasets are noisy in terms of labels and language. Furthermore, many tweets are replies to other tweets and detecting sarcasm in these requires the availability of contextual tweets. To overcome the limitations related to noise in Twitter datasets, this **News Headlines dataset for Sarcasm Detection** is collected from two news website. [*TheOnion*](https://www.theonion.com/) aims at producing sarcastic versions of current events and we collected all the headlines from News in Brief and News in Photos categories (which are sarcastic). We collect real (and non-sarcastic) news headlines from [*HuffPost*](https://www.huffingtonpost.com/). (**5000+ downloads on Kaggle**)
+  * Past studies in Sarcasm Detection mostly make use of Twitter datasets collected using hashtag based supervision but such datasets are noisy in terms of labels and language. Furthermore, many tweets are replies to other tweets and detecting sarcasm in these requires the availability of contextual tweets. To overcome the limitations related to noise in Twitter datasets, this **News Headlines dataset for Sarcasm Detection** is collected from two news website. [*TheOnion*](https://www.theonion.com/) aims at producing sarcastic versions of current events and we collected all the headlines from News in Brief and News in Photos categories (which are sarcastic). We collect real (and non-sarcastic) news headlines from [*HuffPost*](https://www.huffingtonpost.com/). (**5500+ downloads on Kaggle**)
 
 
 * [**News Category Dataset**](https://www.kaggle.com/rmisra/news-category-dataset/home) \[**Released**: June 2018\]
 
-  * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**4500+ downloads on Kaggle**)
+  * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**5000+ downloads on Kaggle**)
 
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
