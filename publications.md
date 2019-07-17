@@ -11,24 +11,24 @@ permalink: /publications/
 
 * [ACL'19](http://www.acl2019.org/EN/index.xhtml)
 
-  * Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, "**Fine-Grained Spoiler Detection from Large-Scale Review Corpora**", in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
-  * [Paper](https://arxiv.org/pdf/1905.13416.pdf) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| **Media**: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
+  * **Fine-Grained Spoiler Detection from Large-Scale Review Corpora**, Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
+  * [Paper](https://arxiv.org/pdf/1905.13416.pdf) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| <span style="color:red"> **Media** </span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
 
 * [RecSys'18](https://recsys.acm.org/recsys18/)
 
-  * **Rishabh Misra**, Mengting Wan, Julian McAuley, "**Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces**", in Proceedings of 2018 ACM Conference on Recommender Systems (RecSys'18), Vancouver, Canada, Oct. 2018. (**25% acceptance rate**)
+  * **Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces**, **Rishabh Misra**, Mengting Wan, Julian McAuley, in Proceedings of 2018 ACM Conference on Recommender Systems (RecSys'18), Vancouver, Canada, Oct. 2018. (**25% acceptance rate**)
   * [Paper](http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf) \| [Code](https://github.com/rishabhmisra/Product-Catalog-Size-Recommendation-Framework) \| [Datasets](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation)
 
 
 * [MUSE'15](https://www.kde.cs.uni-kassel.de/ws/muse2015)
 
-  * Avijit Saha*, **Rishabh Misra\***, Balaraman Ravindran, "**Scalable Bayesian Matrix Factorization**", In Proceedings of the 6th International Workshop on Mining Ubiquitous and Social Environments (MUSE) @ PKDD/ECML, 2015 Sep 7 (pp. 43-54), Porto, Portugal. (\* equal contribution)
+  * **Scalable Bayesian Matrix Factorization**, Avijit Saha*, **Rishabh Misra\***, Balaraman Ravindran, In Proceedings of the 6th International Workshop on Mining Ubiquitous and Social Environments (MUSE) @ PKDD/ECML, 2015 Sep 7 (pp. 43-54), Porto, Portugal. (\* equal contribution)
   * [Paper](https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Bayesian-Matrix-Factorization)
   
 
 * Pre-print
 
-  * Avijit Saha, **Rishabh Misra**, Ayan Acharya, and Balaraman Ravindran. "**Scalable Variational Bayesian Factorization Machine**".
+  * **Scalable Variational Bayesian Factorization Machine**, Avijit Saha, **Rishabh Misra**, Ayan Acharya, and Balaraman Ravindran.
   * [Paper](https://www.researchgate.net/profile/Rishabh_Misra/publication/320408037_Scalable_Variational_Bayesian_Factorization_Machine/links/59e32a86aca2724cbfe36911/Scalable-Variational-Bayesian-Factorization-Machine.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Variational-Bayesian-Factorization-Machine)
 
 
