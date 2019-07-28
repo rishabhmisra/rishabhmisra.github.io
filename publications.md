@@ -14,7 +14,7 @@ permalink: /publications/
   * **Fine-Grained Spoiler Detection from Large-Scale Review Corpora**
   
     Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
-  * [Paper](https://arxiv.org/pdf/1905.13416.pdf) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
+  * [Paper](https://www.aclweb.org/anthology/P19-1248) \| [Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
 
 * [**RecSys'18**](https://recsys.acm.org/recsys18/)
 
