@@ -63,7 +63,7 @@ permalink: /publications/
     ```
     Sarcasm Detection using Hybrid Neural Network
     Rishabh Misra, Prahal Arora
-    August 2019
+    Arxiv, August 2019
     ```
 
 * [**News Category Dataset**](https://www.kaggle.com/rmisra/news-category-dataset/home) \[**Released**: June 2018\]
@@ -73,7 +73,7 @@ permalink: /publications/
     ```
     News Category Dataset
     Rishabh Misra 
-    June 2018
+    ResearchGate, May 2018
     ```
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
