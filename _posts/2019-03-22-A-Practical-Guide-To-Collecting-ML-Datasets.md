@@ -84,7 +84,7 @@ Since it would be very difficult to explain this section without taking an actua
 The first thing to do is to familiarize yourself with the structure of the site.
 
 <center>
-<img src="/images/collecting-datasets-guide/1.png" width="85%" height ="500"/>
+<img src="/images/collecting-datasets-guide/1.png" width="75%" height ="500"/>
 </center>
 
 On [ModCloth](https://www.modcloth.com/), we see that on the top we have various clothing categories: Dresses, Tops, Bottoms and so on. If we click on one of the categories, like Tops in the above image, we see that the products are shown in a grid format. The page in the picture is showing 100 products and the rest of the products are accessible through the page scroller near the top right.
@@ -102,13 +102,13 @@ Next, we click on one of the products to observe what the page for each product 
 We notice that each page contains up to 10 reviews. If there are more than 10 reviews, we see a `NEXT` button at the bottom right.
 
 <center>
-<img src="/images/collecting-datasets-guide/4.png" width="85%" height ="100"/>
+<img src="/images/collecting-datasets-guide/4.png" width="80%" height ="100"/>
 </center>
 
 When we click the `NEXT` button, we are presented with the next 10 reviews. However, you might notice that the link does not change, which means there’s no other way to access the subsequent reviews apart from clicking the `NEXT` button. We also see that in subsequent review pages, a `PREVIOUS` button also appears. We will see later on why noticing such things is important for data extraction.
 
 <center>
-<img src="/images/collecting-datasets-guide/5.png" width="85%" height ="100"/>
+<img src="/images/collecting-datasets-guide/5.png" width="80%" height ="100"/>
 </center>
 
 We now have a fairly good idea about the site’s structure. To reiterate, our goal is to extract reviews for each product from each category.
@@ -129,24 +129,24 @@ So, let’s get started:
 * Till now, we know that within each category, products are presented in groups of 100 and we could have a page scroller to access all the products. To start with, we need to see how the links for various pages vary. As it is usually the case, the following images suggest that links follow a pattern.
 
 <center>
-<img src="/images/collecting-datasets-guide/6.png" width="85%" height ="100"/>
+<img src="/images/collecting-datasets-guide/6.png" width="85%" height ="50"/>
 </center>
 <center> Page 1 of Tops category </center>
 
 <center>
-<img src="/images/collecting-datasets-guide/7.png" width="85%" height ="100"/>
+<img src="/images/collecting-datasets-guide/7.png" width="85%" height ="50"/>
 </center>
 <center> Page 2 of Tops category </center>
 
 <center>
-<img src="/images/collecting-datasets-guide/8.png" width="85%" height ="100"/>
+<img src="/images/collecting-datasets-guide/8.png" width="85%" height ="50"/>
 </center>
 <center> Page 3 of Tops category </center>
 
 * Then for each page, we need to extract the links to individual item’s page. To get that, go to one of the items, right click on it and go to “inspect” option. Scroll a bit to identify the `<a>` element that contains the item link and note its CSS class. In the following image, we see that in our case the class is `thumb-link`. Most likely, all the other product links would also be using the same class for styling (just verify it once).
 
 <center>
-<img src="/images/collecting-datasets-guide/9.png" width="85%" height ="500"/>
+<img src="/images/collecting-datasets-guide/9.png" width="90%" height ="500"/>
 </center>
 
 * With all this information, we can write the following code to extract links to all the products in the Tops category:
@@ -182,7 +182,7 @@ Few things to note:
 
 
 <center>
-<img src="/images/collecting-datasets-guide/12.png" width="85%" height ="300"/>
+<img src="/images/collecting-datasets-guide/12.png" width="80%" height ="300"/>
 </center>
 
 This completes the data extraction and parsing process after which a record in our data would look as follows:
@@ -260,7 +260,7 @@ This seems cleaner and more structured. We did it! 🙌
 This could be a lot to digest but the best way to absorb the content would be to apply these steps in your next dataset quest. While doing so, keep in mind the following main takeaways from this article:
 
 <center>
-<img src="/images/collecting-datasets-guide/13.png" width="85%" height ="600"/>
+<img src="/images/collecting-datasets-guide/13.png" width="80%" height ="600"/>
 </center>
 
 I will continue to refine this article as I collect more datasets and come across different scenarios. Meanwhile, if you come up with (or already have) few tips and tricks of your own, let me know in comments and I’ll try to incorporate them in this article. Cheers! 🥂
