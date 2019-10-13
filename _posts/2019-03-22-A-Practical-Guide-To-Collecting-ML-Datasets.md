@@ -151,7 +151,9 @@ So, let’s get started:
 
 * With all this information, we can write the following code to extract links to all the products in the Tops category:
 
+<center>
 <script src="https://gist.github.com/rishabhmisra/16ef6ceeeea70956a8784230d560bbe3.js"></script>
+</center>
 
 <code> As you would have noticed, the script purposefully has wait time to ensure we are not sending too many frequent requests to the site. Usually, 1 request per second is good, but given that ModCloth is a small site (maybe not as scaled as Amazon) we can put a longer wait time. You can use your judgement in this regard.</code>
 
@@ -172,7 +174,7 @@ We notice that each review is contained in an `<article>` element. Let’s explo
 For example, in the above image, a `<section>` element with a class named `pr-rd-content-block pr-accordion pr-accordion-collapsed` corresponds to fit feedback and customer measurements related data. Once you have explored all the different elements inside `<article>` tag, refer the following script to see how we can extract all the pertinent details.
 
 <center>
-<script src="https://gist.github.com/rishabhmisra/46bb556228c545297009e23e80f597ba.js" width="85%" height ="500"></script>
+<script src="https://gist.github.com/rishabhmisra/46bb556228c545297009e23e80f597ba.js"></script>
 </center>
   
 Few things to note:
