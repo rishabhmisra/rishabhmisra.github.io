@@ -171,8 +171,10 @@ We notice that each review is contained in an `<article>` element. Let’s explo
 
 For example, in the above image, a `<section>` element with a class named `pr-rd-content-block pr-accordion pr-accordion-collapsed` corresponds to fit feedback and customer measurements related data. Once you have explored all the different elements inside `<article>` tag, refer the following script to see how we can extract all the pertinent details.
 
-<script src="https://gist.github.com/rishabhmisra/46bb556228c545297009e23e80f597ba.js"></script>
-
+<center>
+<script src="https://gist.github.com/rishabhmisra/46bb556228c545297009e23e80f597ba.js" width="85%" height ="500"></script>
+</center>
+  
 Few things to note:
 * We have done exception handling in many places. These were added incrementally as and when I faced issues while running the script.
 * Lines `30-97` are responsible for extracting as well as parsing the data of interest into a dictionary format. Usually, people prefer storing the extracted data locally and parsing it offline, however, I preferred doing it on the fly due to storage space constraints on my laptop.
