@@ -8,13 +8,19 @@ permalink: /publications/
 
 ### Research Papers<a name="papers"></a>
 
+* [**WSDM'20**](http://www.wsdm-conference.org/2020/)
+
+  * **Addressing Marketing Bias in Product Recommendations**
+  
+    Mengting Wan, Jianmo Ni, **Rishabh Misra**, Julian McAuley, in Proceedings of 2020 ACM Conference on Web Search and Data Mining (WSDM'20), Houston, TX, USA, Feb. 2020. (**15% acceptance rate**)
+  * [Paper (Coming soon)](http://www.wsdm-conference.org/2020/)
 
 * [**ACL'19**](http://www.acl2019.org/EN/index.xhtml)
 
   * **Fine-Grained Spoiler Detection from Large-Scale Review Corpora**
   
     Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
-  * [Paper](https://www.aclweb.org/anthology/P19-1248) \| [Dataset](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home?authuser=0) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [NBC](https://www.nbclosangeles.com/news/local/SpoilerNet-UCSD-AI-Catch-Spoilers-Researchers-Studying-What-Makes-Text-Spoilery-513510001.html), [Gizmodo](https://io9.gizmodo.com/a-new-study-reminds-us-how-ridiculous-spoiler-culture-h-1837171945), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
+  * [Paper](https://www.aclweb.org/anthology/P19-1248) \| [Dataset](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home?authuser=0) \| [Poster](https://mengtingwan.github.io/paper/acl19_mwan_poster.pdf) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [NBC](https://www.nbclosangeles.com/news/local/SpoilerNet-UCSD-AI-Catch-Spoilers-Researchers-Studying-What-Makes-Text-Spoilery-513510001.html), [Gizmodo](https://io9.gizmodo.com/a-new-study-reminds-us-how-ridiculous-spoiler-culture-h-1837171945), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
 
 * [**RecSys'18**](https://recsys.acm.org/recsys18/)
 
