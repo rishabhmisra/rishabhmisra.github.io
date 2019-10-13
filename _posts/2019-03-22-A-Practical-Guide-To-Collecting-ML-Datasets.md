@@ -30,7 +30,7 @@ Past studies in Sarcasm Detection mostly make use of Twitter datasets collected 
 
 ## Phase 1 — Searching for data 🔎
 
-<code> _This phase would require patience as you might have to search the web extensively. But don’t you worry. Here I will provide certain pointers based on my experience that could make your search more systematic and efficient._</code>
+<code> \_ This phase would require patience as you might have to search the web extensively. But don’t you worry. Here I will provide certain pointers based on my experience that could make your search more systematic and efficient. \_</code>
 
 If you are looking to collect and build a good-quality dataset, you could be in one of two situations:
 * You are looking for a dataset that would allow you to address a specific problem. **Problem known**
