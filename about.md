@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+<div class="column leftcol">
+
 I consider myself a lifelong learner and believe in working hard. I graduated from UC San Diego with Master's in Computer Science with specialization in Machine Learning in June 2018. Currently, I'm working at Amazon with Amazon Global team and soon moving to Twitter to work on their Timelines Quality team. 
 
 My interests are in the Applied ML, Recommender Systems and NLP domains. I got my first exposure to Machine Learning during my internships at IIT Madras, India where I was involved in the development of scalable Bayesian models for the rating prediction task. 
@@ -20,9 +22,13 @@ My work experience is helping me in understanding the intricacies involved in de
 
 Please reach out to me @ [rishabhmisra1994@gmail.com](mailto:rishabhmisra1994@gmail.com)
 
-<center>
+</div>
+
+<div class="column rightcol">
+
 <a class="twitter-timeline" data-width="600" data-height="900" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center> 
+
+</div>
 
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
