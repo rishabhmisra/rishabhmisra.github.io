@@ -270,3 +270,5 @@ This could be a lot to digest but the best way to absorb the content would be to
 I will continue to refine this article as I collect more datasets and come across different scenarios. Meanwhile, if you come up with (or already have) few tips and tricks of your own, let me know in comments and I’ll try to incorporate them in this article. Cheers! 🥂
 
 -- The article was originally published at [TowardsDataScience](https://towardsdatascience.com/a-practical-guide-to-collecting-ml-datasets-476f1ecf5e35).
+
+<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
