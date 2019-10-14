@@ -20,7 +20,9 @@ My work experience is helping me in understanding the intricacies involved in de
 
 Please reach out to me @ [rishabhmisra1994@gmail.com](mailto:rishabhmisra1994@gmail.com)
 
+<center>
 <a class="twitter-timeline" data-width="600" data-height="900" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center> 
 
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
