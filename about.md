@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="column leftcol">
 
-I consider myself a lifelong learner and believe in working hard. I graduated from UC San Diego with Master's in Computer Science with specialization in Machine Learning in June 2018. Currently, I'm working at Amazon with Amazon Global team and soon moving to Twitter to work on their Timelines Quality team. <br> <br>
+I consider myself a lifelong learner and believe in working hard. I graduated from UC San Diego with Master's in Computer Science with specialization in Machine Learning in June 2018. Currently, I'm working at Twitter in the Timelines Quality team building relevance and machine learning models and systems. Previously, I worked at Amazon with Amazon Expansions and Exports Tech team. <br> <br>
 
 My interests are in the Applied ML, Recommender Systems and NLP domains. I got my first exposure to Machine Learning during my internships at IIT Madras, India where I was involved in the development of scalable Bayesian models for the rating prediction task. <br> <br>
 
@@ -16,7 +16,7 @@ Apart from this, I interned at Amazon in Summer 2017 where my project was to bri
 
 My work experience is helping me in understanding the intricacies involved in developing critical and time-intensive software and my research experience is providing me in-depth knowledge of Machine Learning field. All of my work is driven by these learnings. <br> <br>
 
-<h4> Last updated: 20th June 2019 </h4>
+<h4> Last updated: 10th July 2019 </h4>
 
 <h3> Contact </h3>
 
