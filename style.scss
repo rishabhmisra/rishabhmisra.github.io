@@ -28,6 +28,7 @@ body {
   max-width: 1200px;
   padding: 0 5px;
   width: 100%;
+  flex: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -189,6 +190,9 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 10px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .masthead {
