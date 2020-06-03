@@ -19,7 +19,7 @@ permalink: /experience/
   **Technologies**: Python \| Scala \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Tensorflow
   
 </details>
-
+<br>
 <details>
 
 <summary><b>Software Development Engineer @ Amazon.com</b> [July 2018 - July 2019]</summary>
@@ -36,7 +36,7 @@ permalink: /experience/
   * I presented my research on Product Size Recommendation internally at Amazon and it was also selected for presentation at Amazon's Machine Learning Conference.
 
 </details>
-
+<br>
 <details>
 
 <summary><b>Software Development Engineer Intern @ Amazon.com</b> [June 2017 - September 2017]</summary>
@@ -51,7 +51,7 @@ permalink: /experience/
   **Technologies**: Java \| Hive \| DynamoDB
 
 </details>
-
+<br>
 <details>
 
 <summary><b>Member Technical @ Arcesium India Pvt. Ltd.</b> [July 2015 - July 2016]</summary>
@@ -80,7 +80,7 @@ permalink: /experience/
   * [RecSys 2018: Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces](http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf)
 
 </details>
-
+<br>
 
 <details>
   
@@ -91,7 +91,7 @@ permalink: /experience/
   * Contributed to the development of scalable variational Bayesian framework for Factorization Machines, which supplements the existing framework with a scalable alternative. Preprint: [Scalable Variational Bayesian Factorization Machine](https://www.researchgate.net/profile/Rishabh_Misra/publication/320408037_Scalable_Variational_Bayesian_Factorization_Machine/links/59e32a86aca2724cbfe36911/Scalable-Variational-Bayesian-Factorization-Machine.pdf)
 
 </details>
-
+<br>
 <details>
   
 <summary><b>Summer Fellow @ Indian Institue of Technology, Madras</b> [May 2014 - July 2014]</summary>
@@ -101,9 +101,6 @@ permalink: /experience/
 </details>
 
 
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
