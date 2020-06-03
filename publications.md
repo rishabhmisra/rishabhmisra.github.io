@@ -13,7 +13,7 @@ permalink: /publications/
   * **Addressing Marketing Bias in Product Recommendations**
   
     Mengting Wan, Jianmo Ni, **Rishabh Misra**, Julian McAuley, in Proceedings of 2020 ACM Conference on Web Search and Data Mining (WSDM'20), Houston, TX, USA, Feb. 2020. (**15% acceptance rate**)
-  * [Paper](https://arxiv.org/abs/1912.01799) \| [Data and Code](https://github.com/MengtingWan/marketBias)
+  * [Paper](https://dl.acm.org/doi/pdf/10.1145/3336191.3371855) \| [Data and Code](https://github.com/MengtingWan/marketBias)
 
 * [**ACL'19**](http://www.acl2019.org/EN/index.xhtml)
 
