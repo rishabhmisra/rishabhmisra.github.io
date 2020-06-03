@@ -3,9 +3,7 @@ layout: default
 permalink: /experience/
 ---
 
-## Experience
-
-### Industry Experience
+## Industry Experience
 
 <details>
 
@@ -70,7 +68,7 @@ permalink: /experience/
 
 </details>
 
-### Research Experience<a name="research"></a>
+## Research Experience<a name="research"></a>
 
 <details>
 
