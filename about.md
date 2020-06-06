@@ -20,7 +20,7 @@ My work experience is helping me in understanding the intricacies involved in de
 
 <h3> Contact </h3>
 
-Please reach out to me @ <a href="mailto:rishabhmisra1994@gmail.com">rishabhmisra1994@gmail.com</a> 
+Please reach out to me @ <a href="mailto:rishabhmisra1994@gmail.com">r1misra@ucsd.edu</a> 
 
 </div>
 
