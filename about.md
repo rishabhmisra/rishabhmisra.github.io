@@ -20,7 +20,7 @@ My work experience is helping me in understanding the intricacies involved in de
 
 <h3> Contact </h3>
 
-Please reach out to me @ <a href="mailto:rishabhmisra1994@gmail.com">r1misra@ucsd.edu</a> or DM me on Twitter: <a href="https://twitter.com/messages/compose?recipient_id=2591106696&text=Hey%20Rishabh" class="twitter-dm-button" data-screen-name="@rishabh_misra_">Message @rishabh_misra_</a>
+Please reach out to me @ <a href="mailto:rishabhmisra1994@gmail.com">r1misra@ucsd.edu</a> or DM me on Twitter: <a href="https://twitter.com/messages/compose?recipient_id=2591106696&text=Hey%20Rishabh" class="twitter-dm-button" data-screen-name="@rishabh_misra_" data-size=large>Message @rishabh_misra_</a>
 
 </div>
 
