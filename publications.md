@@ -6,7 +6,7 @@ permalink: /publications/
 ## Publications
 ### [Research Papers](#papers) | [Datasets](#datasets)
 
-### Research Papers<a name="papers"></a>
+### Research Papers<a name="papers"></a> ([Scholar Profile](https://scholar.google.com/citations?view_op=list_works&hl=en&user=EN3OcMsAAAAJ))
 
 * [**WSDM'20**](http://www.wsdm-conference.org/2020/)
 
