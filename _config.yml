@@ -85,3 +85,4 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-twitter-plugin
+  - jekyll/scholar
