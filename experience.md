@@ -101,11 +101,5 @@ permalink: /experience/
 </details>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
 
