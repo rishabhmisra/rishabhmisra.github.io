@@ -1,37 +1,37 @@
-name: Rishabh Misra
+name: Rricha Jalota
 
-description: ML Engineer
+description: Software Developer | Master in Data Science Student 
 
-avatar: https://avatars0.githubusercontent.com/u/7669681?v=4&s=400&u=f84f21788154425e2a11a483a86f3753dbbb51cf
+avatar: https://avatars2.githubusercontent.com/u/13457022?s=460&u=daa279f1c04d0995b52d7f9479d3b35e03ab23b5&v=4
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: r1misra@ucsd.edu
+  email: rrichajalota@gmail.com
   flickr:
-  github: rishabhmisra
-  instagram:
-  linkedin: misrarishabh
+  github: rrichajalota
+  instagram: rrichajalota
+  linkedin: rrichajalota
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: rishabh_misra_
+  twitter: RrichaJalota
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-  scholar: citations?user=EN3OcMsAAAAJ
-  medium: rishabh_misra_
+  scholar: citations?user=ZBzbtGYAAAAJ
+  medium: rrichajalota234
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: rishabhmisra
+disqus: rrichajalota
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-63791734-1
+google_analytics: UA-174560667-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://rrichajalota.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -66,7 +66,7 @@ sass:
 
 theme: jekyll-theme-cayman
 
-repository: rishabhmisra/rishabhmisra.github.io
+repository: rrichajalota/rrichajalota.github.io
 
 # Use the following plug-ins
 gems:
