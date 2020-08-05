@@ -2,31 +2,29 @@
 layout: page
 title: About Me
 permalink: /about/
+published: true
 ---
 
 <div class="column leftcol">
 
-I consider myself a lifelong learner and believe in working hard. I graduated from UC San Diego with Master's in Computer Science with specialization in Machine Learning in June 2018. Currently, I'm working at Twitter in the Timelines Quality team building relevance and machine learning models and systems. Previously, I worked at Amazon with Amazon Expansions and Exports Tech team. <br> <br>
+I am currently pursuing a master's degree in Data Science from TU Dortmund. I work part-time at the Data Science Research Group, Paderborn University, where I work in the areas of data access and knowledge extraction. Broadly speaking, my interests lie in the domain of Natural Language Processing and Natural Language Generation.  
 
-My interests are in the Applied ML, Recommender Systems and NLP domains. I got my first exposure to Machine Learning during my internships at IIT Madras, India where I was involved in the development of scalable Bayesian models for the rating prediction task. <br> <br>
+  
+ 
+<br> <br>
 
-At UC San Diego, I worked on several research projects under the guidance of Prof. Julian McAuley. Recently, one of our research papers got accepted at <a href="http://acl2019.org/EN/index.xhtml" target="_blank">ACL 2019</a> in which we proposed a neural network architecture to detect spoilers in review datasets. Additionally, we also contributed a <a href="https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/reviews" target="_blank">large book review dataset</a> for the task of spoiler detection. Last year, another work of ours was published at <a href="https://recsys.acm.org/recsys18/" target="_blank">RecSys 2018</a> in which we proposed a new machine learning framework for predicting the fit of clothing products so that appropriate product sizes could be recommended to customers. The proposed approach improves upon a method proposed by Amazon by up to 18%. In this work as well, we released two <a href="https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation" target="_blank">novel datasets</a>, collected specifically for the task of clothing size recommendation. <br> <br>
 
-Apart from this, I interned at Amazon in Summer 2017 where my project was to bring the support of primary key constraint, batch inserts/updates, transactions, and compaction in Hive while ensuring read consistency. This was particularly challenging as Hive is not designed to handle transactional data and operations. Previously, I also worked with Arcesium, a recently formed subsidiary of D.E. Shaw & Co, as a Software Developer. I was responsible for revamping their infrastructure to make it more scalable and robust. <br> <br>
-
-My work experience is helping me in understanding the intricacies involved in developing critical and time-intensive software and my research experience is providing me in-depth knowledge of Machine Learning field. All of my work is driven by these learnings. <br> <br>
-
-<h4> Last updated: 10th July 2019 </h4>
+<h4> Last updated: 5th August 2020 </h4>
 
 <h3> Contact </h3>
 
-Please reach out to me @ <a href="mailto:r1misra@ucsd.edu">r1misra@ucsd.edu</a> or DM me on Twitter: <a href="https://twitter.com/messages/compose?recipient_id=2591106696&text=Hey%20Rishabh" class="twitter-dm-button" data-screen-name="@rishabh_misra_" data-size=large>Message @rishabh_misra_</a>
+Please reach out to me @ <a href="mailto:rrichajalota@gmail.com">rrichajalota@gmail.com</a> or DM me on Twitter: <a href="https://twitter.com/messages/1696410402-1696410402?text=Hey%20Rricha" class="twitter-dm-button" data-screen-name="@RrichaJalota" data-size=large>Message @RrichaJalota</a>
 
 </div>
 
 <div class="column rightcol">
-
-<a class="twitter-timeline" data-width="600" data-height="900" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+  <a class="twitter-timeline" href="https://twitter.com/RrichaJalota?ref_src=twsrc%5Etfw">Tweets by RrichaJalota</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </div>
 
