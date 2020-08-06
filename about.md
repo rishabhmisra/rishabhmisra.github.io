@@ -7,11 +7,11 @@ published: true
 
 <div class="column leftcol">
 
-  I am currently pursuing master in Data Science from <a href="https://www.tu-dortmund.de/en/"> TU Dortmund</a> and work part-time at the <a href="https://dice-research.org/">Data Science Research Group, Paderborn University</a>. I work in the areas of data access and knowledge extraction. Broadly speaking, my interests lie in the domain of Natural Language Processing and Natural Language Generation. 
+  I am currently pursuing master in Data Science from <a href="https://www.tu-dortmund.de/en/"> TU Dortmund</a> and working part-time at the <a href="https://dice-research.org/">Data Science Research Group in Paderborn University</a>. I work in the areas of data access and knowledge extraction. Broadly speaking, my interests lie in the domain of Natural Language Processing and Natural Language Generation. 
   
-  To be honest, I love studying and learning new stuff, which is not just limited to technology. I enjoy uncovering new cultures and hobbies, and challenging myself to go outside my comfort zone. During quarantine, I turned into a health(/nutrition) and fitness junkie. For the most part, I enjoy long distance bike rides, yoga and swimming. Sometimes, in the evenings after work, I play guitar and sing Taylor Swift songs. 
+  I love studying and learning new stuff, which is not just limited to technology. I enjoy uncovering new cultures and hobbies, and challenging myself to go outside my comfort zone. Quarantine provided me one such time and turned me into a health(/nutrition) and fitness junkie. For the most part, I enjoy long distance bike rides, yoga and swimming. Sometimes, in the evenings after work, I play guitar and sing Taylor Swift songs. 
 
-I seldom post my music videos and yoga flows on <a href="https://www.instagram.com/rrichajalota/">instagram</a>. 
+I seldom post my music videos and yoga flows on <a href="https://www.instagram.com/rrichajalota/">Instagram</a>. 
   
  
 <br> <br>
