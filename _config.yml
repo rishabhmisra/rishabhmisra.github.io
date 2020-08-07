@@ -39,6 +39,30 @@ url: https://rrichajalota.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+scholar:
+
+  last_name: Jalota 
+  first_name: Rricha
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
