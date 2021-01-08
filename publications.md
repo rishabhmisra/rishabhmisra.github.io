@@ -63,21 +63,47 @@ permalink: /publications/
 * [**Clothing Fit Dataset for Size Recommendation**](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/home) \[**Released**: August 2018\]
 
   * Product size recommendation and fit prediction are critical in order to improve customers’ shopping experiences and to reduce product return rates. However, modeling customers’ fit feedback is challenging due to its subtle semantics, arising from the subjective evaluation of products and imbalanced label distribution (most of the feedbacks are "Fit"). These datasets, which are the only fit related datasets available publically at this time, collected from [*ModCloth*](https://www.modcloth.com/) and [*RentTheRunWay*](https://www.renttherunway.com/) could be used to address these challenges to improve the recommendation process. (**4000+ downloads on Kaggle**)
-  * Please cite the following if you use the data using [this link](https://scholar.google.com/scholar?cluster=1205755019374674158&hl=en&as_sdt=2005):
+  * Please cite the following if you use the data:
     ```
-    Decomposing fit semantics for product size recommendation in metric spaces
-    Rishabh Misra, Mengting Wan, Julian McAuley 
-    RecSys, 2018
+    @inproceedings{misra2018decomposing,
+      title={Decomposing fit semantics for product size recommendation in metric spaces},
+      author={Misra, Rishabh and Wan, Mengting and McAuley, Julian},
+      booktitle={Proceedings of the 12th ACM Conference on Recommender Systems},
+      pages={422--426},
+      year={2018},
+      organization={ACM}
+    }
+
+    @book{book,
+    author = {Misra, Rishabh and Grover, Jigyasa},
+    year = {2021},
+    month = {01},
+    pages = {},
+    title = {Sculpting Data for ML: The first act of Machine Learning},
+    isbn = {978-0-578-83125-1}
+    }
     ```
 
 * [**News Headlines Dataset For Sarcasm Detection**](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home) \[**Released**: June 2018\]
 
   * Past studies in Sarcasm Detection mostly make use of Twitter datasets collected using hashtag based supervision but such datasets are noisy in terms of labels and language. Furthermore, many tweets are replies to other tweets and detecting sarcasm in these requires the availability of contextual tweets. To overcome the limitations related to noise in Twitter datasets, this **News Headlines dataset for Sarcasm Detection** is collected from two news website. [*TheOnion*](https://www.theonion.com/) aims at producing sarcastic versions of current events and we collected all the headlines from News in Brief and News in Photos categories (which are sarcastic). We collect real (and non-sarcastic) news headlines from [*HuffPost*](https://www.huffingtonpost.com/). (**20000+ downloads on Kaggle**)
-  * Please cite the following if you use the data using [this link](https://scholar.google.com/citations?view_op=list_works&hl=en&user=EN3OcMsAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DEN3OcMsAAAAJ%26citation_for_view%3DEN3OcMsAAAAJ%3AqjMakFHDy7sC%26tzom%3D420):
+  * Please cite the following if you use the data:
     ```
-    Sarcasm Detection using Hybrid Neural Network
-    Rishabh Misra, Prahal Arora
-    Arxiv, August 2019
+    @article{misra2019sarcasm,
+      title={Sarcasm Detection using Hybrid Neural Network},
+      author={Misra, Rishabh and Arora, Prahal},
+      journal={arXiv preprint arXiv:1908.07414},
+      year={2019}
+    }
+
+    @book{book,
+    author = {Misra, Rishabh and Grover, Jigyasa},
+    year = {2021},
+    month = {01},
+    pages = {},
+    title = {Sculpting Data for ML: The first act of Machine Learning},
+    isbn = {978-0-578-83125-1}
+    }
     ```
 
 * [**News Category Dataset**](https://www.kaggle.com/rmisra/news-category-dataset/home) \[**Released**: June 2018\]
@@ -85,9 +111,23 @@ permalink: /publications/
   * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**16000+ downloads on Kaggle**)
   * Please cite the following if you use the data using [this link](https://www.researchgate.net/publication/332141218_News_Category_Dataset):
     ```
-    News Category Dataset
-    Rishabh Misra 
-    ResearchGate, May 2018
+    @dataset{dataset,
+      author = {Misra, Rishabh},
+      year = {2018},
+      month = {06},
+      pages = {},
+      title = {News Category Dataset},
+      doi = {10.13140/RG.2.2.20331.18729}
+    }
+
+    @book{book,
+      author = {Misra, Rishabh and Grover, Jigyasa},
+      year = {2021},
+      month = {01},
+      pages = {},
+      title = {Sculpting Data for ML: The first act of Machine Learning},
+      isbn = {978-0-578-83125-1}
+    }
     ```
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
