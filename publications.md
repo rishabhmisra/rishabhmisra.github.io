@@ -59,6 +59,17 @@ permalink: /publications/
 * [**IMDB Spoiler Dataset**](https://www.kaggle.com/rmisra/imdb-spoiler-dataset) \[**Released**: May 2019\]
 
   * User-generated reviews are often our first point of contact when we consider watching a movie or a TV show. However, beyond telling us the qualitative aspects about the item we want to consume, reviews may inevitably contain undesired revelatory information (i.e. 'spoilers') such as the surprising fate of a character in a movie, or identity of a murderer in a crime-suspense movie etc. For users who are interested in consuming the item but are unaware of the critical plot twists, spoilers may decrease the excitement regarding the pleasurable uncertainty and curiosity of media consumption. Therefore, a natural question is how to identify these spoilers in entertainment reviews, so that users can more effectively navigate review platforms. This dataset is collected from IMDB and contains meta-data about items as well as user reviews with information regarding whether a review contains a spoiler or not. (**1000+ downloads on Kaggle**)
+  * Please cite the following if you use the data:
+    ```
+    @dataset{dataset,
+    author = {Misra, Rishabh},
+    year = {2019},
+    month = {05},
+    pages = {},
+    title = {IMDB Spoiler Dataset},
+    doi = {10.13140/RG.2.2.11584.15362}
+    }
+    ```
 
 * [**Clothing Fit Dataset for Size Recommendation**](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/home) \[**Released**: August 2018\]
 
