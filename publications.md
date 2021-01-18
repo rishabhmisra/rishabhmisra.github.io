@@ -7,12 +7,10 @@ permalink: /publications/
 ### [Book](#book) | [Research Papers](#papers) | [Datasets](#datasets)
 
 ### Book<a name="book"></a>
-* <span style="color:red"> **Launching Soon**</span> 
+* [**Sculpting Data for ML: The first act of Machine Learning**](https://www.amazon.com/dp/B08RN47C5T) 
 
-  * [**Sculpting Data for ML: The first act of Machine Learning**](https://twitter.com/DataForML)
-  
-    Forewords by [Julian McAuley, Associate Professor at UC San Diego](https://cseweb.ucsd.edu/~jmcauley), [Laurence Moroney, AI Lead Advocate at Google](http://laurencemoroney.com/), and [Mengting Wan, Senior Applied Scientist at Microsoft](https://mengtingwan.github.io/)
-  * In the contemporary world of Artificial Intelligence and Machine Learning, _data is the new oil_. For Machine Learning algorithms to work their magic, it is imperative to lay a firm foundation with relevant data. **Sculpting Data for ML** introduces the readers to the first act of Machine Learning, Dataset Curation. This book puts forward practical tips to identify valuable information from the extensive amount of crude data available at our fingertips. The step-by-step guide accompanies code examples in Python from the extraction of real-world datasets and illustrates ways to hone the skills of extracting meaningful datasets. In addition, the book also dives deep into how data fits into the Machine Learning ecosystem and tries to highlight the impact good quality data can have on the Machine Learning system's performance.
+  * **Forewords** by [Julian McAuley, Associate Professor at UC San Diego](https://cseweb.ucsd.edu/~jmcauley), [Laurence Moroney, AI Lead Advocate at Google](http://laurencemoroney.com/), and [Mengting Wan, Senior Applied Scientist at Microsoft](https://mengtingwan.github.io/)
+  * **Abstract**: In the contemporary world of Artificial Intelligence and Machine Learning, _data is the new oil_. For Machine Learning algorithms to work their magic, it is imperative to lay a firm foundation with relevant data. **Sculpting Data for ML** introduces the readers to the first act of Machine Learning, Dataset Curation. This book puts forward practical tips to identify valuable information from the extensive amount of crude data available at our fingertips. The step-by-step guide accompanies code examples in Python from the extraction of real-world datasets and illustrates ways to hone the skills of extracting meaningful datasets. In addition, the book also dives deep into how data fits into the Machine Learning ecosystem and tries to highlight the impact good quality data can have on the Machine Learning system's performance.
 
 ### Research Papers<a name="papers"></a>
 
