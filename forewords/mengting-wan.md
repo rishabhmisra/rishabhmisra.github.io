@@ -9,4 +9,4 @@ Throughout the rapid growth of Machine Learning and Data Science these years, da
 The book introduces critical data collection, extraction, preparation, and processing skills. It also provides several Machine Learning application examples and approaches the data problems from the application-oriented perspective. I personally find this book can be very helpful for researchers and practitioners, in order to remove their data availability obstacles, help them proactively but responsibly gather the data they need, and understand the strengths as well as limitations of their datasets. In this regard, I think the book will be ideal as a starting point for data enthusiasts who are willing to learn the dataset collection process from scratch.
 
 [<b>Mengting Wan</b>](https://mengtingwan.github.io/) <br>
-Senior Applied Scientist, Microsoft
+**Senior Applied Scientist, Microsoft**
