@@ -17,4 +17,4 @@ All of this will prepare you for Machine Learning with your own custom data that
 I am really excited by this field, and delighted that a book like this one exists. Pick it up, read, learn, enjoy!
 
 [<b>Laurence Moroney</b>](http://laurencemoroney.com/) <br>
-Lead Artificial Intelligence Advocate, Google
+**Lead Artificial Intelligence Advocate, Google**
