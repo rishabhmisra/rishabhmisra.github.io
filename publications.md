@@ -11,6 +11,8 @@ permalink: /publications/
 
   * **Forewords** by [Julian McAuley, Associate Professor at UC San Diego](https://rishabhmisra.github.io/foreword-by-julian-mcauley.html), [Laurence Moroney, AI Lead Advocate at Google](https://rishabhmisra.github.io/foreword-by-laurence-moroney.html), and [Mengting Wan, Senior Applied Scientist at Microsoft](https://rishabhmisra.github.io/foreword-by-mengting-wan.html)
   * **Abstract**: In the contemporary world of Artificial Intelligence and Machine Learning, _data is the new oil_. For Machine Learning algorithms to work their magic, it is imperative to lay a firm foundation with relevant data. **Sculpting Data for ML** introduces the readers to the first act of Machine Learning, Dataset Curation. This book puts forward practical tips to identify valuable information from the extensive amount of crude data available at our fingertips. The step-by-step guide accompanies code examples in Python from the extraction of real-world datasets and illustrates ways to hone the skills of extracting meaningful datasets. In addition, the book also dives deep into how data fits into the Machine Learning ecosystem and tries to highlight the impact good quality data can have on the Machine Learning system's performance.
+  
+  <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B08RN47C5T&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_1mIeGbSZ013C3&tag=mobile0a1329f-20" ></iframe>
 
 ### Research Papers<a name="papers"></a>
 
