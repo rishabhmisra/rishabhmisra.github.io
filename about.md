@@ -34,7 +34,7 @@ Please reach out to me @ <a href="mailto:r1misra@eng.ucsd.edu">r1misra@eng.ucsd.
 
 <div class="column rightcol">
 
-<a class="twitter-timeline" data-width="600" data-height="900" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-width="600" data-height="650" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </div>
 
