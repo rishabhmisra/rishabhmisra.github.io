@@ -63,12 +63,12 @@ permalink: /publications/
     
     ```
     @dataset{dataset,
-    author = {Misra, Rishabh},
-    year = {2019},
-    month = {05},
-    pages = {},
-    title = {IMDB Spoiler Dataset},
-    doi = {10.13140/RG.2.2.11584.15362}
+      author = {Misra, Rishabh},
+      year = {2019},
+      month = {05},
+      pages = {},
+      title = {IMDB Spoiler Dataset},
+      doi = {10.13140/RG.2.2.11584.15362}
     }
     ```
     
@@ -81,12 +81,12 @@ permalink: /publications/
  
     ```
     @book{book,
-    author = {Misra, Rishabh and Grover, Jigyasa},
-    year = {2021},
-    month = {01},
-    pages = {},
-    title = {Sculpting Data for ML: The first act of Machine Learning},
-    isbn = {978-0-578-83125-1}
+      author = {Misra, Rishabh and Grover, Jigyasa},
+      year = {2021},
+      month = {01},
+      pages = {},
+      title = {Sculpting Data for ML: The first act of Machine Learning},
+      isbn = {978-0-578-83125-1}
     }
  
     @inproceedings{misra2018decomposing,
@@ -108,15 +108,15 @@ permalink: /publications/
  
     ```
     @book{book,
-    author = {Misra, Rishabh and Grover, Jigyasa},
-    year = {2021},
-    month = {01},
-    pages = {},
-    title = {Sculpting Data for ML: The first act of Machine Learning},
-    isbn = {978-0-578-83125-1}
+      author = {Misra, Rishabh and Grover, Jigyasa},
+      year = {2021},
+      month = {01},
+      pages = {},
+      title = {Sculpting Data for ML: The first act of Machine Learning},
+      isbn = {978-0-578-83125-1}
     }
  
-     @article{misra2019sarcasm,
+    @article{misra2019sarcasm,
       title={Sarcasm Detection using Hybrid Neural Network},
       author={Misra, Rishabh and Arora, Prahal},
       journal={arXiv preprint arXiv:1908.07414},
