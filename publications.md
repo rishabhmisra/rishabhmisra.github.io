@@ -3,8 +3,8 @@ layout: default
 permalink: /publications/
 ---
 
-## Publications
-### [Book](#book) | [Research Papers](#papers) | [Datasets](#datasets)
+## Research & Services
+### [Book](#book) | [Publications](#papers) | [Datasets](#datasets) | [Services](#services)
 
 ### Book<a name="book"></a>
 * [**Sculpting Data for ML: The first act of Machine Learning**](https://www.amazon.com/dp/B08RN47C5T) 
@@ -14,7 +14,7 @@ permalink: /publications/
   
   <center> <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B08RN47C5T&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_1mIeGbSZ013C3&tag=mobile0a1329f-20" ></iframe> </center>
 
-### Research Papers<a name="papers"></a>
+### Publications<a name="papers"></a>
 
 * [**WSDM'20**](http://www.wsdm-conference.org/2020/)
 
@@ -80,15 +80,6 @@ permalink: /publications/
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
-    @inproceedings{misra2018decomposing,
-      title={Decomposing fit semantics for product size recommendation in metric spaces},
-      author={Misra, Rishabh and Wan, Mengting and McAuley, Julian},
-      booktitle={Proceedings of the 12th ACM Conference on Recommender Systems},
-      pages={422--426},
-      year={2018},
-      organization={ACM}
-    }
-
     @book{book,
     author = {Misra, Rishabh and Grover, Jigyasa},
     year = {2021},
@@ -97,6 +88,15 @@ permalink: /publications/
     title = {Sculpting Data for ML: The first act of Machine Learning},
     isbn = {978-0-578-83125-1}
     }
+ 
+    @inproceedings{misra2018decomposing,
+      title={Decomposing fit semantics for product size recommendation in metric spaces},
+      author={Misra, Rishabh and Wan, Mengting and McAuley, Julian},
+      booktitle={Proceedings of the 12th ACM Conference on Recommender Systems},
+      pages={422--426},
+      year={2018},
+      organization={ACM}
+    } 
     ```
     
     </details>
@@ -107,13 +107,6 @@ permalink: /publications/
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
-    @article{misra2019sarcasm,
-      title={Sarcasm Detection using Hybrid Neural Network},
-      author={Misra, Rishabh and Arora, Prahal},
-      journal={arXiv preprint arXiv:1908.07414},
-      year={2019}
-    }
-
     @book{book,
     author = {Misra, Rishabh and Grover, Jigyasa},
     year = {2021},
@@ -121,6 +114,13 @@ permalink: /publications/
     pages = {},
     title = {Sculpting Data for ML: The first act of Machine Learning},
     isbn = {978-0-578-83125-1}
+    }
+ 
+     @article{misra2019sarcasm,
+      title={Sarcasm Detection using Hybrid Neural Network},
+      author={Misra, Rishabh and Arora, Prahal},
+      journal={arXiv preprint arXiv:1908.07414},
+      year={2019}
     }
     ```
     
@@ -132,15 +132,6 @@ permalink: /publications/
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
-    @dataset{dataset,
-      author = {Misra, Rishabh},
-      year = {2018},
-      month = {06},
-      pages = {},
-      title = {News Category Dataset},
-      doi = {10.13140/RG.2.2.20331.18729}
-    }
-
     @book{book,
       author = {Misra, Rishabh and Grover, Jigyasa},
       year = {2021},
@@ -149,8 +140,25 @@ permalink: /publications/
       title = {Sculpting Data for ML: The first act of Machine Learning},
       isbn = {978-0-578-83125-1}
     }
+ 
+    @dataset{dataset,
+      author = {Misra, Rishabh},
+      year = {2018},
+      month = {06},
+      pages = {},
+      title = {News Category Dataset},
+      doi = {10.13140/RG.2.2.20331.18729}
+    }
     ```
     
     </details>
+
+
+### Services<a name="services"></a>
+
+Invited Reviewer at:
+* [**ICML 2022**](https://icml.cc/Conferences/2022) 
+* [**ICWSM 2022**](https://www.icwsm.org/2022/index.html/) 
+
 
 <center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
