@@ -46,12 +46,15 @@ permalink: /publications/
   * [Paper](https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Bayesian-Matrix-Factorization)
   
 
-* **Pre-print**
+* **Preprints**
+
+  * **Sarcasm Detection using Hybrid Neural Network**
+  
+    **Rishabh Misra** and Prahal Arora. [Paper](https://arxiv.org/pdf/1908.07414.pdf) \| [Code](https://github.com/rishabhmisra/Sarcasm-Detection-using-NN)
 
   * **Scalable Variational Bayesian Factorization Machine**
   
-    Avijit Saha, **Rishabh Misra**, Ayan Acharya, and Balaraman Ravindran.
-  * [Paper](https://www.researchgate.net/profile/Rishabh_Misra/publication/320408037_Scalable_Variational_Bayesian_Factorization_Machine/links/59e32a86aca2724cbfe36911/Scalable-Variational-Bayesian-Factorization-Machine.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Variational-Bayesian-Factorization-Machine)
+    Avijit Saha, **Rishabh Misra**, Ayan Acharya, and Balaraman Ravindran. [Paper](https://www.researchgate.net/profile/Rishabh_Misra/publication/320408037_Scalable_Variational_Bayesian_Factorization_Machine/links/59e32a86aca2724cbfe36911/Scalable-Variational-Bayesian-Factorization-Machine.pdf) \| [Code](https://github.com/rishabhmisra/Scalable-Variational-Bayesian-Factorization-Machine)
 
 
 ### Datasets<a name="datasets"></a>
