@@ -160,7 +160,8 @@ permalink: /publications/
 ### Services<a name="services"></a>
 
 Program Committee Member/Invited Reviewer at:
-* [**ICML 2022**](https://icml.cc/Conferences/2022) 
+* [**ICML 2022**](https://icml.cc/Conferences/2022)
+* [**SIGIR 2022**](https://sigir.org/sigir2022/) 
 * [**ICWSM 2022**](https://www.icwsm.org/2022/index.html/) 
 
 
