@@ -9,6 +9,16 @@ permalink: /experience/
 
 <summary><b>Senior Machine Learning Engineer @ Twitter.com</b> [July 2019 - Present]</summary>
   
+  Working in the Content Quality team that drives foundational infrastructure, core ML modeling, and thought leadership on ML opportunities across the products that enable creation and conversations on Twitter (tweet detail, fleets, spaces, DMs, etc.). Previously worked in the Timelines Quality team that built relevance and machine learning models and systems for Twitter's Home Timeline.
+
+  * Engineering better features and models to improve offline and online metrics to increase user satisfaction.
+  * Building and scaling end-to-end Machine Learning pipelines to rank millions of candidates.
+  * Performing Data Science analysis to identify potential problems and their impact on user satisfaction.
+  * Driving ML tooling adoption (BigQuery and GCP) to speed up the exploratory analysis process.
+
+  **Technologies**: Tensorflow \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Python \| Scala
+  
+  
   Working in the Timelines Quality team. The team’s mission is to show users the content they care about by building relevance and machine learning models and systems. Every time users see new tweets, nearly half a billion daily tweets are evaluated to organize and deliver the best timeline experience.
 
   * Working on building end-to-end Machine Learning pipelines.
