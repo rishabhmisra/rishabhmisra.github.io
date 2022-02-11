@@ -7,7 +7,7 @@ permalink: /experience/
 
 <details>
 
-<summary><b>Machine Learning Engineer II @ Twitter.com</b> [July 2019 - Present]</summary>
+<summary><b>Senior Machine Learning Engineer @ Twitter.com</b> [July 2019 - Present]</summary>
   
   Working in the Timelines Quality team. The team’s mission is to show users the content they care about by building relevance and machine learning models and systems. Every time users see new tweets, nearly half a billion daily tweets are evaluated to organize and deliver the best timeline experience.
 
