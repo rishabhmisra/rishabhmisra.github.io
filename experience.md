@@ -18,16 +18,6 @@ permalink: /experience/
 
   **Technologies**: Tensorflow \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Python \| Scala
   
-  
-  Working in the Timelines Quality team. The team’s mission is to show users the content they care about by building relevance and machine learning models and systems. Every time users see new tweets, nearly half a billion daily tweets are evaluated to organize and deliver the best timeline experience.
-
-  * Working on building end-to-end Machine Learning pipelines.
-  * Working on engineering better features and models to improve offline and online metrics to increase user satisfaction.
-  * Performing Data Science analysis to identify potential problems and their impact on user satisfaction.
-  * Developing ML tooling using BigQuery and GCP to speed up the exploratory analysis process.
-  
-  **Technologies**: Python \| Scala \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Tensorflow
-  
 </details>
 <br>
 <details>
