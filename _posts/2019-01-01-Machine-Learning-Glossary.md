@@ -233,5 +233,3 @@ The goal of this post is to briefly explain popular (and unpopular) concepts in 
 
 [Back to Top](#top)
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
