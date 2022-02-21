@@ -38,5 +38,3 @@ Please reach out to me @ <a href="mailto:r1misra@eng.ucsd.edu">r1misra@eng.ucsd.
 
 </div>
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
