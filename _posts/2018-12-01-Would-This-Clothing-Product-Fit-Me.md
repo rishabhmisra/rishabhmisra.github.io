@@ -121,5 +121,3 @@ Besides learning good representations, the good performance could be ascribed to
 ## Future Work<a name="section-7"></a>
 One direction for further improvement is utilizing reviews to improve the interpretability of the model since currently, it is hard to understand what each latent dimension correspond to. This is possible by integrating a language model with the latent factor model to assign a specific meaning to each latent dimension (denoted by the corresponding topic) as done in [this paper](https://cs.stanford.edu/people/jure/pubs/reviews-recsys13.pdf). This would be challenging however, as not all the text mentioned in reviews is relevant to fit and also, many times, customers do not provide fit feedback in detail. Another scope of improvement comes from jointly learning about good prototypes and distance metric as done in [this paper](https://www.cv-foundation.org/openaccess/content_iccv_2013/papers/Kostinger_Joint_Learning_of_2013_ICCV_paper.pdf).
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
