@@ -112,5 +112,3 @@ In this case, the SVM would get stuck in finding the optimal position of the dec
 ## Concluding Remarks
 We'll learn about these two methods in the next post. If you have any questions or suggestions, please let me know in the comments. Thanks for reading.
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
