@@ -166,4 +166,3 @@ Program Committee Member/Invited Reviewer at:
 * [**ICWSM 2022**](https://www.icwsm.org/2022/index.html/) 
 
 
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
