@@ -124,5 +124,3 @@ Hence, as we see, the kernel function is nothing but a simple transformation of 
 ## Concluding Remarks
 With this, we reached the end of this post. Hopefully, the details I provided here helped you in some way in understanding SVM more clearly. In case you have any questions or suggestions, please let me know in comments. Cheers!
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
