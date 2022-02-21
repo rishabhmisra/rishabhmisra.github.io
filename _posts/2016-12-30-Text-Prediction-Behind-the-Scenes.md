@@ -171,5 +171,3 @@ Having `<UNK>` as the token with the highest likelihood of occurrence is expect
 ## Concluding Remarks
 This brings us to the end of the article about how to predict text using Maximum Likelihood method. Please let me know if you have any queries/feedback in comments. Wishing you a Happy New Year!
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
