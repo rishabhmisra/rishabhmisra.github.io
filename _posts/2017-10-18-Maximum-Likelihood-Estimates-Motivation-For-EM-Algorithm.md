@@ -72,5 +72,3 @@ Apart from using EM algorithms in models with latent variables, it could also be
 ## Concluding Remarks
 This concludes the article. Hope you get a sense of when the EM algorithm proves useful and the high-level idea of how it works. However, as you could guess, usually performing EM steps are not so straightforward. In [this follow up post](https://rishabhmisra.github.io/Inference-Using-EM-Algorithm/), I expand on the cases where evaluating the posterior (in E step) directly gets intractable and we have to resort to some approximation technique to perform the inference. Let me know if you have any questions or feedback in the comments. Cheers!
 
-
-<center> <img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits"> </center>
