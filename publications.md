@@ -163,6 +163,7 @@ Program Committee Member/Invited Reviewer at:
 * [**ICML 2022**](https://icml.cc/Conferences/2022)
 * [**KDD 2022**](https://www.kdd.org/kdd2022/)
 * [**SIGIR 2022**](https://sigir.org/sigir2022/) 
+* [**ECML-PKDD 2022**](https://2022.ecmlpkdd.org/) 
 * [**ICWSM 2022**](https://www.icwsm.org/2022/index.html/) 
 * [**DBKDA 2022**](https://www.iaria.org/conferences2022/ComDBKDA22.html) 
 * [**SciPy 2019**](https://www.scipy2019.scipy.org/) 
