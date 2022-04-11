@@ -8,11 +8,11 @@ permalink: /about/
 
 Hi folks, I am a Machine Learning Engineer by Profession and co-author of the book <a href="https://www.amazon.com/dp/B08RN47C5T" target="_blank">Sculpting Data for ML</a>. I developed a passion for identifying and tackling novel and practical problems using Machine Learning during my research internships at the Indian Institute of Technology Madras, which I further explored during my Master's in Computer Science from the University of California San Diego. I try to combine my past engineering experiences in designing large-scale systems, working at Amazon and Arcesium (a D.E. Shaw company), and research experiences in Applied Machine Learning to develop distributed Machine Learning relevance systems at Twitter.
 
-My explorations have led to several research publications in competitive ML conferences like RecSys, ACL, and WSDM (with 100+ citations & h-index of 6). The ML community has also well received the datasets collected (also used in the book) as part of my research. Kaggle recently ranked me as one of the top 20 dataset contributors on the platform, and Deeplearning.ai's "Natural Language Processing in TensorFlow" course on Coursera used my Sarcasm Detection dataset for teaching purposes. 
+My explorations have led to several research publications in competitive ML conferences like RecSys, ACL, and WSDM (with 150+ citations). The ML community has also well received the datasets collected (also used in the book) as part of my research. Kaggle recently ranked me as one of the top 20 dataset contributors on the platform, and Deeplearning.ai's "Natural Language Processing in TensorFlow" course on Coursera used my Sarcasm Detection dataset for teaching purposes. 
   
 These days, I'm actively working on promoting data centric view and approaches in AI, which is also one of the topics in our book Sculpting Data for ML. Follow DataForML handle on <a href="https://twitter.com/DataForML" target="_blank">Twitter</a> or <a href="https://www.linkedin.com/company/dataforml/" target="_blank">LinkedIn</a> to stay up-to-date.
   
-In my downtime, I enjoy watching sci-fi shows, working-out, video gaming, and spending time with my family. I presently lives in the Bay Area.
+In my downtime, I enjoy watching sci-fi shows, working-out, video gaming, and spending time with my family. I presently live in the Bay Area.
 
 <!-- I consider myself a lifelong learner and believe in working hard. I graduated from UC San Diego with a Master's in Computer Science with a Machine Learning specialization in June 2018. I'm currently working at Twitter in the Timelines Quality team, building relevance and machine learning systems. Previously, I worked at Amazon with Amazon Expansions and Exports Tech team. <br> <br> -->
 
@@ -34,7 +34,7 @@ Please reach out to me @ <a href="mailto:r1misra@eng.ucsd.edu">r1misra@eng.ucsd.
 
 <div class="column rightcol">
 
-<a class="twitter-timeline" data-width="600" data-height="650" data-theme="light" data-link-color="#FF8A33" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-width="600" data-height="650" href="https://twitter.com/rishabh_misra_?ref_src=twsrc%5Etfw">Tweets by rishabh_misra_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </div>
 
