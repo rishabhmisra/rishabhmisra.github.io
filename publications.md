@@ -82,16 +82,7 @@ permalink: /publications/
   * Product size recommendation and fit prediction are critical in order to improve customers’ shopping experiences and to reduce product return rates. However, modeling customers’ fit feedback is challenging due to its subtle semantics, arising from the subjective evaluation of products and imbalanced label distribution (most of the feedbacks are "Fit"). These datasets, which are the only fit related datasets available publically at this time, collected from [*ModCloth*](https://www.modcloth.com/) and [*RentTheRunWay*](https://www.renttherunway.com/) could be used to address these challenges to improve the recommendation process. (**5K+ downloads on Kaggle**)
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
-    ```
-    @book{book,
-      author = {Misra, Rishabh and Grover, Jigyasa},
-      year = {2021},
-      month = {01},
-      pages = {},
-      title = {Sculpting Data for ML: The first act of Machine Learning},
-      isbn = {978-0-578-83125-1}
-    }
- 
+    ``` 
     @inproceedings{misra2018decomposing,
       title={Decomposing fit semantics for product size recommendation in metric spaces},
       author={Misra, Rishabh and Wan, Mengting and McAuley, Julian},
@@ -99,7 +90,16 @@ permalink: /publications/
       pages={422--426},
       year={2018},
       organization={ACM}
-    } 
+    }
+ 
+     @book{book,
+      author = {Misra, Rishabh and Grover, Jigyasa},
+      year = {2021},
+      month = {01},
+      pages = {},
+      title = {Sculpting Data for ML: The first act of Machine Learning},
+      isbn = {978-0-578-83125-1}
+    }
     ```
     
     </details>
@@ -110,20 +110,20 @@ permalink: /publications/
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
-    @book{book,
+    @article{misra2019sarcasm,
+      title={Sarcasm Detection using Hybrid Neural Network},
+      author={Misra, Rishabh and Arora, Prahal},
+      journal={arXiv preprint arXiv:1908.07414},
+      year={2019}
+    }
+ 
+     @book{book,
       author = {Misra, Rishabh and Grover, Jigyasa},
       year = {2021},
       month = {01},
       pages = {},
       title = {Sculpting Data for ML: The first act of Machine Learning},
       isbn = {978-0-578-83125-1}
-    }
- 
-    @article{misra2019sarcasm,
-      title={Sarcasm Detection using Hybrid Neural Network},
-      author={Misra, Rishabh and Arora, Prahal},
-      journal={arXiv preprint arXiv:1908.07414},
-      year={2019}
     }
     ```
     
@@ -135,15 +135,6 @@ permalink: /publications/
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
-    @book{book,
-      author = {Misra, Rishabh and Grover, Jigyasa},
-      year = {2021},
-      month = {01},
-      pages = {},
-      title = {Sculpting Data for ML: The first act of Machine Learning},
-      isbn = {978-0-578-83125-1}
-    }
- 
     @dataset{dataset,
       author = {Misra, Rishabh},
       year = {2018},
@@ -151,6 +142,15 @@ permalink: /publications/
       pages = {},
       title = {News Category Dataset},
       doi = {10.13140/RG.2.2.20331.18729}
+    }
+ 
+    @book{book,
+      author = {Misra, Rishabh and Grover, Jigyasa},
+      year = {2021},
+      month = {01},
+      pages = {},
+      title = {Sculpting Data for ML: The first act of Machine Learning},
+      isbn = {978-0-578-83125-1}
     }
     ```
     
@@ -160,6 +160,8 @@ permalink: /publications/
 ### Services<a name="services"></a>
 
 Program Committee Member/Invited Reviewer at:
+* [**RecSys 2022**](https://recsys.acm.org/recsys22/)
+* [**TORS 2022**](https://dl.acm.org/journal/tors)
 * [**ICML 2022**](https://icml.cc/Conferences/2022)
 * [**KDD 2022**](https://www.kdd.org/kdd2022/)
 * [**SIGIR 2022**](https://sigir.org/sigir2022/) 
