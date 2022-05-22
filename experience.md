@@ -17,7 +17,7 @@ permalink: /experience/
   * Performing Data Science analysis to identify potential problems and their impact on user satisfaction.
   * Driving ML tooling adoption (BigQuery and GCP) to speed up the exploratory analysis process.
 
-  **Technologies**: Tensorflow \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Python \| Scala
+  Technologies: Tensorflow \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Python \| Scala
   
 <!-- </details> -->
 <br>
@@ -31,7 +31,7 @@ permalink: /experience/
   * Improving the infrastructure scalability using Native AWS technologies to speed up the eligibility calculation process.
   * Improving the eligibility prediction process using Machine Learning models.
 
-  **Technologies**: AWS services \| Java \| Python \| Jupyter Notebook
+  Technologies: AWS services \| Java \| Python \| Jupyter Notebook
 
   Side hustles at work:
   * I was a part of Amazon's Machine Learning University program which aims to educate Amazon developers about ML and AI. I was a Teaching Assistant for the "Introduction to Data Science" and "Text Mining" courses.
@@ -53,7 +53,7 @@ permalink: /experience/
 
   This was particularly challenging as it entailed handling highly concurrent and complex scenarios arising due to the distributed nature of Hive and the fact that Hive is not designed to handle transactional data and operations.
 
-  **Technologies**: Java \| Hive \| DynamoDB
+  Technologies: Java \| Hive \| DynamoDB
 
 <!-- </details> -->
 <br>
@@ -71,7 +71,7 @@ permalink: /experience/
   * Profiling and optimizing(~40%) code (using concurrency) and database (using index and partitions).
   * Providing support to the users in case of system's aberrant behavior.
 
-  **Technologies**: Java \| Spring \| MyBatis \| SQL Server \| Git
+  Technologies: Java \| Spring \| MyBatis \| SQL Server \| Git
 
 <!-- </details> -->
 
