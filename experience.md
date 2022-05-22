@@ -8,7 +8,7 @@ permalink: /experience/
 <!-- <details> -->
 
 <!-- <summary><b>Senior Machine Learning Engineer @ Twitter.com</b> [July 2019 - Present]</summary> -->
-**Senior Machine Learning Engineer @ Twitter.com** [July 2019 - Present] 
+**Senior Machine Learning Engineer @ Twitter.com** [July 2019 - Present]
 
   Working in the Content Quality team that drives foundational infrastructure, core ML modeling, and thought leadership on ML opportunities across the products that enable creation and conversations on Twitter (tweet detail, fleets, spaces, DMs, etc.). Previously worked in the Timelines Quality team that built relevance and machine learning models and systems for Twitter's Home Timeline.
 
@@ -20,6 +20,7 @@ permalink: /experience/
   **Technologies**: Tensorflow \| Scalding \| Hadoop \| Airflow \| BigQuery \| GCP \| Python \| Scala
   
 <!-- </details> -->
+<br>
 <br>
 <!-- <details> -->
 
@@ -39,6 +40,7 @@ permalink: /experience/
 
 <!-- </details> -->
 <br>
+<br>
 <!-- <details> -->
 
 <!-- <summary><b>Software Development Engineer Intern @ Amazon.com</b> [June 2017 - September 2017]</summary> -->
@@ -55,6 +57,7 @@ permalink: /experience/
 
 <!-- </details> -->
 <br>
+<br>
 <!-- <details> -->
 
 <!-- <summary><b>Member Technical @ Arcesium India Pvt. Ltd.</b> [July 2015 - July 2016]</summary> -->
@@ -70,7 +73,7 @@ permalink: /experience/
 
   **Technologies**: Java \| Spring \| MyBatis \| SQL Server \| Git
 
-</details>
+<!-- </details> -->
 
 ## Research Experience<a name="research"></a>
 
@@ -86,7 +89,7 @@ permalink: /experience/
 
 <!-- </details> -->
 <br>
-
+<br>
 <!-- <details> -->
   
 <!-- <summary><b>Research Intern @ Indian Institue of Technology, Madras</b> [December 2014 - May 2015]</summary> -->
@@ -97,6 +100,7 @@ permalink: /experience/
   * Contributed to the development of scalable variational Bayesian framework for Factorization Machines, which supplements the existing framework with a scalable alternative. Preprint: [Scalable Variational Bayesian Factorization Machine](https://www.researchgate.net/profile/Rishabh_Misra/publication/320408037_Scalable_Variational_Bayesian_Factorization_Machine/links/59e32a86aca2724cbfe36911/Scalable-Variational-Bayesian-Factorization-Machine.pdf)
 
 <!-- </details> -->
+<br>
 <br>
 <!-- <details> -->
   
