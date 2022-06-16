@@ -6,6 +6,11 @@ permalink: /publication/
 ## Research & Services
 ### [Services](#services) | [Book](#book) | [Publications](#papers) | [Datasets](#datasets)
 
+* [Scholar Profile](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
+* Citations: {{ site.data.scholar.citations }}
+* h-index: {{ site.data.scholar.h_index }}
+* i10-index: {{ site.data.scholar.i10_index }}
+
 ### Services<a name="services"></a>
 
 Served as Program Committee Member/Invited Reviewer at some of the leading conferences in Machine Learning:
