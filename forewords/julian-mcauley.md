@@ -15,4 +15,4 @@ It is wonderful to see a book that covers the underexplored but important skill 
 I was thrilled to hear Jigyasa and Rishabh were working on this book: both have experience collecting, curating, and modeling large datasets, both in academic and industrial settings. I expect readers will find the sections on data extraction and data preparation especially useful, as these are the skills I have found most useful in my own career.
 
 [<b>Julian McAuley</b>](https://cseweb.ucsd.edu/~jmcauley) <br>
-**Associate Professor, University of California San Diego**
+**Professor, University of California San Diego**
