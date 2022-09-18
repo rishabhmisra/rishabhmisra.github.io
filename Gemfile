@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gemspec :name => "jekyll"
+# gemspec :name => "jekyll"
 
 gem "jekyll-jupyter-notebook"
 gem "jekyll-paginate"
@@ -24,31 +24,31 @@ end
 
 #
 
-group :test do
-  gem "cucumber", RUBY_VERSION >= "2.5" ? "~> 5.1.2" : "~> 4.1"
-  gem "httpclient"
-  gem "jekyll_test_plugin"
-  gem "jekyll_test_plugin_malicious"
-  gem "memory_profiler"
-  gem "nokogiri", "~> 1.7"
-  gem "rspec"
-  gem "rspec-mocks"
-  gem "rubocop", "~> 1.29.0"
-  gem "rubocop-minitest"
-  gem "rubocop-performance"
-  gem "rubocop-rake"
-  gem "rubocop-rspec"
-  gem "test-dependency-theme", :path => File.expand_path("test/fixtures/test-dependency-theme", __dir__)
-  gem "test-theme", :path => File.expand_path("test/fixtures/test-theme", __dir__)
-  gem "test-theme-skinny", :path => File.expand_path("test/fixtures/test-theme-skinny", __dir__)
-  gem "test-theme-symlink", :path => File.expand_path("test/fixtures/test-theme-symlink", __dir__)
-  gem "test-theme-w-empty-data", :path => File.expand_path("test/fixtures/test-theme-w-empty-data", __dir__)
+# group :test do
+#   gem "cucumber", RUBY_VERSION >= "2.5" ? "~> 5.1.2" : "~> 4.1"
+#   gem "httpclient"
+#   gem "jekyll_test_plugin"
+#   gem "jekyll_test_plugin_malicious"
+#   gem "memory_profiler"
+#   # gem "nokogiri", "~> 1.7"
+#   gem "rspec"
+#   gem "rspec-mocks"
+#   gem "rubocop", "~> 1.29.0"
+#   gem "rubocop-minitest"
+#   gem "rubocop-performance"
+#   gem "rubocop-rake"
+#   gem "rubocop-rspec"
+#   gem "test-dependency-theme", :path => File.expand_path("test/fixtures/test-dependency-theme", __dir__)
+#   gem "test-theme", :path => File.expand_path("test/fixtures/test-theme", __dir__)
+#   gem "test-theme-skinny", :path => File.expand_path("test/fixtures/test-theme-skinny", __dir__)
+#   gem "test-theme-symlink", :path => File.expand_path("test/fixtures/test-theme-symlink", __dir__)
+#   gem "test-theme-w-empty-data", :path => File.expand_path("test/fixtures/test-theme-w-empty-data", __dir__)
 
-  if RUBY_ENGINE == "jruby"
-    gem "http_parser.rb", "~> 0.6.0"
-    gem "jruby-openssl"
-  end
-end
+#   if RUBY_ENGINE == "jruby"
+#     gem "http_parser.rb", "~> 0.6.0"
+#     gem "jruby-openssl"
+#   end
+# end
 
 #
 
@@ -78,7 +78,7 @@ end
 group :jekyll_optional_dependencies do
   gem "jekyll-coffeescript"
   gem "jekyll-docs", :path => "../docs" if Dir.exist?("../docs") && ENV["JEKYLL_VERSION"]
-  gem "jekyll-feed", "~> 0.9"
+  # gem "jekyll-feed", "~> 0.9"
   gem "jekyll-gist"
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
