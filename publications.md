@@ -175,3 +175,5 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
     
     </details>
 
+### Missing Citations
+* [**MetaPrompting: Learning to Learn Better Prompts**](http://rishabhmisra.github.io/missing_citations/MetaPrompting.pdf)
