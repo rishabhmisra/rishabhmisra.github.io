@@ -177,3 +177,9 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
 ### Missing Citations
 * [**MetaPrompting: Learning to Learn Better Prompts**](http://rishabhmisra.github.io/missing_citations/MetaPrompting.pdf)
+* [**Sarcasm Detection in News Headlines using Supervised Learning**](http://rishabhmisra.github.io/missing_citations/Sarcasm%20Detection%20in%20News%20Headlines%20using%20Supervised%20Learning.pdf)
+* [**A Novel Perspective to Look At Attention: Bi-level Attention-based Explainable Topic Modeling for News Classification**](http://rishabhmisra.github.io/missing_citations/A%20Novel%20Perspective%20to%20Look%20At%20Attention-%20Bi-level%20Attention-based%20Explainable%20Topic%20Modeling%20for%20News%20Classification.pdf)
+* [**Zoom Out and Observe: News Environment Perception for Fake News Detection**](http://rishabhmisra.github.io/missing_citations/Zoom%20Out%20and%20Observe-%20News%20Environment%20Perception%20for%20Fake%20News%20Detection.pdf)
+* [**Understanding the Properties of Generated Corpora**](http://rishabhmisra.github.io/missing_citations/Understanding%20the%20Properties%20of%20Generated%20Corpora.pdf)
+* [**Classifier Data Quality – A Geometric Complexity Based Method for Automated Baseline And Insights Generation**](http://rishabhmisra.github.io/missing_citations/Classifier%20Data%20Quality%20–%20A%20Geometric%20Complexity%20Based%20Method%20for%20Automated%20Baseline%20And%20Insights%20Generation.pdf)
+* [**Classical Sequence Match is a Competitive Few-Shot One-Class Learner**](http://rishabhmisra.github.io/missing_citations/Classical%20Sequence%20Match%20is%20a%20Competitive%20Few-Shot%20One-Class%20Learner.pdf)
