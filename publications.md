@@ -183,3 +183,5 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 * [**Understanding the Properties of Generated Corpora**](http://rishabhmisra.github.io/missing_citations/Understanding%20the%20Properties%20of%20Generated%20Corpora.pdf)
 * [**Classifier Data Quality – A Geometric Complexity Based Method for Automated Baseline And Insights Generation**](http://rishabhmisra.github.io/missing_citations/Classifier%20Data%20Quality%20–%20A%20Geometric%20Complexity%20Based%20Method%20for%20Automated%20Baseline%20And%20Insights%20Generation.pdf)
 * [**Classical Sequence Match is a Competitive Few-Shot One-Class Learner**](http://rishabhmisra.github.io/missing_citations/Classical%20Sequence%20Match%20is%20a%20Competitive%20Few-Shot%20One-Class%20Learner.pdf)
+* [**On the Usefulness of Embeddings, Clusters and Strings for Text Generator Evaluation**](http://rishabhmisra.github.io/missing_citations/ON%20THE%20USEFULNESS%20OF%20EMBEDDINGS.pdf)
+* [**Learning Label Modular Prompts for Text Classification in the Wild**](http://rishabhmisra.github.io/missing_citations/Learning%20Label%20Modular%20Prompts%20for%20Text%20Classification%20in%20the%20Wild.pdf)
