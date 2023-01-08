@@ -148,7 +148,7 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
     
     </details>
 
-* [**News Category Dataset**](https://www.kaggle.com/rmisra/news-category-dataset/home) \[**Released**: June 2018\]
+* [**News Category Dataset**](https://rishabhmisra.github.io/NewsCategoryDataset.pdf) \[**Released**: June 2018\]
 
   * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**30K+ downloads on Kaggle**)
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
