@@ -4,6 +4,12 @@ title: Features
 permalink: /features/
 ---
 
+### [TheSun - I’m an AI expert – fear that bots could become self-aware and harm humans in a ‘Doomsday’ scenario is growing](https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/)
+
+### [BuiltIn - What Is Data-as-a-Service?](https://builtin.com/big-data/data-as-a-service-daas)
+
+### [Hyperight - Sculpting Data for Machine Learning – Interview With Jigyasa Grover & Rishabh Misra](https://hyperight.com/sculpting-data-for-machine-learning-interview-with-jigyasa-grover-rishabh-misra-twitter%ef%bf%bc/)
+
 ### [Colliers - How the Digitization of Retail Will Find Your Perfect Fit](https://knowledge-leader.colliers.com/anjee-solanki/how-the-digitization-of-retail-will-find-your-perfect-fit/)
 
 ### [Lifewire - Your Next Favorite Actor May Be Powered By Artificial Intelligence—Here's Why](https://www.lifewire.com/your-next-favorite-actor-may-be-powered-by-artificial-intelligence-heres-why-6747317)
