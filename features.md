@@ -12,7 +12,7 @@ permalink: /features/
             </h3>
         </div>
         <div class="card-exceprt">
-            <iframe src="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" width="100%" style="border:none;"></iframe>
+            <iframe src="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" width="100%" height="300px" style="border:none;"></iframe>
         </div>
     </div>
 </div>
