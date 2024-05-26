@@ -4,7 +4,19 @@ title: Features
 permalink: /features/
 ---
 
-<iframe src="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" width="100%" height="800px" style="border:none;">TheSun - I’m an AI expert – fear that bots could become self-aware and harm humans in a ‘Doomsday’ scenario is growing</iframe>
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h3>
+                TheSun - I’m an AI expert – fear that bots could become self-aware and harm humans in a ‘Doomsday’ scenario is growing
+            </h3>
+        </div>
+        <div class="card-exceprt">
+            <iframe src="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" width="100%" style="border:none;"></iframe>
+        </div>
+    </div>
+</div>
+
 
 ### [TheSun - I’m an AI expert – fear that bots could become self-aware and harm humans in a ‘Doomsday’ scenario is growing](https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/)
 
