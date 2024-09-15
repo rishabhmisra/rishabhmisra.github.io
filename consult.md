@@ -7,4 +7,4 @@ permalink: /consult/
 
 <hr width="100%" color="#FF8A33" size="5">
 
-<iframe src="https://www.meetapro.com/listing/ml-interviews-l4-l7-with-ml-tech-lead-prev-twitter-amazon-467969" width="100%" height="900px" style="border:none;"></iframe>
+<iframe src="https://www.meetapro.com/provider/rishabh-misra-32292" width="100%" height="900px" style="border:none;"></iframe>
