@@ -3,7 +3,7 @@ layout: default
 permalink: /consult/
 ---
 
-Mentorship Sessions: [mentorcruise.com/mentor/rishabhmisra/](https://mentorcruise.com/mentor/rishabhmisra/)
+Mentorship Sessions: [mentorcruise.com/mentor/rishabhmisra](https://mentorcruise.com/mentor/rishabhmisra/)
 
 <hr width="100%" color="#FF8A33" size="5">
 
