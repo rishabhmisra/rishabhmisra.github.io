@@ -3,7 +3,7 @@ layout: default
 permalink: /consult/
 ---
 
-Mentorship Sessions: [mentorcruise.com/mentor/rishabhmisra](https://mentorcruise.com/mentor/rishabhmisra/)
+Longer-term mentorship sessions are available at [mentorcruise.com/mentor/rishabhmisra](https://mentorcruise.com/mentor/rishabhmisra/). Otherwise, you can find one-off sessions around ML career guidance below.
 
 <hr width="100%" color="#FF8A33" size="5">
 
