@@ -3,7 +3,7 @@ layout: default
 permalink: /consult/
 ---
 
-<iframe src="https://mentorcruise.com/mentor/rishabhmisra/" width="100%" height="500px" style="border:none;"></iframe>
+Mentorship Sessions: [mentorcruise.com/mentor/rishabhmisra/](https://mentorcruise.com/mentor/rishabhmisra/)
 
 <hr width="100%" color="#FF8A33" size="5">
 
