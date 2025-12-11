@@ -3,7 +3,7 @@ layout: default
 permalink: /consult/
 ---
 
-Longer-term mentorship sessions are available at MentorCruise. Otherwise, you can find one-off sessions around ML career guidance below.
+Longer-term mentorship sessions are available at MentorCruise. Otherwise, you can find one-off sessions around ML career guidance on MeetaPro.
 <div style="display:flex; justify-content:center;">
   <a href="https://mentorcruise.com/mentor/rishabhmisra/">
     <img src="https://cdn.mentorcruise.com/img/banner/sky-mentoring-badge.svg" width="240" alt="MentorCruise">
