@@ -1,27 +1,29 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$accent: #C2410C; // Premium Rust/Terracotta
+$primaryText: #111827; // Deep Charcoal
+$mutedText: #4B5563; // Slate Gray
+$borderLight: #E5E7EB; // Thin divider lines
+$pageBg: #FAFAFA; // Off-white
+$white: #ffffff;
+$black: #000000;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$oswald: 'Oswald', 'Bebas Neue', 'Helvetica Neue', sans-serif; // For massive headers
 
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 900px) {
     @content;
   }
 }

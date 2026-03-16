@@ -3,17 +3,25 @@ layout: default
 permalink: /publication/
 ---
 
-## Research & Services
-### [Services](#services) | [Book](#book) | [Publications](#papers) | [Datasets](#datasets)
-<!-- 
-* [Scholar Profile](https://scholar.google.com/citations?user={{ site.data.scholar.id }})
-* Citations: {{ site.data.scholar.citations }}
-* h-index: {{ site.data.scholar.h_index }}
-* i10-index: {{ site.data.scholar.i10_index }} -->
+<div class="hero-split" style="border-bottom: none; padding-bottom: 0; margin-bottom: 40px;">
+  <div class="hero-left">
+    <span class="eyebrow">Academic Impact</span>
+    <h1 class="hero-headline">Research & Publications</h1>
+    <p class="hero-subtext">My research sits at the intersection of NLP, Recommender Systems, and Deep Learning, with 1,146+ citations and top 1–2% global recognition.</p>
+  </div>
+</div>
 
 ### Services<a name="services"></a>
 
 Served as Program Committee Member/Invited Reviewer at some of the leading conferences in Machine Learning:
+* [**SIGIR 2025**](https://sigir.org/)
+* [**CIKM 2024**](https://cikm2024.org/)
+* [**SIGIR 2024**](https://sigir-2024.github.io/)
+* [**TheWebConf 2024**](https://www2024.thewebconf.org/)
+* [**CIKM 2023**](https://uobevents.eventsair.com/cikm2023/)
+* [**SIGIR 2023**](https://sigir.org/sigir2023/)
+* [**ICWSM 2023**](https://www.icwsm.org/2023/index.html/)
+* [**TheWebConf 2023**](https://www2023.thewebconf.org/)
 * [**RecSys 2022**](https://recsys.acm.org/recsys22/)
 * [**TORS 2022**](https://dl.acm.org/journal/tors)
 * [**ICML 2022**](https://icml.cc/Conferences/2022)
@@ -39,21 +47,21 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
   * **Addressing Marketing Bias in Product Recommendations**
     
-    Mengting Wan, Jianmo Ni, **Rishabh Misra**, Julian McAuley, in Proceedings of 2020 ACM Conference on Web Search and Data Mining (WSDM'20), Houston, TX, USA, Feb. 2020. (**15% acceptance rate**)
+    Mengting Wan, Jianmo Ni, **Rishabh Misra**, Julian McAuley, in Proceedings of 2020 ACM Conference on Web Search and Data Mining (WSDM'20), Houston, TX, USA, Feb. 2020. (**15% acceptance rate**, **48 citations — top 10% in CS**)
   * [Paper](https://dl.acm.org/doi/pdf/10.1145/3336191.3371855) \| [Data and Code](https://github.com/MengtingWan/marketBias)
 
 * [**ACL'19**](http://www.acl2019.org/EN/index.xhtml)
 
   * **Fine-Grained Spoiler Detection from Large-Scale Review Corpora**
   
-    Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**)
+    Mengting Wan, **Rishabh Misra**, Ndapa Nakashole, Julian McAuley, in Proceedings of 57th Annual Meeting of the Association for Computational Linguistics 2019 (ACL'19), Florence, Italy, Jul. 2019. (**18% acceptance rate**, **233 citations — top 10% in CS**)
   * [Paper](https://www.aclweb.org/anthology/P19-1248) \| [Dataset](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home?authuser=0) \| [Poster](https://mengtingwan.github.io/paper/acl19_mwan_poster.pdf) \| <span style="color:red"> **Media**</span>: [TechCrunch](https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/), [NBC](https://www.nbclosangeles.com/news/local/SpoilerNet-UCSD-AI-Catch-Spoilers-Researchers-Studying-What-Makes-Text-Spoilery-513510001.html), [Gizmodo](https://io9.gizmodo.com/a-new-study-reminds-us-how-ridiculous-spoiler-culture-h-1837171945), [Geek.com](https://www.geek.com/tech/neural-network-trained-to-spot-spoilers-1795116/), [UCSD News](https://ucsdnews.ucsd.edu/pressrelease/SpoilerNet)/[UC News](https://www.universityofcalifornia.edu/news/hate-spoilers-ai-tool-spots-them-you), [TechXplore](https://techxplore.com/news/2019-07-spoilers-ai-tool.html)
 
 * [**RecSys'18**](https://recsys.acm.org/recsys18/)
 
   * **Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces** 
   
-    **Rishabh Misra**, Mengting Wan, Julian McAuley, in Proceedings of 2018 ACM Conference on Recommender Systems (RecSys'18), Vancouver, Canada, Oct. 2018. (**25% acceptance rate**)
+    **Rishabh Misra**, Mengting Wan, Julian McAuley, in Proceedings of 2018 ACM Conference on Recommender Systems (RecSys'18), Vancouver, Canada, Oct. 2018. (**25% acceptance rate**, **52 citations — top 10% in CS**)
   * [Paper](http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf) \| [Code](https://github.com/rishabhmisra/Product-Catalog-Size-Recommendation-Framework) \| [Datasets](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation)
 
 
@@ -67,9 +75,9 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
 * **Preprints**
 
-  * **Sarcasm Detection using Hybrid Neural Network**
+  * **Sarcasm Detection using News Headlines Dataset**
   
-    **Rishabh Misra** and Prahal Arora. [Paper](https://arxiv.org/pdf/1908.07414.pdf) \| [Code](https://github.com/rishabhmisra/Sarcasm-Detection-using-NN)
+    **Rishabh Misra** and Prahal Arora. AI Open, 2023. (**82 citations — top 10% in CS**) [Paper](https://www.sciencedirect.com/science/article/pii/S2666651023000013) \| [Code](https://github.com/rishabhmisra/Sarcasm-Detection-using-NN)
 
   * **Scalable Variational Bayesian Factorization Machine**
   
@@ -98,7 +106,7 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
 * [**Clothing Fit Dataset for Size Recommendation**](https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/home) \[**Released**: August 2018\]
 
-  * Product size recommendation and fit prediction are critical in order to improve customers’ shopping experiences and to reduce product return rates. However, modeling customers’ fit feedback is challenging due to its subtle semantics, arising from the subjective evaluation of products and imbalanced label distribution (most of the feedbacks are "Fit"). These datasets, which are the only fit related datasets available publically at this time, collected from [*ModCloth*](https://www.modcloth.com/) and [*RentTheRunWay*](https://www.renttherunway.com/) could be used to address these challenges to improve the recommendation process. (**6k+ downloads on Kaggle**)
+  * Product size recommendation and fit prediction are critical in order to improve customers’ shopping experiences and to reduce product return rates. However, modeling customers’ fit feedback is challenging due to its subtle semantics, arising from the subjective evaluation of products and imbalanced label distribution (most of the feedbacks are "Fit"). These datasets, which are the only fit related datasets available publically at this time, collected from [*ModCloth*](https://www.modcloth.com/) and [*RentTheRunWay*](https://www.renttherunway.com/) could be used to address these challenges to improve the recommendation process. (**7k+ downloads on Kaggle**)
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ``` 
@@ -125,7 +133,7 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
 * [**News Headlines Dataset For Sarcasm Detection**](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home) \[**Released**: June 2018\]
 
-  * Past studies in Sarcasm Detection mostly make use of Twitter datasets collected using hashtag based supervision but such datasets are noisy in terms of labels and language. Furthermore, many tweets are replies to other tweets and detecting sarcasm in these requires the availability of contextual tweets. To overcome the limitations related to noise in Twitter datasets, this **News Headlines dataset for Sarcasm Detection** is collected from two news website. [*TheOnion*](https://www.theonion.com/) aims at producing sarcastic versions of current events and we collected all the headlines from News in Brief and News in Photos categories (which are sarcastic). We collect real (and non-sarcastic) news headlines from [*HuffPost*](https://www.huffingtonpost.com/). (**31k+ downloads on Kaggle**)
+  * Past studies in Sarcasm Detection mostly make use of Twitter datasets collected using hashtag based supervision but such datasets are noisy in terms of labels and language. Furthermore, many tweets are replies to other tweets and detecting sarcasm in these requires the availability of contextual tweets. To overcome the limitations related to noise in Twitter datasets, this **News Headlines dataset for Sarcasm Detection** is collected from two news website. [*TheOnion*](https://www.theonion.com/) aims at producing sarcastic versions of current events and we collected all the headlines from News in Brief and News in Photos categories (which are sarcastic). We collect real (and non-sarcastic) news headlines from [*HuffPost*](https://www.huffingtonpost.com/). (**33k+ downloads on Kaggle**)
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```
@@ -150,7 +158,7 @@ Served as Program Committee Member/Invited Reviewer at some of the leading confe
 
 * [**News Category Dataset**](https://rishabhmisra.github.io/NewsCategoryDataset.pdf) \[**Released**: June 2018\]
 
-  * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**30K+ downloads on Kaggle**)
+  * This dataset contains around 200k news headlines from the year 2012 to 2018 obtained from [*HuffPost*](https://www.huffingtonpost.com/). This dataset could be used to produce some interesting liguistic insights about the type of language used in different news articles or to simply identify tags for untracked news articles. (**37K+ downloads on Kaggle**)
   * <details> <summary>Please cite these articles if you use the data (click to reveal the bibtex)</summary>
  
     ```

@@ -1,6 +1,7 @@
 name: Rishabh Misra
+title: Rishabh Misra
 
-description: ML Engineer | Book Author
+description: "Principal ML Lead | Researcher | Author"
 
 avatar: https://avatars.githubusercontent.com/u/7669681?v=4
 
@@ -64,25 +65,29 @@ markdown: kramdown
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 
 repository: rishabhmisra/rishabhmisra.github.io
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-jupyter-notebook
+  - jekyll-seo-tag
+  - jekyll-twitter-plugin
+  - jekyll-scholar
+  - jekyll-avatar
+  - jekyll-mentions
+  - jemoji
 
 # Exclude these files from your production _site
 exclude:
+  - vendor/
+  - vendor
+  - vendor/bundle/
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-twitter-plugin
-  - jekyll/scholar

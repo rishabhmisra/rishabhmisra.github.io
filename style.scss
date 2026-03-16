@@ -1,13 +1,11 @@
 ---
 ---
-
-//
 // IMPORTS
-//
-
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
 
 /**************/
 /* BASE RULES */
@@ -18,85 +16,92 @@ html {
 }
 
 body {
-  background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background: $pageBg;
+  font: 18px/1.6 $inter;
+  color: $primaryText;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 5px;
+  max-width: 1100px;
+  padding: 0 20px;
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $oswald;
+  color: $primaryText;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 1em 0 12px;
   padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
-sub, sup {
-  /* Specified in % so that the sup/sup is the
-     right size relative to the surrounding text */
+sub,
+sup {
   font-size: 75%;
-
-  /* Zero out the line-height so that it doesn't
-     interfere with the positioning that follows */
   line-height: 0;
-
-  /* Where the magic happens: makes all browsers position
-     the sup/sup properly, relative to the surrounding text */
   position: relative;
-
-  /* Note that if you're using Eric Meyer's reset.css, this
-     is already set and you can remove this rule */
   vertical-align: baseline;
 }
 
 sup {
-  /* Move the superscripted text up */
   top: -0.5em;
 }
 
 sub {
-  /* Move the subscripted text down, but only
-     half as far down as the superscript moved up */
   bottom: -0.25em;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 48px;
+  letter-spacing: 1px;
+
+  @include mobile {
+    font-size: 36px;
+  }
+
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  font-family: $inter;
+  color: $mutedText;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
+
 .updates {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 p {
@@ -104,15 +109,19 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $accent;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: #FF8A33;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:active {
+    color: $accent;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -125,60 +134,63 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-li{
-  margin: 8px 0;
+li {
+  margin: 6px 0;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
-  font-weight: bold;
+strong,
+b {
+  font-weight: 600;
 }
 
 img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $mutedText;
 }
 
-// Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $borderLight;
 }
+
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $borderLight;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -190,93 +202,117 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  background: $white;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+.masthead-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.site-avatar {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+
+  @include mobile {
+    width: 60px;
+    height: 60px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.site-info {
   @include mobile {
     text-align: center;
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 105px;
-  height: 105px;
-  margin-right: 10px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $primaryText;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-family: $inter;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
 }
 
 .site-description {
-  margin: -10px 0 0 0;
-  color: $gray;
-  font-size: 17px;
+  margin: 2px 0 0 0;
+  color: $mutedText;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 4px 0 0 0;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 38px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-family: $inter;
+  font-size: 14px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 2px;
   }
 
   a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    padding: 6px 12px;
+    color: $mutedText;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 
     @include mobile {
-      margin: 0 10px;
-      color: $blue;
+      padding: 4px 8px;
+      font-size: 13px;
     }
   }
 
   a:hover {
-    color: #FF8A33
+    color: $primaryText;
+    background: $pageBg;
   }
 }
 
@@ -286,14 +322,15 @@ nav {
 
 .main {
   flex: 1 0 auto;
+  padding-top: 10px;
 }
 
-.posts > .post {
+.posts>.post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $borderLight;
 }
 
-.posts > .post:last-child {
+.posts>.post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -301,10 +338,10 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 3px solid $accent;
     padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    color: $mutedText;
+    font-size: 20px;
     font-style: italic;
   }
 
@@ -319,165 +356,726 @@ nav {
 }
 
 .gist {
-   max-width:350px;
-   overflow:auto;
+  max-width: 350px;
+  overflow: auto;
 }
 
 .gist .blob-wrapper.data {
-   max-height:400px;
-   overflow:auto;
+  max-height: 400px;
+  overflow: auto;
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  background-color: #ffffff;
+  margin-top: 60px;
+  background-color: $white;
+  border-top: 1px solid #E2E8F0;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 24px 0;
   text-align: center;
   flex-shrink: 0;
+  color: $mutedText;
+  font-size: 13px;
 }
 
-/* Index page */
-.column {
+/* ===========================================
+   NEW DESIGN SYSTEM COMPONENTS
+   =========================================== */
+
+/* ---- Hero Section ---- */
+.hero-section {
+  background: $white;
+  border-radius: 16px;
+  padding: 48px 40px;
+  margin: 24px 0;
+  text-align: center;
+  border: 1px solid #E2E8F0;
+
+  @include mobile {
+    padding: 32px 20px;
+    margin: 16px 0;
+  }
+}
+
+.hero-headline {
+  font-size: 26px;
+  font-weight: 700;
+  color: $primaryText;
+  line-height: 1.4;
+  max-width: 750px;
+  margin: 0 auto 8px;
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.hero-subtext {
+  font-size: 16px;
+  color: $mutedText;
+  max-width: 650px;
+  margin: 0 auto 28px;
+  line-height: 1.5;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+/* ---- CTA Pills ---- */
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0 0;
+}
+
+.cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background: $primaryText;
+  color: $white;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: $accent;
+    color: $white;
+    transform: translateY(-1px);
+  }
+
+  @include mobile {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ---- Premium Grid Metrics ---- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  margin: 40px 0;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-block {
+  padding: 32px 24px;
+  border-right: 1px solid $borderLight;
+  text-align: left;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @include tablet {
+    &:nth-child(3n) {
+      border-right: none;
+    }
+
+    border-bottom: 1px solid $borderLight;
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-bottom: none;
+    }
+  }
+
+  @include mobile {
+    &:nth-child(3n) {
+      border-right: 1px solid $borderLight;
+    }
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+
+    &:nth-child(4) {
+      border-bottom: 1px solid $borderLight;
+    }
+  }
+
+  .stat-number {
+    font-family: $oswald;
+    font-size: 32px;
+    font-weight: 600;
+    color: $accent;
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-family: $inter;
+    font-size: 13px;
+    color: $mutedText;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+}
+
+/* ---- Media Split Section ---- */
+.media-split {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid $borderLight;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.media-label {
+  flex: 0 0 150px;
+  font-family: $inter;
+  font-size: 12px;
+  font-weight: 600;
+  color: $mutedText;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.media-links {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+
+  a {
+    font-family: $oswald;
+    font-size: 18px;
+    color: $primaryText;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+/* ---- Premium List Items (Replaces Cards) ---- */
+.premium-list {
+  margin: 40px 0;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  border-bottom: 1px solid $borderLight;
+  text-decoration: none;
+  transition: padding-left 0.2s ease;
+
+  &:hover {
+    padding-left: 16px;
+    background: $white; // Slight highlight against pageBg
+  }
+
+  .li-meta {
+    font-family: $inter;
+    font-size: 13px;
+    color: $accent;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .li-title {
+    font-family: $oswald;
+    font-size: 24px;
+    color: $primaryText;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+  .li-desc {
+    font-family: $inter;
+    font-size: 16px;
+    color: $mutedText;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0;
+  }
+}
+
+/* ---- Quote Blocks ---- */
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.quote-block {
+  border-left: 2px solid $accent;
+  padding: 0 0 0 24px;
+
+  .quote-text {
+    font-family: $inter;
+    font-size: 18px;
+    font-style: italic;
+    color: $primaryText;
+    line-height: 1.6;
+    margin: 0 0 16px;
+  }
+
+  .quote-author {
+    font-family: $inter;
+    font-size: 14px;
+    color: $mutedText;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* ---- Section Headers ---- */
+.section-header {
+  font-family: $inter;
+  font-size: 13px;
+  font-weight: 600;
+  color: $accent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 60px 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $borderLight;
+  display: block;
+}
+
+/* ---- News / Updates Feed ---- */
+.updates-section {
+  padding: 32px 0;
+  margin: 40px 0;
+  border-top: 1px solid $borderLight;
+}
+
+.updates-section h3 {
+  font-family: $oswald;
+  font-size: 24px;
+  color: $primaryText;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 24px;
+}
+
+.see-all-link {
+  font-family: $inter;
+  font-size: 13px;
+  font-weight: 600;
+  color: $primaryText;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-underline-offset: 4px;
+  float: right;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+/* ---- Timeline Entry (Experience) ---- */
+.timeline-entry {
+  padding: 32px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid $borderLight;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .te-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .te-company {
+    font-family: $oswald;
+    font-size: 24px;
+    font-weight: 600;
+    color: $primaryText;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .te-role {
+    font-family: $inter;
+    font-size: 16px;
+    color: $accent;
+    font-weight: 600;
+  }
+
+  .te-dates {
+    font-family: $inter;
+    font-size: 14px;
+    color: $mutedText;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .te-tech {
+    margin-top: 16px;
+    font-family: $inter;
+    font-size: 13px;
+    color: $mutedText;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    margin: 8px 0;
+    padding-left: 24px;
+  }
+
+  li {
+    font-family: $inter;
+    font-size: 16px;
+    color: $mutedText;
+    line-height: 1.6;
+    margin: 8px 0;
+  }
+}
+
+/* ---- Collaboration Grid ---- */
+.collab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  margin: 40px 0;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+}
+
+.collab-block {
+  padding: 40px 32px;
+  border-right: 1px solid $borderLight;
+  text-align: left;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @include tablet {
+    border-right: none;
+    border-bottom: 1px solid $borderLight;
+    padding: 32px 0;
+  }
+
+  .cc-icon {
+    font-size: 32px;
+    margin-bottom: 24px;
+    display: block;
+    color: $accent;
+  }
+
+  .cc-title {
+    font-family: $oswald;
+    font-size: 20px;
+    color: $primaryText;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  .cc-desc {
+    font-family: $inter;
+    font-size: 15px;
+    color: $mutedText;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+/* ---- Credential Strip ---- */
+.credential-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 60px 0;
+  padding: 32px 0;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  font-family: $inter;
+  font-size: 12px;
+  font-weight: 600;
+  color: $primaryText;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+/* ---- Achievement Box ---- */
+.achievement-box {
+  background: $white;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  padding: 40px 0;
+  margin: 40px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+  }
+
+  li {
+    font-family: $inter;
+    font-size: 15px;
+    font-weight: 500;
+    color: $primaryText;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: '✦';
+      color: $accent;
+      font-size: 12px;
+    }
+  }
+}
+
+/* ---- Tag Badges ---- */
+.tag-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: $pageBg;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $mutedText;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 2px;
+}
+
+/* ---- Feature Article List (for Features page) ---- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.feature-article-card {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $borderLight;
+  transition: padding-left 0.2s ease;
+
+  &:hover {
+    padding-left: 12px;
+  }
+
+  .fac-outlet {
+    display: inline-block;
+    font-family: $inter;
+    font-size: 12px;
+    font-weight: 600;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  .fac-headline {
+    font-family: $oswald;
+    font-size: 20px;
+    color: $primaryText;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .fac-excerpt {
+    font-family: $inter;
+    font-size: 15px;
+    color: $mutedText;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .fac-link {
+    font-family: $inter;
+    font-size: 13px;
+    font-weight: 600;
+    color: $primaryText;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: $accent;
+    text-underline-offset: 4px;
+  }
+}
+
+/* ---- Old card styles (backwards compat for Projects page) ---- */
+
+.card {
+  width: 100%;
+  margin: 0px auto;
+  background-color: $white;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.left {
   float: left;
-  padding: 5px;
 }
 
-.leftcol {
-  width: 70%;
+.right {
+  float: right;
 }
 
-.rightcol {
-  width: 30%;
+.card:hover .card-image img {
+  width: 100%;
+  filter: grayscale(0);
 }
 
-@media screen and (max-width: 900px) {
-  .column {
-    width: 100%;
-  }
-  .leftcol {
-    width: 100%;
-  }
-  .rightcol {
-    width: 100%;
-  }
+.card-image {
+  height: 12em;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Clear floats after the columns */
+.card-image img {
+  width: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition-property: filter width;
+  transition-duration: .3s;
+}
+
+.card-body {
+  text-align: left;
+  padding: 0em 2em 1em;
+  box-sizing: border-box;
+}
+
+.card-date {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-date,
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-title-2 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-date,
+.card-exceprt {
+  color: #606060;
+}
+
+.btn {
+  padding: 5px 15px;
+  background: transparent;
+  color: #1b95e0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.btn:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+}
+
+summary {
+  color: #1b95e0;
+}
+
+/* ---- Legacy column layout removed ---- */
+/* Old .row/.column/.leftcol/.rightcol removed — no longer used */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Projects */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro");
-
-.card {
-    width: 100%;
-    margin: 0px auto;
-    background-color: white;
-    /* box-shadow: 0px 5px 20px #555; */
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 2px solid #ded8d8;
-    border-radius: 10px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.card:hover .card-image img {
-	width: 100%;
-	filter: grayscale(0);
-}
-.card-image {
-	height: 12em;
-	position: relative;
-	overflow: hidden;
-}
-.card-image img {
-	width: 50%;
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	filter: grayscale(1);
-	transition-property: filter width;
-	transition-duration: .3s;
-}
-.card-body {
-	text-align: left;
-	padding: 0em 2em 1em;
-	box-sizing: border-box;
-}
-.card-date {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-.card-date,
-.card-title {
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-}
-.card-title-2 {
-	text-align: center;
-	font-weight: bold;
-	letter-spacing: 1px;
-}
-.card-date,
-.card-exceprt,
-{
-	color: #606060;
-}
-
-.btn {
-    padding: 5px 15px;
-    /* text-decoration: none; */
-    background: transparent;
-    /* border: 2px solid #f27c7c; */
-    color: #1b95e0;
-    display: inline-block;
-    /* position: relative; */
-    text-transform: uppercase;
-    font-size: 15px;
-    /* -webkit-border-radius: 5px; */
-    /* -moz-border-radius: 5px; */
-    /* -ms-border-radius: 5px; */
-    /* border-radius: 5px; */
-    /* -webkit-transition: background 0.3s ease; */
-    /* -moz-transition: background 0.3s ease; */
-    /* -ms-transition: background 0.3s ease; */
-    /* transition: background 0.3s ease; */
-    /* -webkit-box-shadow: 2px 2px 0 #f27c7c; */
-    /* -moz-box-shadow: 2px 2px 0 #f27c7c; */
-    /* -ms-box-shadow: 2px 2px 0 #f27c7c; */
-    /* box-shadow: 2px 2px 0 #f27c7c; */
-}
-.btn:hover {
-  box-shadow: none;
-  top: 2px;
-  left: 2px;
-  -webkit-box-shadow: 2px 2px 0 transparent;
-  -moz-box-shadow: 2px 2px 0 transparent;
-  -ms-box-shadow: 2px 2px 0 transparent;
-  box-shadow: 2px 2px 0 transparent;
-}
-
-summary {
-    color: #1b95e0;	
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";

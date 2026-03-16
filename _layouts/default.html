@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" type="image/png" href="/images/Flash_Logo.png" sizes="32x32" />
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+<head>
+  <title>{{ site.name }}{% if page.title %} – {{ page.title }}{% endif %}</title>
 
-    <!--[if lt IE 9]>
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    {% seo %}
-  </head>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
+  <link rel="shortcut icon"
+    href="https://raw.githubusercontent.com/rishabhmisra/rishabhmisra.github.io/master/images/rm-favicon.ico">
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.name }}">
+  <meta property="og:title" content="{{ site.name }}{% if page.title %} – {{ page.title }}{% endif %}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+</head>
 
+<body>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <div class="masthead-left">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
           <div class="site-info">
-            <center><h3 class="site-name" style="margin-bottom:1px"><a href="{{ site.baseurl }}/"><b>{{ site.name }}</b></a></h3></center>
-            <center><h4 class="site-description" style="margin-bottom:3px">ML Engineer & Researcher</h4></center>
-            <center><h4 class="site-description" style="margin-bottom:3px">Book Author 'Sculpting Data for ML'</h4></center>
-            <center><h4 class="site-description">Program Committee @ Leading AI Conferences</h4></center>
-<!--             <center>
-                <h2 style="margin-top:8px">
-                    <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js" user-profile="https://topmate.io/embed/profile/rishabhmisra?theme=d20844" btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1" button-text="Hop on a call? or DM 🤙🏻" position="relative" custom-padding="4px" custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer=""></script>
-            </center> -->
+            <div class="site-name"><a href="{{ site.baseurl }}/"
+                style="font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 22px; letter-spacing: 1px; font-weight: 600;">{{
+                site.name }}</a></div>
           </div>
-          
-
-          <nav>
-            <center>
-               <div style="margin-top:-20px">
-                 {% include svg-icons.html %}
-              </div>
-            </center>
-            </br>
-            <div style="margin-top:-5px">
-                <a href="{{ site.baseurl }}/blog"><b>Blog</b></a>
-    <!--             <a href="{{ site.baseurl }}/experience"><b>Experience</b></a>             -->
-                <a href="{{ site.baseurl }}/consult"><b>Consultation</b></a>
-                <a href="{{ site.baseurl }}/publications"><b>Research</b></a>
-                <a href="{{ site.baseurl }}/projects"><b>Projects</b></a>
-                <a href="{{ site.baseurl }}/features"><b>Features</b></a>
-    <!--             <a href="{{ site.baseurl }}/Rishabh_Misra_Resume_latest.pdf" target="_blank"><b>Resume</b></a> -->
-                <a href="{{ site.baseurl }}/aboutme"><b>About Me</b></a>
-            </div>
-          </nav>
-        
-        </header>
-      </div>
+        </div>
+        <nav>
+          <a href="{{ site.baseurl }}/blog">Blog</a>
+          <a href="{{ site.baseurl }}/publications">Research</a>
+          <a href="{{ site.baseurl }}/experience">Experience</a>
+          <a href="{{ site.baseurl }}/features">Features</a>
+          <a href="{{ site.baseurl }}/collaborate">Collaborate</a>
+          <a href="{{ site.baseurl }}/aboutme">About</a>
+        </nav>
+      </header>
     </div>
+  </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+  <div id="main" role="main" class="container main">
+    {{ content }}
+  </div>
+
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        {% include svg-icons.html %}
+        <p style="margin-top: 10px;">© {{ site.name }} · Principal ML Lead · Researcher · Author</p>
+      </footer>
     </div>
+  </div>
 
-<!--     <div class="wrapper-footer"> -->
-<!--       <div class="container"> -->
-<!--         <footer class="footer"> -->
-<!--           {% include svg-icons.html %} -->
-<!--         </footer> -->
-<!--       </div> -->
-<!--     </div> -->
+  {% include analytics.html %}
+</body>
 
-    {% include analytics.html %}
-  </body>
 </html>
