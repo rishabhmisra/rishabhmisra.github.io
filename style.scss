@@ -383,78 +383,120 @@ footer {
    NEW DESIGN SYSTEM COMPONENTS
    =========================================== */
 
-/* ---- Hero Section ---- */
-.hero-section {
-  background: $white;
-  border-radius: 16px;
-  padding: 48px 40px;
-  margin: 24px 0;
-  text-align: center;
-  border: 1px solid #E2E8F0;
+/* ---- Hero Split Section ---- */
+.hero-split {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0;
+  border-bottom: 1px solid $borderLight;
 
-  @include mobile {
-    padding: 32px 20px;
-    margin: 16px 0;
+  @include tablet {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+    padding: 60px 0;
   }
 }
 
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 0 0 400px;
+
+  @include tablet {
+    flex: 0 0 auto;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-family: $oswald;
+  font-size: 14px;
+  font-weight: 600;
+  color: $accent;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+}
+
 .hero-headline {
-  font-size: 26px;
+  font-family: $oswald;
+  font-size: 56px;
   font-weight: 700;
   color: $primaryText;
-  line-height: 1.4;
-  max-width: 750px;
-  margin: 0 auto 8px;
+  line-height: 1.05;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 
   @include mobile {
-    font-size: 20px;
+    font-size: 36px;
   }
 }
 
 .hero-subtext {
-  font-size: 16px;
+  font-family: $inter;
+  font-size: 18px;
   color: $mutedText;
-  max-width: 650px;
-  margin: 0 auto 28px;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 32px;
 
-  @include mobile {
-    font-size: 14px;
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* ---- CTA Pills ---- */
+/* ---- CTA Components ---- */
 .cta-row {
   display: flex;
-  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
-  margin: 24px 0 0;
+  align-items: center;
+
+  @include tablet {
+    justify-content: center;
+  }
 }
 
-.cta-pill {
+.btn-solid,
+.btn-outline {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 10px 22px;
+  padding: 14px 28px;
+  font-family: $inter;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.2s ease;
+  border: 1px solid $primaryText;
+}
+
+.btn-solid {
   background: $primaryText;
   color: $white;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  cursor: pointer;
 
   &:hover {
     background: $accent;
+    border-color: $accent;
     color: $white;
-    transform: translateY(-1px);
   }
+}
 
-  @include mobile {
-    padding: 8px 16px;
-    font-size: 13px;
+.btn-outline {
+  background: transparent;
+  color: $primaryText;
+
+  &:hover {
+    background: $borderLight;
+    color: $primaryText;
   }
 }
 
@@ -663,14 +705,14 @@ footer {
 
 /* ---- Section Headers ---- */
 .section-header {
-  font-family: $inter;
-  font-size: 13px;
+  font-family: $oswald;
+  font-size: 14px;
   font-weight: 600;
   color: $accent;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 60px 0 24px;
-  padding-bottom: 12px;
+  letter-spacing: 2.5px;
+  margin: 80px 0 32px;
+  padding-bottom: 16px;
   border-bottom: 1px solid $borderLight;
   display: block;
 }
@@ -693,18 +735,48 @@ footer {
 
 .see-all-link {
   font-family: $inter;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: $primaryText;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: underline;
-  text-decoration-color: $accent;
-  text-underline-offset: 4px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  border-bottom: 2px solid $accent;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
   float: right;
 
   &:hover {
     color: $accent;
+    border-color: $primaryText;
+  }
+}
+
+/* ---- Publications Sub-Nav ---- */
+.sub-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+  font-family: $oswald;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  a {
+    color: $mutedText;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .sep {
+    color: $borderLight;
+    font-size: 10px;
+    align-self: center;
   }
 }
 

@@ -187,7 +187,7 @@ permalink: /experience/
   <p class="te-tech"><b>Tech:</b> C++, Python, MATLAB</p>
 </div>
 
-<h3 style="margin-top: 40px;">Education</h3>
+<span class="section-header">Education</span>
 
 <div class="timeline-entry">
   <div class="te-header">

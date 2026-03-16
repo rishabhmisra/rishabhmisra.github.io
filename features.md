@@ -7,7 +7,7 @@ permalink: /features/
 <div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
   <div class="hero-left">
     <span class="eyebrow">Public Impact</span>
-    <h1 class="hero-headline">Media Features & Expert Commentary</h1>
+    <h2 class="hero-headline">Media Features & Expert Commentary</h2>
     <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide.</p>
   </div>
 </div>

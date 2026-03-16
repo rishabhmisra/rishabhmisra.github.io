@@ -4,21 +4,18 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="card">   
-      <div class="card-body">
-          <div class="card-title-2">
-              <h1>
-                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </h1>
-          </div>
-          <div class="card-exceprt">
-              <p>
-                  {{ post.excerpt }} 
-              </p>
-          </div>
-          <center><a class="btn" href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></center>
-      </div>
-    </article>
+  <article class="list-item">
+    <span class="li-meta">{{ post.date | date: "%B %Y" }}</span>
+    <div class="li-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="li-desc">
+      <p>
+        {{ post.excerpt | strip_html | truncate: 180 }}
+      </p>
+    </div>
+    <a class="see-all-link" href="{{ site.baseurl }}{{ post.url }}"
+      style="float: none; margin-top: 12px; display: inline-block;">Read More →</a>
+  </article>
   {% endfor %}
 </div>
-
