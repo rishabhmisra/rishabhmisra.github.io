@@ -8,7 +8,7 @@ permalink: /features/
   <div class="hero-left">
     <span class="eyebrow">Public Impact</span>
     <h2 class="hero-headline">Media Features & Expert Commentary</h2>
-    <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide.</p>
+    <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide. Research highlights: 1,150+ citations, Top 1% impact.</p>
   </div>
 </div>
 

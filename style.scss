@@ -388,14 +388,14 @@ footer {
   display: flex;
   align-items: center;
   gap: 60px;
-  padding: 80px 0;
+  padding: 60px 0;
   border-bottom: 1px solid $borderLight;
 
   @include tablet {
     flex-direction: column-reverse;
     text-align: center;
     gap: 40px;
-    padding: 60px 0;
+    padding: 40px 0;
   }
 }
 
@@ -426,7 +426,7 @@ footer {
 
 .hero-headline {
   font-family: $oswald;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   color: $primaryText;
   line-height: 1.05;
@@ -435,7 +435,7 @@ footer {
   letter-spacing: -0.5px;
 
   @include mobile {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -444,7 +444,7 @@ footer {
   font-size: 18px;
   color: $mutedText;
   line-height: 1.6;
-  max-width: 600px;
+  max-width: 100%;
   margin-bottom: 32px;
 
   @include tablet {
@@ -457,10 +457,11 @@ footer {
 .cta-row {
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 
   @include tablet {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -706,12 +707,12 @@ footer {
 /* ---- Section Headers ---- */
 .section-header {
   font-family: $oswald;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: $accent;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  margin: 80px 0 32px;
+  margin: 60px 0 32px;
   padding-bottom: 16px;
   border-bottom: 1px solid $borderLight;
   display: block;
@@ -726,10 +727,11 @@ footer {
 
 .updates-section h3 {
   font-family: $oswald;
-  font-size: 24px;
-  color: $primaryText;
+  font-size: 16px;
+  font-weight: 600;
+  color: $accent;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 2.5px;
   margin: 0 0 24px;
 }
 

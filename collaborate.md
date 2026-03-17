@@ -7,7 +7,7 @@ permalink: /collaborate/
 <div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
   <div class="hero-left">
     <h1 class="hero-headline">Let's Work Together</h1>
-    <p class="hero-subtext">I work with brands, research teams, and organizations at the intersection of AI research and production engineering. With 10+ years building ML systems at Atlassian, Twitter, and Amazon, and 1,146+ research citations, I bring both theoretical depth and real-world scale.</p>
+    <p class="hero-subtext">I work with brands, research teams, and organizations at the intersection of AI research and production engineering. With 10+ years building ML systems at Atlassian, Twitter, and Amazon, and 1,150+ research citations, I bring both theoretical depth and real-world scale.</p>
   </div>
 </div>
 
@@ -15,7 +15,7 @@ permalink: /collaborate/
   <div class="collab-block">
     <span class="cc-icon">🤝</span>
     <div class="cc-title">Brand & Creator Partnerships</div>
-    <p class="cc-desc">AI tools, dev platforms, education products. Sponsored content, co-created courses, product reviews, and ambassador programs. Past reach: 150K+ blog readers and 77K+ Kaggle dataset downloads.</p>
+    <p class="cc-desc">AI tools, dev platforms, education products. Sponsored content, co-created courses, product reviews, and ambassador programs. Past reach: 150K+ blog readers and 180K+ Kaggle dataset downloads.</p>
   </div>
   <div class="collab-block">
     <span class="cc-icon">🧠</span>
@@ -32,8 +32,8 @@ permalink: /collaborate/
 <div class="credential-strip">
   <span>🏛️ US Govt. Recognized Researcher</span>
   <span>🧬 Meta Research Advisory Council</span>
-  <span>📊 1,146+ Citations (Top 1–2%)</span>
-  <span>⭐ 5.0★ / 35 Reviews on MeetAPro</span>
+  <span>📊 1,150+ Citations (Top 1%)</span>
+  <span>⭐ 5.0★ / 45+ Reviews on MeetAPro</span>
 </div>
 
 <span class="section-header">Social Proof</span>

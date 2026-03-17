@@ -71,7 +71,7 @@ permalink: /experience/
   <ul>
     <li>Invited Research Committee Member at <b>20+ leading AI conferences</b></li>
     <li>Conferences: TheWebConf (2x), CIKM (3x), ICML (1x), SIGKDD (2x), SIGIR (3x), ICDM (2x), RecSys (3x), ECML-PKDD (3x), ICWSM (3x), and TORS (1x)</li>
-    <li>Published author in LLMs (NLP and GenAI) and Recommender Systems domains, amassing <b>1,146+ citations</b></li>
+    <li>Published author in LLMs (NLP and GenAI) and Recommender Systems domains, amassing <b>1,150+ citations</b></li>
   </ul>
 </div>
 
