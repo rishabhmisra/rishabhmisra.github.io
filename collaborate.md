@@ -7,15 +7,22 @@ permalink: /collaborate/
 <div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
   <div class="hero-left">
     <h1 class="hero-headline">Let's Work Together</h1>
-    <p class="hero-subtext">I work with brands, research teams, and organizations at the intersection of AI research and production engineering. With 10+ years building ML systems at Atlassian, Twitter, and Amazon, and 1,150+ research citations, I bring both theoretical depth and real-world scale.</p>
+    <p class="hero-subtext">I partner with engineering teams, research organizations, and forward-thinking brands to architect as well as create awareness about the models and systems that enable AI at scale. For over a decade, I have led 0→1 transformations across Atlassian, Twitter, and Amazon, bridging the gap between ML research and elite engineering to deliver massive production impact.</p>
   </div>
+</div>
+
+<div class="cta-row" style="margin-bottom: 60px;">
+  <a href="https://www.linkedin.com/in/misra-rishabh/" target="_blank" class="btn-solid">Connect on LinkedIn</a>
+  <a href="mailto:rishabhmisra33@gmail.com" class="btn-outline">Email Me</a>
+  <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" class="btn-outline">Book on MeetAPro</a>
+  <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" class="btn-outline">Book on MentorCruise</a>
 </div>
 
 <div class="collab-grid">
   <div class="collab-block">
     <span class="cc-icon">🤝</span>
     <div class="cc-title">Brand & Creator Partnerships</div>
-    <p class="cc-desc">AI tools, dev platforms, education products. Sponsored content, co-created courses, product reviews, and ambassador programs. Past reach: 150K+ blog readers and 180K+ Kaggle dataset downloads.</p>
+    <p class="cc-desc">Partnering with AI tools, dev platforms, and education products to improve market perception and reach elite developer audiences. Sponsored content, strategic advertising, product reviews, and ambassador programs. Past reach: 150K+ blog readers and 180K+ Kaggle dataset downloads.</p>
   </div>
   <div class="collab-block">
     <span class="cc-icon">🧠</span>
@@ -56,8 +63,3 @@ permalink: /collaborate/
   </div>
 </div>
 
-<div class="cta-row" style="justify-content: center; margin: 60px 0;">
-  <a href="https://www.linkedin.com/in/misra-rishabh/" target="_blank" class="btn-solid">Connect on LinkedIn</a>
-  <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" class="btn-outline">Book on MeetAPro</a>
-  <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" class="btn-outline">MentorCruise</a>
-</div>
