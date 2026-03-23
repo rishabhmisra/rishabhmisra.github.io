@@ -3,6 +3,8 @@ layout: default
 ---
 
 <div class="posts">
+  {{ content }}
+
   {% for post in site.posts %}
   <article class="list-item">
     <span class="li-meta">{{ post.date | date: "%B %Y" }}</span>
