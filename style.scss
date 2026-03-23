@@ -508,17 +508,17 @@ footer {
 /* ---- Premium Grid Metrics ---- */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid $borderLight;
   border-bottom: 1px solid $borderLight;
   margin: 40px 0;
 
   @include tablet {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @include mobile {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -532,29 +532,43 @@ footer {
   }
 
   @include tablet {
-    &:nth-child(3n) {
+    &:nth-child(2n) {
       border-right: none;
     }
 
     border-bottom: 1px solid $borderLight;
 
-    &:nth-child(4),
-    &:nth-child(5) {
+    &:nth-child(3),
+    &:nth-child(4) {
       border-bottom: none;
     }
   }
 
   @include mobile {
-    &:nth-child(3n) {
-      border-right: 1px solid $borderLight;
-    }
+    border-right: none;
+    border-bottom: 1px solid $borderLight;
 
-    &:nth-child(2n) {
-      border-right: none;
+    &:last-child {
+      border-bottom: none;
     }
+  }
 
-    &:nth-child(4) {
-      border-bottom: 1px solid $borderLight;
+  .stat-category {
+    display: block;
+    font-family: $inter;
+    font-size: 11px;
+    font-weight: 700;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  .stat-item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -906,6 +920,29 @@ footer {
     color: $mutedText;
     line-height: 1.6;
     margin: 0;
+
+    ul {
+      padding: 0;
+      margin: 16px 0 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 10px;
+        padding-left: 1.5em;
+        text-indent: -1.5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          content: "—";
+          color: $accent;
+          margin-right: 0.75em;
+          font-weight: 700;
+        }
+      }
+    }
   }
 }
 
