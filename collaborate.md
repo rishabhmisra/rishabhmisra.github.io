@@ -23,10 +23,10 @@ permalink: /collaborate/
     <div class="cc-title">Brand & Creator Partnerships</div>
     <div class="cc-desc">
       <ul>
-        <li><b>Reach</b>: 129K+ organic impressions with 700%+ quarterly growth (LinkedIn).</li>
-        <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves across 5.5K followers.</li>
+        <li><b>Reach</b>: 130K+ organic impressions with 700%+ quarterly growth in Q1 2026 (LinkedIn).</li>
+        <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves and 3,000+ engagements across 5.5K followers in Q1 2026.</li>
         <li><b>Global Presence</b>: Audience spanning 140+ countries (led by USA, China, and India).</li>
-        <li><b>Education</b>: Instructor for <b>LinkedIn Learning</b> and <b>Udacity</b>; 180K+ dataset downloads adopted by Google, Deeplearning.ai, and others.</li>
+        <li><b>Education</b>: Instructor for <b>LinkedIn Learning</b> and <b>Udacity</b>; 180K+ dataset usages; adopted by Google, Deeplearning.ai, and others.</li>
       </ul>
     </div>
   </div>
