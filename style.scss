@@ -464,6 +464,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  &.cta-center {
+    justify-content: center;
+  }
 }
 
 .btn-solid,
