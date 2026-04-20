@@ -21,9 +21,9 @@ permalink: /experience/
     <span class="te-dates">2025 – Present</span>
   </div>
   <ul>
-    <li>Leading a team of <b>20+ engineers</b> building Generative Personalization and Foundation Models</li>
-    <li>LLMs/SLMs Pre-training, Post-training (fine-tuning, preference alignment)</li>
-    <li>Generative Personalization and Foundation Modeling for Atlassian Intelligence</li>
+    <li>Leading a team of <b>20+ engineers</b></li>
+    <li>Architecting LLMs/SLMs Pre-training and Post-training (fine-tuning, preference alignment) to power Atlassian's Rovo Agent.</li>
+    <li>Architecting Generative Personalization and Foundation Models to power information consumption in Atlassian's products.</li>
   </ul>
 </div>
 
@@ -94,19 +94,6 @@ permalink: /experience/
     <li>Built roadmaps via data-backed analyses & shipped measurement frameworks</li>
   </ul>
   <p class="te-tech"><b>Tech:</b> Python, Java, Scala, TensorFlow, Airflow, KubeFlow, BigQuery, DataFlow, GCP, Scalding</p>
-</div>
-
-<div class="timeline-entry">
-  <div class="te-header">
-    <div>
-      <span class="te-company">Google Developer Group</span>
-      <span class="te-role"> — Organizer</span>
-    </div>
-    <span class="te-dates">2020 – 2022</span>
-  </div>
-  <ul>
-    <li>Organized and led technology and AI-focused events, workshops, and meetups</li>
-  </ul>
 </div>
 
 <div class="timeline-entry">
@@ -209,4 +196,7 @@ permalink: /experience/
       <span class="te-role"> — B.E., Computer Science</span>
     </div>
   </div>
+  <ul>
+    <li>Gold Medalist</li>
+  </ul>
 </div>

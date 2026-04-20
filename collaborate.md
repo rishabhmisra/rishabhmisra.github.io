@@ -20,13 +20,13 @@ permalink: /collaborate/
 
 <div class="collab-grid">
   <div class="collab-block">
-    <div class="cc-title">Brand & Creator Partnerships</div>
+    <div class="cc-title">Content Creation & Reach</div>
     <div class="cc-desc">
       <ul>
-        <li><b>Reach</b>: 130K+ organic impressions with 700%+ quarterly growth in Q1 2026 (LinkedIn).</li>
-        <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves and 3,000+ engagements across 5.5K followers in Q1 2026.</li>
-        <li><b>Global Presence</b>: Audience spanning 140+ countries (led by USA, China, and India).</li>
-        <li><b>Education</b>: Instructor for <b>LinkedIn Learning</b> and <b>Udacity</b>; 180K+ dataset usages; adopted by Google, Deeplearning.ai, and others.</li>
+        <li><b>Reach</b>: 150K+ organic impressions with 700%+ quarterly growth (LinkedIn).</li>
+        <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves and 3,000+ engagements across 6.5K followers in 2026.</li>
+        <li><b>Global Presence</b>: Content distirbution to audience spanning 140+ countries (led by USA, China, and India).</li>
+        <li><b>Partnerships</b>: <b>LinkedIn Learning</b> and <b>Udacity</b>.</li>
       </ul>
     </div>
   </div>
@@ -34,19 +34,19 @@ permalink: /collaborate/
     <div class="cc-title">Advisory & Consulting</div>
     <div class="cc-desc">
       <ul>
-        <li><b>Expertise</b>: Specialist in Foundational Modeling, Agentic and Generative Personalization, SLMs, and Recommender Systems.</li>
-        <li><b>Track Record</b>: Architected 10M+ QPS systems and led 0→1 transformations at big techs and startups.</li>
+        <li><b>Expertise</b>: Specialist in Agentic and Generative Personalization, LLMs / SLMs, Foundational Modeling, and Recommender Systems.</li>
         <li><b>Consulting</b>: 50+ high-impact engagements with leaders including <b>Google, Meta, Microsoft, Nvidia, AWS, Airtable, Glean, Salesforce, Datadog, and more</b>.</li>
-        <li><b>Credibility</b>: 45+ verified 5.0★ reviews for career, technical, and architectural guidance.</li>
+        <li><b>Board & Council</b>: Meta Research Advisory Council member and PC for 20+ international conferences (SIGIR, ICML, KDD, TheWebConf, and more).</li>
       </ul>
     </div>
   </div>
   <div class="collab-block">
-    <div class="cc-title">Keynotes, Talks & Workshops</div>
+    <div class="cc-title">Speaking, Publishing, & Coaching</div>
     <div class="cc-desc">
       <ul>
-        <li><b>Global Speaker</b>: 15+ international talks across London, SF, Amsterdam, Nantes, Denver, Vancouver, Nuremberg, and more.</li>
-        <li><b>Board & Council</b>: Meta Research Advisory Council member and PC for 20+ conferences (SIGIR, ICML, KDD, TheWebConf, and more).</li>
+        <li><b>Global Speaker</b>: 15+ international talks across London, Prauge, SF, Amsterdam, Denmark, Nantes, Vancouver, Cambridge, Nuremberg, and more.</li>
+        <li><b>Mentorship</b>: 45+ verified 5.0⭐️ reviews for career, technical, and architectural guidance.</li>
+        <li><b>Publishing</b>: Author of "Sculpting Data for ML" book; ML courses with <b>LinkedIn Learning</b> and <b>Udacity</b>; 200K+ ML tech/dataset adoption, notably by Google and Deeplearning.ai; 1k+ citations.</li>
       </ul>
     </div>
   </div>
