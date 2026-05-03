@@ -1197,3 +1197,234 @@ summary {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 @import "highlights";
 @import "svg-icons";
+/* ---- Review Styles ---- */
+.testimonial-carousel-wrapper {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  position: relative;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-left: 4px solid #C2410C;
+  padding: 40px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-slide {
+  display: none;
+  animation: fade 0.5s;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.testimonial-stars, .review-stars, .stars {
+  color: #C2410C;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial-quote {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #111827;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reviewer-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4B5563;
+}
+
+.platform-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.platform-badge.meetapro {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.platform-badge.mentorcruise {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.carousel-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #4B5563;
+  transition: color 0.2s;
+}
+
+.carousel-btn:hover {
+  color: #C2410C;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #E5E7EB;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dot.active, .dot:hover {
+  background-color: #C2410C;
+}
+
+.social-proof-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #4B5563;
+}
+
+.see-all-reviews {
+  font-weight: 600;
+  color: #C2410C;
+  text-decoration: none;
+}
+
+.see-all-reviews:hover {
+  text-decoration: underline;
+}
+
+.rating-badge-header {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.rating-score {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.rating-text {
+  font-size: 15px;
+  color: #4B5563;
+}
+
+.featured-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .featured-reviews-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card.featured {
+  border-top: 4px solid #C2410C;
+}
+
+.review-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.reviews-filter-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  padding: 8px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4B5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  border-color: #C2410C;
+  color: #C2410C;
+}
+
+.review-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .review-card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

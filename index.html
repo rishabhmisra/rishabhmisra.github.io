@@ -133,18 +133,129 @@ layout: default
 
 <!-- SECTION E: Social Proof -->
 <span class="section-header">What People Say</span>
-<div class="quotes-grid">
-	<div class="quote-block">
-		<p class="quote-text">"I was able to land an MLE FAANG offer with his reviews and prep material. 10/10
-			recommend!"</p>
-		<span class="quote-author">Review via MeetAPro</span>
+<div class="testimonial-carousel-wrapper">
+	<div class="testimonial-carousel" id="homeTestimonials">
+		<div class="testimonial-slide active">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"I wish I could give Rishabh more than 5 stars. He is extremely knowledgeable,
+				approachable and most importantly Structured."</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">stack overflow (Verified User)</span>
+				<span class="platform-badge meetapro">MeetAPro</span>
+			</div>
+		</div>
+		<div class="testimonial-slide">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"I was able to land an MLE FAANG offer with his reviews and prep material.
+				10/10 recommend!"</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">P L (Verified User)</span>
+				<span class="platform-badge meetapro">MeetAPro</span>
+			</div>
+		</div>
+		<div class="testimonial-slide">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"He really has a range of experience and depth of knowledge that only a select
+				few engineers can contain in one head. Could not recommend more!"</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">Benjamin</span>
+				<span class="platform-badge mentorcruise">MentorCruise</span>
+			</div>
+		</div>
+		<div class="testimonial-slide">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"Rishabh is an amazing interviewer. He knows his stuff and gives invaluable
+				feedback which helps you prepare well for your ML interviews. Strongly recommend him!"</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">Sunjeet Jena</span>
+				<span class="platform-badge meetapro">MeetAPro</span>
+			</div>
+		</div>
+		<div class="testimonial-slide">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"Highly recommended for candidates who would like to switch roles (e.g.,
+				Research → Engineer, General ML → LLM)."</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">Charles C.</span>
+				<span class="platform-badge meetapro">MeetAPro</span>
+			</div>
+		</div>
+		<div class="testimonial-slide">
+			<div class="testimonial-stars">★★★★★</div>
+			<p class="testimonial-quote">"Mr. Rishabh is a spectacular aide when it comes to feeding curiosity while
+				also keeping you focused on the correct path to follow. He is a great help if you want to break into the
+				ML space."</p>
+			<div class="testimonial-meta">
+				<span class="quote-author">David</span>
+				<span class="platform-badge mentorcruise">MentorCruise</span>
+			</div>
+		</div>
+
+		<div class="carousel-controls">
+			<button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+			<div class="carousel-dots">
+				<span class="dot active" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+			</div>
+			<button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+		</div>
 	</div>
-	<div class="quote-block">
-		<p class="quote-text">"He really has a range of experience and depth of knowledge that only a select few
-			engineers can contain in one head. Could not recommend more!"</p>
-		<span class="quote-author">Benjamin, MentorCruise</span>
+
+	<div class="social-proof-bar">
+		<span class="proof-stats">50+ Five-Star Reviews · 5.0/5.0 Average Rating</span>
+		<a href="{{ site.baseurl }}/reviews" class="see-all-reviews">See all reviews &rarr;</a>
 	</div>
 </div>
+
+<script>
+	let slideIndex = 1;
+	let slideTimer;
+
+	function showSlides(n) {
+		let slides = document.querySelectorAll("#homeTestimonials .testimonial-slide");
+		let dots = document.querySelectorAll("#homeTestimonials .dot");
+		if (!slides.length) return;
+
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+
+		slides.forEach(slide => slide.classList.remove("active"));
+		dots.forEach(dot => dot.classList.remove("active"));
+
+		slides[slideIndex - 1].classList.add("active");
+		dots[slideIndex - 1].classList.add("active");
+	}
+
+	function moveCarousel(n) {
+		showSlides(slideIndex += n);
+		resetTimer();
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+		resetTimer();
+	}
+
+	function resetTimer() {
+		clearInterval(slideTimer);
+		slideTimer = setInterval(() => { moveCarousel(1); }, 6000);
+	}
+
+	document.addEventListener("DOMContentLoaded", () => {
+		showSlides(slideIndex);
+		resetTimer();
+
+		let carousel = document.getElementById("homeTestimonials");
+		if (carousel) {
+			carousel.addEventListener("mouseenter", () => clearInterval(slideTimer));
+			carousel.addEventListener("mouseleave", resetTimer);
+		}
+	});
+</script>
 
 <!-- SECTION F: Curated Updates -->
 <div class="updates-section">
