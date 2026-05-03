@@ -52,7 +52,7 @@ permalink: /blog/
     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7421253839087112192?collapsed=1" height="540" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
   </div>
   <div class="linkedin-item">
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7437716576210108416?collapsed=1" height="540" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7451755937423364096?collapsed=1" height="540" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
   </div>
   <div class="linkedin-item">
     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7429268542715330560?collapsed=1" height="540" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
