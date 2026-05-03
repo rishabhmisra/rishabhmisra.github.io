@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>Advanced LLM Inference Optimization Techniques</center>
+title: "<center>Advanced LLM Inference Optimization Techniques</center>"
 comments: true
 mathjax: true
+summary: "An overview of advanced LLM inference optimization techniques, detailing how model parallelism, Grouped-Query Attention, and specialized serving engines overcome the Memory Wall."
 ---
-
-## Introduction
 
 We have crossed a threshold in the Generative AI landscape. Large Language Models (LLMs) have transitioned from research novelties and experimental playgrounds into production-critical engines driving real enterprise value. 
 
@@ -28,9 +27,9 @@ Overcoming this "Memory Wall" is the primary directive of modern inference archi
 
 ### 1. Model Parallelism and Sharding
 When a model is too large to fit on a single GPU (or when you need to split it to increase bandwidth), you must shard the model across multiple devices. 
-*   **Tensor Parallelism (TP):** This technique splits individual matrix multiplications across multiple GPUs. Because the GPUs must synchronize their results constantly, TP requires extremely fast, specialized inter-GPU communication (like NVIDIA's NVLink). It is highly effective but usually limited to the GPUs within a single node.
-*   **Pipeline Parallelism (PP):** This approach assigns different sequential layers of the model to different GPUs. It reduces the communication overhead between GPUs but introduces "pipeline bubbles"—periods of idle time where one GPU is waiting for the previous one to finish its layer.
-Mastering the exact ratio of TP to PP is crucial for maximizing throughput on large, multi-node clusters.
+*   **Tensor Parallelism (TP) / Intra-layer Parallelism:** This technique splits individual matrix multiplications across multiple GPUs. Frameworks like NVIDIA's **Megatron-LM** pioneered this for giant models. Because partial results need to be combined within a single layer computation, TP requires significant inter-GPU communication using operations like `all-reduce` or `all-gather`. Therefore, it is highly effective but usually restricted to the GPUs within a single node connected by high-speed NVLink.
+*   **Pipeline Parallelism (PP) / Inter-layer Parallelism:** This approach assigns different sequential groups of layers to different GPUs. It reduces the communication overhead between GPUs but can introduce "pipeline bubbles"—periods of idle time where one GPU is waiting for the previous one to finish its layer. To mitigate this and keep the pipeline full, we introduce **micro-batches**, dividing the input batch into smaller chunks that flow sequentially through the pipeline, maximizing GPU utilization.
+Mastering the exact composition of TP and PP is crucial for maximizing throughput on large, multi-node clusters.
 
 ### 2. Architectural Tweaks: Grouped-Query Attention (GQA)
 Traditional Multi-Head Attention (MHA) requires the model to cache a unique Key and Value vector for every single Query head during generation. This causes the KV Cache to balloon to unmanageable sizes, leading to severe memory fragmentation.

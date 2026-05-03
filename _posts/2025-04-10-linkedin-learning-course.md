@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>Building LLM-Powered Recommendation Systems: My LinkedIn Learning Course</center>
+title: "<center>Building LLM-Powered Recommendation Systems: My LinkedIn Learning Course</center>"
 comments: true
 mathjax: true
+summary: "An exclusive sneak peek into my upcoming LinkedIn Learning course, which explores the paradigm shift of integrating Large Language Models into massive-scale personalization pipelines."
 ---
-
-## Introduction
 
 🎬 And that’s a WRAP! I am thrilled to announce that filming for my upcoming LinkedIn Learning course is officially complete.
 

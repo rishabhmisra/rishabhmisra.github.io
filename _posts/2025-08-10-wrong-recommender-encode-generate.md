@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>Why Your Team Built the Wrong Recommender</center>
+title: "<center>Why Your Team Built the Wrong Recommender</center>"
 comments: true
 mathjax: true
+summary: "Traditional Retrieve-and-Rank models treat user history like a grocery list. Learn why the industry is shifting toward 'Encode and Generate' paradigms to capture temporal user intent."
 ---
-
-## Introduction
 
 Your team probably built the wrong recommender system. It is likely not wrong because the mathematical modeling is flawed, or because your engineers chose the wrong hyperparameters. It is wrong because of the fundamental assumption baked into the core architecture.
 

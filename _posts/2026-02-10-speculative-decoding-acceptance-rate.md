@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>Speculative Decoding: The Mathematics of Acceptance Rate</center>
+title: "<center>Speculative Decoding: The Mathematics of Acceptance Rate</center>"
 comments: true
 mathjax: true
+summary: "Speculative Decoding can make LLMs 3x faster—or slow them down. Master the mathematics of the Acceptance Rate to determine when and how to deploy this powerful optimization technique."
 ---
-
-## Introduction
 
 Speculative Decoding is currently the closest thing we have to "cheating physics" in Machine Learning inference. When implemented correctly, it can make Large Language Models (LLMs) 3x faster with zero degradation in output quality. 
 
@@ -21,9 +20,9 @@ To understand speculative decoding, we must revisit the fundamental bottleneck o
 Because modern GPUs are so massively parallel, evaluating a batch of 5 tokens in a single forward pass takes almost the exact same amount of time as evaluating just 1 token.
 
 Speculative decoding exploits this hardware quirk through a two-model architecture:
-1.  **The Draft Model:** A tiny, incredibly fast model generates a "guess" of the next $K$ tokens (e.g., the next 5 words).
-2.  **The Target Model:** The massive, slow LLM takes those 5 draft tokens and verifies them all in a *single* forward pass.
-3.  **The Result:** If the target model agrees with the draft model's guesses, you get 5 tokens generated in the time it usually takes to generate 1. You get speed "for free."
+1.  **The Draft Model:** A smaller, highly efficient draft model generates a sequence of candidate tokens very quickly.
+2.  **The Target Model:** The massive, slow LLM takes those candidate tokens and efficiently verifies them all in a *single* forward pass.
+3.  **The Result:** If the target model agrees with the draft model's candidates, you get multiple tokens generated in the time it usually takes to generate one. This speeds up text generation dramatically without sacrificing any output quality.
 
 ## The Production Reality: Acceptance Rate
 

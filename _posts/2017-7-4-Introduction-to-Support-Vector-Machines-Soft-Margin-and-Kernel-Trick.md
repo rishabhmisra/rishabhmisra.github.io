@@ -1,12 +1,12 @@
 ---
 layout: post
 type: blog
-title: <center>Introduction to Support Vector Machines - Soft Margin Formulation and Kernel Trick</center>
+title: "<center>Introduction to Support Vector Machines - Soft Margin Formulation and Kernel Trick</center>"
 comments: true
 mathjax: true
+summary: "The second part of the SVM series, explaining how the Soft Margin formulation and the Kernel Trick allow models to elegantly handle noisy and linearly inseparable datasets."
 ---
 
-## Introduction
 This is the second part of the post on SVM where I'll discuss Soft Margin Formulation and Kernel trick as ways to tackle linear inseparability problem. [First part](https://rishabhmisra.github.io/Introduction-to-Support-Vector-Machines-Motivation-and-Basics/) of the post discusses the motivation and basics of SVM. In the previous part, we left off with the case where the data points did not seem to be linearly separable.
 
 <center>

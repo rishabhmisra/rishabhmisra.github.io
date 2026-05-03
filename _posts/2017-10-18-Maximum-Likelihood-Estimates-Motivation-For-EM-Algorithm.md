@@ -1,12 +1,12 @@
 ---
 layout: post
 type: blog
-title: <center>Maximum Likelihood Estimates - Motivation for EM algorithm</center>
+title: "<center>Maximum Likelihood Estimates - Motivation for EM algorithm</center>"
 comments: true
 mathjax: true
+summary: "Understand the core premise of Maximum Likelihood Estimates in Logistic Regression, and how this foundational concept motivates the powerful Expectation-Maximization (EM) algorithm."
 ---
 
-## Introduction
 To solve any data science problem, first we obtain a dataset, do exploration on it and then, guided by the findings, we try to come up with a model to tackle the problem. Once all of that is done, our next task is to find a way to estimate the parameters of the model based on the dataset we have, so that we can make predictions on unseen data. In this post, we will learn about how we can learn the parameters of the model using Maximum Likelihood approach which has a very simple premise: find parameters that maximize the likelihood of the observed data. Through that, I would motivate the Expectation-Maximization (EM) algorithm which is considered to be an important tool in statistical analysis. This post would assume familiarity with [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression).
 
 ## Maximum Likelihood approach in Logistic Regression

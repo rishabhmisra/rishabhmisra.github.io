@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>From AI Enthusiast to Inference Architect: Mastering GPU Profiling</center>
+title: "<center>From AI Enthusiast to Inference Architect: Mastering GPU Profiling</center>"
 comments: true
 mathjax: true
+summary: "Stop obsessing over prompts and start profiling GPUs. Master Arithmetic Intensity, KV Caching, and Scheduling to transition from an AI Enthusiast to an Inference Architect."
 ---
-
-## Introduction
 
 Let's state a hard truth about the current AI landscape: 90% of engineers bearing the title "AI Engineer" today are simply chaining together API calls. Less than 10% actually possess the systems engineering depth required to keep a 70-Billion parameter model profitable and performant at scale.
 

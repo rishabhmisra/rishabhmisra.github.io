@@ -1,12 +1,12 @@
 ---
 layout: post
 type: blog
-title: <center>Introduction to Support Vector Machines - Motivation and Basics</center>
+title: "<center>Introduction to Support Vector Machines - Motivation and Basics</center>"
 comments: true
 mathjax: true
+summary: "A foundational introduction to Support Vector Machines (SVM), covering the geometric intuition behind finding the optimal margin classifier for linearly separable data."
 ---
 
-## Introduction
 In this post, you will learn about the basics of Support Vector Machines (SVM), which is a well-regarded supervised machine learning algorithm. This technique needs to be in everyone's tool-bag especially people who aspire to be a data scientist one day. Since there's a lot to learn about, I'll introduce SVM to you across two posts so that you can have a coffee break in between :)
 
 ## Motivation

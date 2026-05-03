@@ -72,7 +72,11 @@ layout: default
     <div class="bc-meta">{{ post.date | date: "%B %d, %Y" }}</div>
     <div class="bc-title">{{ post.title | strip_html }}</div>
     <div class="bc-excerpt">
-      {{ post.excerpt | strip_html | truncate: 160 }}
+      {% if post.summary %}
+        {{ post.summary }}
+      {% else %}
+        {{ post.excerpt | strip_html | truncate: 160 }}
+      {% endif %}
     </div>
     <div class="bc-read-more">Read Article <span aria-hidden="true">→</span></div>
   </a>

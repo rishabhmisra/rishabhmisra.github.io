@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>KV Cache: The Silent Killer of Your Inference Budget</center>
+title: "<center>KV Cache: The Silent Killer of Your Inference Budget</center>"
 comments: true
 mathjax: true
+summary: "The KV Cache is the hidden memory tax causing your LLM applications to crash. Discover the math behind the bottleneck and how fragmentation eats your inference budget."
 ---
-
-## Introduction
 
 If you have ever tried to scale a Generative AI application, you have likely encountered this scenario: your model works flawlessly in testing, but the moment you push a 10-page document into your "production-ready" Retrieval-Augmented Generation (RAG) system, the entire cluster crashes with an Out-Of-Memory (OOM) error.
 
@@ -42,8 +41,17 @@ This turns your incredibly expensive H100 GPU memory into "Swiss Cheese"—riddl
 
 We are facing a systems engineering problem disguised as a machine learning problem.
 
-## The Fix: Virtualizing GPU Memory
+## Architectural Fixes
 
-The solution to this fragmentation comes from classic operating systems design: Virtual Memory. 
+We are facing a systems engineering problem disguised as a machine learning problem. Solving it requires architectural shifts:
 
-By implementing **PagedAttention**, we can break the KV cache into small, non-contiguous blocks (pages) and map them dynamically. This completely eliminates internal fragmentation and is the breakthrough technology that allows modern serving engines to achieve high throughput. In the next post, we will dive deeper into exactly how PagedAttention rewrites the rules of GPU memory management.
+### 1. Virtualizing GPU Memory (PagedAttention)
+The solution to fragmentation comes from classic operating systems design: Virtual Memory. By implementing **PagedAttention**, we can break the KV cache into small, non-contiguous blocks (pages) and map them dynamically. This completely eliminates internal fragmentation and is the breakthrough technology that allows modern serving engines to achieve high throughput.
+
+### 2. Grouped Query Attention (GQA)
+Instead of caching a unique Key and Value vector for every single Query head (Multi-Head Attention), modern architectures use **Grouped Query Attention (GQA)**. GQA strikes a balance: it shares Key and Value matrices across groups of Query heads. This drastically reduces the KV Cache memory footprint—shrinking the data that needs to be read from slow GPU memory—without significantly impacting model quality.
+
+### 3. Flash Attention
+Finally, we can optimize the attention mechanism's memory bandwidth usage through **Flash Attention**. Flash Attention rethinks the data flow by fusing operations and keeping data in the fast on-chip SRAM, minimizing expensive reads and writes to the main HBM memory. This results in faster computation, especially with longer context windows.
+
+In the next post, we will dive deeper into exactly how PagedAttention rewrites the rules of GPU memory management.

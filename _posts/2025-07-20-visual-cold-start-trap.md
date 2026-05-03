@@ -1,12 +1,11 @@
 ---
 layout: post
 type: blog
-title: <center>The Visual Cold-Start Trap in Recommender Systems</center>
+title: "<center>The Visual Cold-Start Trap in Recommender Systems</center>"
 comments: true
 mathjax: true
+summary: "Uncover the 'Visual Cold-Start Trap' in recommendation systems and learn how to use Contrastive Learning and Cross-Attention to ensure new products get the visibility they deserve."
 ---
-
-## Introduction
 
 Your recommendation system doesn’t hate new products. It just never sees them. And that, fundamentally, is why they die.
 

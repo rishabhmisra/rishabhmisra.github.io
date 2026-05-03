@@ -1,12 +1,12 @@
 ---
 layout: post
 type: blog
-title: <center>Text Prediction - Behind the Scenes</center>
+title: "<center>Text Prediction - Behind the Scenes</center>"
 comments: true
 mathjax: true
+summary: "An inside look at how mobile keyboard applications use language models and smoothing techniques to predict your next word with increasing accuracy."
 ---
 
-## Introduction
 These days, one of the common features of a good keyboard application is the prediction of upcoming words. These predictions get better and better as you use the application, thus saving users' effort. Another application for text prediction is in Search Engines. Predictive search saves effort and guides visitors to results, rather than having them type searches that are slightly off and don't return a large number of results. As a consumer of these applications, I am sure you would have wondered "How exactly does this prediction works?" at least once. Well, wonder no more because, in this article, I will give you some insight into what goes behind the scenes of producing predictions. So, let's get started.
 
 Note: This article is going to use some concepts from Probability and Machine Learning theory. I'll try my best to keep it as general as possible and would provide links to background reading on essential concepts as and when I introduce them.

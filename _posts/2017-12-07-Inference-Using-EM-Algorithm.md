@@ -1,12 +1,12 @@
 ---
 layout: post
 type: blog
-title: <center>Inference using EM algorithm</center>
+title: "<center>Inference using EM algorithm</center>"
 comments: true
 mathjax: true
+summary: "A deep dive into the mathematical derivation of the Expectation-Maximization (EM) algorithm, demonstrating how to tackle inference problems involving latent variables."
 ---
 
-## Introduction
 In the [previous post](https://rishabhmisra.github.io/Maximum-Likelihood-Estimates-Motivation-For-EM-Algorithm/), we learned about scenarios where Expectation Maximization (EM) algorithm could be useful and a basic outline of the algorithm for inferring the model parameters. If you haven't already, I would encourage you to read that first so that you have the necessary context. In this post, we would dive deeper into understanding the algorithm. First, we would try to understand how EM algorithm optimizes the log-likelihood at every step. Although, a bit mathematical, this would in-turn help us in understanding how we can use various approximation methods for inference when the E-step (calculating posterior of hidden variables given observed variables and parameters) is not tractable. **Disclaimer**: This post is a bit Mathematical.
 
 ## Diving Deeper into EM
