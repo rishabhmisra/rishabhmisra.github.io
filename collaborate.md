@@ -25,7 +25,7 @@ permalink: /collaborate/
       <ul>
         <li><b>Reach</b>: 150K+ organic impressions with 700%+ quarterly growth (LinkedIn).</li>
         <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves and 3,000+ engagements across 6.5K followers in 2026.</li>
-        <li><b>Global Presence</b>: Content distirbution to audience spanning 140+ countries (led by USA, China, and India).</li>
+        <li><b>Global Presence</b>: Blog posts and technical content consumed by an audience spanning 140+ countries.</li>
         <li><b>Partnerships</b>: <b>LinkedIn Learning</b> and <b>Udacity</b>.</li>
       </ul>
     </div>
