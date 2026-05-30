@@ -7,7 +7,7 @@ permalink: /publication/
   <div class="hero-left">
     <span class="eyebrow">Academic Impact</span>
     <h1 class="hero-headline">Research & Publications</h1>
-    <p class="hero-subtext">My research sits at the intersection of NLP, Recommender Systems, and Deep Learning, with 1,146+ citations and top 1–2% global recognition.</p>
+    <p class="hero-subtext">My research sits at the intersection of NLP, Recommender Systems, and Deep Learning, with 1200+ citations and top 1–2% global recognition.</p>
   </div>
 </div>
 

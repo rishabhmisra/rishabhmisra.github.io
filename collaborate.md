@@ -46,7 +46,7 @@ permalink: /collaborate/
       <ul>
         <li><b>Global Speaker</b>: 15+ international talks across London, Prauge, SF, Amsterdam, Denmark, Nantes, Vancouver, Cambridge, Nuremberg, and more.</li>
         <li><b>Mentorship</b>: 50+ verified 5.0⭐️ reviews for career, technical, and architectural guidance.</li>
-        <li><b>Publishing</b>: Author of "Sculpting Data for ML" book; ML courses with <b>LinkedIn Learning</b> and <b>Udacity</b>; 200K+ ML tech/dataset adoption, notably by Google and Deeplearning.ai; 1k+ citations.</li>
+        <li><b>Publishing</b>: Author of "Sculpting Data for ML" book; ML courses with <b>LinkedIn Learning</b> and <b>Udacity</b>; 200K+ ML tech/dataset adoption, notably by Google and Deeplearning.ai; 1200+ citations.</li>
       </ul>
     </div>
   </div>
