@@ -25,6 +25,14 @@ permalink: /reviews/
 
 <div class="review-card-grid" id="reviewsGrid">
   <!-- TIER 1: VERY HIGH SIGNAL (Specific outcomes, LLMs, RAG, 3D CV, Systems Design, FAANG/Unicorn offers, career shifts) -->
+  <div class="review-card meetapro">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Truly want to appreciate Rishabh Misra for his feedback in the mock interviews. It helped me polish my preparation and delivery. I was able to land an MLE FAANG offer with his reviews and prep material. 10/10 recommend working with him!"</p>
+    <div class="review-meta">
+      <span class="reviewer-name">Anonymous (Received a job offer! 🎉)</span>
+      <span class="platform-badge meetapro">MeetAPro</span>
+    </div>
+  </div>
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
     <p class="review-text">"I got a great offer as an applied AI engineer at a major LLM unicorn startup thanks to Rishabh! He helped me cover the breadth and depth of LLM knowledge, and I also learned a lot from him when it comes to best practices in deployment and optimization, which I didn't have extensive experience at work. the mentorship is structured and flexible in the meantime as we would decide the agenda and topics ahead of time. highly recommend!"</p>
