@@ -25,6 +25,30 @@ permalink: /reviews/
 
 <div class="review-card-grid" id="reviewsGrid">
   <!-- TIER 1: VERY HIGH SIGNAL (Specific outcomes, LLMs, RAG, 3D CV, Systems Design, FAANG/Unicorn offers, career shifts) -->
+  <div class="review-card mentorcruise">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Rishabh is an exceptionally knowledgeable mentor in the AI/ML space, combining strong academic credentials with practical industry experience. His background as an AI professional at Atlassian, along with his publications and authorship, gives him deep expertise across a wide range of topics. What stands out most, however, is not just his technical knowledge but his patience, adaptability, and genuine commitment to his mentees' success. I have been working with Rishabh for over seven months, during which my learning direction evolved multiple times—from classical machine learning to Agentic AI and research-oriented work—as I refined my career goals and adapted to industry trends. Throughout every transition, Rishabh remained supportive, flexible, and focused on helping me make informed decisions. Rather than offering a generic roadmap, he took the time to understand my long-term aspirations and designed a personalized curriculum tailored to my strengths, constraints, and career objectives. His guidance has helped me stay aligned with my goal of becoming a leader in the AI/ML field while ensuring that my learning remains relevant to contemporary industry standards. Beyond structured learning, Rishabh has played a significant role in my research journey. Under his mentorship, I successfully completed two research papers and currently have a third paper in progress. His feedback, strategic guidance, and ability to break down complex research challenges into actionable steps were invaluable throughout the process. I am particularly grateful for the effort he invested in building a structured growth plan specifically for me, as well as for his consistent support, encouragement, and thoughtful advice throughout the journey. I highly recommend Rishabh to anyone seeking a mentor who combines deep technical expertise with genuine dedication to their mentees' growth and long-term success."</p>
+    <div class="review-meta">
+      <span class="reviewer-name">Bidit</span>
+      <span class="platform-badge mentorcruise">MentorCruise</span>
+    </div>
+  </div>
+  <div class="review-card mentorcruise">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Rishabh has been fantastic to work with. He pays incredible attention to detail, and it really shows because nothing gets overlooked, whether it's a small technical point or the bigger picture of what I'm trying to achieve. He's also quick to respond, which makes a huge difference when I'm stuck on something and need clarity fast. What I appreciate most is how structured his approach is. Each session follows a clear outline, and it's obvious he puts thought into planning topics that actually align with my goals, rather than just going through generic material. It never feels like we're wasting time, everything builds toward something. He's also very generous with resources, pointing me toward materials I can use for independent study between our sessions, which has helped me stay consistent and keep learning on my own. And whenever I run into questions or get stuck, he's always willing to help, no matter how basic or advanced the question is. That combination of expertise, patience, and genuine willingness to support my growth has made this experience really valuable."</p>
+    <div class="review-meta">
+      <span class="reviewer-name">Telma</span>
+      <span class="platform-badge mentorcruise">MentorCruise</span>
+    </div>
+  </div>
+  <div class="review-card mentorcruise">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"I reached out to Rishabh because I wasn't sure where my career was going, and I wanted to talk it through with someone more experienced. He really took his time going through my background. His notes on my career brief were so useful. He showed me where things weren't clear, told me what I should be highlighting more, and helped me reword the bits that were coming across confusing. On top of that, he put together a plan for the areas I still need to work on. I'm glad I did this. I came away with a much clearer idea of how to talk about my own experience, plus an actual plan for what comes next. Definitely recommend Rishabh."</p>
+    <div class="review-meta">
+      <span class="reviewer-name">Telma</span>
+      <span class="platform-badge mentorcruise">MentorCruise</span>
+    </div>
+  </div>
   <div class="review-card meetapro">
     <div class="review-stars">★★★★★</div>
     <p class="review-text">"Truly want to appreciate Rishabh Misra for his feedback in the mock interviews. It helped me polish my preparation and delivery. I was able to land an MLE FAANG offer with his reviews and prep material. 10/10 recommend working with him!"</p>
