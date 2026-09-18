@@ -13,7 +13,7 @@ permalink: /collaborate/
 
 <div class="cta-row cta-center" style="margin-bottom: 60px;">
   <a href="mailto:rishabhmisra33@gmail.com" class="btn-solid">Reach Via Email</a>
-  <a href="https://www.linkedin.com/in/misra-rishabh/" target="_blank" class="btn-outline">DM on LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rishabhmisra33/" target="_blank" class="btn-outline">DM on LinkedIn</a>
   <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" class="btn-outline">Book on MeetAPro</a>
   <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" class="btn-outline">Book on MentorCruise</a>
 </div>
