@@ -32,6 +32,33 @@ body {
   width: 100%;
 }
 
+.visually-hidden:where(:not(:focus-within, :active)) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-link:focus-visible {
+  background: $primaryText;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  left: 16px;
+  padding: 10px 16px;
+  position: fixed;
+  top: 16px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+:where(a:any-link, button):focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
+}
+
 h1,
 h2,
 h3,

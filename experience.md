@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Experience
+title: Professional Experience
+description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Udacity & LinkedIn Learning, Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
 permalink: /experience/
 ---
 
@@ -21,23 +22,26 @@ permalink: /experience/
     <span class="te-dates">2025 – Present</span>
   </div>
   <ul>
-    <li>Leading a team of <b>20+ engineers</b></li>
-    <li>Architecting LLMs/SLMs Pre-training and Post-training (fine-tuning, preference alignment) to power Atlassian's Rovo Agent.</li>
-    <li>Architecting Generative Personalization and Foundation Models to power information consumption in Atlassian's products.</li>
+    <li>Leading Rovo &amp; Search Quality / Generative Personalization teams (<b>20+ engineers</b>) across the organization</li>
+    <li>Architecting LLMs/SLMs Pre-training and Post-training (fine-tuning, preference alignment) to power Atlassian's Rovo Agent</li>
+    <li>Defining long-term technical strategy and <b>0→1 architecture for Generative RecSys &amp; Foundation Models</b> — leading the transition from traditional recommendation and search systems toward Foundation Models spanning representation learning, generative recommendation, personalization, training, and evaluation</li>
   </ul>
 </div>
 
 <div class="timeline-entry">
   <div class="te-header">
     <div>
-      <span class="te-company">Udacity / LinkedIn Learning</span>
-      <span class="te-role"> — Content Creator & Instructor</span>
+      <span class="te-company">AI Aspire / Udacity / LinkedIn Learning / Interview Kickstart</span>
+      <span class="te-role"> — Enterprise AI Trainer, Course Creator &amp; Featured Instructor</span>
     </div>
     <span class="te-dates">2025 – Present</span>
   </div>
   <ul>
-    <li><b>Udacity</b>: <em>Advanced LLM Inference Optimization Techniques</em> — covers transformer tweaks, model parallelism, and sharding using DeepSpeed, TensorRT-LLM, and Triton Inference Server</li>
-    <li><b>LinkedIn Learning</b>: <em>Building LLM-Powered Recommendation Systems</em> — production-ready recommender systems using GenAI for enhanced personalization</li>
+    <li><b>AI Aspire (by Andrew Ng) &amp; Afterdays</b>: Partnering with <a href="https://aiaspire.ai/" target="_blank">AI Aspire</a> (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/" target="_blank">announcement</a>) to build practical applied ML and AI engineering capabilities across enterprises — including leading a <b>2-week corporate AI training program for Morgan Stanley</b> in New York, NY</li>
+    <li><b>Udacity</b>: <a href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank"><em>Advanced LLM Inference Optimization Techniques</em></a> — covers transformer KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, and Triton Inference Server</li>
+    <li><b>Udacity</b>: <a href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank"><em>Intelligent Backends with RAG &amp; Chat Models</em></a> (Course 3: Enterprise AI &amp; Microservices) — covers LLM chat clients, tool-calling AI agents (Spring AI, LangChain4j), modular RAG pipelines, and semantic vector search (HNSW, HyDE, re-ranking)</li>
+    <li><b>LinkedIn Learning</b>: <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank"><em>Building LLM-Powered Recommendation Systems</em></a> (<a href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214" target="_blank">GitHub</a>) — production-ready recommender systems using GenAI; featured in the <a href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/" target="_blank">University of Florida Career Hub</a></li>
+    <li><b>Interview Kickstart</b>: Featured Instructor for <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank"><em>Applied Agentic AI</em></a>, <a href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank"><em>Building Vertical AI Agents</em></a>, <a href="https://interviewkickstart.com/masterclass/retail-ai-agent" target="_blank"><em>Building AI Agent for Retail</em></a>, and <a href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank"><em>Agentic RAG</em></a></li>
   </ul>
 </div>
 
@@ -51,26 +55,27 @@ permalink: /experience/
   </div>
   <ul>
     <li>Founded and led the Personalization ML team (<b>0→1</b>); oversaw <b>15+ engineers</b> across 5+ products</li>
-    <li>Built and deployed Deep Learning models from scratch for conversational commerce (text/email marketing) across <b>hundreds of millions of end-users</b> and <b>1,000+ brands</b></li>
-    <li>Advanced neural architectures: MLP stack, deep & cross networks, residual connections, attention, MMoE, PLE</li>
+    <li>Built and deployed Deep Learning models from scratch for conversational commerce (text/email marketing) across <b>hundreds of millions of end-users</b> and <b>8,000+ leading brands</b></li>
+    <li>Advanced neural architectures: Two-Tower &amp; Multi-Task Learning, MLP stack, deep &amp; cross networks, residual connections, attention, MMoE, PLE</li>
+    <li>Drove generative personalization applications leveraging prompt engineering, RAG architectures, and PEFT-based LLM fine-tuning grounded in deep user/item representations</li>
     <li>Distributed model training, mixed precision training, ANN vector store-based serving</li>
     <li>Published <a href="https://tech.attentive.com/articles/evolving-attentives-personalized-recommendations" target="_blank">engineering blog</a> on personalization work (Oct 2024)</li>
     <li>Technical leadership in defining long-term personalization strategy, partnering with senior executives</li>
   </ul>
-  <p class="te-tech"><b>Tech:</b> Python, PyTorch, Spark, Airflow, Feature Store, ANN Serving, A/B Experimentation</p>
+  <p class="te-tech"><b>Tech:</b> Python, PyTorch, LLMs/PEFT, RAG, Spark, Airflow, Feature Store, ANN Serving, A/B Experimentation</p>
 </div>
 
 <div class="timeline-entry">
   <div class="te-header">
     <div>
       <span class="te-company">Research Advisor</span>
-      <span class="te-role"> — Leading AI Conferences</span>
+      <span class="te-role"> — Leading AI Conferences &amp; Councils</span>
     </div>
     <span class="te-dates">2021 – Present</span>
   </div>
   <ul>
-    <li>Invited Research Committee Member at <b>20+ leading AI conferences</b></li>
-    <li>Conferences: TheWebConf (2x), CIKM (3x), ICML (1x), SIGKDD (2x), SIGIR (3x), ICDM (2x), RecSys (3x), ECML-PKDD (3x), ICWSM (3x), and TORS (1x)</li>
+    <li>Invited Member of <b>Meta's Research Advisory Council</b> (2025 – Present) and Research Committee Member / Reviewer at <b>20+ leading AI conferences</b></li>
+    <li>Conferences: ACL Rolling Review (2025), SIGIR (4x: 2022–2025), RecSys (3x: 2022, 2024, 2025), ICWSM (3x: 2022–2024), SIGKDD (2x: 2022, 2023), CIKM (2x: 2023, 2024), TheWebConf (2x: 2023, 2024), ICML, ICDM, ECML-PKDD, and ACM TORS</li>
     <li>Published author in LLMs (NLP and GenAI) and Recommender Systems domains, amassing <b>1200+ citations</b></li>
   </ul>
 </div>

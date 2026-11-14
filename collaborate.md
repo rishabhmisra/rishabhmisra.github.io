@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Collaborate
+title: Collaborate & Book
+description: "Partner with Rishabh Misra for AI/ML architecture advisory, international keynotes & workshops, developer content partnerships, and 1:1 career coaching."
 permalink: /collaborate/
 ---
 
@@ -25,8 +26,8 @@ permalink: /collaborate/
       <ul>
         <li><b>Reach</b>: 150K+ organic impressions with 700%+ quarterly growth (LinkedIn).</li>
         <li><b>Engagement</b>: Exceptional interaction rate with 1,000+ saves and 3,000+ engagements across 6.5K followers in 2026.</li>
-        <li><b>Global Presence</b>: Blog posts and technical content consumed by an audience spanning 140+ countries.</li>
-        <li><b>Partnerships</b>: <b>LinkedIn Learning</b> and <b>Udacity</b>.</li>
+        <li><b>Global Presence</b>: Blog posts and technical content consumed by an audience spanning 165+ countries.</li>
+        <li><b>Partnerships</b>: <a href="https://aiaspire.ai/" target="_blank"><b>AI Aspire (by Andrew Ng)</b></a>, <b>Udacity</b>, <b>LinkedIn Learning</b>, and <b>Interview Kickstart</b>.</li>
       </ul>
     </div>
   </div>
@@ -35,8 +36,8 @@ permalink: /collaborate/
     <div class="cc-desc">
       <ul>
         <li><b>Expertise</b>: Specialist in Agentic and Generative Personalization, LLMs / SLMs, Foundational Modeling, and Recommender Systems.</li>
-        <li><b>Consulting</b>: 50+ high-impact engagements with leaders including <b>Google, Meta, Microsoft, Nvidia, AWS, Airtable, Glean, Salesforce, Datadog, and more</b>.</li>
-        <li><b>Board & Council</b>: Meta Research Advisory Council member and PC for 20+ international conferences (SIGIR, ICML, KDD, TheWebConf, and more).</li>
+        <li><b>Consulting &amp; Enterprise Training</b>: 50+ high-impact engagements with leaders including <b>Google, Meta, Microsoft, Nvidia, AWS, Morgan Stanley, Airtable, Glean, Salesforce, Datadog, and more</b>.</li>
+        <li><b>Board & Council</b>: Meta Research Advisory Council member and PC/Reviewer for 20+ international conferences (ACL, SIGIR, RecSys, ICML, KDD, TheWebConf, and more).</li>
       </ul>
     </div>
   </div>
@@ -44,9 +45,9 @@ permalink: /collaborate/
     <div class="cc-title">Speaking, Publishing, & Coaching</div>
     <div class="cc-desc">
       <ul>
-        <li><b>Global Speaker</b>: 15+ international talks across London, Prauge, SF, Amsterdam, Denmark, Nantes, Vancouver, Cambridge, Nuremberg, and more.</li>
-        <li><b>Mentorship</b>: 50+ verified 5.0⭐️ reviews for career, technical, and architectural guidance.</li>
-        <li><b>Publishing</b>: Author of "Sculpting Data for ML" book; ML courses with <b>LinkedIn Learning</b> and <b>Udacity</b>; 200K+ ML tech/dataset adoption, notably by Google and Deeplearning.ai; 1200+ citations.</li>
+        <li><b>Global Speaker &amp; Trainer</b>: 20+ international talks and corporate AI programs across New York, London, Prague, San Francisco, Amsterdam, Copenhagen, Nantes, Vancouver, Cambridge, Nuremberg, Denver, and more (including multi-week enterprise AI training for <b>Morgan Stanley</b> with <b>AI Aspire</b>).</li>
+        <li><b>Mentorship</b>: 54+ verified 5.0⭐️ reviews for career, technical, and architectural guidance.</li>
+        <li><b>Publishing</b>: Author of "Sculpting Data for ML" book; AI/LLM courses &amp; training with <b>AI Aspire</b>, <b>Udacity</b>, <b>LinkedIn Learning</b>, and <b>Interview Kickstart</b>; 200K+ ML tech/dataset adoption, notably by Google, Deeplearning.ai, and University of Florida; 1200+ citations.</li>
       </ul>
     </div>
   </div>
@@ -57,14 +58,38 @@ permalink: /collaborate/
 <div class="rating-badge-header">
 	<span class="stars">★★★★★</span>
 	<span class="rating-score">5.0</span>
-	<span class="rating-text">· 50+ Verified Reviews</span>
+	<span class="rating-text">· 54+ Verified Reviews</span>
 </div>
 
 <div class="testimonial-carousel-wrapper">
   <div class="testimonial-carousel" id="collaborateTestimonials">
     <div class="testimonial-slide active">
       <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-quote">"Mr. Rishabh is a spectacular aide when it comes to feeding curiosity while also keeping you focused on the correct path to follow. He provides adequate resources as well as advice that allows people to learn at their own pace and become mostly self-sufficient. He is a great help if you want to break into the ML space.""</p>
+      <p class="testimonial-quote">"Rishabh has been an amazing mentor. He helped me from forecasting demand to classification to more logistical ml. He has a ton of experience with systems as well. From training to deployment he has helped me understand at a deeper level all the components and how to develop systems that scale. He has really helped me grow my confidence as a practitioner. He is also attentive and quick to answer any questions. Could not recommend more!"</p>
+      <div class="testimonial-meta">
+        <span class="reviewer-name">Benjamin</span>
+        <span class="platform-badge mentorcruise">MentorCruise</span>
+      </div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Great discussion on RAG system design. Rishabh provides a lot of valuable feedback."</p>
+      <div class="testimonial-meta">
+        <span class="reviewer-name">M Y (Verified User)</span>
+        <span class="platform-badge meetapro">MeetAPro</span>
+      </div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Rishabh provided great tips and feedback. Was very happy with the ML sys design mock."</p>
+      <div class="testimonial-meta">
+        <span class="reviewer-name">R D (Verified User)</span>
+        <span class="platform-badge meetapro">MeetAPro</span>
+      </div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Mr. Rishabh is a spectacular aide when it comes to feeding curiosity while also keeping you focused on the correct path to follow. He provides adequate resources as well as advice that allows people to learn at their own pace and become mostly self-sufficient. He is a great help if you want to break into the ML space."</p>
       <div class="testimonial-meta">
         <span class="reviewer-name">David</span>
         <span class="platform-badge mentorcruise">MentorCruise</span>
@@ -391,9 +416,9 @@ permalink: /collaborate/
       </div>
     </div>
     <div class="carousel-controls">
-      <button class="carousel-btn prev" onclick="moveCollabCarousel(-1)">&#10094;</button>
+      <button type="button" class="carousel-btn prev" aria-label="Previous testimonial" onclick="moveCollabCarousel(-1)">&#10094;</button>
       <div class="carousel-dots" style="display:none;"></div>
-      <button class="carousel-btn next" onclick="moveCollabCarousel(1)">&#10095;</button>
+      <button type="button" class="carousel-btn next" aria-label="Next testimonial" onclick="moveCollabCarousel(1)">&#10095;</button>
     </div>
   </div>
 </div>

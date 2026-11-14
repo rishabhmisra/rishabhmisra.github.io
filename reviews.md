@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Reviews
+title: Reviews & Testimonials
+description: "54+ verified 5.0/5.0 testimonials and reviews from engineers, researchers, and clients mentored or advised by Rishabh Misra on MentorCruise and MeetAPro."
 permalink: /reviews/
 ---
 
@@ -14,7 +15,7 @@ permalink: /reviews/
 <div class="rating-badge-header" style="margin-bottom: 40px; text-align: center; padding: 20px; background: #fff; border: 1px solid #E5E7EB; border-left: 4px solid #C2410C;">
   <span class="stars">★★★★★</span>
   <span class="rating-score">5.0</span>
-  <span class="rating-text">· 50+ Verified Reviews · Top-Rated on MentorCruise</span>
+  <span class="rating-text">· 54+ Verified Reviews · Top Mentor &amp; Quick Responder on MentorCruise</span>
 </div>
 
 <div class="reviews-filter-tabs">
@@ -25,6 +26,14 @@ permalink: /reviews/
 
 <div class="review-card-grid" id="reviewsGrid">
   <!-- TIER 1: VERY HIGH SIGNAL (Specific outcomes, LLMs, RAG, 3D CV, Systems Design, FAANG/Unicorn offers, career shifts) -->
+  <div class="review-card mentorcruise">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Rishabh has been an amazing mentor. He helped me from forecasting demand to classification to more logistical ml. He has a ton of experience with systems as well. From training to deployment he has helped me understand at a deeper level all the components and how to develop systems that scale. He has really helped me grow my confidence as a practitioner. He is also attentive and quick to answer any questions. Could not recommend more!"</p>
+    <div class="review-meta">
+      <span class="reviewer-name">Benjamin</span>
+      <span class="platform-badge mentorcruise">MentorCruise</span>
+    </div>
+  </div>
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
     <p class="review-text">"Rishabh is an exceptionally knowledgeable mentor in the AI/ML space, combining strong academic credentials with practical industry experience. His background as an AI professional at Atlassian, along with his publications and authorship, gives him deep expertise across a wide range of topics. What stands out most, however, is not just his technical knowledge but his patience, adaptability, and genuine commitment to his mentees' success. I have been working with Rishabh for over seven months, during which my learning direction evolved multiple times—from classical machine learning to Agentic AI and research-oriented work—as I refined my career goals and adapted to industry trends. Throughout every transition, Rishabh remained supportive, flexible, and focused on helping me make informed decisions. Rather than offering a generic roadmap, he took the time to understand my long-term aspirations and designed a personalized curriculum tailored to my strengths, constraints, and career objectives. His guidance has helped me stay aligned with my goal of becoming a leader in the AI/ML field while ensuring that my learning remains relevant to contemporary industry standards. Beyond structured learning, Rishabh has played a significant role in my research journey. Under his mentorship, I successfully completed two research papers and currently have a third paper in progress. His feedback, strategic guidance, and ability to break down complex research challenges into actionable steps were invaluable throughout the process. I am particularly grateful for the effort he invested in building a structured growth plan specifically for me, as well as for his consistent support, encouragement, and thoughtful advice throughout the journey. I highly recommend Rishabh to anyone seeking a mentor who combines deep technical expertise with genuine dedication to their mentees' growth and long-term success."</p>
@@ -187,6 +196,22 @@ permalink: /reviews/
   </div>
 
   <!-- TIER 2: MEDIUM SIGNAL (Good context, but shorter or less descriptive than Tier 1) -->
+  <div class="review-card meetapro">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Great discussion on RAG system design. Rishabh provides a lot of valuable feedback."</p>
+    <div class="review-meta">
+      <span class="reviewer-name">M Y (Verified User)</span>
+      <span class="platform-badge meetapro">MeetAPro</span>
+    </div>
+  </div>
+  <div class="review-card meetapro">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Rishabh provided great tips and feedback. Was very happy with the ML sys design mock."</p>
+    <div class="review-meta">
+      <span class="reviewer-name">R D (Verified User)</span>
+      <span class="platform-badge meetapro">MeetAPro</span>
+    </div>
+  </div>
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
     <p class="review-text">"Excellent mentor, gives super useful advice. Is very much an expert in ML, knows best practices inside and out, and always knows what you can do better on in an interview."</p>
@@ -309,6 +334,14 @@ permalink: /reviews/
   </div>
 
   <!-- TIER 3: BRIEF / LESS MEANINGFUL / GENERIC (Moved to bottom) -->
+  <div class="review-card meetapro">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Answers honestly and gives good feedback"</p>
+    <div class="review-meta">
+      <span class="reviewer-name">B b (Verified User)</span>
+      <span class="platform-badge meetapro">MeetAPro</span>
+    </div>
+  </div>
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
     <p class="review-text">"Thank you for your detailed answers"</p>

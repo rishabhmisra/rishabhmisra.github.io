@@ -1,0 +1,277 @@
+---
+layout: null
+permalink: /agent-context.json
+---
+{
+  "schema_version": "1.0",
+  "generated_by": "Jekyll static build for rishabhmisra.github.io",
+  "canonical_url": "https://rishabhmisra.github.io/agent-context.json",
+  "llms_txt": "https://rishabhmisra.github.io/llms.txt",
+  "llms_full_txt": "https://rishabhmisra.github.io/llms-full.txt",
+  "entity": {
+    "@id": "https://rishabhmisra.github.io/#person",
+    "type": "Person",
+    "name": "Rishabh Misra",
+    "headline": "Principal ML Architect, Researcher & Author",
+    "current_role": {
+      "title": "Principal Machine Learning Engineer / Tech Lead",
+      "organization": "Atlassian",
+      "start_date": "2025-09",
+      "focus": [
+        "Leading Rovo & Search Quality / Generative Personalization teams (20+ ML Engineers)",
+        "LLM and SLM Pre-training & Post-training (Rovo Agent / Atlassian Intelligence)",
+        "0->1 Architecture & Strategy for Generative RecSys and Foundation Models"
+      ]
+    },
+    "location": "San Francisco Bay Area, CA, USA",
+    "email": "rishabhmisra33@gmail.com",
+    "url": "https://rishabhmisra.github.io/",
+    "cv_url": "https://rishabhmisra.github.io/Rishabh_Misra_Resume_latest_ML.pdf",
+    "disambiguation": "Rishabh Misra (spelled M-i-s-r-a), Principal ML Engineer at Atlassian, ex-Attentive, ex-Twitter, ex-Amazon, UC San Diego M.S. CS alumnus (Prof. Julian McAuley's lab), and co-author of 'Sculpting Data for ML'. Distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix.",
+    "same_as": [
+      "https://www.linkedin.com/in/rishabhmisra33/",
+      "https://github.com/rishabhmisra",
+      "https://scholar.google.com/citations?user=nURar74AAAAJ",
+      "https://www.kaggle.com/rmisra/datasets",
+      "https://x.com/rishabh_misra_",
+      "https://medium.com/@rishabh_misra_",
+      "https://mentorcruise.com/mentor/rishabhmisra/",
+      "https://www.meetapro.com/provider/rishabh-misra-32292",
+      "https://www.udacity.com/course/llm-inference-optimization--cd14455",
+      "https://www.linkedin.com/learning/building-llm-powered-recommendation-systems"
+    ]
+  },
+  "impact_metrics": {
+    "max_system_throughput": "10M+ QPS",
+    "users_impacted": "1B+",
+    "research_citations": "1200+",
+    "kaggle_dataset_downloads": "180000+",
+    "global_markets_reached": "165+ (169 countries)",
+    "international_talks": "20+",
+    "program_committees_served": "20+",
+    "verified_five_star_reviews": "54+",
+    "average_review_rating": "5.0/5.0",
+    "media_features": "15+"
+  },
+  "navigation": {
+    "home": "https://rishabhmisra.github.io/",
+    "about": "https://rishabhmisra.github.io/aboutme/",
+    "experience": "https://rishabhmisra.github.io/experience/",
+    "publications_and_datasets": "https://rishabhmisra.github.io/publications/",
+    "blog": "https://rishabhmisra.github.io/blog/",
+    "media_features": "https://rishabhmisra.github.io/features/",
+    "reviews": "https://rishabhmisra.github.io/reviews/",
+    "collaborate": "https://rishabhmisra.github.io/collaborate/",
+    "rss_feed": "https://rishabhmisra.github.io/feed.xml"
+  },
+  "experience": [
+    {
+      "organization": "Atlassian",
+      "role": "Principal ML Engineer / Tech Lead",
+      "period": "2025 - Present",
+      "highlights": [
+        "Leading Rovo & Search Quality / Generative Personalization teams (20+ engineers)",
+        "Architecting LLM/SLM pre-training and post-training for Atlassian's Rovo Agent",
+        "Defining long-term technical strategy and 0->1 architecture for Generative RecSys & Foundation Models"
+      ]
+    },
+    {
+      "organization": "AI Aspire (by Andrew Ng) / Afterdays / Udacity / LinkedIn Learning / Interview Kickstart",
+      "role": "Enterprise AI Trainer, Course Creator & Featured Instructor",
+      "period": "2025 - Present",
+      "highlights": [
+        "Afterdays x AI Aspire (by Andrew Ng, https://aiaspire.ai/ | https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/): Partnering on enterprise AI enablement, including delivering a 2-week corporate AI training program for Morgan Stanley in New York, NY",
+        "Udacity course: Advanced LLM Inference Optimization (DeepSpeed, TensorRT-LLM, Triton Inference Server)",
+        "Udacity course: Intelligent Backends with RAG & Chat Models (Spring AI, LangChain4j agents, modular RAG, HNSW/HyDE vector search)",
+        "LinkedIn Learning course: Building LLM-Powered Recommendation Systems (featured in University of Florida Career Hub)",
+        "Interview Kickstart instructor: Applied Agentic AI, Building Vertical AI Agents, Building AI Agent for Retail, Agentic RAG"
+      ]
+    },
+    {
+      "organization": "Attentive",
+      "role": "Staff Machine Learning Engineer / Tech Lead",
+      "period": "2023 - 2025",
+      "highlights": [
+        "Founded and led Personalization ML team (0->1) overseeing 15+ engineers across 5+ products",
+        "Deployed deep learning and generative personalization (RAG, PEFT LLM fine-tuning) across hundreds of millions of end-users and 8,000+ leading brands"
+      ]
+    },
+    {
+      "organization": "Twitter",
+      "role": "Senior Machine Learning Engineer / Tech Lead",
+      "period": "2019 - 2023",
+      "highlights": [
+        "Founding engineer of Conversations Quality team; contributor to Home Feed Ranking",
+        "Architected 10M+ QPS Early Ranking system (20% p9999 latency improvement) and filed reply ranking patent",
+        "Drove >30% engagement gains via deep multi-task TensorFlow models and 10x faster KubeFlow training"
+      ]
+    },
+    {
+      "organization": "Amazon",
+      "role": "Software Engineer, Machine Learning",
+      "period": "2018 - 2019",
+      "highlights": [
+        "ML eligibility prediction & AWS infrastructure for International Expansions & Exports",
+        "Teaching Assistant at Amazon ML University & Reviewer for AMLC 2019"
+      ]
+    },
+    {
+      "organization": "Arcesium (D.E. Shaw)",
+      "role": "Member Technical",
+      "period": "2015 - 2016",
+      "highlights": [
+        "Fault-tolerant low-latency financial artifact processing (~40% concurrency optimization)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California San Diego",
+      "degree": "M.S. in Computer Science",
+      "specialization": "Machine Learning, Recommender Systems, and NLP",
+      "advisor": "Prof. Julian McAuley"
+    },
+    {
+      "institution": "Thapar Institute of Engineering & Technology",
+      "degree": "B.E. in Computer Science",
+      "honors": "Gold Medalist"
+    }
+  ],
+  "book": {
+    "title": "Sculpting Data for ML: The First Act of Machine Learning",
+    "authors": ["Rishabh Misra", "Jigyasa Grover"],
+    "year": 2021,
+    "isbn": "979-8585463570",
+    "url": "https://www.amazon.com/Sculpting-Data-ML-Machine-Learning-ebook/dp/B08RN47C5T",
+    "adopted_by": [
+      "DeepLearning.AI Natural Language Processing in TensorFlow (Coursera)",
+      "Google TensorFlow Developer Professional Certificate preparation"
+    ]
+  },
+  "courses": [
+    {
+      "title": "Advanced LLM Inference Optimization",
+      "provider": "Udacity",
+      "url": "https://www.udacity.com/course/llm-inference-optimization--cd14455"
+    },
+    {
+      "title": "Intelligent Backends with RAG & Chat Models (Enterprise AI, RAG & Microservices)",
+      "provider": "Udacity",
+      "url": "https://www.udacity.com/course/java-developer-nanodegree--nd035"
+    },
+    {
+      "title": "Building LLM-Powered Recommendation Systems",
+      "provider": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/building-llm-powered-recommendation-systems",
+      "code_repository": "https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214",
+      "adopted_by": ["University of Florida Career Hub"]
+    },
+    {
+      "title": "Applied Agentic AI, Building Vertical AI Agents & Building AI Agent for Retail",
+      "provider": "Interview Kickstart",
+      "url": "https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors",
+      "masterclasses": [
+        "https://interviewkickstart.com/masterclass/vertical-ai-agents-impact",
+        "https://interviewkickstart.com/masterclass/retail-ai-agent",
+        "https://interviewkickstart.com/ai-glossary/agentic-rag",
+        "https://interviewkickstart.com/ai-glossary/structured-prompting"
+      ]
+    }
+  ],
+  "selected_publications": [
+    {
+      "title": "Keeping it Low-Key: Modern-Day Approaches to Privacy-Preserving Machine Learning",
+      "venue": "Springer Nature — Data Protection in a Post-Pandemic Society",
+      "year": 2023,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-34006-2_2"
+    },
+    {
+      "title": "Sarcasm Detection using News Headlines Dataset",
+      "venue": "AI Open (Vol. 4)",
+      "year": 2023,
+      "url": "https://doi.org/10.1016/j.aiopen.2023.01.001"
+    },
+    {
+      "title": "Do Not 'Fake It Till You Make It'! Synopsis of Trending Fake News Detection Methodologies Using Deep Learning",
+      "venue": "Springer Nature — Deep Learning for Social Media Data Analytics",
+      "year": 2022,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-10869-3_12"
+    },
+    {
+      "title": "Addressing Marketing Bias in Product Recommendations",
+      "venue": "ACM WSDM 2020 (Oral)",
+      "year": 2020,
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3336191.3371855"
+    },
+    {
+      "title": "Fine-Grained Spoiler Detection from Large-Scale Review Corpora",
+      "venue": "ACL 2019",
+      "year": 2019,
+      "url": "https://www.aclweb.org/anthology/P19-1248"
+    },
+    {
+      "title": "Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces",
+      "venue": "ACM RecSys 2018",
+      "year": 2018,
+      "url": "http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf"
+    },
+    {
+      "title": "Scalable Bayesian Matrix Factorization",
+      "venue": "MUSE @ ECML-PKDD 2015",
+      "year": 2015,
+      "url": "https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "News Category Dataset",
+      "downloads": "100k+",
+      "url": "https://www.kaggle.com/rmisra/news-category-dataset/",
+      "citation_url": "https://arxiv.org/abs/2209.11429"
+    },
+    {
+      "name": "News Headlines Dataset for Sarcasm Detection",
+      "downloads": "60k+",
+      "url": "https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/",
+      "citation_url": "https://doi.org/10.1016/j.aiopen.2023.01.001"
+    },
+    {
+      "name": "Clothing Fit Dataset for Size Recommendation",
+      "downloads": "13k+",
+      "url": "https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/"
+    },
+    {
+      "name": "Politifact Fact Check Dataset",
+      "url": "https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset",
+      "doi": "10.13140/RG.2.2.29923.22566"
+    },
+    {
+      "name": "IMDB Spoiler Dataset",
+      "downloads": "5k+",
+      "url": "https://www.kaggle.com/rmisra/imdb-spoiler-dataset",
+      "doi": "10.13140/RG.2.2.11584.15362"
+    }
+  ],
+  "collaboration": {
+    "email": "mailto:rishabhmisra33@gmail.com",
+    "collaborate_page": "https://rishabhmisra.github.io/collaborate/",
+    "mentorcruise": "https://mentorcruise.com/mentor/rishabhmisra/",
+    "meetapro": "https://www.meetapro.com/provider/rishabh-misra-32292",
+    "offerings": [
+      "Enterprise Corporate AI Training & Engineering Enablement (in partnership with AI Aspire by Andrew Ng / Afterdays; delivered for Morgan Stanley in NYC)",
+      "AI/ML Architecture Advisory & Fractional Technical Leadership",
+      "International Keynotes, Fireside Chats & Technical Workshops",
+      "Course Creation & Developer Advocacy Partnerships",
+      "1:1 Career Coaching & ML System Design Mentorship"
+    ]
+  },
+  "articles": [
+{% for post in site.posts %}{% capture post_summary %}{% if post.summary %}{{ post.summary | strip_html | strip_newlines | strip }}{% else %}{{ post.excerpt | strip_html | strip_newlines | strip | truncate: 240 }}{% endif %}{% endcapture %}    {
+      "title": {{ post.title | strip_html | strip | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "url": {{ post.url | prepend: site.url | jsonify }},
+      "summary": {{ post_summary | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}  ]
+}
+

@@ -1,0 +1,100 @@
+# =============================================================================
+# robots.txt — https://rishabhmisra.github.io/
+# Standard: IETF RFC 9309 (Robots Exclusion Protocol)
+#
+# Entity: Rishabh Misra (https://rishabhmisra.github.io/#person)
+# Curated LLM & Agent Index: https://rishabhmisra.github.io/llms.txt
+# Well-Known LLM Mirror:     https://rishabhmisra.github.io/.well-known/llms.txt
+# Full Entity & Bio Corpus:  https://rishabhmisra.github.io/llms-full.txt
+# Structured Agent JSON:     https://rishabhmisra.github.io/agent-context.json
+# Technical Writing Feed:    https://rishabhmisra.github.io/feed.xml
+# XML Sitemap:               https://rishabhmisra.github.io/sitemap.xml
+#
+# Policy: Open for web search, AI answer engines, real-time RAG/agent
+# retrieval, knowledge-graph extraction, and rich social previews.
+# =============================================================================
+
+# 1. Core Web, Image & Scholarly Search Engines
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-News
+User-agent: GoogleOther
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: YandexBot
+Allow: /
+Allow: /images/
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+Allow: /llms-full.txt
+Allow: /agent-context.json
+Allow: /feed.xml
+Allow: /sitemap.xml
+
+# 2. AI Search Engines, Live Grounding & User-Triggered Agent Fetchers (GEO)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-CloudVertexBot
+User-agent: DuckAssistBot
+User-agent: Meta-ExternalFetcher
+User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: PhindBot
+User-agent: ExaBot
+User-agent: AndiBot
+User-agent: Timpibot
+User-agent: Amazonbot
+Allow: /
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+Allow: /llms-full.txt
+Allow: /agent-context.json
+Allow: /feed.xml
+Allow: /sitemap.xml
+
+# 3. Foundation Model & Knowledge-Graph Crawlers
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: CCBot
+User-agent: Diffbot
+Allow: /
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+Allow: /llms-full.txt
+Allow: /agent-context.json
+
+# 4. Social, Developer & Messaging Rich-Preview Unfurlers
+User-agent: LinkedInBot
+User-agent: Twitterbot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: WhatsApp
+User-agent: TelegramBot
+Allow: /
+Allow: /images/
+
+# 5. Default Fallback for All Other Compliant Crawlers & Autonomous Agents
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /.well-known/llms.txt
+Allow: /llms-full.txt
+Allow: /agent-context.json
+Allow: /feed.xml
+Allow: /sitemap.xml
+
+Sitemap: https://rishabhmisra.github.io/sitemap.xml
+

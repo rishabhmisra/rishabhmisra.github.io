@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>{{ site.name }}{% if page.title %} – {{ page.title }}{% endif %}</title>
-
   {% include meta.html %}
-
-  <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  {% include seo-geo.html %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +12,12 @@
     rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
-    href="{{ site.baseurl }}/feed.xml" />
   <link rel="shortcut icon"
     href="https://raw.githubusercontent.com/rishabhmisra/rishabhmisra.github.io/master/images/rm-favicon.ico">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.name }}">
-  <meta property="og:title" content="{{ site.name }}{% if page.title %} – {{ page.title }}{% endif %}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 </head>
 
 <body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
   <div class="wrapper-masthead">
     <div class="container">
       <header class="masthead clearfix">
@@ -43,7 +29,7 @@
                 site.name }}</a></div>
           </div>
         </div>
-        <nav>
+        <nav aria-label="Primary">
           <a href="{{ site.baseurl }}/blog">Blog</a>
           <a href="{{ site.baseurl }}/publications">Research</a>
           <a href="{{ site.baseurl }}/experience">Experience</a>
@@ -56,9 +42,9 @@
     </div>
   </div>
 
-  <div id="main" role="main" class="container main">
+  <main id="main" class="container main">
     {{ content }}
-  </div>
+  </main>
 
   <div class="wrapper-footer">
     <div class="container">

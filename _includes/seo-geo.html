@@ -1,0 +1,312 @@
+{% assign clean_page_title = page.title | default: "" | strip_html | strip %}
+{% if clean_page_title != "" %}
+  {% capture seo_title %}{{ clean_page_title }} | {{ site.name }}{% endcapture %}
+{% else %}
+  {% capture seo_title %}{{ site.name }} — Principal ML Architect, Researcher & Author{% endcapture %}
+{% endif %}
+{% assign default_geo_desc = "Rishabh Misra is a Principal ML Engineer & Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), UC San Diego MS CS alumnus, co-author of Sculpting Data for ML, and instructor on LLM inference optimization and recommender systems." %}
+{% if page.description %}
+  {% assign raw_desc = page.description %}
+{% elsif page.summary %}
+  {% assign raw_desc = page.summary %}
+{% elsif page.excerpt %}
+  {% assign raw_desc = page.excerpt %}
+{% else %}
+  {% assign raw_desc = default_geo_desc %}
+{% endif %}
+{% assign seo_description = raw_desc | strip_html | strip_newlines | strip | truncate: 220 %}
+{% assign canonical_path = page.url | replace: "index.html", "" %}
+{% capture canonical_url %}{{ site.url }}{{ canonical_path }}{% endcapture %}
+{% capture seo_image %}{{ site.url }}/images/Headshot.jpg{% endcapture %}
+
+  <title>{{ seo_title | escape }}</title>
+  <meta name="description" content="{{ seo_description | escape }}">
+  <meta name="author" content="{{ site.name | escape }}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }} — RSS Feed" href="{{ site.url }}/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLMs Summary Index (llms.txt)" href="{{ site.url }}/llms.txt">
+  <link rel="alternate" type="text/markdown" title="LLMs Full Corpus (llms-full.txt)" href="{{ site.url }}/llms-full.txt">
+  <link rel="alternate" type="application/json" title="AI Agent Structured Context (agent-context.json)" href="{{ site.url }}/agent-context.json">
+
+  <link rel="me" href="https://www.linkedin.com/in/rishabhmisra33/">
+  <link rel="me" href="https://github.com/rishabhmisra">
+  <link rel="me" href="https://scholar.google.com/citations?user=nURar74AAAAJ">
+  <link rel="me" href="https://x.com/rishabh_misra_">
+  <link rel="me" href="https://medium.com/@rishabh_misra_">
+  <link rel="me" href="https://www.kaggle.com/rmisra">
+  <link rel="me" href="https://mentorcruise.com/mentor/rishabhmisra/">
+  <link rel="me" href="https://www.meetapro.com/provider/rishabh-misra-32292">
+
+  <meta property="og:site_name" content="{{ site.name | escape }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ seo_title | escape }}">
+  <meta property="og:description" content="{{ seo_description | escape }}">
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="https://rishabhmisra.github.io/#person">{% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@rishabh_misra_">
+  <meta name="twitter:creator" content="@rishabh_misra_">
+  <meta name="twitter:title" content="{{ seo_title | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | escape }}">
+  <meta name="twitter:image" content="{{ seo_image }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://rishabhmisra.github.io/#person",
+        "name": "Rishabh Misra",
+        "givenName": "Rishabh",
+        "familyName": "Misra",
+        "url": "https://rishabhmisra.github.io/",
+        "image": "https://rishabhmisra.github.io/images/Headshot.jpg",
+        "email": "mailto:rishabhmisra33@gmail.com",
+        "jobTitle": "Principal Machine Learning Engineer / Tech Lead",
+        "description": "Principal ML Architect & Tech Lead at Atlassian leading 20+ engineers on Foundation Models, LLM/SLM training, and Generative Personalization. Former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter (10M+ QPS ranking), and ML Engineer at Amazon. UC San Diego MS CS alumnus, co-author of Sculpting Data for ML, and creator of widely cited benchmark datasets (1,200+ citations, 180K+ Kaggle downloads).",
+        "disambiguatingDescription": "Rishabh Misra (spelled M-i-s-r-a), Principal ML Engineer at Atlassian, ex-Attentive, ex-Twitter, ex-Amazon, UC San Diego M.S. CS alumnus (advised by Prof. Julian McAuley), and author of Sculpting Data for ML. Distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Atlassian",
+          "url": "https://www.atlassian.com/"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California San Diego",
+            "url": "https://ucsd.edu/"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Thapar Institute of Engineering & Technology",
+            "url": "https://www.thapar.edu/"
+          }
+        ],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Meta Research Advisory Council"
+          },
+          {
+            "@type": "Organization",
+            "name": "Afterdays"
+          },
+          {
+            "@type": "Organization",
+            "name": "AI Aspire",
+            "url": "https://aiaspire.ai/"
+          }
+        ],
+        "award": [
+          "Recognized by the US Government for Outstanding Contributions to Machine Learning",
+          "Top 1% Global Research Impact (1,200+ Citations)",
+          "Gold Medalist, B.E. Computer Science (Thapar Institute of Engineering & Technology)",
+          "Top 20 Dataset Contributor on Kaggle (180,000+ Downloads)"
+        ],
+        "knowsAbout": [
+          "Large Language Models (LLMs)",
+          "Small Language Models (SLMs)",
+          "LLM Inference Optimization",
+          "Generative Recommender Systems",
+          "Personalization & Ranking Systems at Scale",
+          "Agentic AI & Retrieval-Augmented Generation (RAG)",
+          "Natural Language Processing",
+          "Dataset Curation & Data-Centric AI"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/rishabhmisra33/",
+          "https://github.com/rishabhmisra",
+          "https://scholar.google.com/citations?user=nURar74AAAAJ",
+          "https://www.kaggle.com/rmisra/datasets",
+          "https://x.com/rishabh_misra_",
+          "https://medium.com/@rishabh_misra_",
+          "https://mentorcruise.com/mentor/rishabhmisra/",
+          "https://www.meetapro.com/provider/rishabh-misra-32292",
+          "https://www.udacity.com/course/llm-inference-optimization--cd14455",
+          "https://www.linkedin.com/learning/building-llm-powered-recommendation-systems"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rishabhmisra.github.io/#website",
+        "url": "https://rishabhmisra.github.io/",
+        "name": "Rishabh Misra",
+        "description": "Official website of Rishabh Misra — Principal ML Architect at Atlassian, AI Researcher, Author of Sculpting Data for ML, and Educator.",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://rishabhmisra.github.io/#person"
+        }
+      },
+      {% if page.date %}{
+        "@type": "BlogPosting",
+        "@id": {{ canonical_url | append: "#article" | jsonify }},
+        "mainEntityOfPage": {{ canonical_url | jsonify }},
+        "headline": {{ clean_page_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "inLanguage": "en-US",
+        "image": {{ seo_image | jsonify }},
+        "author": {
+          "@id": "https://rishabhmisra.github.io/#person"
+        },
+        "publisher": {
+          "@id": "https://rishabhmisra.github.io/#person"
+        },
+        "isPartOf": {
+          "@id": "https://rishabhmisra.github.io/#website"
+        }
+      }{% elsif canonical_path == "/" or canonical_path == "/aboutme/" %}{
+        "@type": "ProfilePage",
+        "@id": {{ canonical_url | append: "#profilepage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ seo_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "inLanguage": "en-US",
+        "mainEntity": {
+          "@id": "https://rishabhmisra.github.io/#person"
+        },
+        "isPartOf": {
+          "@id": "https://rishabhmisra.github.io/#website"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-headline", ".hero-subtext"]
+        }
+      },
+      {
+        "@type": "Book",
+        "@id": "https://rishabhmisra.github.io/#book-sculpting-data",
+        "name": "Sculpting Data for ML: The First Act of Machine Learning",
+        "isbn": "979-8585463570",
+        "datePublished": "2021-01",
+        "url": "https://www.amazon.com/Sculpting-Data-ML-Machine-Learning-ebook/dp/B08RN47C5T",
+        "author": [
+          { "@id": "https://rishabhmisra.github.io/#person" },
+          { "@type": "Person", "name": "Jigyasa Grover", "url": "https://jigyasa-grover.github.io/" }
+        ]
+      },
+      {
+        "@type": "Course",
+        "name": "Advanced LLM Inference Optimization",
+        "description": "Production LLM inference optimization covering KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, and Triton Inference Server.",
+        "url": "https://www.udacity.com/course/llm-inference-optimization--cd14455",
+        "provider": { "@type": "Organization", "name": "Udacity", "url": "https://www.udacity.com/" },
+        "instructor": { "@id": "https://rishabhmisra.github.io/#person" }
+      },
+      {
+        "@type": "Course",
+        "name": "Intelligent Backends with RAG & Chat Models",
+        "description": "Enterprise AI & microservices curriculum covering LLM chat clients, tool-calling AI agents (Spring AI, LangChain4j), modular RAG pipelines, and semantic vector search (HNSW, HyDE, re-ranking).",
+        "url": "https://www.udacity.com/course/java-developer-nanodegree--nd035",
+        "provider": { "@type": "Organization", "name": "Udacity", "url": "https://www.udacity.com/" },
+        "instructor": { "@id": "https://rishabhmisra.github.io/#person" }
+      },
+      {
+        "@type": "Course",
+        "name": "Building LLM-Powered Recommendation Systems",
+        "description": "Designing, evaluating, and deploying production-ready LLM-powered recommender systems at scale.",
+        "url": "https://www.linkedin.com/learning/building-llm-powered-recommendation-systems",
+        "provider": { "@type": "Organization", "name": "LinkedIn Learning", "url": "https://www.linkedin.com/learning/" },
+        "instructor": { "@id": "https://rishabhmisra.github.io/#person" }
+      }{% elsif canonical_path == "/publications/" %}{
+        "@type": "CollectionPage",
+        "@id": "https://rishabhmisra.github.io/publications/#collection",
+        "url": "https://rishabhmisra.github.io/publications/",
+        "name": {{ seo_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "inLanguage": "en-US",
+        "about": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
+      },
+      {
+        "@type": "Dataset",
+        "name": "News Category Dataset",
+        "description": "Approximately 200,000 HuffPost news headlines and categories from 2012 to 2018 for NLP benchmarking (100k+ downloads on Kaggle).",
+        "url": "https://www.kaggle.com/rmisra/news-category-dataset/",
+        "sameAs": "https://arxiv.org/abs/2209.11429",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "Dataset",
+        "name": "News Headlines Dataset for Sarcasm Detection",
+        "description": "High-quality sarcasm detection benchmark collected from The Onion and HuffPost (60k+ downloads on Kaggle; featured in DeepLearning.AI Coursera NLP course).",
+        "url": "https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/",
+        "sameAs": "https://doi.org/10.1016/j.aiopen.2023.01.001",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "Dataset",
+        "name": "Politifact Fact Check Dataset",
+        "description": "21,152 expert fact-checked statements from PolitiFact categorized across six truthfulness ratings.",
+        "url": "https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset",
+        "identifier": "doi:10.13140/RG.2.2.29923.22566",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "Dataset",
+        "name": "Clothing Fit Dataset for Size Recommendation",
+        "description": "Public product size recommendation and fit feedback benchmark collected from ModCloth and RentTheRunway.",
+        "url": "https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "Dataset",
+        "name": "IMDB Spoiler Dataset",
+        "description": "Large-scale entertainment review corpus annotated for plot spoilers.",
+        "url": "https://www.kaggle.com/rmisra/imdb-spoiler-dataset",
+        "identifier": "doi:10.13140/RG.2.2.11584.15362",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isAccessibleForFree": true
+      }{% else %}{
+        "@type": "WebPage",
+        "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ seo_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "inLanguage": "en-US",
+        "about": { "@id": "https://rishabhmisra.github.io/#person" },
+        "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
+      }{% endif %}
+    ]
+  }
+  </script>
+  <script>
+    (function () {
+      if (typeof navigator !== "undefined" && navigator.modelContext && typeof navigator.modelContext.registerTool === "function") {
+        try {
+          navigator.modelContext.registerTool({
+            name: "get_rishabh_misra_context",
+            description: "Retrieve verified structured JSON information about Rishabh Misra (experience, research publications, datasets, courses, speaking, articles, and collaboration links).",
+            inputSchema: {
+              type: "object",
+              properties: {
+                section: {
+                  type: "string",
+                  description: "Optional key to filter (entity, impact_metrics, experience, education, book, courses, selected_publications, datasets, collaboration, articles)."
+                }
+              }
+            },
+            annotations: { readOnlyHint: true },
+            execute: async function (args) {
+              var res = await fetch("/agent-context.json", { credentials: "same-origin" });
+              var data = await res.json();
+              var payload = args && args.section && data[args.section] ? data[args.section] : data;
+              return { content: [{ type: "text", text: JSON.stringify(payload, null, 2) }] };
+            }
+          });
+        } catch (e) {}
+      }
+    })();
+  </script>
+

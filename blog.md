@@ -1,6 +1,7 @@
 ---
 layout: truncated_post
-title: Blog
+title: Blog & Technical Articles
+description: "Technical articles by Rishabh Misra on LLM inference optimization (KV cache, PagedAttention, quantization, speculative decoding, GPU profiling), generative recommender systems, and machine learning."
 permalink: /blog/
 ---
 

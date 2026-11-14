@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Rishabh Misra — Principal ML Engineer & Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), UC San Diego MS CS alumnus, co-author of Sculpting Data for ML, and instructor on LLM inference & recommender systems."
 ---
 
 <!-- SECTION A: Massive Split Hero -->
@@ -17,8 +18,8 @@ layout: default
 		</div>
 	</div>
 	<div class="hero-right">
-		<img src="{{ site.baseurl }}/images/Headshot.jpg" alt="Rishabh Misra"
-			style="width: 100%; object-fit: cover; border-radius: 2px;">
+		<img src="{{ site.baseurl }}/images/Headshot.jpg" alt="Rishabh Misra — Principal Machine Learning Architect"
+			fetchpriority="high" style="width: 100%; object-fit: cover; border-radius: 2px;">
 	</div>
 </div>
 
@@ -42,11 +43,11 @@ layout: default
 	<div class="stat-block">
 		<span class="stat-category">Global Influence</span>
 		<div class="stat-item">
-			<span class="stat-number">140+</span>
+			<span class="stat-number">165+</span>
 			<span class="stat-label">Global Markets Reached</span>
 		</div>
 		<div class="stat-item">
-			<span class="stat-number">15+</span>
+			<span class="stat-number">20+</span>
 			<span class="stat-label">International Talks</span>
 		</div>
 		<div class="stat-item">
@@ -127,7 +128,12 @@ layout: default
 		class="list-item">
 		<span class="li-meta">LinkedIn Learning Course</span>
 		<div class="li-title">Building LLM-Powered Recommendation Systems</div>
-		<p class="li-desc">Designing, building, and deploying production-ready LLM-powered Recommender Systems.</p>
+		<p class="li-desc">Designing, building, and deploying production-ready LLM-powered Recommender Systems; featured in the University of Florida Career Hub.</p>
+	</a>
+	<a href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank" class="list-item">
+		<span class="li-meta">Udacity Course</span>
+		<div class="li-title">Intelligent Backends with RAG &amp; Chat Models</div>
+		<p class="li-desc">Enterprise AI &amp; microservices module covering LLM chat clients, tool-calling agents (Spring AI, LangChain4j), modular RAG pipelines, and vector search (HNSW, HyDE, re-ranking).</p>
 	</a>
 </div>
 
@@ -192,7 +198,7 @@ layout: default
 		</div>
 
 		<div class="carousel-controls">
-			<button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+			<button type="button" class="carousel-btn prev" aria-label="Previous testimonial" onclick="moveCarousel(-1)">&#10094;</button>
 			<div class="carousel-dots">
 				<span class="dot active" onclick="currentSlide(1)"></span>
 				<span class="dot" onclick="currentSlide(2)"></span>
@@ -201,12 +207,12 @@ layout: default
 				<span class="dot" onclick="currentSlide(5)"></span>
 				<span class="dot" onclick="currentSlide(6)"></span>
 			</div>
-			<button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+			<button type="button" class="carousel-btn next" aria-label="Next testimonial" onclick="moveCarousel(1)">&#10095;</button>
 		</div>
 	</div>
 
 	<div class="social-proof-bar">
-		<span class="proof-stats">50+ Five-Star Reviews · 5.0/5.0 Average Rating</span>
+		<span class="proof-stats">54+ Five-Star Reviews · 5.0/5.0 Average Rating</span>
 		<a href="{{ site.baseurl }}/reviews" class="see-all-reviews">See all reviews &rarr;</a>
 	</div>
 </div>
@@ -259,56 +265,82 @@ layout: default
 
 <!-- SECTION F: Curated Updates -->
 <div class="updates-section">
-	<h3>Latest Updates <a href="#all-updates" class="see-all-link"
-			onclick="document.getElementById('all-updates').style.display='block'; this.style.display='none'; return false;">See
+	<h3>Latest Updates <a href="#all-updates" class="see-all-link" aria-expanded="false" aria-controls="all-updates"
+			onclick="document.getElementById('all-updates').style.display='block'; this.setAttribute('aria-expanded','true'); this.style.display='none'; return false;">See
 			all →</a></h3>
 	<ul>
-		<li class="updates"> [<b>Jul 2026</b>] Hosting a fireside chat on <b>"Industrial AI & Computer Vision Moats"</b>
+		<li class="updates"> [<b>Oct 2026</b>] Delivered a 2-week corporate AI training program for <b>Morgan
+				Stanley</b> in collaboration with <a href="https://aiaspire.ai/" target="_blank"><b>AI Aspire</b></a>
+			(by Andrew Ng). [New York, NY]</li>
+		<li class="updates"> [<b>Oct 2026</b>] Partnering via <b>Afterdays</b> with <a href="https://aiaspire.ai/"
+				target="_blank"><b>AI Aspire</b></a>, <b>Andrew Ng</b>'s AI advisory &amp; education organization, to
+			help enterprises build practical applied ML and AI engineering capabilities (<a
+				href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/"
+				target="_blank">announcement</a>).</li>
+		<li class="updates"> [<b>Sep 2026</b>] Presented <b>"When NOT To Use an Agent: Choosing Between Workflows,
+				Services, and Agent Systems"</b> with <a href="https://jigyasa-grover.github.io/"
+				target="_blank">Jigyasa Grover</a> at <a
+				href="https://agntconmcpconeu26.sched.com/event/2RB8V/when-not-to-use-an-agent-choosing-between-workflows-services-and-agent-systems-jigyasa-grover-uber-rishabh-misra-atlassian"
+				target="_blank"><b>AGNTCon + MCPCon Europe 2026</b></a>. [Amsterdam, Netherlands]</li>
+		<li class="updates"> [<b>2026</b>] Launched Enterprise AI, RAG &amp; Agents curriculum (<b>"Intelligent Backends
+				with RAG &amp; Chat Models"</b> — Spring AI, LangChain4j, HNSW &amp; HyDE vector search) on <a
+				href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank"><b>Udacity</b></a>.</li>
+		<li class="updates"> [<b>Jul 2026</b>] Hosted a fireside chat on <b>"Industrial AI &amp; Computer Vision Moats"</b>
 			with Reza Zadeh at <a href="https://goannabuildersday.com/" target="_blank"><b>Goanna Builders Day</b></a>.
 			[San Francisco, CA]</li>
-		<li class="updates"> [<b>Jul 2026</b>] Featured Instructor for the <b>"Applied Agentic AI"</b> and <b>"Building
-				Vertical AI Agents"</b> programs at <a
+		<li class="updates"> [<b>Jul 2026</b>] Featured Instructor for <a
 				href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors"
-				target="_blank"><b>Interview Kickstart</b></a>.</li>
-		<li class="updates"> [<b>Jul 2026</b>] Speaking at <a href="https://www.scipy2026.scipy.org/"
-				target="_blank"><b>SciPy 2026</b></a> on <b>"The New Technical Debt: Data"</b>.
+				target="_blank"><b>"Applied Agentic AI"</b></a>, <a
+				href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank"><b>"Building
+				Vertical AI Agents"</b></a>, and <a href="https://interviewkickstart.com/masterclass/retail-ai-agent"
+				target="_blank"><b>"Building AI Agent for Retail"</b></a> at <b>Interview Kickstart</b>.</li>
+		<li class="updates"> [<b>Jul 2026</b>] Presented <b>"The New Technical Debt: Data"</b> at <a
+				href="https://www.scipy2026.scipy.org/" target="_blank"><b>SciPy 2026</b></a>.
 		</li>
-		<li class="updates"> [<b>Jul 2026</b>] Speaking at <a href="https://euroscipy.org/" target="_blank"><b>EuroSciPy
-					2026</b></a> with Jigyasa Grover on <b>"Making LLM
-				Evaluation Reproducible in Python"</b>.</li>
+		<li class="updates"> [<b>Jul 2026</b>] Presented <b>"Making LLM Evaluation Reproducible in Python"</b> with
+			Jigyasa Grover at <a href="https://pretalx.com/euroscipy-2026/schedule/v/0.14/"
+				target="_blank"><b>EuroSciPy 2026</b></a>.</li>
 		<li class="updates"> [<b>May 2026</b>] Delivered a keynote titled <b>"When NOT to use an agent: Lessons from
 				systems that didn’t want autonomy"</b> with <a href="https://jigyasa-grover.github.io/"
 				target="_blank">Jigyasa Grover</a> at <a
 				href="https://ida.dk/driving-ai/talere-og-program/jigyasa-grover-rishabh-misra"
 				target="_blank"><b>Driving AI 2026</b></a>. [Copenhagen, Denmark]</li>
 		<li class="updates"> [<b>Mar 2026</b>] Guest speaker at <a href="https://interviewkickstart.com/events"
-				target="_blank"><b>Interview Kickstart</b></a>, leading a deep-dive session
-			on <b>Agentic RAG</b>.</li>
-		<li class="updates"> [<b>Feb 2026</b>] Speaking at <a href="https://mlconference.ai/san-diego/"
-				target="_blank"><b>MLCon San Diego</b></a> on <b>"AI Showdown: Open Source Tools
-				for LLM Face-Offs"</b>.</li>
-		<li class="updates"> [<b>Feb 2026</b>] Co-presenting <b>"AI as a Cog in the Machine: Transforming Unstructured
+				target="_blank"><b>Interview Kickstart</b></a>, leading deep-dive sessions on <a
+				href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank"><b>Agentic RAG</b></a> and <a
+				href="https://interviewkickstart.com/ai-glossary/structured-prompting" target="_blank"><b>Structured Prompting</b></a>.</li>
+		<li class="updates"> [<b>Feb 2026</b>] Presented <b>"AI Showdown: Open Source Tools for LLM Face-Offs"</b> at <a
+				href="https://mlconference.ai/san-diego/" target="_blank"><b>MLCon San Diego</b></a>.</li>
+		<li class="updates"> [<b>Feb 2026</b>] Co-presented <b>"AI as a Cog in the Machine: Transforming Unstructured
 				Data"</b> at <a href="https://mlconference.ai/san-diego/" target="_blank"><b>MLCon San Diego</b></a>
 			with Jigyasa Grover.</li>
-		<li class="updates"> [<b>Jan 2026</b>] My new <a
+		<li class="updates"> [<b>Jan 2026</b>] My <a
 				href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems"
-				target="_blank">LinkedIn Learning</a> course on <b>"Building LLM-Powered Recommendation Systems"</b> is
-			now officially live.</li>
-		<li class="updates"> [<b>Oct 2025</b>] My online course on <b>LLM Inference Optimization</b> is now live on <a
+				target="_blank">LinkedIn Learning</a> course on <b>"Building LLM-Powered Recommendation Systems"</b> (<a
+				href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214"
+				target="_blank">GitHub</a>) is live and featured in the <a
+				href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/"
+				target="_blank">University of Florida Career Hub</a>.</li>
+		<li class="updates"> [<b>Oct 2025</b>] My online course on <b>LLM Inference Optimization</b> is live on <a
 				href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank">Udacity</a>.
 		</li>
 		<li class="updates"> [<b>Sep 2025</b>] Joined <b>Atlassian as Principal ML Engineer / Tech Lead</b> — driving
 			critical LLM/SLM pre-training, fine-tuning, and generative personalization at scale for Atlassian
 			Intelligence.</li>
+		<li class="updates"> [<b>Sep 2025</b>] Co-presented <b>"Guarding the LLM Galaxy: Security, Privacy, and
+				Guardrails in the AI Era"</b> with <a href="https://jigyasa-grover.github.io/"
+				target="_blank">Jigyasa Grover</a> at <a href="https://kwsqa.org/past-conferences/tq2025/schedule/"
+				target="_blank"><b>KWSQA Targeting Quality 2025</b></a>. [Cambridge, Canada]</li>
 		<li class="updates"> [<b>Aug 2025</b>] Presented "Open Source Tools for LLM Face-Offs" with <a
 				href="https://jigyasa-grover.github.io/" target="_blank">Jigyasa Grover</a> at <a
 				href="https://aideveu2025.sched.com/speaker/rishabhmisra33@gmail.com" target="_blank"><b>AI Dev
-					2025</b></a>. [Amsterdam,
+					2025</b></a> (<a href="https://www.youtube.com/watch?v=0pm5LDV3k-M" target="_blank">video</a>). [Amsterdam,
 			Netherlands]</li>
 		<li class="updates"> [<b>Jun 2025</b>] Presented "Guarding the LLM Galaxy" with <a
-				href="https://jigyasa-grover.github.io/" target="_blank">Jigyasa Grover</a> at Open Source Summit 2025.
+				href="https://jigyasa-grover.github.io/" target="_blank">Jigyasa Grover</a> at Open Source Summit 2025 (<a
+				href="https://www.youtube.com/watch?v=q__B79sB5cw" target="_blank">video</a>).
 			[Denver, Colorado]</li>
-		<li class="updates"> [<b>2025</b>] Serving as a <b>Reviewer for ACL 2025</b> (via ACL Rolling Review).</li>
+		<li class="updates"> [<b>2025</b>] Serving as a <b>Reviewer for ACL 2025</b> (via ACL Rolling Review) and Program Committee Member for <a href="https://recsys.acm.org/recsys25/" target="_blank"><b>RecSys 2025</b></a>.</li>
 		<li class="updates"> [<b>Jan 2025</b>] Invited to serve on <b>Meta's Research Advisory Council</b>.</li>
 		<li class="updates"> [<b>Jan 2025</b>] Serving as a Program Committee Member at SIGIR 2025.</li>
 		<li class="updates"> [<b>Dec 2024</b>] Expert commentary on AI alignment and safety published in <a

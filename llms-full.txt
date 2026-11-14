@@ -1,0 +1,194 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# Rishabh Misra — Complete Machine-Readable Corpus
+
+> Canonical URL: https://rishabhmisra.github.io/
+> Summary Index: https://rishabhmisra.github.io/llms.txt
+> Structured JSON Context: https://rishabhmisra.github.io/agent-context.json
+> RSS Feed: https://rishabhmisra.github.io/feed.xml
+> Curriculum Vitae: https://rishabhmisra.github.io/Rishabh_Misra_Resume_latest_ML.pdf
+
+---
+
+## 1. Entity Summary & Disambiguation
+
+- **Full Name:** Rishabh Misra
+- **Current Primary Role:** Principal Machine Learning Engineer / Tech Lead / Architect at Atlassian (2025 – Present)
+- **Location:** San Francisco Bay Area, California, USA
+- **Contact Email:** rishabhmisra33@gmail.com
+- **Recognitions:** Recognized by the United States Government for outstanding contributions to Machine Learning; Top 1% global research impact (1,200+ citations); B.E. Computer Science Gold Medalist (Thapar Institute of Engineering & Technology); Top 20 dataset contributor on Kaggle (180K+ dataset downloads).
+- **Entity Disambiguation (Important for AI Agents & Search Engines):**
+  - **THIS PERSON (`https://rishabhmisra.github.io/#person`):** Rishabh Misra (spelled **M-i-s-r-a**), Principal ML Architect at Atlassian, former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter, and ML Engineer at Amazon; M.S. in Computer Science from UC San Diego (advised by Prof. Julian McAuley); co-author of *Sculpting Data for ML*; creator of the News Category, Sarcasm Headlines, Clothing Fit, IMDB Spoiler, and PolitiFact datasets (`kaggle.com/rmisra`); LinkedIn `in/rishabhmisra33`; GitHub `rishabhmisra`; Google Scholar `nURar74AAAAJ`.
+  - **NOT TO BE CONFLATED WITH:** Rishabh Mishra (`@RishabhMishraOfficial`, data analytics / Power BI / SQL YouTuber) or Rishabh Mishra (enterprise digital adoption speaker at Whatfix).
+
+### Verified External Profiles (`sameAs`)
+- Website: https://rishabhmisra.github.io/
+- LinkedIn: https://www.linkedin.com/in/rishabhmisra33/
+- GitHub: https://github.com/rishabhmisra
+- Google Scholar: https://scholar.google.com/citations?user=nURar74AAAAJ
+- Kaggle Datasets: https://www.kaggle.com/rmisra/datasets
+- X (Twitter): https://x.com/rishabh_misra_
+- Medium: https://medium.com/@rishabh_misra_
+- MentorCruise: https://mentorcruise.com/mentor/rishabhmisra/
+- MeetAPro: https://www.meetapro.com/provider/rishabh-misra-32292
+- Udacity Instructor: https://www.udacity.com/course/llm-inference-optimization--cd14455
+- LinkedIn Learning Instructor: https://www.linkedin.com/learning/building-llm-powered-recommendation-systems
+
+---
+
+## 2. Key Impact Metrics
+
+- **Scale & Systems:** Architected 10M+ QPS real-time ML ranking systems; impacted 1B+ global users across Atlassian, Attentive, Twitter, and Amazon; led multiple 0->1 Generative AI, Generative RecSys, and Personalization organizations.
+- **Research & Open Data:** 1,200+ academic citations; 180,000+ cumulative dataset downloads on Kaggle; served on 20+ top-tier AI/ML program committees and editorial review boards; invited member of Meta's Research Advisory Council.
+- **Teaching, Speaking & Advisory:** 20+ international conference talks and keynotes; courses and technical content reaching 165+ global markets (169 countries); 54+ verified 5.0/5.0 advisory and mentorship engagements across MentorCruise (Top Mentor & Quick Responder) and MeetAPro; 15+ global media features.
+
+---
+
+## 3. Professional Experience
+
+### Atlassian — Principal ML Engineer / Tech Lead (Sep 2025 – Present)
+- Leading Rovo & Search Quality / Generative Personalization teams (20+ engineers) across the organization.
+- Architecting LLM and SLM pre-training and post-training (supervised fine-tuning, preference alignment) powering Atlassian's Rovo Agent and Atlassian Intelligence.
+- Defining long-term technical strategy and 0->1 architecture for Generative RecSys & Foundation Models — leading the transition from traditional recommendation and search systems toward Foundation Models spanning representation learning, generative recommendation, personalization, training, and evaluation.
+
+### AI Aspire (by Andrew Ng) / Afterdays / Udacity / LinkedIn Learning / Interview Kickstart — Enterprise AI Trainer, Course Creator & Featured Instructor (2025 – Present)
+- **Afterdays × AI Aspire (by Andrew Ng):** Partnering closely with AI Aspire (https://aiaspire.ai/ | Announcement: https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/) to help enterprises and engineering organizations build practical applied ML and AI engineering skills — including delivering a **2-week corporate AI training program for Morgan Stanley** in New York, NY (Oct 2026).
+- **Udacity — *Advanced LLM Inference Optimization* (`cd14455`):** Production LLM inference course covering transformer KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, and Triton Inference Server (https://www.udacity.com/course/llm-inference-optimization--cd14455).
+- **Udacity — *Intelligent Backends with RAG & Chat Models* (`nd035` Course 3: Enterprise AI & Microservices):** Enterprise AI curriculum covering LLM chat clients, tool-calling AI agents (Spring AI, LangChain4j), modular RAG pipelines, and semantic vector search with HNSW, HyDE, and re-ranking (https://www.udacity.com/course/java-developer-nanodegree--nd035).
+- **LinkedIn Learning — *Building LLM-Powered Recommendation Systems*:** Hands-on course on hybrid retrieval, LLM-enhanced recommender patterns, prompt engineering, evaluation, and scalable serving (https://www.linkedin.com/learning/building-llm-powered-recommendation-systems | Companion GitHub: https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214 | Featured in the University of Florida Career Hub: https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/).
+- **Interview Kickstart:** Featured instructor for *Applied Agentic AI* (https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors), *Building Vertical AI Agents* (https://interviewkickstart.com/masterclass/vertical-ai-agents-impact), *Building AI Agent for Retail* (https://interviewkickstart.com/masterclass/retail-ai-agent), *Agentic RAG* (https://interviewkickstart.com/ai-glossary/agentic-rag), and *Structured Prompting* (https://interviewkickstart.com/ai-glossary/structured-prompting).
+
+### Attentive — Staff Machine Learning Engineer / Tech Lead (2023 – 2025)
+- Founded and led the Personalization ML team from 0->1, overseeing 15+ engineers across 5+ product lines.
+- Built and deployed deep learning recommendation and conversational commerce models (Two-Tower & Multi-Task Learning, MLP stacks, DCN, residual networks, attention, MMoE, PLE) across hundreds of millions of end-users and 8,000+ leading brands.
+- Drove generative personalization applications leveraging prompt engineering, RAG architectures, and PEFT-based LLM fine-tuning grounded in deep user/item representations.
+- Scaled distributed mixed-precision PyTorch training and ANN vector-store serving; authored Attentive's engineering blog *Evolving Attentive's Personalized Recommendations* (Oct 2024).
+
+### Twitter — Senior Machine Learning Engineer / Tech Lead (Jul 2019 – 2023)
+- Founding engineer of the Conversations Quality team and contributor to Home Feed Ranking.
+- Built multi-task TensorFlow deep ranking models driving >30% gains in key conversation engagement metrics and 3-5% gains in reply health and author follows; filed patent on reply ranking.
+- Architected KubeFlow + DataFlow + BigQuery pipelines on GCP (10x faster model training), Heterogeneous Information Network graph embeddings, fine-tuned BERT text embeddings, and a 10M+ QPS Early Ranking system (20% p9999 latency reduction, +5% health metrics).
+
+### Amazon — Software Engineer, Machine Learning (Jul 2018 – Jul 2019) & SDE Intern (Jun – Sep 2017)
+- Built ML eligibility prediction models and AWS serverless/SageMaker infrastructure for Amazon International Expansions & Exports.
+- Served as Teaching Assistant at Amazon's Machine Learning University (Intro to Data Science, Text Mining) and Reviewer for Amazon's Machine Learning Conference (AMLC 2019).
+- Earlier interned on the DataForge Big Data scheduling platform (Java, Hive transactionality, DynamoDB).
+
+### University of California San Diego — Graduate Researcher & Teaching Assistant (2016 – 2018)
+- Conducted ML, NLP, and Recommender Systems research in Prof. Julian McAuley's lab.
+- Teaching Assistant for CSE 258 (*Recommender Systems & Web Mining*, Prof. Julian McAuley) and CSE 110 (*Software Engineering*, Prof. William Griswold).
+
+### Arcesium (D.E. Shaw Group Spin-off) — Member Technical (Jul 2015 – Jul 2016)
+- Engineered fault-tolerant, low-latency post-trade financial processing infrastructure in Java/Spring/SQL Server (~40% throughput gain via concurrency and indexing).
+
+### Indian Institute of Technology (IIT) Madras — Research Intern (Dec 2014 – May 2015)
+- Developed linear-complexity Scalable Bayesian Matrix Factorization and Variational Bayesian Factorization Machines under Prof. Balaraman Ravindran.
+
+---
+
+## 4. Education
+
+- **University of California San Diego (UCSD)** — M.S. in Computer Science (Specialization: Machine Learning, Recommender Systems, and Natural Language Processing). Advisor: Prof. Julian McAuley.
+- **Thapar Institute of Engineering & Technology** — B.E. in Computer Science (Gold Medalist).
+
+---
+
+## 5. Book, Peer-Reviewed Publications & Preprints
+
+### Authored Book
+1. **Sculpting Data for ML: The First Act of Machine Learning** (Jan 2021)
+   - Authors: Rishabh Misra, Jigyasa Grover | ISBN: `979-8585463570` | Link: https://www.amazon.com/Sculpting-Data-ML-Machine-Learning-ebook/dp/B08RN47C5T
+   - Forewords / Endorsements: Prof. Julian McAuley (UC San Diego), Laurence Moroney (AI Lead at Google), Dr. Mengting Wan (Microsoft Research).
+   - Curriculum Adoption: Referenced in DeepLearning.AI's *Natural Language Processing in TensorFlow* on Coursera and Google's TensorFlow Developer Certificate preparation materials.
+
+### Peer-Reviewed Papers & Book Chapters
+1. **Keeping it Low-Key: Modern-Day Approaches to Privacy-Preserving Machine Learning** (Jul 2023)
+   - Authors: Jigyasa Grover, Rishabh Misra
+   - Venue: *Data Protection in a Post-Pandemic Society*, Springer Nature, pp. 49–78 (ISBN `978-3-031-34005-5`)
+   - URL: https://link.springer.com/chapter/10.1007/978-3-031-34006-2_2
+2. **Sarcasm Detection using News Headlines Dataset** (Feb 2023)
+   - Authors: Rishabh Misra, Prahal Arora
+   - Venue: *AI Open*, Volume 4, pp. 13–18 (ISSN `2666-6510`)
+   - DOI: https://doi.org/10.1016/j.aiopen.2023.01.001 | Code: https://github.com/rishabhmisra/Sarcasm-Detection-using-NN
+3. **Do Not 'Fake It Till You Make It'! Synopsis of Trending Fake News Detection Methodologies Using Deep Learning** (Sep 2022)
+   - Authors: Rishabh Misra, Jigyasa Grover
+   - Venue: *Deep Learning for Social Media Data Analytics*, Springer Nature, pp. 213–235 (ISBN `978-3-031-10868-6`)
+   - URL: https://link.springer.com/chapter/10.1007/978-3-031-10869-3_12
+4. **Addressing Marketing Bias in Product Recommendations** (Feb 2020)
+   - Authors: Mengting Wan, Jianmo Ni, Rishabh Misra, Julian McAuley
+   - Venue: *13th ACM International Conference on Web Search and Data Mining (WSDM '20)*, Houston, TX, pp. 618–626 (Oral Presentation, 15% acceptance rate)
+   - Paper: https://dl.acm.org/doi/pdf/10.1145/3336191.3371855 | Code & Data: https://github.com/MengtingWan/marketBias
+5. **Fine-Grained Spoiler Detection from Large-Scale Review Corpora** (Jul 2019)
+   - Authors: Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley
+   - Venue: *57th Annual Meeting of the Association for Computational Linguistics (ACL '19)*, Florence, Italy (18% acceptance rate)
+   - Paper: https://www.aclweb.org/anthology/P19-1248 | Dataset: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home
+   - Media Coverage: TechCrunch, NBC Los Angeles, Gizmodo, Times of India, TechXplore, UC San Diego News.
+6. **Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces** (Oct 2018)
+   - Authors: Rishabh Misra, Mengting Wan, Julian McAuley
+   - Venue: *12th ACM Conference on Recommender Systems (RecSys '18)*, Vancouver, Canada, pp. 422–426 (25% acceptance rate)
+   - Paper: http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf | Code: https://github.com/rishabhmisra/Product-Catalog-Size-Recommendation-Framework
+7. **Scalable Bayesian Matrix Factorization** (Sep 2015)
+   - Authors: Avijit Saha*, Rishabh Misra*, Balaraman Ravindran (*equal contribution)
+   - Venue: *6th International Workshop on Mining Ubiquitous and Social Environments (MUSE @ ECML-PKDD 2015)*, Porto, Portugal, pp. 43–54
+   - Paper: https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf
+8. **Preprints:** *News Category Dataset* (`arXiv:2209.11429`, 2022); *Sarcasm Detection using Hybrid Neural Network* (`arXiv:1908.07414`, 2019); *Hotel Recommendation System* (`arXiv:1908.07498`, 2019); *Scalable Variational Bayesian Factorization Machine* (2017).
+
+---
+
+## 6. Open-Source Benchmark Datasets
+
+1. **News Category Dataset** — ~200,000 HuffPost headlines & categories (2012–2018); 100K+ Kaggle downloads.
+   - Kaggle: https://www.kaggle.com/rmisra/news-category-dataset/ | Paper: https://arxiv.org/abs/2209.11429
+2. **News Headlines Dataset for Sarcasm Detection** — Sarcastic (*The Onion*) vs. non-sarcastic (*HuffPost*) headlines; 60K+ Kaggle downloads; featured in DeepLearning.AI's Coursera NLP specialization.
+   - Kaggle: https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/ | DOI: https://doi.org/10.1016/j.aiopen.2023.01.001
+3. **Clothing Fit Dataset for Size Recommendation** — ModCloth and RentTheRunway fit feedback datasets; 13K+ Kaggle downloads.
+   - Kaggle: https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/
+4. **Politifact Fact Check Dataset** — 21,152 expert fact-checked statements across 6 truthfulness ratings (`DOI: 10.13140/RG.2.2.29923.22566`).
+   - Kaggle: https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset
+5. **IMDB Spoiler Dataset** — Large-scale entertainment reviews labeled for plot spoilers; 5K+ Kaggle downloads (`DOI: 10.13140/RG.2.2.11584.15362`).
+   - Kaggle: https://www.kaggle.com/rmisra/imdb-spoiler-dataset
+
+---
+
+## 7. Selected Speaking, Advisory & Scientific Service
+
+### Recent & Notable Keynotes / Conference Talks
+- **AGNTCon + MCPCon Europe 2026 (Sep 2026, Amsterdam, Netherlands):** *"When NOT To Use an Agent: Choosing Between Workflows, Services, and Agent Systems"* with Jigyasa Grover (https://agntconmcpconeu26.sched.com/event/2RB8V/when-not-to-use-an-agent-choosing-between-workflows-services-and-agent-systems-jigyasa-grover-uber-rishabh-misra-atlassian).
+- **Goanna Builders Day (Jul 2026, San Francisco, CA):** Fireside chat *"Industrial AI & Computer Vision Moats"* with Reza Zadeh (https://goannabuildersday.com/).
+- **SciPy 2026 (Jul 2026):** *"The New Technical Debt: Data"* (https://www.scipy2026.scipy.org/).
+- **EuroSciPy 2026 (Jul 2026):** *"Making LLM Evaluation Reproducible in Python"* with Jigyasa Grover (https://pretalx.com/euroscipy-2026/schedule/v/0.14/).
+- **Driving AI 2026 Keynote (May 2026, Copenhagen, Denmark):** *"When NOT to use an agent: Lessons from systems that didn't want autonomy"* with Jigyasa Grover (https://ida.dk/driving-ai/talere-og-program/jigyasa-grover-rishabh-misra).
+- **Interview Kickstart (Mar–Jul 2026):** Live masterclasses & deep-dives on *Building Vertical AI Agents*, *Building AI Agent for Retail*, *Agentic RAG*, and *Structured Prompting*.
+- **MLCon San Diego (Feb 2026):** *"AI Showdown: Open Source Tools for LLM Face-Offs"* and *"AI as a Cog in the Machine: Transforming Unstructured Data"* (https://mlconference.ai/san-diego/).
+- **KWSQA Targeting Quality 2025 (Sep 2025, Cambridge, Canada):** *"Guarding the LLM Galaxy: Security, Privacy, and Guardrails in the AI Era"* with Jigyasa Grover (https://kwsqa.org/past-conferences/tq2025/schedule/).
+- **AI_dev: Open Source GenAI & ML Summit Europe (Aug 2025, Amsterdam):** *"Open Source Tools for LLM Face-Offs"* (https://aideveu2025.sched.com/speaker/rishabhmisra33@gmail.com | Video: https://www.youtube.com/watch?v=0pm5LDV3k-M).
+- **Open Source Summit North America (Jun 2025, Denver & Apr 2024, Seattle):** *"Guarding the LLM/ML Galaxy"* (Video: https://www.youtube.com/watch?v=q__B79sB5cw).
+- **Earlier International Talks (2022–2024):** Developer Week (Nuremberg, 2024), Update Days: Implement AI (Prague, 2024), Salon de la Data (Nantes, 2023), Data Innovation Summit (2023), PyCon US (Salt Lake City, 2022), rvatech Data Summit (Richmond, 2022), RE•WORK Enterprise AI Summit (San Francisco, 2022).
+
+### Advisory Boards & Program Committees
+- **Meta Research Advisory Council** (Invited Member, 2025 – Present).
+- **Program Committee / Reviewer:** ACL Rolling Review (ACL 2025), ACM SIGIR (2022–2025), ACM RecSys (2022, 2024, 2025), ACM CIKM (2023–2024), ACM TheWebConf / WWW (2023–2024), AAAI ICWSM (2022–2024), ACM SIGKDD (2022–2023), ICML (2022), IEEE ICDM (2022), ECML-PKDD (2022), ACM TORS (2022), DBKDA (2022), SciPy (2019).
+
+---
+
+## 8. Collaboration, Consulting & Mentorship
+
+- **Enterprise Corporate AI Training:** Multi-day and multi-week applied ML, LLM, RAG, and Agentic AI engineering programs for enterprises (including a 2-week corporate AI training program for Morgan Stanley in New York, NY in collaboration with AI Aspire by Andrew Ng).
+- **Advisory & Consulting:** 0->1 ML/GenAI system architecture, LLM inference cost/latency optimization, foundation model post-training, and personalization strategy for startups and enterprises (50+ engagements across leaders at Google, Meta, Microsoft, Nvidia, AWS, Morgan Stanley, Airtable, Glean, Salesforce, Datadog, and more).
+- **Speaking & Workshops:** International keynotes, fireside chats, executive briefings, and technical deep-dives.
+- **1:1 Mentorship & Career Coaching:** 54+ five-star reviews (5.0/5.0 rating; Top Mentor & Quick Responder on MentorCruise) coaching Staff/Principal/FAANG ML engineers and researchers.
+  - Book via MentorCruise: https://mentorcruise.com/mentor/rishabhmisra/
+  - Book via MeetAPro: https://www.meetapro.com/provider/rishabh-misra-32292
+  - Direct Inquiries: `rishabhmisra33@gmail.com` or https://rishabhmisra.github.io/collaborate/
+
+---
+
+## 9. Blog & Technical Articles Index
+
+{% for post in site.posts %}- **{{ post.title | strip_html | strip }}** ({{ post.date | date: "%Y-%m-%d" }})
+  - URL: {{ site.url }}{{ post.url }}
+  - Summary: {% if post.summary %}{{ post.summary | strip_html | strip_newlines | strip }}{% else %}{{ post.excerpt | strip_html | strip_newlines | strip | truncate: 240 }}{% endif %}
+{% endfor %}
+

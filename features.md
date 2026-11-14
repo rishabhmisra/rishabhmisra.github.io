@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Features
+title: Media Features
+description: "Global media coverage and expert AI commentary featuring Rishabh Misra across TechCrunch, NBC, Gizmodo, The Sun, Times of India, Lifewire, BuiltIn, and Interesting Engineering."
 permalink: /features/
 ---
 
 <div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
   <div class="hero-left">
     <span class="eyebrow">Public Impact</span>
-    <h2 class="hero-headline">Media Features & Expert Commentary</h2>
+    <h1 class="hero-headline">Media Features & Expert Commentary</h1>
     <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide. Research highlights: 1200+ citations, Top 1% impact.</p>
   </div>
 </div>
