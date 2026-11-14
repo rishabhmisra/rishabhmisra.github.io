@@ -18,6 +18,7 @@ For years, the industry standard has been the Retrieve-and-Rank pipeline. In the
 The fatal flaw here is context-blindness. Human behavior isn't a set of independent, isolated clicks; it is a chronological sentence. Order creates meaning.
 
 Consider an e-commerce scenario:
+
 *   **Sequence A:** A user buys a high-end camera, *then* watches a tutorial on lens cleaning.
 *   **Sequence B:** A user watches a tutorial on lens cleaning, *then* buys a high-end camera.
 

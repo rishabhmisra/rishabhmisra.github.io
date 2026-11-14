@@ -21,6 +21,7 @@ Think: **Classic Personalization meets the new world of Generative AI.**
 
 ### The Limitations of the Old Guard
 In traditional recommendation systems (RecSys), the industry heavily relied on collaborative filtering, matrix factorization, and Two-Tower retrieval architectures. While these methods are computationally efficient and powerful, they suffer from inherent limitations:
+
 1.  **Context Blindness:** They struggle to capture the sequential "grammar" of a user's behavior. Buying a phone case *after* buying a phone means something very different than buying it *before*. Traditional systems often treat these as unordered sets of clicks.
 2.  **The Cold-Start Problem:** New users and new products lack the interaction data required to generate meaningful embeddings, leading to a frustrating experience.
 3.  **Semantic Rigidity:** Standard embeddings struggle to capture the nuanced, unstructured reasoning behind *why* a user prefers an item.

@@ -13,6 +13,7 @@ This is an explanatory post of my [recent RecSys paper](https://cseweb.ucsd.edu/
 
 ### Prerequisite concepts
 Following concepts are required to understand this post thoroughly. Though I'll briefly explain some of them, the corresponding links would provide in-depth knowledge.
+
 * [Latent Factor Model](http://www.ideal.ece.utexas.edu/seminar/LatentFactorModels.pdf)
 * [Stochastic Gradient Descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 * [Ordinal Regression](https://rishabhmisra.github.io/Machine-Learning-Glossary/#OR)
@@ -30,6 +31,7 @@ For the experimentation, they considered Hinge Loss as the loss function. Once t
 
 ## Challenges<a name="section-3"></a>
 Although the aforementioned model works, it does not address some key challenges mentioned following: 
+
 * Customers' fit feedback reflects not only the objective match/mismatch between a product's size and a customer's measurements but also depends on other subjective characteristics of a product's style and properties.
   * For example, consider a Jacket and a Wet Suit. Usually, customers prefer the fitting of Jacket to be a little bit loose whereas fitting of Wet Suit to be more form fitting. Furthermore, for each customer, fit preferences would also vary across different product categories. Hence, capturing true sizes of customers and products with a single latent variable might not be sufficient. 
 
@@ -86,6 +88,7 @@ We propose the use of metric learning with prototyping to handle the issue of la
 
 #### Metric Learning Technique
 The goal of metric learning is to learn a distance metric $D$ such that $D(k,l) > D(k,m)$ for any training instance $(k,l,m)$ where transactions $k$ and $l$ are in the same class and $k$ and $m$ are in different classes. In this work, we use an LMNN metric learning approach which, apart from bringing transactions of the same class closer, also aims at maintaining a margin between transactions of different classes. LMNN does this by 
+
 * Identifying the target neighbors for each transaction, where target neighbors are those transactions that are _desired_ to be closest to the transaction under consideration (that is, few transactions of the same class) 
 * Learning a linear transformation of the input space such that the resulting nearest neighbors of a point are indeed its target neighbors. The final classification in LMNN is given by k-NN in a metric space. The distance measure $D$ used by LMNN is the Mahalanobis distance which is parameterized by matrix $L$.
 
@@ -96,6 +99,7 @@ One caveat of LMNN is that it fixes the k target neighbors for each transaction 
 
 ### Experimental Setup
 We experiment with and compare the following five methods:
+
 * **1-LV-LR**: Method proposed in by Amazon as described above. Scoring function is of form $f_w(t)=w(u_{t_c} - v_{t_p})$ and method uses Logistic Regression (LR) for the final classification.
 * **K-LV-LR**: This is a simple extension of 1-LV-LR where $\mathbf{u_{t_c}}$ and $\mathbf{v_{t_p}}$ are $K$ dimensional latent variables. 
 * **K-LF-LR**: The proposed latent factor variation given in "Learning Fit Semantics" section. We use the learned factors directly into a Logistic Regression Classifier as features to produce the fit outcome.
@@ -103,6 +107,7 @@ We experiment with and compare the following five methods:
 * **K-LF-ML**: This is the proposed method.
 
 These methods are designed to evaluate:
+
 * Effectiveness of capturing fit semantics over "true" sizes 
 * Importance of learning good latent representations
 * Effectiveness of the proposed metric learning approach in handling label imbalance issues. 

@@ -27,6 +27,7 @@ Overcoming this "Memory Wall" is the primary directive of modern inference archi
 
 ### 1. Model Parallelism and Sharding
 When a model is too large to fit on a single GPU (or when you need to split it to increase bandwidth), you must shard the model across multiple devices. 
+
 *   **Tensor Parallelism (TP) / Intra-layer Parallelism:** This technique splits individual matrix multiplications across multiple GPUs. Frameworks like NVIDIA's **Megatron-LM** pioneered this for giant models. Because partial results need to be combined within a single layer computation, TP requires significant inter-GPU communication using operations like `all-reduce` or `all-gather`. Therefore, it is highly effective but usually restricted to the GPUs within a single node connected by high-speed NVLink.
 *   **Pipeline Parallelism (PP) / Inter-layer Parallelism:** This approach assigns different sequential groups of layers to different GPUs. It reduces the communication overhead between GPUs but can introduce "pipeline bubbles"—periods of idle time where one GPU is waiting for the previous one to finish its layer. To mitigate this and keep the pipeline full, we introduce **micro-batches**, dividing the input batch into smaller chunks that flow sequentially through the pipeline, maximizing GPU utilization.
 Mastering the exact composition of TP and PP is crucial for maximizing throughput on large, multi-node clusters.
@@ -38,6 +39,7 @@ Modern architectures solve this via Grouped-Query Attention (GQA). In GQA, multi
 
 ### 3. Specialized Serving Engines
 You cannot run production inference on native, out-of-the-box PyTorch. To achieve high utilization, you must route requests through specialized inference servers engineered for memory management and continuous batching:
+
 *   **vLLM:** The open-source pioneer of PagedAttention. vLLM treats the KV cache exactly like virtual memory in a classic operating system, eliminating memory fragmentation and unlocking the ability to batch requests dynamically in real-time.
 *   **TensorRT-LLM:** NVIDIA's highly optimized, proprietary library. It compiles your LLM into a static execution engine specifically tailored for your exact GPU architecture, aggressively fusing operations to maximize tensor core utilization.
 *   **Triton Inference Server:** The orchestration layer that sits on top of engines like vLLM or TensorRT, handling complex routing, dynamic batching across multiple models, and graceful degradation under load.

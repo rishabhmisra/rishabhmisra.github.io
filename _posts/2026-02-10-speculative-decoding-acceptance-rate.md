@@ -20,6 +20,7 @@ To understand speculative decoding, we must revisit the fundamental bottleneck o
 Because modern GPUs are so massively parallel, evaluating a batch of 5 tokens in a single forward pass takes almost the exact same amount of time as evaluating just 1 token.
 
 Speculative decoding exploits this hardware quirk through a two-model architecture:
+
 1.  **The Draft Model:** A smaller, highly efficient draft model generates a sequence of candidate tokens very quickly.
 2.  **The Target Model:** The massive, slow LLM takes those candidate tokens and efficiently verifies them all in a *single* forward pass.
 3.  **The Result:** If the target model agrees with the draft model's candidates, you get multiple tokens generated in the time it usually takes to generate one. This speeds up text generation dramatically without sacrificing any output quality.
@@ -46,6 +47,7 @@ The true unlock in speculative decoding is not finding the perfect open-source d
 A tiny 100M parameter model fine-tuned on your specific company traffic will drastically outperform a generic 7B model. Why? Because $\alpha$ depends on *distribution alignment*, not parameter count.
 
 The math is eye-opening:
+
 *   A generic 7B draft model at 35% $\alpha$ yields a ~1.2x speedup. The complexity is barely worth it.
 *   A custom 100M draft model at 75% $\alpha$ yields a ~2.8x speedup. This is a game-changer for your cloud bill.
 

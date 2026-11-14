@@ -2,16 +2,41 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+{% assign word_count = content | strip_html | number_of_words %}
+{% assign read_minutes = word_count | divided_by: 200 | plus: 1 %}
 
-  <div class="entry">
+<article class="post-article">
+  <div class="post-back-row">
+    <a href="{{ site.baseurl }}/blog" class="post-back-link"><span aria-hidden="true">←</span> Back to All Articles</a>
+  </div>
+
+  <header class="post-header">
+    <div class="post-meta-bar">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span class="meta-sep" aria-hidden="true">·</span>
+      <span>{{ read_minutes }} min read</span>
+    </div>
+    <h1 class="post-title">{{ page.title | strip_html }}</h1>
+    {% if page.summary %}
+    <p class="post-standfirst">{{ page.summary }}</p>
+    {% endif %}
+  </header>
+
+  <div class="entry post-prose">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  <footer class="post-author-card">
+    <img src="{{ site.baseurl }}/images/Headshot.jpg" alt="{{ site.name }}" width="56" height="56" class="post-author-avatar" />
+    <div class="post-author-body">
+      <div class="post-author-name">Written by {{ site.name }}</div>
+      <p class="post-author-bio">Principal ML Engineer &amp; Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), co-author of <em>Sculpting Data for ML</em>, and enterprise AI instructor.</p>
+      <div class="post-author-links">
+        <a href="{{ site.baseurl }}/collaborate">Advisory &amp; Speaking →</a>
+        <a href="{{ site.baseurl }}/blog">More Articles →</a>
+      </div>
+    </div>
+  </footer>
 
   {% include disqus.html %}
   {% include mathjax.html %}

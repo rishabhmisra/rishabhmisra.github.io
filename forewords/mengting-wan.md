@@ -1,6 +1,8 @@
 ---
 layout: page
-title: <center>Foreword by Mengting Wan</center>
+title: Foreword by Mengting Wan
+back_url: /publications/#book
+back_label: Back to Research & Book
 permalink: /foreword-by-mengting-wan.html
 ---
 

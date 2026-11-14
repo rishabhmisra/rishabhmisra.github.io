@@ -5,10 +5,10 @@ description: "Technical articles by Rishabh Misra on LLM inference optimization 
 permalink: /blog/
 ---
 
-<div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
+<section class="hero-split hero-page">
   <div class="hero-left">
-    <span class="eyebrow">Insights & Perspectives</span>
-    <h1 class="hero-headline">Blog & Articles</h1>
+    <span class="eyebrow">Insights &amp; Perspectives</span>
+    <h1 class="hero-headline">Blog &amp; Articles</h1>
     <p class="hero-subtext">Deep dives into Generative AI, Recommender Systems, LLM Inference Optimization, and Machine Learning Architecture.</p>
   </div>
-</div>
+</section>

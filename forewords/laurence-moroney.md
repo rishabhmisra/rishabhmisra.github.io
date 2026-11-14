@@ -1,6 +1,8 @@
 ---
 layout: page
-title: <center>Foreword by Laurence Moroney</center>
+title: Foreword by Laurence Moroney
+back_url: /publications/#book
+back_label: Back to Research & Book
 permalink: /foreword-by-laurence-moroney.html
 ---
 

@@ -1,29 +1,37 @@
 //
-// VARIABLES
+// DESIGN SYSTEM SASS HELPERS & BREAKPOINTS
+// Core runtime tokens live on :root in @layer tokens (style.scss)
 //
 
-// Colors
-$accent: #C2410C; // Premium Rust/Terracotta
-$primaryText: #111827; // Deep Charcoal
-$mutedText: #4B5563; // Slate Gray
-$borderLight: #E5E7EB; // Thin divider lines
-$pageBg: #FAFAFA; // Off-white
-$white: #ffffff;
-$black: #000000;
+// Legacy Sass aliases kept for partial compatibility
+$accent: #C2410C;
+$primaryText: #0F172A;
+$mutedText: #475569;
+$borderLight: #E4E2DC;
+$pageBg: #FAF9F6;
+$white: #FFFFFF;
+$black: #0B0F19;
 
 // Font stacks
-$inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-$oswald: 'Oswald', 'Bebas Neue', 'Helvetica Neue', sans-serif; // For massive headers
+$inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$oswald: 'Oswald', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+$mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-// Mobile breakpoints
+// Responsive breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
   }
 }
 
+@mixin nav-collapse {
+  @media screen and (max-width: 860px) {
+    @content;
+  }
+}
+
 @mixin tablet {
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 920px) {
     @content;
   }
 }

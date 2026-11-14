@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
@@ -17,30 +17,63 @@
 </head>
 
 <body>
+  {% assign current_path = page.url | replace: 'index.html', '' %}
   <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
+
   <div class="wrapper-masthead">
     <div class="container">
-      <header class="masthead clearfix">
-        <div class="masthead-left">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
-          <div class="site-info">
-            <div class="site-name"><a href="{{ site.baseurl }}/"
-                style="font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 22px; letter-spacing: 1px; font-weight: 600;">{{
-                site.name }}</a></div>
-          </div>
-        </div>
-        <nav aria-label="Primary">
-          <a href="{{ site.baseurl }}/blog">Blog</a>
-          <a href="{{ site.baseurl }}/publications">Research</a>
-          <a href="{{ site.baseurl }}/experience">Experience</a>
-          <a href="{{ site.baseurl }}/features">Features</a>
-          <a href="{{ site.baseurl }}/reviews">Reviews</a>
-          <a href="{{ site.baseurl }}/collaborate">Collaborate</a>
-          <a href="{{ site.baseurl }}/aboutme">About</a>
+      <header class="masthead">
+        <a href="{{ site.baseurl }}/" class="brand-link">
+          <span class="site-avatar">
+            <img src="{{ site.avatar }}" alt="{{ site.name }}" width="38" height="38" decoding="async" />
+          </span>
+          <span class="site-info">
+            <span class="site-name">{{ site.name }}</span>
+            <span class="site-role-tag">ML Architect · Educator · Advisor</span>
+          </span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="{{ site.baseurl }}/publications" {% if current_path == '/publications/' or current_path == '/publications' %}aria-current="page" class="is-active"{% elsif current_path contains 'foreword-by-' %}class="is-active"{% endif %}>Research</a>
+          <a href="{{ site.baseurl }}/experience" {% if current_path == '/experience/' or current_path == '/experience' %}aria-current="page" class="is-active"{% endif %}>Experience</a>
+          <a href="{{ site.baseurl }}/blog" {% if current_path == '/blog/' or current_path == '/blog' %}aria-current="page" class="is-active"{% elsif page.layout == 'post' %}class="is-active"{% endif %}>Blog</a>
+          <a href="{{ site.baseurl }}/features" {% if current_path == '/features/' or current_path == '/features' %}aria-current="page" class="is-active"{% endif %}>Features</a>
+          <a href="{{ site.baseurl }}/reviews" {% if current_path == '/reviews/' or current_path == '/reviews' %}aria-current="page" class="is-active"{% endif %}>Reviews</a>
+          <a href="{{ site.baseurl }}/aboutme" {% if current_path == '/aboutme/' or current_path == '/aboutme' %}aria-current="page" class="is-active"{% endif %}>About</a>
+          <a href="{{ site.baseurl }}/collaborate" class="nav-cta{% if current_path == '/collaborate/' or current_path == '/collaborate' %} is-active{% endif %}" {% if current_path == '/collaborate/' or current_path == '/collaborate' %}aria-current="page"{% endif %}>Collaborate</a>
         </nav>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-controls="mobileNavDialog" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>Menu</span>
+        </button>
       </header>
     </div>
   </div>
+
+  <dialog id="mobileNavDialog" class="mobile-nav-dialog" aria-label="Site navigation">
+    <div class="mobile-nav-sheet">
+      <div class="mobile-nav-top">
+        <span class="site-name">{{ site.name }}</span>
+        <button type="button" class="mobile-close-btn" id="mobileMenuClose" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Mobile Primary">
+        <a href="{{ site.baseurl }}/" {% if current_path == '/' %}aria-current="page" class="is-active"{% endif %}>Home</a>
+        <a href="{{ site.baseurl }}/publications" {% if current_path == '/publications/' or current_path == '/publications' %}aria-current="page" class="is-active"{% endif %}>Research &amp; Book</a>
+        <a href="{{ site.baseurl }}/experience" {% if current_path == '/experience/' or current_path == '/experience' %}aria-current="page" class="is-active"{% endif %}>Experience</a>
+        <a href="{{ site.baseurl }}/blog" {% if current_path == '/blog/' or current_path == '/blog' %}aria-current="page" class="is-active"{% elsif page.layout == 'post' %}class="is-active"{% endif %}>Blog &amp; Articles</a>
+        <a href="{{ site.baseurl }}/features" {% if current_path == '/features/' or current_path == '/features' %}aria-current="page" class="is-active"{% endif %}>Media Features</a>
+        <a href="{{ site.baseurl }}/reviews" {% if current_path == '/reviews/' or current_path == '/reviews' %}aria-current="page" class="is-active"{% endif %}>Reviews (5.0★)</a>
+        <a href="{{ site.baseurl }}/aboutme" {% if current_path == '/aboutme/' or current_path == '/aboutme' %}aria-current="page" class="is-active"{% endif %}>About</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="{{ site.baseurl }}/collaborate" class="btn-solid mobile-cta-full">Collaborate &amp; Book</a>
+        {% include svg-icons.html %}
+      </div>
+    </div>
+  </dialog>
 
   <main id="main" class="container main">
     {{ content }}
@@ -49,11 +82,119 @@
   <div class="wrapper-footer">
     <div class="container">
       <footer class="footer">
-        {% include svg-icons.html %}
-        <p style="margin-top: 10px;">© {{ site.name }} · Principal ML Lead · Researcher · Author</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="{{ site.baseurl }}/" class="footer-wordmark">{{ site.name }}</a>
+            <p class="footer-bio">Principal ML Lead at Atlassian, AI Faculty at AI Aspire (by Andrew Ng), author of <em>Sculpting Data for ML</em>, and strategic AI advisor across 50+ organizations.</p>
+            {% include svg-icons.html %}
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-heading">Explore</span>
+            <ul class="footer-links">
+              <li><a href="{{ site.baseurl }}/publications">Research &amp; Book</a></li>
+              <li><a href="{{ site.baseurl }}/experience">Experience</a></li>
+              <li><a href="{{ site.baseurl }}/blog">Blog &amp; Articles</a></li>
+              <li><a href="{{ site.baseurl }}/features">Media Features</a></li>
+              <li><a href="{{ site.baseurl }}/reviews">Verified Reviews</a></li>
+              <li><a href="{{ site.baseurl }}/aboutme">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-heading">Engage &amp; Profiles</span>
+            <ul class="footer-links">
+              <li><a href="{{ site.baseurl }}/collaborate">Advisory, Training &amp; Speaking</a></li>
+              <li><a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" rel="noopener">MentorCruise <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" rel="noopener">MeetAPro <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://scholar.google.com/citations?user=nURar74AAAAJ" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.kaggle.com/rmisra/datasets" target="_blank" rel="noopener">Kaggle Datasets <span aria-hidden="true">↗</span></a></li>
+              <li><a href="{{ site.baseurl }}/llms.txt">AI Agent Index (llms.txt)</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© {{ 'now' | date: '%Y' }} {{ site.name }} · ML Architect · AI Educator · Strategic Advisor · Author</p>
+          <p class="footer-meta-links">
+            <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+            <span aria-hidden="true">·</span>
+            <a href="{{ site.baseurl }}/agent-context.json">Agent JSON</a>
+          </p>
+        </div>
       </footer>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('mobileMenuBtn');
+      var closeBtn = document.getElementById('mobileMenuClose');
+      var dialog = document.getElementById('mobileNavDialog');
+      if (!btn || !dialog || typeof dialog.showModal !== 'function') return;
+
+      var supportsDisplayTransition;
+      function canTransitionDisplay() {
+        if (supportsDisplayTransition !== undefined) return supportsDisplayTransition;
+        if (!window.CSS || !CSS.supports || !CSS.supports('transition-behavior', 'allow-discrete') || !document.body) {
+          return false;
+        }
+        var probe = document.createElement('div');
+        probe.style.cssText = 'transition: display 1s allow-discrete !important; display: block;';
+        document.body.appendChild(probe);
+        getComputedStyle(probe).display;
+        probe.style.display = 'none';
+        supportsDisplayTransition = getComputedStyle(probe).display === 'block';
+        probe.remove();
+        return supportsDisplayTransition;
+      }
+
+      function supportsTopLayerExit() {
+        return !!(window.CSS && CSS.supports && CSS.supports('overlay', 'auto')) && canTransitionDisplay();
+      }
+
+      async function closeTopLayer() {
+        btn.setAttribute('aria-expanded', 'false');
+        if (!dialog.open) return;
+        if (!supportsTopLayerExit()) {
+          dialog.setAttribute('data-closing', '');
+          var animations = dialog.getAnimations ? dialog.getAnimations({ subtree: true }) : [];
+          if (animations.length > 0) {
+            await Promise.race([
+              Promise.allSettled(animations.map(function (a) { return a.finished; })),
+              new Promise(function (r) { setTimeout(r, 400); })
+            ]);
+          }
+          if (!dialog.hasAttribute('data-closing')) return;
+          dialog.removeAttribute('data-closing');
+        }
+        dialog.close();
+      }
+
+      btn.addEventListener('click', function () {
+        dialog.removeAttribute('data-closing');
+        dialog.showModal();
+        btn.setAttribute('aria-expanded', 'true');
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          closeTopLayer();
+        });
+      }
+
+      dialog.addEventListener('cancel', function (e) {
+        e.preventDefault();
+        closeTopLayer();
+      });
+
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) {
+          closeTopLayer();
+        }
+      });
+    })();
+  </script>
 
   {% include analytics.html %}
 </body>

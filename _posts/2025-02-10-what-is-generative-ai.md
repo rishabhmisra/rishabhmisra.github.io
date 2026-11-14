@@ -32,6 +32,7 @@ The core innovation of the Transformer is the **Self-Attention mechanism**. In o
 While Transformers dominate text, **Diffusion Models** (like those powering Midjourney, DALL-E 3, and Stable Diffusion) have revolutionized image and video generation. 
 
 Diffusion models operate on a fascinating principle derived from non-equilibrium thermodynamics. The training process involves two phases:
+
 *   **Forward Diffusion:** The model takes a clean image and systematically adds Gaussian noise in small steps until the image is completely destroyed, becoming pure static.
 *   **Reverse Diffusion:** The neural network (typically a U-Net architecture) is trained to reverse this process. It learns to take pure noise and iteratively "denoise" it step-by-step. During inference, you feed the model pure static and a text prompt (which acts as conditioning data), and it gradually sculpts that static into a coherent image matching your description.
 

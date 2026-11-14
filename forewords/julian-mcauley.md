@@ -1,6 +1,8 @@
 ---
 layout: page
-title: <center>Foreword by Julian McAuley</center>
+title: Foreword by Julian McAuley
+back_url: /publications/#book
+back_label: Back to Research & Book
 permalink: /foreword-by-julian-mcauley.html
 ---
 

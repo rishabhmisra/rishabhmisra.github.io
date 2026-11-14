@@ -5,26 +5,39 @@ description: "54+ verified 5.0/5.0 testimonials and reviews from engineers, rese
 permalink: /reviews/
 ---
 
-<div class="hero-split" style="border-bottom: none; padding-bottom: 0;">
+<section class="hero-split hero-page">
   <div class="hero-left">
-    <h1 class="hero-headline">What Mentees & Clients Say</h1>
-    <p class="hero-subtext">A collection of reviews and testimonials from my mentorship and consulting sessions. With a 5.0/5.0 average rating across platforms, I strive to provide actionable, high-impact guidance.</p>
+    <span class="eyebrow">Verified Outcomes</span>
+    <h1 class="hero-headline">What Mentees &amp; Clients Say</h1>
+    <p class="hero-subtext">A collection of verified reviews and testimonials from mentorship and advisory sessions. With a 5.0/5.0 average rating across platforms, I strive to provide structured, actionable, high-impact guidance.</p>
+  </div>
+</section>
+
+<div class="rating-summary-banner">
+  <div class="rating-main">
+    <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+    <span class="rating-score">5.0</span>
+    <span class="rating-text">54+ Verified Reviews · Top Mentor &amp; Quick Responder on MentorCruise</span>
+  </div>
+  <div class="rating-actions">
+    <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" rel="noopener">MentorCruise ↗</a>
+    <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" rel="noopener">MeetAPro ↗</a>
   </div>
 </div>
 
-<div class="rating-badge-header" style="margin-bottom: 40px; text-align: center; padding: 20px; background: #fff; border: 1px solid #E5E7EB; border-left: 4px solid #C2410C;">
-  <span class="stars">★★★★★</span>
-  <span class="rating-score">5.0</span>
-  <span class="rating-text">· 54+ Verified Reviews · Top Mentor &amp; Quick Responder on MentorCruise</span>
+<div class="reviews-filter-tabs" role="group" aria-label="Filter reviews by platform">
+  <button type="button" class="filter-btn active" aria-pressed="true" onclick="filterReviews('all', this)">
+    All <span class="filter-count" data-count="all"></span>
+  </button>
+  <button type="button" class="filter-btn" aria-pressed="false" onclick="filterReviews('meetapro', this)">
+    MeetAPro <span class="filter-count" data-count="meetapro"></span>
+  </button>
+  <button type="button" class="filter-btn" aria-pressed="false" onclick="filterReviews('mentorcruise', this)">
+    MentorCruise <span class="filter-count" data-count="mentorcruise"></span>
+  </button>
 </div>
 
-<div class="reviews-filter-tabs">
-  <button class="filter-btn active" onclick="filterReviews('all')">All</button>
-  <button class="filter-btn" onclick="filterReviews('meetapro')">MeetAPro</button>
-  <button class="filter-btn" onclick="filterReviews('mentorcruise')">MentorCruise</button>
-</div>
-
-<div class="review-card-grid" id="reviewsGrid">
+<div class="reviews-masonry" id="reviewsGrid">
   <!-- TIER 1: VERY HIGH SIGNAL (Specific outcomes, LLMs, RAG, 3D CV, Systems Design, FAANG/Unicorn offers, career shifts) -->
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
@@ -424,23 +437,77 @@ permalink: /reviews/
   </div>
 </div>
 
-<div class="cta-row cta-center" style="margin-top: 60px; margin-bottom: 60px;">
-  <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" class="btn-solid">Book on MeetAPro</a>
-  <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" class="btn-outline">Book on MentorCruise</a>
+<div class="cta-row cta-center">
+  <a href="https://www.meetapro.com/provider/rishabh-misra-32292" target="_blank" rel="noopener" class="btn-solid">Book on MeetAPro ↗</a>
+  <a href="https://mentorcruise.com/mentor/rishabhmisra/" target="_blank" rel="noopener" class="btn-outline">Book on MentorCruise ↗</a>
 </div>
 
 <script>
-function filterReviews(platform) {
-  const cards = document.querySelectorAll(".review-card");
-  const btns = document.querySelectorAll(".filter-btn");
-  btns.forEach(btn => btn.classList.remove("active"));
-  event.target.classList.add("active");
-  cards.forEach(card => {
-    if (platform === "all" || card.classList.contains(platform)) {
-      card.style.display = "flex";
-    } else {
-      card.style.display = "none";
+(function () {
+  const grid = document.getElementById('reviewsGrid');
+  if (!grid) return;
+  const allCards = Array.from(grid.querySelectorAll('.review-card'));
+  let currentPlatform = 'all';
+
+  const allCountEl = document.querySelector('[data-count="all"]');
+  const meetaproCountEl = document.querySelector('[data-count="meetapro"]');
+  const mentorcruiseCountEl = document.querySelector('[data-count="mentorcruise"]');
+
+  if (allCountEl) allCountEl.textContent = allCards.length;
+  if (meetaproCountEl) meetaproCountEl.textContent = allCards.filter(c => c.classList.contains('meetapro')).length;
+  if (mentorcruiseCountEl) mentorcruiseCountEl.textContent = allCards.filter(c => c.classList.contains('mentorcruise')).length;
+
+  function renderBalancedColumns() {
+    const visible = allCards.filter(c => currentPlatform === 'all' || c.classList.contains(currentPlatform));
+    const isSingleCol = window.matchMedia('(max-width: 900px)').matches;
+
+    grid.innerHTML = '';
+    if (isSingleCol) {
+      const col = document.createElement('div');
+      col.className = 'reviews-col';
+      visible.forEach(card => {
+        card.hidden = false;
+        col.appendChild(card);
+      });
+      grid.appendChild(col);
+      return;
     }
-  });
-}
+
+    const colLeft = document.createElement('div');
+    const colRight = document.createElement('div');
+    colLeft.className = 'reviews-col';
+    colRight.className = 'reviews-col';
+    grid.appendChild(colLeft);
+    grid.appendChild(colRight);
+
+    let hLeft = 0;
+    let hRight = 0;
+    visible.forEach(card => {
+      card.hidden = false;
+      // Estimate visual height from text length + base card chrome so top Tier-1 cards fill left-to-right and bottom heights match
+      const weight = 140 + (card.textContent ? card.textContent.trim().length : 0);
+      if (hLeft <= hRight) {
+        colLeft.appendChild(card);
+        hLeft += weight;
+      } else {
+        colRight.appendChild(card);
+        hRight += weight;
+      }
+    });
+  }
+
+  window.filterReviews = function (platform, activeBtn) {
+    currentPlatform = platform;
+    const btns = document.querySelectorAll('.reviews-filter-tabs .filter-btn');
+    btns.forEach(btn => {
+      const isSelected = btn === activeBtn;
+      btn.classList.toggle('active', isSelected);
+      btn.setAttribute('aria-pressed', String(isSelected));
+    });
+    renderBalancedColumns();
+  };
+
+  renderBalancedColumns();
+  window.matchMedia('(max-width: 900px)').addEventListener('change', renderBalancedColumns);
+})();
 </script>

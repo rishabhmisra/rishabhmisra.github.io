@@ -12,15 +12,15 @@ permalink: /agent-context.json
     "@id": "https://rishabhmisra.github.io/#person",
     "type": "Person",
     "name": "Rishabh Misra",
-    "headline": "Principal ML Architect, Researcher & Author",
+    "headline": "Principal ML Architect, AI Educator, Strategic Advisor & Author",
     "current_role": {
       "title": "Principal Machine Learning Engineer / Tech Lead",
       "organization": "Atlassian",
       "start_date": "2025-09",
       "focus": [
-        "Leading Rovo & Search Quality / Generative Personalization teams (20+ ML Engineers)",
-        "LLM and SLM Pre-training & Post-training (Rovo Agent / Atlassian Intelligence)",
-        "0->1 Architecture & Strategy for Generative RecSys and Foundation Models"
+        "Defining 0->1 architecture & technical strategy for Generative RecSys and Foundation Models (leading 20+ ML engineers)",
+        "Leading Natural Language Personalization for Search & Chat across millions of enterprise users",
+        "LLM and SLM Pre-training & Post-training for Agentic AI intent and query-complexity routing (Rovo Agent)"
       ]
     },
     "location": "San Francisco Bay Area, CA, USA",
@@ -51,6 +51,10 @@ permalink: /agent-context.json
     "program_committees_served": "20+",
     "verified_five_star_reviews": "54+",
     "average_review_rating": "5.0/5.0",
+    "advisory_engagements": "50+",
+    "linkedin_annual_impressions": "193000+",
+    "linkedin_unique_members_reached": "70000+",
+    "linkedin_followers": "8280+ (66% Senior+ & Leadership)",
     "media_features": "15+"
   },
   "navigation": {
