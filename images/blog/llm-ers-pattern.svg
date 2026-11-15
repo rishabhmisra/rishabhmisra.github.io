@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="#0F172A"/>
+  <rect width="800" height="450" fill="url(#g)" opacity="0.75"/>
+  <rect x="36" y="28" width="168" height="28" rx="14" fill="rgba(249,115,22,0.16)" stroke="rgba(251,146,60,0.3)" stroke-width="1"/>
+  <text x="120" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#FB923C" text-anchor="middle" letter-spacing="0.06em">LLM-ERS PATTERN</text>
+  <text x="764" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="end">Enrich · Retrieve · Score</text>
+  
+  <rect x="52" y="128" width="208" height="220" rx="14" fill="#1E293B" stroke="#F97316" stroke-width="2"/>
+  <text x="156" y="164" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FB923C" text-anchor="middle">1. ENRICH (OFFLINE)</text>
+  <text x="156" y="196" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">LLM World Knowledge</text>
+  <text x="156" y="228" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">Structured item attributes,</text>
+  <text x="156" y="248" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">use-cases &amp; intent graphs</text>
+  <rect x="82" y="284" width="148" height="32" rx="6" fill="#0F172A"/><text x="156" y="305" font-family="ui-monospace, monospace" font-size="11.5" fill="#FDBA74" text-anchor="middle">0ms Serving Latency</text>
+
+  <path d="M 268 238 L 292 238" stroke="#94A3B8" stroke-width="2.5"/>
+  <polygon points="298,238 289,232 289,244" fill="#94A3B8"/>
+
+  <rect x="304" y="128" width="192" height="220" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="400" y="164" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle">2. RETRIEVE (ONLINE)</text>
+  <text x="400" y="196" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">Hybrid Two-Tower</text>
+  <text x="400" y="228" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">Semantic + Collaborative</text>
+  <text x="400" y="248" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">ANN Candidate Funnel</text>
+  <rect x="326" y="284" width="148" height="32" rx="6" fill="#0F172A"/><text x="400" y="305" font-family="ui-monospace, monospace" font-size="11.5" fill="#7DD3FC" text-anchor="middle">10M ──▶ 500 Items</text>
+
+  <path d="M 504 238 L 528 238" stroke="#94A3B8" stroke-width="2.5"/>
+  <polygon points="534,238 525,232 525,244" fill="#94A3B8"/>
+
+  <rect x="540" y="128" width="208" height="220" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+  <text x="644" y="164" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#34D399" text-anchor="middle">3. SCORE (ONLINE)</text>
+  <text x="644" y="196" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">Heavy Cross-Ranker</text>
+  <text x="644" y="228" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">Calibrated CTR / CVR +</text>
+  <text x="644" y="248" font-family="system-ui, sans-serif" font-size="12.5" fill="#CBD5E1" text-anchor="middle">Distilled LLM Features</text>
+  <rect x="570" y="284" width="148" height="32" rx="6" fill="#0F172A"/><text x="644" y="305" font-family="ui-monospace, monospace" font-size="11.5" fill="#6EE7B7" text-anchor="middle">Top-K Personalized</text>
+
+</svg>

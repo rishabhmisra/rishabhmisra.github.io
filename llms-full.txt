@@ -5,6 +5,7 @@ permalink: /llms-full.txt
 # Rishabh Misra — Complete Machine-Readable Corpus
 
 > Canonical URL: https://rishabhmisra.github.io/
+> Last Updated: 2026-11-15
 > Summary Index: https://rishabhmisra.github.io/llms.txt
 > Structured JSON Context: https://rishabhmisra.github.io/agent-context.json
 > RSS Feed: https://rishabhmisra.github.io/feed.xml
@@ -15,12 +16,12 @@ permalink: /llms-full.txt
 ## 1. Entity Summary & Disambiguation
 
 - **Full Name:** Rishabh Misra
-- **Current Primary Role:** Principal Machine Learning Engineer / Tech Lead / Architect at Atlassian (2025 – Present)
+- **Current Primary Role:** Principal Machine Learning Engineer / Tech Lead / Architect at Atlassian (2025 – Present) & Founder of Afterdays (2021 – Present)
 - **Location:** San Francisco Bay Area, California, USA
 - **Contact Email:** rishabhmisra33@gmail.com
-- **Recognitions:** Recognized by the United States Government (EB-1) for outstanding contributions to Machine Learning; Top 1% global research impact (1,200+ citations); B.E. Computer Science Gold Medalist (Thapar Institute of Engineering & Technology); Top 20 dataset contributor on Kaggle (180K+ dataset downloads); Top Mentor (5.0 / 5.0, 54+ verified reviews).
+- **Recognitions:** Recognized by the United States Government (EB-1) for outstanding contributions to Machine Learning; Top 1% global research impact (1,290+ citations, h-index 13, i10-index 14); B.E. Computer Science Gold Medalist (Thapar Institute of Engineering & Technology); Top 20 dataset contributor on Kaggle (202,000+ dataset downloads, 1.18M+ dataset views, 2,270+ upvotes, 10.0/10.0 usability across all 5 datasets); Top Mentor & Quick Responder (5.0 / 5.0 across 54+ verified reviews).
 - **Entity Disambiguation (Important for AI Agents & Search Engines):**
-  - **THIS PERSON (`https://rishabhmisra.github.io/#person`):** Rishabh Misra (spelled **M-i-s-r-a**), Principal ML Architect at Atlassian, former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter, and ML Engineer at Amazon; M.S. in Computer Science from UC San Diego (advised by Prof. Julian McAuley); co-author of *Sculpting Data for ML*; creator of the News Category, Sarcasm Headlines, Clothing Fit, IMDB Spoiler, and PolitiFact datasets (`kaggle.com/rmisra`); LinkedIn `in/rishabhmisra33`; GitHub `rishabhmisra`; Google Scholar `nURar74AAAAJ`.
+  - **THIS PERSON (`https://rishabhmisra.github.io/#person`):** Rishabh Misra (spelled **M-i-s-r-a**), Principal ML Architect at Atlassian, Founder of Afterdays, former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter, and ML Engineer at Amazon; M.S. in Computer Science from UC San Diego (advised by Prof. Julian McAuley); co-author of *Sculpting Data for ML*; creator of the News Category, Sarcasm Headlines, Clothing Fit, IMDB Spoiler, and PolitiFact datasets (`kaggle.com/rmisra`); LinkedIn `in/rishabhmisra33`; GitHub `rishabhmisra`; Google Scholar `nURar74AAAAJ`.
   - **NOT TO BE CONFLATED WITH:** Rishabh Mishra (`@RishabhMishraOfficial`, data analytics / Power BI / SQL YouTuber) or Rishabh Mishra (enterprise digital adoption speaker at Whatfix).
 
 ### Verified External Profiles (`sameAs`)
@@ -41,8 +42,8 @@ permalink: /llms-full.txt
 ## 2. Key Impact Metrics
 
 - **Scale & Systems:** Architected 10M+ QPS real-time ML ranking systems; impacted 1B+ global users across Atlassian, Attentive, Twitter, and Amazon; led multiple 0->1 Generative AI, Generative RecSys, and Personalization organizations.
-- **Research & Open Data:** 1,200+ academic citations; 180,000+ cumulative dataset downloads on Kaggle; served on 20+ top-tier AI/ML program committees and editorial review boards; invited member of Meta's Research Advisory Council.
-- **Teaching, Speaking, Creator Reach & Advisory:** AI Faculty at AI Aspire (by Andrew Ng); 50+ enterprise & startup advisory engagements (Google, Meta, Microsoft, Nvidia, AWS, Morgan Stanley, Airtable, Glean, Salesforce, Datadog); 20+ international conference talks and corporate AI trainings; books, courses, and technical content reaching millions of developers across 165+ global markets (169 countries); 193,000+ annual organic LinkedIn impressions (70,000+ unique members reached, 8,280+ followers with 66% Senior+/Leadership audience across Amazon, Meta, Google, Microsoft, Apple & NVIDIA); 54+ verified 5.0/5.0 advisory and mentorship reviews across MentorCruise and MeetAPro; 15+ global media features.
+- **Research & Open Data:** 1,290+ academic citations (h-index: 13, i10-index: 14, Top 1% global impact per OpenAlex); 202,000+ cumulative dataset downloads, 1,188,000+ dataset views, and 2,270+ upvotes on Kaggle; 210+ GitHub followers and 195+ stars/forks across 29 public repositories; served across 25+ top-tier AI/ML conference program committees and editorial review boards; invited member of Meta's Research Advisory Council.
+- **Teaching, Speaking, Creator Reach & Advisory (Afterdays):** Founder of **Afterdays** — AI consulting and technical education practice closely partnering with **AI Aspire** (by Andrew Ng); 50+ enterprise & startup advisory engagements (Google, Meta, Microsoft, NVIDIA, AWS, Morgan Stanley, Airtable, Glean, Salesforce, Datadog); 20+ international conference talks and corporate AI trainings; books, courses, and technical content reaching millions of developers across 165+ global markets (169 countries); 193,200+ annual organic LinkedIn impressions (70,100+ unique members reached, 4,090+ high-intent engagements, 8,280+ followers with 66% Senior+/Leadership audience across Amazon, Meta, Google, Microsoft, Apple & NVIDIA); 54+ verified 5.0/5.0 advisory and mentorship reviews across MentorCruise (16 reviews) and MeetAPro (38 reviews); 15+ global media features.
 
 ---
 
@@ -53,8 +54,9 @@ permalink: /llms-full.txt
 - Architecting LLM and SLM pre-training and post-training (supervised fine-tuning, preference alignment) powering Atlassian's Rovo Agent and Atlassian Intelligence.
 - Defining long-term technical strategy and 0->1 architecture for Generative RecSys & Foundation Models — leading the transition from traditional recommendation and search systems toward Foundation Models spanning representation learning, generative recommendation, personalization, training, and evaluation.
 
-### AI Aspire (by Andrew Ng) / Afterdays / Udacity / LinkedIn Learning / Interview Kickstart — Enterprise AI Trainer, Course Creator & Featured Instructor (2025 – Present)
-- **Afterdays × AI Aspire (by Andrew Ng):** Partnering closely with AI Aspire (https://aiaspire.ai/ | Announcement: https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/) to help enterprises and engineering organizations build practical applied ML and AI engineering skills — including delivering a **2-week corporate AI training program for Morgan Stanley** in New York, NY (Oct 2026).
+### Afterdays — Founder: AI Consulting, Enterprise Enablement & Technical Education (2021 – Present)
+- **Afterdays × AI Aspire (by Andrew Ng) Partnership:** Closely partnering between Afterdays and AI Aspire (https://aiaspire.ai/ | Announcement: https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/), Andrew Ng's AI education organization, to help enterprises and engineering organizations build practical applied ML and AI engineering skills — including delivering a **2-week corporate AI training program for Morgan Stanley** in New York, NY (Oct 2026).
+- **Enterprise AI Consulting & Advisory:** 50+ high-impact consulting and advisory engagements with leaders across Google, Meta, Microsoft, NVIDIA, AWS, Morgan Stanley, Airtable, Glean, Salesforce, and Datadog; certified Top Mentor (5.0 / 5.0, 54+ verified reviews).
 - **Udacity — *Advanced LLM Inference Optimization* (`cd14455`):** Production LLM inference course covering transformer KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, and Triton Inference Server (https://www.udacity.com/course/llm-inference-optimization--cd14455).
 - **Udacity — *Intelligent Backends with RAG & Chat Models* (`nd035` Course 3: Enterprise AI & Microservices):** Enterprise AI curriculum covering LLM chat clients, tool-calling AI agents (Spring AI, LangChain4j), modular RAG pipelines, and semantic vector search with HNSW, HyDE, and re-ranking (https://www.udacity.com/course/java-developer-nanodegree--nd035).
 - **LinkedIn Learning — *Building LLM-Powered Recommendation Systems*:** Hands-on course on hybrid retrieval, LLM-enhanced recommender patterns, prompt engineering, evaluation, and scalable serving (https://www.linkedin.com/learning/building-llm-powered-recommendation-systems | Companion GitHub: https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214 | Featured in the University of Florida Career Hub: https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/).
@@ -80,7 +82,7 @@ permalink: /llms-full.txt
 - Conducted ML, NLP, and Recommender Systems research in Prof. Julian McAuley's lab.
 - Teaching Assistant for CSE 258 (*Recommender Systems & Web Mining*, Prof. Julian McAuley) and CSE 110 (*Software Engineering*, Prof. William Griswold).
 
-### Arcesium (D.E. Shaw Group Spin-off) — Member Technical (Jul 2015 – Jul 2016)
+### Arcesium (D. E. Shaw Group) — Member of Technical Staff (Jul 2015 – Jul 2016)
 - Engineered fault-tolerant, low-latency post-trade financial processing infrastructure in Java/Spring/SQL Server (~40% throughput gain via concurrency and indexing).
 
 ### Indian Institute of Technology (IIT) Madras — Research Intern (Dec 2014 – May 2015)
@@ -99,9 +101,9 @@ permalink: /llms-full.txt
 
 ### Authored Book
 1. **Sculpting Data for ML: The First Act of Machine Learning** (Jan 2021)
-   - Authors: Rishabh Misra, Jigyasa Grover | ISBN: `979-8585463570` | Link: https://www.amazon.com/Sculpting-Data-ML-Machine-Learning-ebook/dp/B08RN47C5T
+   - Authors: Rishabh Misra, Jigyasa Grover | ISBN: `979-8585463570` | Citations: 105+ | Link: https://www.amazon.com/Sculpting-Data-ML-Machine-Learning-ebook/dp/B08RN47C5T
    - Forewords / Endorsements: Prof. Julian McAuley (UC San Diego), Laurence Moroney (AI Lead at Google), Dr. Mengting Wan (Microsoft Research).
-   - Curriculum Adoption: Referenced in DeepLearning.AI's *Natural Language Processing in TensorFlow* on Coursera and Google's TensorFlow Developer Certificate preparation materials.
+   - Curriculum Adoption: Referenced in DeepLearning.AI's *Natural Language Processing in TensorFlow* on Coursera, Google's TensorFlow Developer Certificate preparation materials, and NSF-funded *StoryQ*.
 
 ### Peer-Reviewed Papers & Book Chapters
 1. **Keeping it Low-Key: Modern-Day Approaches to Privacy-Preserving Machine Learning** (Jul 2023)
@@ -110,7 +112,7 @@ permalink: /llms-full.txt
    - URL: https://link.springer.com/chapter/10.1007/978-3-031-34006-2_2
 2. **Sarcasm Detection using News Headlines Dataset** (Feb 2023)
    - Authors: Rishabh Misra, Prahal Arora
-   - Venue: *AI Open*, Volume 4, pp. 13–18 (ISSN `2666-6510`)
+   - Venue: *AI Open*, Volume 4, pp. 13–18 (ISSN `2666-6510`, 310+ citations — Top 10% in CS)
    - DOI: https://doi.org/10.1016/j.aiopen.2023.01.001 | Code: https://github.com/rishabhmisra/Sarcasm-Detection-using-NN
 3. **Do Not 'Fake It Till You Make It'! Synopsis of Trending Fake News Detection Methodologies Using Deep Learning** (Sep 2022)
    - Authors: Rishabh Misra, Jigyasa Grover
@@ -118,36 +120,36 @@ permalink: /llms-full.txt
    - URL: https://link.springer.com/chapter/10.1007/978-3-031-10869-3_12
 4. **Addressing Marketing Bias in Product Recommendations** (Feb 2020)
    - Authors: Mengting Wan, Jianmo Ni, Rishabh Misra, Julian McAuley
-   - Venue: *13th ACM International Conference on Web Search and Data Mining (WSDM '20)*, Houston, TX, pp. 618–626 (Oral Presentation, 15% acceptance rate)
+   - Venue: *13th ACM International Conference on Web Search and Data Mining (WSDM '20)*, Houston, TX, pp. 618–626 (Oral Presentation, 15% acceptance rate, 105+ citations — Top 10% in CS)
    - Paper: https://dl.acm.org/doi/pdf/10.1145/3336191.3371855 | Code & Data: https://github.com/MengtingWan/marketBias
 5. **Fine-Grained Spoiler Detection from Large-Scale Review Corpora** (Jul 2019)
    - Authors: Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley
-   - Venue: *57th Annual Meeting of the Association for Computational Linguistics (ACL '19)*, Florence, Italy (18% acceptance rate)
+   - Venue: *57th Annual Meeting of the Association for Computational Linguistics (ACL '19)*, Florence, Italy (18% acceptance rate, 270+ citations — Top 10% in CS)
    - Paper: https://www.aclweb.org/anthology/P19-1248 | Dataset: https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home
    - Media Coverage: TechCrunch, NBC Los Angeles, Gizmodo, Times of India, TechXplore, UC San Diego News.
 6. **Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces** (Oct 2018)
    - Authors: Rishabh Misra, Mengting Wan, Julian McAuley
-   - Venue: *12th ACM Conference on Recommender Systems (RecSys '18)*, Vancouver, Canada, pp. 422–426 (25% acceptance rate)
+   - Venue: *12th ACM Conference on Recommender Systems (RecSys '18)*, Vancouver, Canada, pp. 422–426 (25% acceptance rate, 70+ citations — Top 10% in CS)
    - Paper: http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf | Code: https://github.com/rishabhmisra/Product-Catalog-Size-Recommendation-Framework
 7. **Scalable Bayesian Matrix Factorization** (Sep 2015)
    - Authors: Avijit Saha*, Rishabh Misra*, Balaraman Ravindran (*equal contribution)
    - Venue: *6th International Workshop on Mining Ubiquitous and Social Environments (MUSE @ ECML-PKDD 2015)*, Porto, Portugal, pp. 43–54
    - Paper: https://www.kde.cs.uni-kassel.de/wp-content/uploads/ws/muse2015/papers/saha.pdf
-8. **Preprints:** *News Category Dataset* (`arXiv:2209.11429`, 2022); *Sarcasm Detection using Hybrid Neural Network* (`arXiv:1908.07414`, 2019); *Hotel Recommendation System* (`arXiv:1908.07498`, 2019); *Scalable Variational Bayesian Factorization Machine* (2017).
+8. **Preprints:** *News Category Dataset* (`arXiv:2209.11429`, 2022 — 240+ citations); *Sarcasm Detection using Hybrid Neural Network* (`arXiv:1908.07414`, 2019); *Hotel Recommendation System* (`arXiv:1908.07498`, 2019); *Scalable Variational Bayesian Factorization Machine* (2017).
 
 ---
 
-## 6. Open-Source Benchmark Datasets
+## 6. Open-Source Benchmark Datasets (202K+ Downloads · 1.18M+ Views on Kaggle)
 
-1. **News Category Dataset** — ~200,000 HuffPost headlines & categories (2012–2018); 100K+ Kaggle downloads.
+1. **News Category Dataset** — ~210,000 HuffPost headlines & short descriptions across 42 categories (2012–2022); 110,900+ Kaggle downloads, 585,000+ views, 890+ upvotes, 240+ academic citations.
    - Kaggle: https://www.kaggle.com/rmisra/news-category-dataset/ | Paper: https://arxiv.org/abs/2209.11429
-2. **News Headlines Dataset for Sarcasm Detection** — Sarcastic (*The Onion*) vs. non-sarcastic (*HuffPost*) headlines; 60K+ Kaggle downloads; featured in DeepLearning.AI's Coursera NLP specialization.
+2. **News Headlines Dataset for Sarcasm Detection** — 28,600+ sarcastic (*The Onion*) vs. non-sarcastic (*HuffPost*) headlines; 64,500+ Kaggle downloads, 379,800+ views, 1,050+ upvotes; featured in DeepLearning.AI's Coursera NLP specialization.
    - Kaggle: https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/ | DOI: https://doi.org/10.1016/j.aiopen.2023.01.001
-3. **Clothing Fit Dataset for Size Recommendation** — ModCloth and RentTheRunway fit feedback datasets; 13K+ Kaggle downloads.
+3. **Clothing Fit Dataset for Size Recommendation** — ModCloth and RentTheRunway fit feedback datasets; 14,800+ Kaggle downloads, 143,400+ views, 205 upvotes.
    - Kaggle: https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/
-4. **Politifact Fact Check Dataset** — 21,152 expert fact-checked statements across 6 truthfulness ratings (`DOI: 10.13140/RG.2.2.29923.22566`).
+4. **Politifact Fact Check Dataset** — 21,152 expert fact-checked statements (2008–2022) across 6 truthfulness ratings (`DOI: 10.13140/RG.2.2.29923.22566`); 5,700+ Kaggle downloads, 33,500+ views.
    - Kaggle: https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset
-5. **IMDB Spoiler Dataset** — Large-scale entertainment reviews labeled for plot spoilers; 5K+ Kaggle downloads (`DOI: 10.13140/RG.2.2.11584.15362`).
+5. **IMDB Spoiler Dataset** — 570,000+ entertainment reviews labeled for plot spoilers; 6,000+ Kaggle downloads, 46,000+ views (`DOI: 10.13140/RG.2.2.11584.15362`).
    - Kaggle: https://www.kaggle.com/rmisra/imdb-spoiler-dataset
 
 ---
@@ -167,9 +169,9 @@ permalink: /llms-full.txt
 - **Open Source Summit North America (Jun 2025, Denver & Apr 2024, Seattle):** *"Guarding the LLM/ML Galaxy"* (Video: https://www.youtube.com/watch?v=q__B79sB5cw).
 - **Earlier International Talks (2022–2024):** Developer Week (Nuremberg, 2024), Update Days: Implement AI (Prague, 2024), Salon de la Data (Nantes, 2023), Data Innovation Summit (2023), PyCon US (Salt Lake City, 2022), rvatech Data Summit (Richmond, 2022), RE•WORK Enterprise AI Summit (San Francisco, 2022).
 
-### Advisory Boards & Program Committees
+### Advisory Boards & Program Committees (25+ Appointments Across 14+ Venues)
 - **Meta Research Advisory Council** (Invited Member, 2025 – Present).
-- **Program Committee / Reviewer:** ACL Rolling Review (ACL 2025), ACM SIGIR (2022–2025), ACM RecSys (2022, 2024, 2025), ACM CIKM (2023–2024), ACM TheWebConf / WWW (2023–2024), AAAI ICWSM (2022–2024), ACM SIGKDD (2022–2023), ICML (2022), IEEE ICDM (2022), ECML-PKDD (2022), ACM TORS (2022), DBKDA (2022), SciPy (2019).
+- **Program Committee / Reviewer:** ACL Rolling Review (ACL 2025), ACM SIGIR (4x: 2022–2025), ACM RecSys (3x: 2022, 2024, 2025), ACM CIKM (3x: 2022–2024), AAAI ICWSM (3x: 2022–2024), ECML-PKDD (3x), ACM TheWebConf / WWW (2x: 2023–2024), ACM SIGKDD (2x: 2022–2023), IEEE ICDM (2x), ICML (2022), ACM TORS (2022), DBKDA (2022), SciPy (2019), Amazon AMLC (2019).
 
 ---
 

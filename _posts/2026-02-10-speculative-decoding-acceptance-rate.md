@@ -5,6 +5,8 @@ title: "<center>Speculative Decoding: The Mathematics of Acceptance Rate</center
 comments: true
 mathjax: true
 summary: "Speculative Decoding can make LLMs 3x faster—or slow them down. Master the mathematics of the Acceptance Rate to determine when and how to deploy this powerful optimization technique."
+image: "/images/blog/speculative-decoding.svg"
+show_hero: true
 ---
 
 Speculative Decoding is currently the closest thing we have to "cheating physics" in Machine Learning inference. When implemented correctly, it can make Large Language Models (LLMs) 3x faster with zero degradation in output quality. 

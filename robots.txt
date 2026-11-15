@@ -41,9 +41,13 @@ User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Google-CloudVertexBot
+User-agent: GoogleAgent
 User-agent: DuckAssistBot
 User-agent: Meta-ExternalFetcher
 User-agent: MistralAI-User
+User-agent: xAI-Bot
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
 User-agent: YouBot
 User-agent: PhindBot
 User-agent: ExaBot

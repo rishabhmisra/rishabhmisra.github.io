@@ -5,6 +5,7 @@ title: "<center>Would this clothing product fit me?</center>"
 comments: true
 mathjax: true
 summary: "An explanation of my RecSys paper addressing the challenge of providing accurate, personalized fit guidance in online fashion retail using advanced machine learning models."
+image: "/images/blog/fit-semantics-recsys.jpg"
 ---
 
 Online shopping is a trend these days as it provides many benefits like convenience, large selection of products, great prices and so on. Trailing on this trend, the online fashion industry has also seen tremendous growth. However, shopping for clothes online is still tricky because it is hard to gauge their fit given the wide size variations across different clothing brands. Thus, automatically providing accurate and personalized fit guidance is critical for improving the online shopping experience and reducing product return rates.

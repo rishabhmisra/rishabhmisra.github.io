@@ -5,6 +5,8 @@ title: "<center>What is Generative AI? Peeling the magic behind the buzz</center
 comments: true
 mathjax: true
 summary: "A technical primer on Generative AI, breaking down the mechanics of Transformers and Diffusion models, and exploring how self-supervised learning is transforming the industry."
+image: "/images/blog/generative-ai-foundations.svg"
+show_hero: true
 ---
 
 Generative AI (GenAI) has taken the world by storm, moving rapidly from niche research labs into mainstream, paradigm-shifting applications. To the uninitiated, watching an AI instantly draft a legal contract or generate a photorealistic image from a text prompt feels indistinguishable from magic. But beyond the hype cycle, what exactly is Generative AI, and how does it actually work under the hood? 

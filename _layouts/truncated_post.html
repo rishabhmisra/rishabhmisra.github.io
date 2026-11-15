@@ -9,6 +9,9 @@ layout: default
   {% assign post_words = post.content | strip_html | number_of_words %}
   {% assign post_minutes = post_words | divided_by: 200 | plus: 1 %}
   <a href="{{ site.baseurl }}{{ post.url }}" class="blog-card">
+    {% if post.image %}
+    <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title | strip_html | escape }}" width="800" height="450" {% if forloop.first %}fetchpriority="high" {% elsif forloop.index > 3 %}loading="lazy" {% endif %}decoding="async" class="bc-thumb">
+    {% endif %}
     <div class="bc-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       <span class="meta-sep" aria-hidden="true">·</span>

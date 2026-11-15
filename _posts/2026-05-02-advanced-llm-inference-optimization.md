@@ -5,6 +5,8 @@ title: "<center>Advanced LLM Inference Optimization Techniques</center>"
 comments: true
 mathjax: true
 summary: "An overview of advanced LLM inference optimization techniques, detailing how model parallelism, Grouped-Query Attention, and specialized serving engines overcome the Memory Wall."
+image: "/images/work/udacity-llm-inference.jpg"
+show_hero: true
 ---
 
 We have crossed a threshold in the Generative AI landscape. Large Language Models (LLMs) have transitioned from research novelties and experimental playgrounds into production-critical engines driving real enterprise value. 

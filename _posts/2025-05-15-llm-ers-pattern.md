@@ -5,6 +5,8 @@ title: "<center>The LLM-ERS Pattern: Where LLMs Actually Belong in RecSys</cente
 comments: true
 mathjax: true
 summary: "Why using massive LLMs for real-time ranking fails in production, and how the LLM-ERS pattern offers a scalable blueprint by keeping retrieval fast and utilizing LLMs for offline augmentation."
+image: "/images/blog/llm-ers-pattern.svg"
+show_hero: true
 ---
 
 Over the past year, I've had the opportunity to review over 50 different architectural proposals for Generative Recommendation Systems (RecSys). Despite the variance in domains—from e-commerce to streaming video—one extremely expensive mistake keeps appearing on whiteboards everywhere: **Engineering teams are trying to use massive 70-Billion parameter Large Language Models (LLMs) to perform real-time, online ranking.**

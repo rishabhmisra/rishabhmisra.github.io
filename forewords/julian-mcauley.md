@@ -6,6 +6,15 @@ back_label: Back to Research & Book
 permalink: /foreword-by-julian-mcauley.html
 ---
 
+<div class="foreword-showcase">
+<img src="{{ site.baseurl }}/images/book/sculpting-data-cover.jpg" alt="Sculpting Data for ML book cover" width="517" height="800" fetchpriority="high" decoding="async" class="fs-cover">
+<div class="fs-meta">
+<span class="fs-kicker">Book Foreword</span>
+<strong class="fs-book"><cite>Sculpting Data for ML: The first act of Machine Learning</cite></strong>
+<p class="fs-author">Foreword by <b>Prof. Julian McAuley</b> · University of California San Diego</p>
+</div>
+</div>
+
 Many recent breakthroughs in Machine Learning, including Natural Language Processing, Computer Vision, etc. owe as much to having better data as they owe to having better models.
 
 Naturally, modern ML datasets should be large, in order for models to capture their complex underlying semantics. However having enough data is only a small part of the problem: data must also be processed, appropriately represented, properly sampled, freed from issues of balance and bias etc., not to mention the challenge of extracting meaningful predictive information.

@@ -4,7 +4,7 @@
 {% else %}
   {% capture seo_title %}{{ site.name }} — Principal ML Architect, AI Educator & Strategic Advisor{% endcapture %}
 {% endif %}
-{% assign default_geo_desc = "Rishabh Misra is a Principal ML Lead at Atlassian (ex-Twitter, Attentive, Amazon), AI Faculty at AI Aspire (by Andrew Ng), strategic AI advisor across 50+ organizations, co-author of Sculpting Data for ML, and Top 1% cited researcher." %}
+{% assign default_geo_desc = "Rishabh Misra is a Principal ML Lead at Atlassian (ex-Twitter, Attentive, Amazon), Founder of Afterdays (AI consulting & education partnering with AI Aspire by Andrew Ng across 50+ organizations), co-author of Sculpting Data for ML, and Top 1% cited researcher (1,290+ citations, 200K+ Kaggle downloads)." %}
 {% if page.description %}
   {% assign raw_desc = page.description %}
 {% elsif page.summary %}
@@ -22,7 +22,7 @@
   <title>{{ seo_title | escape }}</title>
   <meta name="description" content="{{ seo_description | escape }}">
   <meta name="author" content="{{ site.name | escape }}">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="robots" content="{% if page.noindex %}noindex, follow{% else %}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{% endif %}">
 
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }} — RSS Feed" href="{{ site.url }}/feed.xml">
@@ -69,14 +69,19 @@
         "url": "https://rishabhmisra.github.io/",
         "image": "https://rishabhmisra.github.io/images/Headshot.jpg",
         "email": "mailto:rishabhmisra33@gmail.com",
-        "jobTitle": "Principal Machine Learning Engineer / Tech Lead, AI Educator & Strategic Advisor",
-        "description": "Principal ML Architect & Tech Lead at Atlassian leading 20+ engineers on Foundation Models, Generative RecSys, and Natural Language Personalization. AI Faculty at AI Aspire (by Andrew Ng), strategic AI advisor across 50+ organizations, former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter (10M+ QPS ranking), and ML Engineer at Amazon. UC San Diego MS CS alumnus, US Government recognized (EB-1) researcher, and co-author of Sculpting Data for ML (1,200+ citations, 180K+ Kaggle downloads).",
-        "disambiguatingDescription": "Rishabh Misra (spelled M-i-s-r-a), Principal ML Engineer at Atlassian, ex-Attentive, ex-Twitter, ex-Amazon, UC San Diego M.S. CS alumnus (advised by Prof. Julian McAuley), and author of Sculpting Data for ML. Distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Atlassian",
-          "url": "https://www.atlassian.com/"
-        },
+        "jobTitle": "Principal Machine Learning Engineer / Tech Lead & Founder, Afterdays (AI Consulting & Education)",
+        "description": "Principal ML Architect & Tech Lead at Atlassian leading 20+ engineers on Foundation Models, Generative RecSys, and Natural Language Personalization. Founder of Afterdays — AI consulting and technical education practice closely partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, and 50+ organizations. Former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter (10M+ QPS ranking), and ML Engineer at Amazon. UC San Diego MS CS alumnus, US Government recognized (EB-1) researcher, and co-author of Sculpting Data for ML (1,290+ citations, h-index 13, 200K+ Kaggle downloads, 1.18M+ dataset views).",
+        "disambiguatingDescription": "Rishabh Misra (spelled M-i-s-r-a), Principal ML Engineer at Atlassian, Founder of Afterdays, ex-Attentive, ex-Twitter, ex-Amazon, UC San Diego M.S. CS alumnus (advised by Prof. Julian McAuley), and author of Sculpting Data for ML. Distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix.",
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "Atlassian",
+            "url": "https://www.atlassian.com/"
+          },
+          {
+            "@id": "https://rishabhmisra.github.io/#afterdays"
+          }
+        ],
         "alumniOf": [
           {
             "@type": "CollegeOrUniversity",
@@ -95,8 +100,7 @@
             "name": "Meta Research Advisory Council"
           },
           {
-            "@type": "Organization",
-            "name": "Afterdays"
+            "@id": "https://rishabhmisra.github.io/#afterdays"
           },
           {
             "@type": "Organization",
@@ -105,10 +109,11 @@
           }
         ],
         "award": [
-          "Recognized by the US Government for Outstanding Contributions to Machine Learning",
-          "Top 1% Global Research Impact (1,200+ Citations)",
+          "Recognized by the US Government (EB-1) for Outstanding Contributions to Machine Learning",
+          "Top 1% Global Research Impact (1,290+ Citations, h-index 13, i10-index 14)",
           "Gold Medalist, B.E. Computer Science (Thapar Institute of Engineering & Technology)",
-          "Top 20 Dataset Contributor on Kaggle (180,000+ Downloads)"
+          "Top 20 Dataset Contributor on Kaggle (200,000+ Downloads, 1.18M+ Views)",
+          "Top Mentor & Quick Responder on MentorCruise (5.0/5.0 across 54+ Verified Reviews)"
         ],
         "knowsAbout": [
           "Large Language Models (LLMs)",
@@ -134,11 +139,30 @@
         ]
       },
       {
+        "@type": "Organization",
+        "@id": "https://rishabhmisra.github.io/#afterdays",
+        "name": "Afterdays",
+        "url": "https://rishabhmisra.github.io/collaborate/",
+        "logo": "https://rishabhmisra.github.io/images/logos/afterdays.png",
+        "description": "AI consulting, enterprise enablement, and technical education practice founded by Rishabh Misra — closely partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, and 50+ organizations.",
+        "founder": {
+          "@id": "https://rishabhmisra.github.io/#person"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": 54,
+          "reviewCount": 54
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://rishabhmisra.github.io/#website",
         "url": "https://rishabhmisra.github.io/",
         "name": "Rishabh Misra",
-        "description": "Official website of Rishabh Misra — Principal ML Architect at Atlassian, AI Researcher, Author of Sculpting Data for ML, and Educator.",
+        "description": "Official website of Rishabh Misra — Principal ML Architect at Atlassian, Founder of Afterdays (partnering with AI Aspire by Andrew Ng), AI Researcher (1,290+ citations), and Author of Sculpting Data for ML.",
         "inLanguage": "en-US",
         "publisher": {
           "@id": "https://rishabhmisra.github.io/#person"
@@ -168,6 +192,7 @@
         "url": {{ canonical_url | jsonify }},
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
+        "dateModified": "2026-11-15",
         "inLanguage": "en-US",
         "mainEntity": {
           "@id": "https://rishabhmisra.github.io/#person"
@@ -221,14 +246,62 @@
         "url": "https://rishabhmisra.github.io/publications/",
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
+        "dateModified": "2026-11-15",
         "inLanguage": "en-US",
         "about": { "@id": "https://rishabhmisra.github.io/#person" },
         "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
       },
       {
+        "@type": "ScholarlyArticle",
+        "headline": "Sarcasm Detection using News Headlines Dataset",
+        "datePublished": "2023-02",
+        "isPartOf": { "@type": "Periodical", "name": "AI Open" },
+        "url": "https://doi.org/10.1016/j.aiopen.2023.01.001",
+        "author": [
+          { "@id": "https://rishabhmisra.github.io/#person" },
+          { "@type": "Person", "name": "Prahal Arora" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Addressing Marketing Bias in Product Recommendations",
+        "datePublished": "2020-02",
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3336191.3371855",
+        "author": [
+          { "@type": "Person", "name": "Mengting Wan" },
+          { "@type": "Person", "name": "Jianmo Ni" },
+          { "@id": "https://rishabhmisra.github.io/#person" },
+          { "@type": "Person", "name": "Julian McAuley" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Fine-Grained Spoiler Detection from Large-Scale Review Corpora",
+        "datePublished": "2019-07",
+        "url": "https://www.aclweb.org/anthology/P19-1248",
+        "author": [
+          { "@type": "Person", "name": "Mengting Wan" },
+          { "@id": "https://rishabhmisra.github.io/#person" },
+          { "@type": "Person", "name": "Ndapa Nakashole" },
+          { "@type": "Person", "name": "Julian McAuley" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces",
+        "datePublished": "2018-10",
+        "url": "http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf",
+        "author": [
+          { "@id": "https://rishabhmisra.github.io/#person" },
+          { "@type": "Person", "name": "Mengting Wan" },
+          { "@type": "Person", "name": "Julian McAuley" }
+        ]
+      },
+      {
         "@type": "Dataset",
         "name": "News Category Dataset",
-        "description": "Approximately 200,000 HuffPost news headlines and categories from 2012 to 2018 for NLP benchmarking (100k+ downloads on Kaggle).",
+        "description": "Approximately 210,000 HuffPost news headlines and short descriptions across 42 categories from 2012 to 2022 for NLP benchmarking (110K+ downloads, 585K+ views, and 890+ upvotes on Kaggle; 240+ academic citations).",
+        "temporalCoverage": "2012/2022",
         "url": "https://www.kaggle.com/rmisra/news-category-dataset/",
         "sameAs": "https://arxiv.org/abs/2209.11429",
         "creator": { "@id": "https://rishabhmisra.github.io/#person" },
@@ -237,7 +310,7 @@
       {
         "@type": "Dataset",
         "name": "News Headlines Dataset for Sarcasm Detection",
-        "description": "High-quality sarcasm detection benchmark collected from The Onion and HuffPost (60k+ downloads on Kaggle; featured in DeepLearning.AI Coursera NLP course).",
+        "description": "High-quality 28,600+ headline sarcasm detection benchmark collected from The Onion and HuffPost (64K+ downloads, 379K+ views, and 1,050+ upvotes on Kaggle; featured in DeepLearning.AI Coursera NLP course).",
         "url": "https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/",
         "sameAs": "https://doi.org/10.1016/j.aiopen.2023.01.001",
         "creator": { "@id": "https://rishabhmisra.github.io/#person" },
@@ -246,7 +319,8 @@
       {
         "@type": "Dataset",
         "name": "Politifact Fact Check Dataset",
-        "description": "21,152 expert fact-checked statements from PolitiFact categorized across six truthfulness ratings.",
+        "description": "21,152 expert fact-checked statements from PolitiFact (2008 to 2022) categorized across six truthfulness ratings (5.7K+ downloads and 33K+ views on Kaggle).",
+        "temporalCoverage": "2008/2022",
         "url": "https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset",
         "identifier": "doi:10.13140/RG.2.2.29923.22566",
         "creator": { "@id": "https://rishabhmisra.github.io/#person" },
@@ -255,7 +329,7 @@
       {
         "@type": "Dataset",
         "name": "Clothing Fit Dataset for Size Recommendation",
-        "description": "Public product size recommendation and fit feedback benchmark collected from ModCloth and RentTheRunway.",
+        "description": "Public product size recommendation and fit feedback benchmark collected from ModCloth and RentTheRunway (14.8K+ downloads and 143K+ views on Kaggle).",
         "url": "https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/",
         "creator": { "@id": "https://rishabhmisra.github.io/#person" },
         "isAccessibleForFree": true
@@ -263,17 +337,37 @@
       {
         "@type": "Dataset",
         "name": "IMDB Spoiler Dataset",
-        "description": "Large-scale entertainment review corpus annotated for plot spoilers.",
+        "description": "Large-scale entertainment review corpus of 570,000+ IMDb reviews annotated for plot spoilers (6K+ downloads and 46K+ views on Kaggle).",
         "url": "https://www.kaggle.com/rmisra/imdb-spoiler-dataset",
         "identifier": "doi:10.13140/RG.2.2.11584.15362",
         "creator": { "@id": "https://rishabhmisra.github.io/#person" },
         "isAccessibleForFree": true
+      }{% elsif canonical_path == "/collaborate/" %}{
+        "@type": "WebPage",
+        "@id": "https://rishabhmisra.github.io/collaborate/#webpage",
+        "url": "https://rishabhmisra.github.io/collaborate/",
+        "name": {{ seo_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "dateModified": "2026-11-15",
+        "inLanguage": "en-US",
+        "about": { "@id": "https://rishabhmisra.github.io/#afterdays" },
+        "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rishabhmisra.github.io/collaborate/#service",
+        "name": "Afterdays — Enterprise AI Consulting, Training, Curricula & Keynotes",
+        "description": "Enterprise corporate AI training (in close partnership with AI Aspire by Andrew Ng, including Morgan Stanley NYC), AI/ML architecture advisory across 50+ organizations, production LLM/RAG curricula, international keynotes, and 1:1 coaching.",
+        "provider": { "@id": "https://rishabhmisra.github.io/#afterdays" },
+        "url": "https://rishabhmisra.github.io/collaborate/",
+        "areaServed": "Worldwide"
       }{% else %}{
         "@type": "WebPage",
         "@id": {{ canonical_url | append: "#webpage" | jsonify }},
         "url": {{ canonical_url | jsonify }},
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
+        "dateModified": "2026-11-15",
         "inLanguage": "en-US",
         "about": { "@id": "https://rishabhmisra.github.io/#person" },
         "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }

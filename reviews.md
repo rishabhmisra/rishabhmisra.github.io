@@ -26,13 +26,13 @@ permalink: /reviews/
 </div>
 
 <div class="reviews-filter-tabs" role="group" aria-label="Filter reviews by platform">
-  <button type="button" class="filter-btn active" aria-pressed="true" onclick="filterReviews('all', this)">
+  <button type="button" class="filter-btn active" aria-pressed="true" data-platform="all">
     All <span class="filter-count" data-count="all"></span>
   </button>
-  <button type="button" class="filter-btn" aria-pressed="false" onclick="filterReviews('meetapro', this)">
+  <button type="button" class="filter-btn" aria-pressed="false" data-platform="meetapro">
     MeetAPro <span class="filter-count" data-count="meetapro"></span>
   </button>
-  <button type="button" class="filter-btn" aria-pressed="false" onclick="filterReviews('mentorcruise', this)">
+  <button type="button" class="filter-btn" aria-pressed="false" data-platform="mentorcruise">
     MentorCruise <span class="filter-count" data-count="mentorcruise"></span>
   </button>
 </div>
@@ -496,16 +496,21 @@ permalink: /reviews/
     });
   }
 
-  window.filterReviews = function (platform, activeBtn) {
-    currentPlatform = platform;
-    const btns = document.querySelectorAll('.reviews-filter-tabs .filter-btn');
-    btns.forEach(btn => {
-      const isSelected = btn === activeBtn;
-      btn.classList.toggle('active', isSelected);
-      btn.setAttribute('aria-pressed', String(isSelected));
+  const filterTabs = document.querySelector('.reviews-filter-tabs');
+  if (filterTabs) {
+    filterTabs.addEventListener('click', function (e) {
+      const activeBtn = e.target.closest('.filter-btn[data-platform]');
+      if (!activeBtn) return;
+      currentPlatform = activeBtn.getAttribute('data-platform') || 'all';
+      const btns = filterTabs.querySelectorAll('.filter-btn');
+      btns.forEach(btn => {
+        const isSelected = btn === activeBtn;
+        btn.classList.toggle('active', isSelected);
+        btn.setAttribute('aria-pressed', String(isSelected));
+      });
+      renderBalancedColumns();
     });
-    renderBalancedColumns();
-  };
+  }
 
   renderBalancedColumns();
   window.matchMedia('(max-width: 900px)').addEventListener('change', renderBalancedColumns);

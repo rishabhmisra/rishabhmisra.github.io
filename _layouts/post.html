@@ -22,6 +22,12 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.image and page.show_hero %}
+  <figure class="post-hero-figure">
+    <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title | strip_html | escape }}" width="800" height="450" fetchpriority="high" decoding="async">
+  </figure>
+  {% endif %}
+
   <div class="entry post-prose">
     {{ content }}
   </div>
@@ -30,7 +36,7 @@ layout: default
     <img src="{{ site.baseurl }}/images/Headshot.jpg" alt="{{ site.name }}" width="56" height="56" class="post-author-avatar" />
     <div class="post-author-body">
       <div class="post-author-name">Written by {{ site.name }}</div>
-      <p class="post-author-bio">Principal ML Engineer &amp; Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), co-author of <em>Sculpting Data for ML</em>, and enterprise AI instructor.</p>
+      <p class="post-author-bio">Principal ML Engineer &amp; Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), Founder of Afterdays (AI consulting &amp; education; partnering with AI Aspire by Andrew Ng), and co-author of <em>Sculpting Data for ML</em>.</p>
       <div class="post-author-links">
         <a href="{{ site.baseurl }}/collaborate">Advisory &amp; Speaking →</a>
         <a href="{{ site.baseurl }}/blog">More Articles →</a>

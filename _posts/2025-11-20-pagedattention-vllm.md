@@ -5,6 +5,8 @@ title: "<center>You Don't Need More H100s: Understanding PagedAttention</center>
 comments: true
 mathjax: true
 summary: "Stop buying more GPUs. Learn how PagedAttention and vLLM decouple physical from logical memory to eliminate fragmentation and unlock continuous batching for massive throughput gains."
+image: "/images/blog/paged-attention.svg"
+show_hero: true
 ---
 
 "We are hitting OOM errors under load. We need to buy more H100s."

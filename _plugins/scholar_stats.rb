@@ -27,7 +27,7 @@ module Jekyll
       rescue => e
         Jekyll.logger.warn "ScholarStats:", "Could not fetch stats from Google Scholar: #{e.message}"
         # Provide fallback data so the site still builds
-        site.data['scholar'] ||= { 'id' => SCHOLAR_ID, 'citations' => 1146, 'h_index' => 12, 'i10_index' => 13 }
+        site.data['scholar'] ||= { 'id' => SCHOLAR_ID, 'citations' => 1294, 'h_index' => 13, 'i10_index' => 14 }
       end
     end
   end

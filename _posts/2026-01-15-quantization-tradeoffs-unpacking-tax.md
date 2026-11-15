@@ -5,6 +5,8 @@ title: "<center>Quantization Tradeoffs in LLMs: The Unpacking Tax</center>"
 comments: true
 mathjax: true
 summary: "Quantizing an LLM to 4-bit doesn't guarantee faster latency. Understand the hidden 'Unpacking Tax' and learn how batch sizes dictate whether quantization helps or hurts your performance."
+image: "/images/blog/quantization-unpacking.svg"
+show_hero: true
 ---
 
 Recently, I watched a brilliant senior engineer spend three weeks painstakingly quantizing a Large Language Model (LLM) down to 4-bit precision. The goal was to drastically reduce latency and compute costs. The result? The P99 latency actually got *worse*.

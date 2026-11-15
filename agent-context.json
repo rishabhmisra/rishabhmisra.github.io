@@ -3,7 +3,8 @@ layout: null
 permalink: /agent-context.json
 ---
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "last_updated": "2026-11-15",
   "generated_by": "Jekyll static build for rishabhmisra.github.io",
   "canonical_url": "https://rishabhmisra.github.io/agent-context.json",
   "llms_txt": "https://rishabhmisra.github.io/llms.txt",
@@ -44,16 +45,24 @@ permalink: /agent-context.json
   "impact_metrics": {
     "max_system_throughput": "10M+ QPS",
     "users_impacted": "1B+",
-    "research_citations": "1200+",
-    "kaggle_dataset_downloads": "180000+",
+    "research_citations": "1290+",
+    "h_index": 13,
+    "i10_index": 14,
+    "global_research_impact_percentile": "Top 1% (OpenAlex)",
+    "kaggle_dataset_downloads": "202000+",
+    "kaggle_dataset_views": "1188000+",
+    "kaggle_dataset_upvotes": "2270+",
+    "github_followers": "210+",
+    "github_stars": "195+",
     "global_markets_reached": "165+ (169 countries)",
     "international_talks": "20+",
-    "program_committees_served": "20+",
+    "program_committees_served": "25+",
     "verified_five_star_reviews": "54+",
     "average_review_rating": "5.0/5.0",
     "advisory_engagements": "50+",
-    "linkedin_annual_impressions": "193000+",
-    "linkedin_unique_members_reached": "70000+",
+    "linkedin_annual_impressions": "193200+",
+    "linkedin_unique_members_reached": "70100+",
+    "linkedin_annual_engagements": "4090+",
     "linkedin_followers": "8280+ (66% Senior+ & Leadership)",
     "media_features": "15+"
   },
@@ -80,15 +89,16 @@ permalink: /agent-context.json
       ]
     },
     {
-      "organization": "AI Aspire (by Andrew Ng) / Afterdays / Udacity / LinkedIn Learning / Interview Kickstart",
-      "role": "Enterprise AI Trainer, Course Creator & Featured Instructor",
-      "period": "2025 - Present",
+      "organization": "Afterdays",
+      "role": "Founder — AI Consulting, Enterprise Enablement & Technical Education",
+      "period": "2021 - Present",
       "highlights": [
-        "Afterdays x AI Aspire (by Andrew Ng, https://aiaspire.ai/ | https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/): Partnering on enterprise AI enablement, including delivering a 2-week corporate AI training program for Morgan Stanley in New York, NY",
-        "Udacity course: Advanced LLM Inference Optimization (DeepSpeed, TensorRT-LLM, Triton Inference Server)",
-        "Udacity course: Intelligent Backends with RAG & Chat Models (Spring AI, LangChain4j agents, modular RAG, HNSW/HyDE vector search)",
-        "LinkedIn Learning course: Building LLM-Powered Recommendation Systems (featured in University of Florida Career Hub)",
-        "Interview Kickstart instructor: Applied Agentic AI, Building Vertical AI Agents, Building AI Agent for Retail, Agentic RAG"
+        "Afterdays x AI Aspire (by Andrew Ng, https://aiaspire.ai/ | https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/): Strategic partnership on enterprise AI enablement, including delivering a 2-week corporate AI training program for Morgan Stanley in New York, NY",
+        "50+ enterprise AI consulting & advisory engagements across Google, Meta, Microsoft, NVIDIA, AWS, Morgan Stanley, Airtable, Glean, Salesforce, and Datadog; 54+ verified 5.0/5.0 reviews",
+        "Udacity partnership: Advanced LLM Inference Optimization (DeepSpeed, TensorRT-LLM, Triton Inference Server)",
+        "Udacity partnership: Intelligent Backends with RAG & Chat Models (Spring AI, LangChain4j agents, modular RAG, HNSW/HyDE vector search)",
+        "LinkedIn Learning partnership: Building LLM-Powered Recommendation Systems (featured in University of Florida Career Hub)",
+        "Interview Kickstart featured instructor: Applied Agentic AI, Building Vertical AI Agents, Building AI Agent for Retail, Agentic RAG"
       ]
     },
     {
@@ -120,8 +130,8 @@ permalink: /agent-context.json
       ]
     },
     {
-      "organization": "Arcesium (D.E. Shaw)",
-      "role": "Member Technical",
+      "organization": "Arcesium (D. E. Shaw Group)",
+      "role": "Member of Technical Staff",
       "period": "2015 - 2016",
       "highlights": [
         "Fault-tolerant low-latency financial artifact processing (~40% concurrency optimization)"
@@ -193,6 +203,7 @@ permalink: /agent-context.json
       "title": "Sarcasm Detection using News Headlines Dataset",
       "venue": "AI Open (Vol. 4)",
       "year": 2023,
+      "citations": "310+",
       "url": "https://doi.org/10.1016/j.aiopen.2023.01.001"
     },
     {
@@ -205,18 +216,21 @@ permalink: /agent-context.json
       "title": "Addressing Marketing Bias in Product Recommendations",
       "venue": "ACM WSDM 2020 (Oral)",
       "year": 2020,
+      "citations": "105+",
       "url": "https://dl.acm.org/doi/pdf/10.1145/3336191.3371855"
     },
     {
       "title": "Fine-Grained Spoiler Detection from Large-Scale Review Corpora",
       "venue": "ACL 2019",
       "year": 2019,
+      "citations": "270+",
       "url": "https://www.aclweb.org/anthology/P19-1248"
     },
     {
       "title": "Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces",
       "venue": "ACM RecSys 2018",
       "year": 2018,
+      "citations": "70+",
       "url": "http://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf"
     },
     {
@@ -229,29 +243,46 @@ permalink: /agent-context.json
   "datasets": [
     {
       "name": "News Category Dataset",
-      "downloads": "100k+",
+      "description": "~210,000 HuffPost news headlines and short descriptions across 42 categories from 2012 to 2022",
+      "downloads": "110k+",
+      "views": "585k+",
+      "upvotes": "890+",
+      "citations": "240+",
       "url": "https://www.kaggle.com/rmisra/news-category-dataset/",
       "citation_url": "https://arxiv.org/abs/2209.11429"
     },
     {
       "name": "News Headlines Dataset for Sarcasm Detection",
-      "downloads": "60k+",
+      "description": "28,600+ sarcastic (The Onion) and non-sarcastic (HuffPost) news headlines; featured in DeepLearning.AI Coursera NLP course",
+      "downloads": "64k+",
+      "views": "379k+",
+      "upvotes": "1050+",
       "url": "https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/",
       "citation_url": "https://doi.org/10.1016/j.aiopen.2023.01.001"
     },
     {
       "name": "Clothing Fit Dataset for Size Recommendation",
-      "downloads": "13k+",
+      "description": "Public product size recommendation and customer fit feedback benchmark from ModCloth and RentTheRunway",
+      "downloads": "14.8k+",
+      "views": "143k+",
+      "upvotes": "205",
       "url": "https://www.kaggle.com/rmisra/clothing-fit-dataset-for-size-recommendation/"
     },
     {
       "name": "Politifact Fact Check Dataset",
+      "description": "21,152 expert fact-checked statements from PolitiFact (2008 to 2022) across 6 truthfulness ratings",
+      "downloads": "5.7k+",
+      "views": "33k+",
+      "upvotes": "51",
       "url": "https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset",
       "doi": "10.13140/RG.2.2.29923.22566"
     },
     {
       "name": "IMDB Spoiler Dataset",
-      "downloads": "5k+",
+      "description": "570,000+ entertainment reviews from IMDb annotated for plot spoilers with rich item metadata",
+      "downloads": "6k+",
+      "views": "46k+",
+      "upvotes": "77",
       "url": "https://www.kaggle.com/rmisra/imdb-spoiler-dataset",
       "doi": "10.13140/RG.2.2.11584.15362"
     }

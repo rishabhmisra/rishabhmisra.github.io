@@ -1,0 +1,22 @@
+{
+  "name": "Rishabh Misra — Principal ML Architect, Educator & Advisor",
+  "short_name": "Rishabh Misra",
+  "description": "Principal ML Lead at Atlassian, Founder of Afterdays (AI Consulting & Education), and Author of Sculpting Data for ML.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#FAF9F6",
+  "icons": [
+    {
+      "src": "/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

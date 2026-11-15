@@ -5,6 +5,8 @@ title: "<center>Common Pitfalls in ML Interviews and How to Avoid Them</center>"
 comments: true
 mathjax: true
 summary: "Discover the five critical mistakes candidates make in Machine Learning interviews—from neglecting fundamentals to ignoring production reality—and learn how to overcome them."
+image: "/images/blog/ml-interviews.svg"
+show_hero: true
 ---
 
 Machine Learning interviews can be incredibly daunting. With the rapid evolution of the field—from traditional statistical methods to the explosion of Large Language Models (LLMs)—the scope of what a candidate is expected to know has expanded significantly. Over the past decade, having sat on both sides of the interview table at companies like Amazon, Twitter, and Atlassian, I've noticed a recurring pattern of mistakes. 

@@ -9,12 +9,13 @@ permalink: /features/
   <div class="hero-left">
     <span class="eyebrow">Public Impact</span>
     <h1 class="hero-headline">Media Features &amp; Expert Commentary</h1>
-    <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide. Research highlights: 1,200+ citations, Top 1% global impact.</p>
+    <p class="hero-subtext">My research and expert commentary have been featured by leading media outlets reaching hundreds of millions of readers worldwide. Research highlights: 1,290+ citations (h-index 13), Top 1% global impact.</p>
   </div>
 </section>
 
 <div class="feature-grid">
   <a href="https://techcrunch.com/2019/07/09/spoiler-warning-this-neural-network-spots-dangerous-reviews-before-you-read-them/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/techcrunch-spoilernet.jpg" alt="Cinema auditorium screen representing SpoilerNet entertainment review research" width="800" height="450" fetchpriority="high" decoding="async" class="fac-thumb">
     <span class="fac-outlet">TechCrunch</span>
     <div class="fac-headline">Spoiler warning: this neural network spots dangerous reviews before you read them</div>
     <p class="fac-excerpt">Coverage of the SpoilerNet research on detecting entertainment spoilers in online reviews using deep learning.</p>
@@ -22,6 +23,7 @@ permalink: /features/
   </a>
 
   <a href="https://io9.gizmodo.com/a-new-study-reminds-us-how-ridiculous-spoiler-culture-h-1837171945" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/gizmodo-spoilernet.jpg" alt="Gizmodo feature on ACL 2019 SpoilerNet spoiler culture research" width="800" height="450" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Gizmodo</span>
     <div class="fac-headline">A New Study Reminds Us How Ridiculous Spoiler Culture Has Become</div>
     <p class="fac-excerpt">Coverage of the ACL 2019 research on fine-grained spoiler detection from large-scale review corpora.</p>
@@ -29,6 +31,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.nbclosangeles.com/news/local/SpoilerNet-UCSD-AI-Catch-Spoilers-Researchers-Studying-What-Makes-Text-Spoilery-513510001.html" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/nbc-ucsd-spoilernet.jpg" alt="Geisel Library at UC San Diego" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">NBC Los Angeles</span>
     <div class="fac-headline">UCSD Researchers Using AI to Catch Spoilers</div>
     <p class="fac-excerpt">NBC coverage on the SpoilerNet deep neural network that detects entertainment spoilers across 1.3 million reviews.</p>
@@ -36,6 +39,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.the-sun.com/tech/13098870/former-google-boss-warns-ai-danger/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/sun-ai-safety.jpg" alt="The Sun coverage on AI alignment and safety warnings" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">The Sun</span>
     <div class="fac-headline">Expert Commentary on AI Alignment and Safety</div>
     <p class="fac-excerpt">Expert commentary on the need for AI alignment and safety efforts in the context of rapid AI advancement.</p>
@@ -43,6 +47,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/sun-doomsday.jpg" alt="The Sun analysis piece on AI safety risks and responsible development" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">The Sun</span>
     <div class="fac-headline">AI Bots Doomsday Scenario — Expert Analysis</div>
     <p class="fac-excerpt">Thoughts on the risks and need for responsible AI development, published in a widely-read analysis piece.</p>
@@ -50,6 +55,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.lifewire.com/ai-tools-could-help-create-art-and-heres-why-you-should-use-them-6797565" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/lifewire-artists.jpg" alt="Fine art painting in gallery frame" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Lifewire</span>
     <div class="fac-headline">AI Tools Could Help Create Art and Here's Why You Should Use Them</div>
     <p class="fac-excerpt">Expert commentary on the creative potential of AI art generation tools and their role in democratizing art.</p>
@@ -57,6 +63,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.lifewire.com/your-next-favorite-actor-may-be-powered-by-artificial-intelligence-heres-why-6747317" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/lifewire-actors.jpg" alt="Cinema camera crew filming on location" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Lifewire</span>
     <div class="fac-headline">Your Next Favorite Actor May Be Powered by Artificial Intelligence</div>
     <p class="fac-excerpt">Expert commentary on the future of AI in acting and entertainment, discussing deepfakes and synthetic media.</p>
@@ -64,6 +71,7 @@ permalink: /features/
   </a>
 
   <a href="https://hyperallergic.com/781592/how-is-artificial-intelligence-changing-art-history/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/hyperallergic-dalle.jpg" alt="Hyperallergic feature on AI-generated art and art history" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Hyperallergic</span>
     <div class="fac-headline">How Is Artificial Intelligence Changing Art History?</div>
     <p class="fac-excerpt">Commentary on machine learning's impact on the art world and creative industries.</p>
@@ -71,6 +79,7 @@ permalink: /features/
   </a>
 
   <a href="https://interestingengineering.com/innovation/what-is-dall-e-how-it-works-and-how-the-system-generates-ai-art" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/ie-dalle.jpg" alt="Interesting Engineering feature on DALL-E text-to-image generation" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">InterestingEngineering</span>
     <div class="fac-headline">What Is DALL-E, How It Works, and How the System Generates AI Art</div>
     <p class="fac-excerpt">Expert insights on the technical mechanisms behind DALL-E and AI-powered image generation.</p>
@@ -78,6 +87,7 @@ permalink: /features/
   </a>
 
   <a href="https://www.reworked.co/talent-management/national-techies-day-underlines-demand-for-data-related-job-skills/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/reworked-skills.jpg" alt="Reworked feature on rising demand for machine learning and data skills" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Reworked</span>
     <div class="fac-headline">National Techies Day Underlines Demand for Data-Related Job Skills</div>
     <p class="fac-excerpt">Commentary on the rising demand for machine learning and data science skills in the job market.</p>
@@ -85,6 +95,7 @@ permalink: /features/
   </a>
 
   <a href="https://knowledge-leader.colliers.com/anjee-solanki/how-the-digitization-of-retail-will-find-your-perfect-fit/" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/colliers-fit.jpg" alt="Colliers illustration on retail digitization and AI product fit" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Colliers</span>
     <div class="fac-headline">How the Digitization of Retail Will Find Your Perfect Fit</div>
     <p class="fac-excerpt">Thoughts on the role of AI in product size recommendations and the digitization of retail experiences.</p>
@@ -92,6 +103,7 @@ permalink: /features/
   </a>
 
   <a href="https://builtin.com/big-data/data-as-a-service-daas" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/builtin-datasets.jpg" alt="BuiltIn illustration on cloud data infrastructure and Data as a Service" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">BuiltIn</span>
     <div class="fac-headline">The Importance of Data as a Service</div>
     <p class="fac-excerpt">Thoughts on why Data-as-a-Service is becoming critical for modern business intelligence and ML applications.</p>
@@ -99,6 +111,7 @@ permalink: /features/
   </a>
 
   <a href="https://hyperight.com/sculpting-data-for-machine-learning-interview-with-jigyasa-grover-rishabh-misra-twitter" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/hyperight-sculpting.jpg" alt="Jigyasa Grover and Rishabh Misra with Sculpting Data for ML book" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Hyperight</span>
     <div class="fac-headline">Interview: Sculpting Data for Machine Learning</div>
     <p class="fac-excerpt">In-depth interview on the importance of data quality and curation practices for machine learning.</p>
@@ -106,6 +119,7 @@ permalink: /features/
   </a>
 
   <a href="https://tech.attentive.com/articles/evolving-attentives-personalized-recommendations" target="_blank" rel="noopener" class="feature-article-card">
+    <img src="{{ site.baseurl }}/images/features/attentive-genai.jpg" alt="Attentive Engineering Blog graphic on personalized product recommendations" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">Attentive Engineering Blog</span>
     <div class="fac-headline">Evolving Attentive's Personalized Recommendations</div>
     <p class="fac-excerpt">Technical blog post detailing the personalization ML work led over the past year at Attentive.</p>

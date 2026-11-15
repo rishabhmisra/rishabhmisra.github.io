@@ -6,6 +6,15 @@ back_label: Back to Research & Book
 permalink: /foreword-by-laurence-moroney.html
 ---
 
+<div class="foreword-showcase">
+<img src="{{ site.baseurl }}/images/book/sculpting-data-cover.jpg" alt="Sculpting Data for ML book cover" width="517" height="800" fetchpriority="high" decoding="async" class="fs-cover">
+<div class="fs-meta">
+<span class="fs-kicker">Book Foreword</span>
+<strong class="fs-book"><cite>Sculpting Data for ML: The first act of Machine Learning</cite></strong>
+<p class="fs-author">Foreword by <b>Laurence Moroney</b> · Lead Artificial Intelligence Advocate, Google</p>
+</div>
+</div>
+
 This is an important book!
 
 Data is the lifeblood of any Machine Learning or AI solution, and there is only so far you can go with publicly available datasets. What excites me about this book is that Jigyasa and Rishabh go beyond these, and teach you how to create, curate, and manage data effectively.

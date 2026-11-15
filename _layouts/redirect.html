@@ -1,0 +1,18 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to {{ page.redirect_to }} | {{ site.name }}</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.redirect_to }}">
+  <meta http-equiv="refresh" content="0; url={{ site.baseurl }}{{ page.redirect_to }}">
+  <script>window.location.replace({{ page.redirect_to | prepend: site.baseurl | jsonify }});</script>
+</head>
+<body>
+  <p>Redirecting to <a href="{{ site.baseurl }}{{ page.redirect_to }}">{{ site.url }}{{ page.redirect_to }}</a>…</p>
+</body>
+</html>
+

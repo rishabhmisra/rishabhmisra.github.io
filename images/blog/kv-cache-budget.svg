@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="#0F172A"/>
+  <rect width="800" height="450" fill="url(#g)" opacity="0.75"/>
+  <rect x="36" y="28" width="168" height="28" rx="14" fill="rgba(249,115,22,0.16)" stroke="rgba(251,146,60,0.3)" stroke-width="1"/>
+  <text x="120" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#FB923C" text-anchor="middle" letter-spacing="0.06em">KV CACHE</text>
+  <text x="764" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="end">Memory Scaling vs Context</text>
+  
+  <rect x="66" y="112" width="300" height="252" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="216" y="148" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="middle">70B Model @ 32K Context</text>
+  <rect x="96" y="176" width="240" height="42" rx="7" fill="#0F172A" stroke="#475569"/>
+  <text x="216" y="202" font-family="ui-monospace, monospace" font-size="12" fill="#CBD5E1" text-anchor="middle">2 × L × n_kv × d_h × seq × B</text>
+  <rect x="96" y="236" width="108" height="96" rx="8" fill="#0F172A" stroke="#38BDF8"/>
+  <text x="150" y="274" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#38BDF8" text-anchor="middle">140 GB</text>
+  <text x="150" y="300" font-family="system-ui, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Static Weights</text>
+  <rect x="220" y="236" width="116" height="96" rx="8" fill="#431407" stroke="#F97316"/>
+  <text x="278" y="274" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#FB923C" text-anchor="middle">160 GB+</text>
+  <text x="278" y="300" font-family="system-ui, sans-serif" font-size="11.5" fill="#FDBA74" text-anchor="middle">Dynamic KV Cache</text>
+
+  <line x1="428" y1="352" x2="736" y2="352" stroke="#475569" stroke-width="2"/>
+  <line x1="428" y1="352" x2="428" y2="122" stroke="#475569" stroke-width="2"/>
+  <path d="M 438 338 L 722 138" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 438 342 L 722 292" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+  <text x="665" y="132" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FCA5A5" text-anchor="middle">MHA (1× KV)</text>
+  <text x="665" y="280" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#6EE7B7" text-anchor="middle">GQA-8 (8× Smaller)</text>
+  <text x="582" y="384" font-family="system-ui, sans-serif" font-size="12.5" fill="#94A3B8" text-anchor="middle">Batch × Sequence Length ──▶</text>
+
+</svg>

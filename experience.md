@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Professional Experience
-description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Udacity & LinkedIn Learning, Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
+description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Afterdays (Founder — AI Consulting & Education, partnering with AI Aspire by Andrew Ng, Udacity & LinkedIn Learning), Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
 permalink: /experience/
 ---
 
@@ -20,8 +20,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Atlassian</h2>
-        <span class="te-role">Principal ML Engineer / Tech Lead</span>
+        <img src="{{ site.baseurl }}/images/logos/atlassian.svg" alt="" width="44" height="44" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Atlassian</h2>
+          <span class="te-role">Principal ML Engineer / Tech Lead</span>
+        </div>
       </div>
       <ul>
         <li>Defining and driving long-term technical strategy and <b>0→1 architecture for Generative RecSys &amp; Foundation Models</b> across multiple product surfaces, providing technical leadership across <b>20+ engineers</b></li>
@@ -44,17 +47,26 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Afterdays · AI Aspire · Udacity · LinkedIn Learning · Interview Kickstart</h2>
-        <span class="te-role">AI Faculty, Strategic Advisor, Course Creator &amp; Executive Coach</span>
+        <img src="{{ site.baseurl }}/images/logos/afterdays.png" alt="" width="44" height="44" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Afterdays</h2>
+          <span class="te-role">Founder — AI Consulting, Enterprise Enablement &amp; Technical Education</span>
+        </div>
       </div>
       <ul>
-        <li><b>AI Faculty @ AI Aspire (by Andrew Ng)</b>: Partnering via Afterdays with <a href="https://aiaspire.ai/" target="_blank" rel="noopener">AI Aspire</a> (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/" target="_blank" rel="noopener">announcement</a>) to equip enterprise engineering organizations to adopt and scale applied AI — including leading a <b>2-week corporate AI training program for Morgan Stanley</b> in New York, NY</li>
-        <li><b>Strategic AI Advisor &amp; Mentor</b>: <b>50+ high-impact advisory engagements</b> with leaders from Google, Meta, Microsoft, Nvidia, AWS, Morgan Stanley, Airtable, Glean, Salesforce, and Datadog; certified <b>Top Mentor (5.0 / 5.0, 54+ verified reviews)</b> coaching engineers into Senior+/FAANG ML &amp; GenAI roles</li>
-        <li><b>Udacity</b>: <a href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank" rel="noopener"><em>Advanced LLM Inference Optimization Techniques</em></a> — covers transformer KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, and Triton Inference Server</li>
-        <li><b>Udacity</b>: <a href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank" rel="noopener"><em>Intelligent Backends with RAG &amp; Chat Models</em></a> (Course 3: Enterprise AI &amp; Microservices) — covers LLM chat clients, tool-calling AI agents (Spring AI, LangChain4j), modular RAG pipelines, and semantic vector search (HNSW, HyDE, re-ranking)</li>
-        <li><b>LinkedIn Learning</b>: <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank" rel="noopener"><em>Building LLM-Powered Recommendation Systems</em></a> (<a href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214" target="_blank" rel="noopener">GitHub</a>) — production-ready recommender systems using GenAI; featured in the <a href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/" target="_blank" rel="noopener">University of Florida Career Hub</a></li>
-        <li><b>Interview Kickstart</b>: Featured Instructor for <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank" rel="noopener"><em>Applied Agentic AI</em></a>, <a href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank" rel="noopener"><em>Building Vertical AI Agents</em></a>, <a href="https://interviewkickstart.com/masterclass/retail-ai-agent" target="_blank" rel="noopener"><em>Building AI Agent for Retail</em></a>, and <a href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank" rel="noopener"><em>Agentic RAG</em></a></li>
+        <li><b>Afterdays × AI Aspire (by Andrew Ng) Partnership</b>: Closely partnering with <a href="https://aiaspire.ai/" target="_blank" rel="noopener">AI Aspire</a>, Andrew Ng's AI education organization (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/" target="_blank" rel="noopener">announcement</a>), to help enterprises move beyond experimentation and put applied ML &amp; AI engineering to work — including delivering a <b>2-week corporate AI training program for Morgan Stanley</b> in New York, NY</li>
+        <li><b>Enterprise AI Consulting &amp; Advisory</b>: Led <b>50+ high-impact consulting and advisory engagements</b> with leaders across Google, Meta, Microsoft, NVIDIA, AWS, Morgan Stanley, Airtable, Glean, Salesforce, and Datadog; certified <b>Top Mentor (5.0 / 5.0, 54+ verified reviews)</b> coaching engineers into Senior+/FAANG ML &amp; GenAI roles</li>
+        <li><b>Udacity Partnership</b>: Authored <a href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank" rel="noopener"><em>Advanced LLM Inference Optimization Techniques</em></a> (KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, Triton) and <a href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank" rel="noopener"><em>Intelligent Backends with RAG &amp; Chat Models</em></a> (Spring AI, LangChain4j, modular RAG pipelines, HNSW &amp; HyDE vector search)</li>
+        <li><b>LinkedIn Learning Partnership</b>: Authored <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank" rel="noopener"><em>Building LLM-Powered Recommendation Systems</em></a> (<a href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214" target="_blank" rel="noopener">GitHub</a>) — production-ready recommender systems using GenAI; featured in the <a href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/" target="_blank" rel="noopener">University of Florida Career Hub</a></li>
+        <li><b>Interview Kickstart &amp; Brand Partnerships</b>: Featured Instructor for <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank" rel="noopener"><em>Applied Agentic AI</em></a>, <a href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank" rel="noopener"><em>Building Vertical AI Agents</em></a>, <a href="https://interviewkickstart.com/masterclass/retail-ai-agent" target="_blank" rel="noopener"><em>Building AI Agent for Retail</em></a>, and <a href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank" rel="noopener"><em>Agentic RAG</em></a>; technical creator with <b>193K+ annual LinkedIn impressions</b> across <b>8.2K+ followers (66% Senior+)</b></li>
       </ul>
+      <div class="tech-pills">
+        <span class="tag-badge">Enterprise AI Enablement</span>
+        <span class="tag-badge">AI Strategy &amp; Consulting</span>
+        <span class="tag-badge">LLM Inference &amp; RAG</span>
+        <span class="tag-badge">Agentic AI</span>
+        <span class="tag-badge">Technical Curricula</span>
+      </div>
     </div>
   </article>
 
@@ -64,8 +76,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Attentive</h2>
-        <span class="te-role">Staff Machine Learning Engineer / Tech Lead</span>
+        <img src="{{ site.baseurl }}/images/logos/attentive.png" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Attentive</h2>
+          <span class="te-role">Staff Machine Learning Engineer / Tech Lead</span>
+        </div>
       </div>
       <ul>
         <li>Founded and led the Personalization ML team (<b>0→1</b>); oversaw <b>15+ engineers</b> across 5+ products</li>
@@ -86,7 +101,7 @@ permalink: /experience/
         <span class="tag-badge">Feature Store</span>
         <span class="tag-badge">ANN Serving</span>
         <span class="tag-badge">A/B Experimentation</span>
-      </div>
+      </ul>
     </div>
   </article>
 
@@ -96,13 +111,16 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Research Advisor</h2>
-        <span class="te-role">Leading AI Conferences &amp; Councils</span>
+        <img src="{{ site.baseurl }}/images/logos/meta.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Research Advisor</h2>
+          <span class="te-role">Leading AI Conferences &amp; Councils</span>
+        </div>
       </div>
       <ul>
-        <li>Invited Member of <b>Meta's Research Advisory Council</b> (2025 – Present) and Research Committee Member / Reviewer at <b>20+ leading AI conferences</b></li>
-        <li>Conferences: ACL Rolling Review (2025), SIGIR (4x: 2022–2025), RecSys (3x: 2022, 2024, 2025), ICWSM (3x: 2022–2024), SIGKDD (2x: 2022, 2023), CIKM (2x: 2023, 2024), TheWebConf (2x: 2023, 2024), ICML, ICDM, ECML-PKDD, and ACM TORS</li>
-        <li>Published author in LLMs (NLP and GenAI) and Recommender Systems domains, amassing <b>1,200+ citations</b></li>
+        <li>Invited Member of <b>Meta's Research Advisory Council</b> (2025 – Present) and Research Committee Member / Reviewer across <b>25+ leading AI conference committees</b></li>
+        <li>Conferences: ACL Rolling Review (2025), SIGIR (4x: 2022–2025), RecSys (3x: 2022, 2024, 2025), CIKM (3x: 2022–2024), ICWSM (3x: 2022–2024), ECML-PKDD (3x), TheWebConf (2x: 2023, 2024), SIGKDD (2x: 2022, 2023), ICDM (2x), ICML, ACM TORS, DBKDA, and SciPy</li>
+        <li>Published author in LLMs (NLP and GenAI) and Recommender Systems domains, amassing <b>1,290+ citations</b> (h-index 13, Top 1% global impact)</li>
       </ul>
     </div>
   </article>
@@ -113,8 +131,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Twitter</h2>
-        <span class="te-role">Senior Machine Learning Engineer / Tech Lead</span>
+        <img src="{{ site.baseurl }}/images/logos/twitter.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Twitter</h2>
+          <span class="te-role">Senior Machine Learning Engineer / Tech Lead</span>
+        </div>
       </div>
       <ul>
         <li>Founding engineer of the <b>Conversations Quality</b> team applying ML and NLP to drive healthy conversations from Reply product; also worked on <b>Home Feed Ranking</b></li>
@@ -147,8 +168,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Google's Developer Group (GDG)</h2>
-        <span class="te-role">AI &amp; ML Community Organizer</span>
+        <img src="{{ site.baseurl }}/images/logos/google-gdg.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Google's Developer Group (GDG)</h2>
+          <span class="te-role">AI &amp; ML Community Organizer</span>
+        </div>
       </div>
       <ul>
         <li>Organized and led AI, Machine Learning, and cloud technology workshops, technical talks, and developer meetups to upskill practitioners across the developer community</li>
@@ -162,8 +186,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Amazon</h2>
-        <span class="te-role">Software Engineer, Machine Learning</span>
+        <img src="{{ site.baseurl }}/images/logos/amazon.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Amazon</h2>
+          <span class="te-role">Software Engineer, Machine Learning</span>
+        </div>
       </div>
       <ul>
         <li>Infrastructure scalability and ML applications for Amazon's international shipping business (Expansions &amp; Exports)</li>
@@ -190,8 +217,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">UC San Diego</h2>
-        <span class="te-role">Teaching Assistant</span>
+        <img src="{{ site.baseurl }}/images/logos/ucsd.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">UC San Diego</h2>
+          <span class="te-role">Teaching Assistant</span>
+        </div>
       </div>
       <ul>
         <li>TA for Recommender Systems &amp; Web Mining (CSE 258, Prof. Julian McAuley) and Software Engineering (CSE 110, Prof. William Griswold)</li>
@@ -206,8 +236,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Amazon</h2>
-        <span class="te-role">Software Development Engineering Intern</span>
+        <img src="{{ site.baseurl }}/images/logos/amazon.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Amazon</h2>
+          <span class="te-role">Software Development Engineering Intern</span>
+        </div>
       </div>
       <ul>
         <li>Led development of distributed platform for efficient scheduling of Big Data workloads in the DataForge team</li>
@@ -227,8 +260,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">Arcesium (D.E. Shaw)</h2>
-        <span class="te-role">Member Technical</span>
+        <img src="{{ site.baseurl }}/images/logos/arcesium.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">Arcesium (D. E. Shaw Group)</h2>
+          <span class="te-role">Member of Technical Staff</span>
+        </div>
       </div>
       <ul>
         <li>Led low-latency processing of critical financial artifacts in the STP team</li>
@@ -250,8 +286,11 @@ permalink: /experience/
     </div>
     <div class="te-content">
       <div class="te-header">
-        <h2 class="te-company">IIT Madras</h2>
-        <span class="te-role">Research Intern</span>
+        <img src="{{ site.baseurl }}/images/logos/iitm.svg" alt="" width="44" height="44" loading="lazy" decoding="async" class="org-logo">
+        <div class="te-title-group">
+          <h2 class="te-company">IIT Madras</h2>
+          <span class="te-role">Research Intern</span>
+        </div>
       </div>
       <ul>
         <li>Developed scalable Bayesian Matrix Factorization (cubic → linear complexity) under Dr. Balaraman Ravindran</li>
@@ -270,8 +309,13 @@ permalink: /experience/
   <h2 id="education-heading" class="section-header">Education</h2>
   <div class="edu-grid">
     <article class="edu-card">
-      <h3 class="edu-school">University of California San Diego</h3>
-      <div class="edu-degree">M.S., Computer Science</div>
+      <div class="edu-head">
+        <img src="{{ site.baseurl }}/images/logos/ucsd.svg" alt="" width="42" height="42" loading="lazy" decoding="async" class="org-logo">
+        <div>
+          <h3 class="edu-school">University of California San Diego</h3>
+          <div class="edu-degree">M.S., Computer Science</div>
+        </div>
+      </div>
       <ul class="edu-notes">
         <li>Specialization in Machine Learning, Recommender Systems, and NLP</li>
         <li>Advisor: <a href="http://cseweb.ucsd.edu/~jmcauley/" target="_blank" rel="noopener">Prof. Julian McAuley</a></li>
@@ -279,8 +323,13 @@ permalink: /experience/
     </article>
 
     <article class="edu-card">
-      <h3 class="edu-school">Thapar Institute of Engineering &amp; Technology</h3>
-      <div class="edu-degree">B.E., Computer Science</div>
+      <div class="edu-head">
+        <img src="{{ site.baseurl }}/images/logos/thapar.svg" alt="" width="42" height="42" loading="lazy" decoding="async" class="org-logo">
+        <div>
+          <h3 class="edu-school">Thapar Institute of Engineering &amp; Technology</h3>
+          <div class="edu-degree">B.E., Computer Science</div>
+        </div>
+      </div>
       <ul class="edu-notes">
         <li><b>Gold Medalist</b></li>
       </ul>

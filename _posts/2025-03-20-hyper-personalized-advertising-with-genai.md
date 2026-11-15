@@ -5,6 +5,8 @@ title: "<center>Unlock Hyper-Personalized Advertising with Generative AI</center
 comments: true
 mathjax: true
 summary: "Explore how Generative AI is moving digital marketing from broad segmentation to hyper-personalization by dynamically synthesizing visual and textual ad creatives in real-time."
+image: "/images/features/attentive-genai.jpg"
+show_hero: true
 ---
 
 In the fiercely competitive digital advertising landscape, capturing and retaining user attention is harder than ever. Consumers are bombarded with generic marketing messages, leading to "ad fatigue" and plummeting conversion rates. For years, the industry standard for combating this was **segmentation**—grouping users into broad, demographic or behavioral buckets.

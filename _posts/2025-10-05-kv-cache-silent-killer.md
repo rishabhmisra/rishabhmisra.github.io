@@ -5,6 +5,8 @@ title: "<center>KV Cache: The Silent Killer of Your Inference Budget</center>"
 comments: true
 mathjax: true
 summary: "The KV Cache is the hidden memory tax causing your LLM applications to crash. Discover the math behind the bottleneck and how fragmentation eats your inference budget."
+image: "/images/blog/kv-cache-budget.svg"
+show_hero: true
 ---
 
 If you have ever tried to scale a Generative AI application, you have likely encountered this scenario: your model works flawlessly in testing, but the moment you push a 10-page document into your "production-ready" Retrieval-Augmented Generation (RAG) system, the entire cluster crashes with an Out-Of-Memory (OOM) error.

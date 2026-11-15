@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#EAE7E0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="#F6F5F1"/>
+  <rect width="800" height="450" fill="url(#g)" opacity="0.75"/>
+  <rect x="36" y="28" width="168" height="28" rx="14" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+  <text x="120" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#C2410C" text-anchor="middle" letter-spacing="0.06em">RECSYS ARCHITECTURE</text>
+  <text x="764" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-anchor="end">Encode vs. Generate</text>
+  
+  <rect x="56" y="114" width="322" height="256" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="80" y="138" width="112" height="26" rx="13" fill="#EFF6FF"/><text x="136" y="155" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">ENCODE PATH</text>
+  <text x="80" y="194" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0F172A">Dense Embeddings + ANN</text>
+  <text x="80" y="224" font-family="system-ui, sans-serif" font-size="13" fill="#475569">• 10M+ item catalog @ &lt; 15ms p99</text>
+  <text x="80" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#475569">• Offline semantic item indexing</text>
+  <text x="80" y="280" font-family="system-ui, sans-serif" font-size="13" fill="#475569">• Sub-cent cost per 1K requests</text>
+  <rect x="80" y="308" width="274" height="36" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="217" y="331" font-family="ui-monospace, monospace" font-size="12" font-weight="600" fill="#0F766E" text-anchor="middle">✓ Retrieval &amp; High-QPS Ranking</text>
+
+  <rect x="422" y="114" width="322" height="256" rx="14" fill="#0F172A"/>
+  <rect x="446" y="138" width="128" height="26" rx="13" fill="rgba(249,115,22,0.2)"/><text x="510" y="155" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" fill="#FB923C" text-anchor="middle">GENERATE PATH</text>
+  <text x="446" y="194" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#F8FAFC">Autoregressive LLM</text>
+  <text x="446" y="224" font-family="system-ui, sans-serif" font-size="13" fill="#CBD5E1">• Cross-item reasoning &amp; explanations</text>
+  <text x="446" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#CBD5E1">• Conversational intent synthesis</text>
+  <text x="446" y="280" font-family="system-ui, sans-serif" font-size="13" fill="#CBD5E1">• Top-K slate reranking (K ≤ 30)</text>
+  <rect x="446" y="308" width="274" height="36" rx="8" fill="#1E293B" stroke="#F97316"/>
+  <text x="583" y="331" font-family="ui-monospace, monospace" font-size="12" font-weight="600" fill="#FDBA74" text-anchor="middle">✓ Reranking &amp; Rationale Layer</text>
+
+</svg>
