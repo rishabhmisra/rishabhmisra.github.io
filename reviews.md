@@ -49,7 +49,7 @@ permalink: /reviews/
   </div>
   <div class="review-card mentorcruise">
     <div class="review-stars">★★★★★</div>
-    <p class="review-text">"Rishabh is an exceptionally knowledgeable mentor in the AI/ML space, combining strong academic credentials with practical industry experience. His background as an AI professional at Atlassian, along with his publications and authorship, gives him deep expertise across a wide range of topics. What stands out most, however, is not just his technical knowledge but his patience, adaptability, and genuine commitment to his mentees' success. I have been working with Rishabh for over seven months, during which my learning direction evolved multiple times—from classical machine learning to Agentic AI and research-oriented work—as I refined my career goals and adapted to industry trends. Throughout every transition, Rishabh remained supportive, flexible, and focused on helping me make informed decisions. Rather than offering a generic roadmap, he took the time to understand my long-term aspirations and designed a personalized curriculum tailored to my strengths, constraints, and career objectives. His guidance has helped me stay aligned with my goal of becoming a leader in the AI/ML field while ensuring that my learning remains relevant to contemporary industry standards. Beyond structured learning, Rishabh has played a significant role in my research journey. Under his mentorship, I successfully completed two research papers and currently have a third paper in progress. His feedback, strategic guidance, and ability to break down complex research challenges into actionable steps were invaluable throughout the process. I am particularly grateful for the effort he invested in building a structured growth plan specifically for me, as well as for his consistent support, encouragement, and thoughtful advice throughout the journey. I highly recommend Rishabh to anyone seeking a mentor who combines deep technical expertise with genuine dedication to their mentees' growth and long-term success."</p>
+    <p class="review-text">"Rishabh is an exceptionally knowledgeable mentor in the AI/ML space, combining strong academic credentials with practical industry experience. His background as an AI professional at Atlassian, along with his publications and authorship, gives him deep expertise across a wide range of topics. What stands out most, however, is not just his technical knowledge but his patience, adaptability, and genuine commitment to his mentees' success. I have been working with Rishabh for over seven months, during which my learning direction evolved multiple times - from classical machine learning to Agentic AI and research-oriented work - as I refined my career goals and adapted to industry trends. Throughout every transition, Rishabh remained supportive, flexible, and focused on helping me make informed decisions. Rather than offering a generic roadmap, he took the time to understand my long-term aspirations and designed a personalized curriculum tailored to my strengths, constraints, and career objectives. His guidance has helped me stay aligned with my goal of becoming a leader in the AI/ML field while ensuring that my learning remains relevant to contemporary industry standards. Beyond structured learning, Rishabh has played a significant role in my research journey. Under his mentorship, I successfully completed two research papers and currently have a third paper in progress. His feedback, strategic guidance, and ability to break down complex research challenges into actionable steps were invaluable throughout the process. I am particularly grateful for the effort he invested in building a structured growth plan specifically for me, as well as for his consistent support, encouragement, and thoughtful advice throughout the journey. I highly recommend Rishabh to anyone seeking a mentor who combines deep technical expertise with genuine dedication to their mentees' growth and long-term success."</p>
     <div class="review-meta">
       <span class="reviewer-name">Bidit</span>
       <span class="platform-badge mentorcruise">MentorCruise</span>
@@ -459,7 +459,7 @@ permalink: /reviews/
 
   function renderBalancedColumns() {
     const visible = allCards.filter(c => currentPlatform === 'all' || c.classList.contains(currentPlatform));
-    const isSingleCol = window.matchMedia('(max-width: 900px)').matches;
+    const isSingleCol = window.matchMedia('(max-width: 920px)').matches;
 
     grid.innerHTML = '';
     if (isSingleCol) {
@@ -513,6 +513,6 @@ permalink: /reviews/
   }
 
   renderBalancedColumns();
-  window.matchMedia('(max-width: 900px)').addEventListener('change', renderBalancedColumns);
+  window.matchMedia('(max-width: 920px)').addEventListener('change', renderBalancedColumns);
 })();
 </script>

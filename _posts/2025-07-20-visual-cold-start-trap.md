@@ -25,7 +25,7 @@ The lifecycle of a failed new product in a traditional RecSys often looks like t
 4.  **The Feedback Loop:** Because it is ranked on page 50, it receives zero impressions. Zero impressions guarantee zero clicks. 
 5.  **The Death:** The system definitively learns: *this product is irrelevant*. The fresh inventory becomes dead weight.
 
-The vicious cycle doesn't stop itself. The algorithm is technically doing exactly what it was optimized to do—minimizing risk by showing proven items. You have to break it architecturally.
+The vicious cycle doesn't stop itself. The algorithm is technically doing exactly what it was optimized to do - minimizing risk by showing proven items. You have to break it architecturally.
 
 ## The Root Problem: Users Don't Read
 

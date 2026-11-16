@@ -11,7 +11,7 @@ show_hero: true
 
 We have crossed a threshold in the Generative AI landscape. Large Language Models (LLMs) have transitioned from research novelties and experimental playgrounds into production-critical engines driving real enterprise value. 
 
-With this shift, the engineering bottleneck has fundamentally changed. The hardest problem is no longer *training* the model—thanks to robust open-weight models like Llama-3 and Mistral. The hardest problem is now *serving* the model efficiently. 
+With this shift, the engineering bottleneck has fundamentally changed. The hardest problem is no longer *training* the model - thanks to robust open-weight models like Llama-3 and Mistral. The hardest problem is now *serving* the model efficiently. 
 
 In my Udacity course, "Advanced LLM Inference Optimization Techniques," I dive deep into the mechanics of making LLM inference fast, scalable, and economically viable. This post provides an overview of the core architectural principles you need to master to optimize inference at scale.
 
@@ -31,7 +31,7 @@ Overcoming this "Memory Wall" is the primary directive of modern inference archi
 When a model is too large to fit on a single GPU (or when you need to split it to increase bandwidth), you must shard the model across multiple devices. 
 
 *   **Tensor Parallelism (TP) / Intra-layer Parallelism:** This technique splits individual matrix multiplications across multiple GPUs. Frameworks like NVIDIA's **Megatron-LM** pioneered this for giant models. Because partial results need to be combined within a single layer computation, TP requires significant inter-GPU communication using operations like `all-reduce` or `all-gather`. Therefore, it is highly effective but usually restricted to the GPUs within a single node connected by high-speed NVLink.
-*   **Pipeline Parallelism (PP) / Inter-layer Parallelism:** This approach assigns different sequential groups of layers to different GPUs. It reduces the communication overhead between GPUs but can introduce "pipeline bubbles"—periods of idle time where one GPU is waiting for the previous one to finish its layer. To mitigate this and keep the pipeline full, we introduce **micro-batches**, dividing the input batch into smaller chunks that flow sequentially through the pipeline, maximizing GPU utilization.
+*   **Pipeline Parallelism (PP) / Inter-layer Parallelism:** This approach assigns different sequential groups of layers to different GPUs. It reduces the communication overhead between GPUs but can introduce "pipeline bubbles" - periods of idle time where one GPU is waiting for the previous one to finish its layer. To mitigate this and keep the pipeline full, we introduce **micro-batches**, dividing the input batch into smaller chunks that flow sequentially through the pipeline, maximizing GPU utilization.
 Mastering the exact composition of TP and PP is crucial for maximizing throughput on large, multi-node clusters.
 
 ### 2. Architectural Tweaks: Grouped-Query Attention (GQA)

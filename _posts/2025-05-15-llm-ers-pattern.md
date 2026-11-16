@@ -9,7 +9,7 @@ image: "/images/blog/llm-ers-pattern.svg"
 show_hero: true
 ---
 
-Over the past year, I've had the opportunity to review over 50 different architectural proposals for Generative Recommendation Systems (RecSys). Despite the variance in domains—from e-commerce to streaming video—one extremely expensive mistake keeps appearing on whiteboards everywhere: **Engineering teams are trying to use massive 70-Billion parameter Large Language Models (LLMs) to perform real-time, online ranking.**
+Over the past year, I've had the opportunity to review over 50 different architectural proposals for Generative Recommendation Systems (RecSys). Despite the variance in domains - from e-commerce to streaming video - one extremely expensive mistake keeps appearing on whiteboards everywhere: **Engineering teams are trying to use massive 70-Billion parameter Large Language Models (LLMs) to perform real-time, online ranking.**
 
 It fails in production. Almost every single time. 
 
@@ -19,7 +19,7 @@ In this post, I want to break down exactly why this approach is doomed from an i
 
 Let’s look at the reality of production ML. At scale-obsessed companies like Amazon and Twitter, engineering teams operate under ruthless latency budgets. A user expects their feed to populate in roughly 100 to 200 milliseconds. 
 
-If you attempt to pass a user's entire interaction history and a candidate pool of hundreds of items into the context window of an LLM to autoregressively generate a ranked list, you are going to hit a wall. Generating output token-by-token through a massive Transformer network takes time—often hundreds of milliseconds per token. You simply cannot run autoregressive inference over a massive catalog and stay within a 100ms budget. 
+If you attempt to pass a user's entire interaction history and a candidate pool of hundreds of items into the context window of an LLM to autoregressively generate a ranked list, you are going to hit a wall. Generating output token-by-token through a massive Transformer network takes time - often hundreds of milliseconds per token. You simply cannot run autoregressive inference over a massive catalog and stay within a 100ms budget. 
 
 That is not a modeling problem; that is physics. The bottleneck is the memory bandwidth of your GPUs. 
 
@@ -30,7 +30,7 @@ The real issue isn't that LLMs are weak or incapable of ranking. It's that they 
 The field is rapidly converging on a pattern that balances the semantic power of LLMs with the raw speed of traditional machine learning. We call this the LLM-Enhanced Recommender System (LLM-ERS) pattern. It divides the pipeline into three distinct layers.
 
 ### Layer 1: Retrieval + Ranking (Keep it Boring, Keep it Fast)
-The critical path—the actual real-time serving layer—should remain mathematically simple and blazing fast. Do not put an LLM here.
+The critical path - the actual real-time serving layer - should remain mathematically simple and blazing fast. Do not put an LLM here.
 
 *   Rely on proven architectures like **Two-Tower embeddings** for dense retrieval.
 *   Use heavily optimized **Vector Databases** (like Milvus or Pinecone) for Approximate Nearest Neighbor (ANN) search.

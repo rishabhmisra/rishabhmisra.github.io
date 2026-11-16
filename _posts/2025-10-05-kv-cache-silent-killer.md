@@ -39,7 +39,7 @@ The problem isn't just the raw size of the cache; it is how traditional systems 
 
 Historically, deep learning frameworks required contiguous blocks of memory for tensors. When a user submits a prompt, the system doesn't know if the LLM will generate a 5-token response or a 500-token response. To prevent crashing mid-generation, the system must aggressively over-allocate a maximum-length contiguous block "just in case."
 
-This turns your incredibly expensive H100 GPU memory into "Swiss Cheese"—riddled with holes and reserved, but ultimately empty, memory slots. You can end up in a situation where 50% of your VRAM is technically "free," but completely unusable because it is highly fragmented. 
+This turns your incredibly expensive H100 GPU memory into "Swiss Cheese" - riddled with holes and reserved, but ultimately empty, memory slots. You can end up in a situation where 50% of your VRAM is technically "free," but completely unusable because it is highly fragmented. 
 
 We are facing a systems engineering problem disguised as a machine learning problem.
 
@@ -51,7 +51,7 @@ We are facing a systems engineering problem disguised as a machine learning prob
 The solution to fragmentation comes from classic operating systems design: Virtual Memory. By implementing **PagedAttention**, we can break the KV cache into small, non-contiguous blocks (pages) and map them dynamically. This completely eliminates internal fragmentation and is the breakthrough technology that allows modern serving engines to achieve high throughput.
 
 ### 2. Grouped Query Attention (GQA)
-Instead of caching a unique Key and Value vector for every single Query head (Multi-Head Attention), modern architectures use **Grouped Query Attention (GQA)**. GQA strikes a balance: it shares Key and Value matrices across groups of Query heads. This drastically reduces the KV Cache memory footprint—shrinking the data that needs to be read from slow GPU memory—without significantly impacting model quality.
+Instead of caching a unique Key and Value vector for every single Query head (Multi-Head Attention), modern architectures use **Grouped Query Attention (GQA)**. GQA strikes a balance: it shares Key and Value matrices across groups of Query heads. This drastically reduces the KV Cache memory footprint - shrinking the data that needs to be read from slow GPU memory - without significantly impacting model quality.
 
 ### 3. Flash Attention
 Finally, we can optimize the attention mechanism's memory bandwidth usage through **Flash Attention**. Flash Attention rethinks the data flow by fusing operations and keeping data in the fast on-chip SRAM, minimizing expensive reads and writes to the main HBM memory. This results in faster computation, especially with longer context windows.

@@ -17,7 +17,7 @@ While I am sworn to secrecy on the exact title for just a little longer, I want 
 
 ## The Premise: Reinventing Personalization
 
-We are taking one of the most fundamental, revenue-driving problems in Machine Learning—how apps know exactly what you want to watch, read, or buy next—and we are completely reinventing it using the biggest AI breakthrough of the decade: Large Language Models (LLMs).
+We are taking one of the most fundamental, revenue-driving problems in Machine Learning - how apps know exactly what you want to watch, read, or buy next - and we are completely reinventing it using the biggest AI breakthrough of the decade: Large Language Models (LLMs).
 
 Think: **Classic Personalization meets the new world of Generative AI.**
 

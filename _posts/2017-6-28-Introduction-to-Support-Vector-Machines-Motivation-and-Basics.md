@@ -39,7 +39,7 @@ First, we will derive the equation of the decision boundary in terms of the data
 Mathematically, we say that a data point $ \vec{x}$ is on the right side of decision boundary (that is, in the Star class) if $ \vec{w} . \vec{x} \ge c$ else it is in the plus class. This means that the equation of the hyperplane (line in case of 2-d) that separates two classes, in terms of an arbitrary data point $ \vec{x}$, is following:
 
 <center>
-$ \vec{w} . \vec{x} + b\ = 0$, where $ b = -c$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)
+$ \vec{w} . \vec{x} + b\ = 0$, where $ b = -c$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)
 </center>
 
 Now we have the equation of our decision boundary but it is not yet immediately clear how it would help us in the maximizing its distance from the data points of both the classes. To that end, we would employ a trick which goes as follows. Usually, in a binary classification problem, the labels of data samples are + 1 or -1. Thus, it would be more convenient for us if our decision rule (i.e. $ \vec{w} . \vec{x} + b$) outputs quantity greater than or equal to +1 for all the data points belonging to star class and quantity less than or equal to -1 for all the data points belonging to plus class.
@@ -47,7 +47,7 @@ Now we have the equation of our decision boundary but it is not yet immediately 
 Mathematically, $ \vec{x}$ should belong to class Star if $ \vec{w} . \vec{x} + b \ge 1$ and $ \vec{x}$ should belong to class Plus if $ \vec{w} . \vec{x} + b \le -1$ or equivalently, we can write 
 
 <center>
-$ y_{i} (\vec{w} . \vec{x}_{i} + b) \ge 1$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)
+$ y_{i} (\vec{w} . \vec{x}_{i} + b) \ge 1$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)
 </center>
 for each point $ \vec{x}\_{i}$, where we are considering $ y_{i}$ equal to -1 for plus class and equal to +1 for star class.
 
@@ -73,21 +73,21 @@ Since $\vec{x}\_{+}$ and $\vec{x}\_{-}$ are closest to the decision boundary an
 
 Substituting $\vec{x}\_{+}.\vec{w}$ and $\vec{x}\_{-}.\vec{w}$ in the equation of d, we get:
 
-<center> $ d = \frac{2}{\|\vec{w}\|}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C) </center>
+<center> $ d = \frac{2}{\|\vec{w}\|}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C) </center>
 
 Thus, if we have to maximize $d$, we can equivalently minimize $\|\vec{w}\|$ or minimize $\frac{1}{2} {\|\vec{w}\|}^{2}$ (this transformation is done for mathematical convenience). However, this optimization must be subjected to a constraint of correctly classifying all the data points.  Hence, we'll make use of Lagrange Multiplier here to enforce the constraint from the equation (A).
 
 Now, it is time to do some mathematics. Formally, our objective is to minimize the following objective function:
 
-<center>$ L = \frac{1}{2} {\|\vec{w}\|}^{2} + \sum_{i} \lambda_{i} (y_{i} (\vec{w}.\vec{x}_{i} + b) - 1)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)</center>
+<center>$ L = \frac{1}{2} {\|\vec{w}\|}^{2} + \sum_{i} \lambda_{i} (y_{i} (\vec{w}.\vec{x}_{i} + b) - 1)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)</center>
 
 Differentiating $L$ with respect to $\vec{w}$, we would obtain the optimal $\vec{w}$ as
 
-<center>$ \vec{w} = \sum_{i} \lambda_{i} y_{i} \vec{x}_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(E)</center>
+<center>$ \vec{w} = \sum_{i} \lambda_{i} y_{i} \vec{x}_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(E)</center>
 
 The interesting thing to note here is that the decision vector $\vec{w}$ is a linear sum of the input vector (or data points) $\vec{x}\_{i}$s. Next step is to differentiate $L$ with respect to $b$ which would give us the following equality
 
-<center>$ \sum_{i} \lambda_{i} y_{i} = 0$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(F)</center>
+<center>$ \sum_{i} \lambda_{i} y_{i} = 0$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(F)</center>
 
 Now, we will substitute (E) into (D) and use (F) to rearrange the objective function into the following:
 

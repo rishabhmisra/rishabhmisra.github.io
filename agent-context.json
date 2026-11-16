@@ -3,8 +3,8 @@ layout: null
 permalink: /agent-context.json
 ---
 {
-  "schema_version": "1.1",
-  "last_updated": "2026-11-15",
+  "schema_version": "1.2",
+  "last_updated": "2026-11-16",
   "generated_by": "Jekyll static build for rishabhmisra.github.io",
   "canonical_url": "https://rishabhmisra.github.io/agent-context.json",
   "llms_txt": "https://rishabhmisra.github.io/llms.txt",
@@ -36,6 +36,7 @@ permalink: /agent-context.json
       "https://www.kaggle.com/rmisra/datasets",
       "https://x.com/rishabh_misra_",
       "https://medium.com/@rishabh_misra_",
+      "https://naano.com/creators/rishabh-misra",
       "https://mentorcruise.com/mentor/rishabhmisra/",
       "https://www.meetapro.com/provider/rishabh-misra-32292",
       "https://www.udacity.com/course/llm-inference-optimization--cd14455",
@@ -63,7 +64,10 @@ permalink: /agent-context.json
     "linkedin_annual_impressions": "193200+",
     "linkedin_unique_members_reached": "70100+",
     "linkedin_annual_engagements": "4090+",
+    "linkedin_peak_post_impressions": "51000+",
     "linkedin_followers": "8280+ (66% Senior+ & Leadership)",
+    "towards_data_science_views": "135000+",
+    "website_visits": "85000+",
     "media_features": "15+"
   },
   "navigation": {
@@ -75,6 +79,8 @@ permalink: /agent-context.json
     "media_features": "https://rishabhmisra.github.io/features/",
     "reviews": "https://rishabhmisra.github.io/reviews/",
     "collaborate": "https://rishabhmisra.github.io/collaborate/",
+    "creator_media_kit": "https://rishabhmisra.github.io/collaborate/#media-kit",
+    "naano_creator_profile": "https://naano.com/creators/rishabh-misra",
     "rss_feed": "https://rishabhmisra.github.io/feed.xml"
   },
   "experience": [
@@ -90,7 +96,7 @@ permalink: /agent-context.json
     },
     {
       "organization": "Afterdays",
-      "role": "Founder — AI Consulting, Enterprise Enablement & Technical Education",
+      "role": "Founder - AI Consulting, Enterprise Enablement & Technical Education",
       "period": "2021 - Present",
       "highlights": [
         "Afterdays x AI Aspire (by Andrew Ng, https://aiaspire.ai/ | https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/): Strategic partnership on enterprise AI enablement, including delivering a 2-week corporate AI training program for Morgan Stanley in New York, NY",
@@ -195,7 +201,7 @@ permalink: /agent-context.json
   "selected_publications": [
     {
       "title": "Keeping it Low-Key: Modern-Day Approaches to Privacy-Preserving Machine Learning",
-      "venue": "Springer Nature — Data Protection in a Post-Pandemic Society",
+      "venue": "Springer Nature - Data Protection in a Post-Pandemic Society",
       "year": 2023,
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-34006-2_2"
     },
@@ -208,7 +214,7 @@ permalink: /agent-context.json
     },
     {
       "title": "Do Not 'Fake It Till You Make It'! Synopsis of Trending Fake News Detection Methodologies Using Deep Learning",
-      "venue": "Springer Nature — Deep Learning for Social Media Data Analytics",
+      "venue": "Springer Nature - Deep Learning for Social Media Data Analytics",
       "year": 2022,
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-10869-3_12"
     },
@@ -290,14 +296,106 @@ permalink: /agent-context.json
   "collaboration": {
     "email": "mailto:rishabhmisra33@gmail.com",
     "collaborate_page": "https://rishabhmisra.github.io/collaborate/",
+    "creator_media_kit": "https://rishabhmisra.github.io/collaborate/#media-kit",
+    "naano": "https://naano.com/creators/rishabh-misra",
     "mentorcruise": "https://mentorcruise.com/mentor/rishabhmisra/",
     "meetapro": "https://www.meetapro.com/provider/rishabh-misra-32292",
     "offerings": [
+      "B2B AI & DevTools Content Creation & Brand Partnerships (Sponsored LinkedIn Technical Deep-Dives, Whitepapers, Benchmarks & Launch Webinars via Afterdays / Naano)",
       "Enterprise Corporate AI Training & Engineering Enablement (in partnership with AI Aspire by Andrew Ng / Afterdays; delivered for Morgan Stanley in NYC)",
       "AI/ML Architecture Advisory & Fractional Technical Leadership",
       "International Keynotes, Fireside Chats & Technical Workshops",
-      "Course Creation & Developer Advocacy Partnerships",
+      "Custom Developer Curricula & Online Courses",
       "1:1 Career Coaching & ML System Design Mentorship"
+    ]
+  },
+  "creator_media_kit": {
+    "practice": "Afterdays",
+    "positioning": "Practitioner-first B2B AI, Infrastructure & DevTools technical creator - sitting Principal ML Lead architecting Foundation Models at billion-user scale, writing deeply technical systems analyses trusted by Senior/Staff+ engineers and engineering executives.",
+    "booking_links": {
+      "media_kit_url": "https://rishabhmisra.github.io/collaborate/#media-kit",
+      "naano_storefront": "https://naano.com/creators/rishabh-misra",
+      "sponsor_inquiry_email": "mailto:rishabhmisra33@gmail.com?subject=Content%20%26%20Brand%20Partnership%20Inquiry%20(Afterdays)",
+      "linkedin": "https://www.linkedin.com/in/rishabhmisra33/"
+    },
+    "reach_metrics": {
+      "linkedin_followers": "8280+",
+      "linkedin_annual_impressions": 193277,
+      "linkedin_unique_members_reached_1y": 70124,
+      "linkedin_annual_engagements": 4094,
+      "linkedin_peak_post_impressions": 51037,
+      "linkedin_peak_post_engagements": 1310,
+      "towards_data_science_views": "135000+",
+      "website_visits": "85000+"
+    },
+    "audience_demographics": {
+      "senior_and_leadership_share": "66%",
+      "senior_individual_contributors": "45%",
+      "leadership_directors_vps_cxos_founders": "21%",
+      "enterprise_1000_to_10000_plus_employees": "56%",
+      "startups_2_to_500_employees": "30%",
+      "top_companies": [
+        "Amazon",
+        "Meta",
+        "Google",
+        "Microsoft",
+        "Amazon Web Services (AWS)",
+        "Apple",
+        "NVIDIA",
+        "LinkedIn",
+        "Google DeepMind"
+      ],
+      "top_locations": [
+        "San Francisco Bay Area (24%)",
+        "Greater Bengaluru Area (13%)",
+        "Greater Seattle Area (7%)",
+        "New York City Metropolitan Area (5%)",
+        "London",
+        "Toronto"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Machine Learning Engineer",
+        "AI Engineer",
+        "Data & Applied Scientist",
+        "Founder / Co-Founder",
+        "Director of AI"
+      ]
+    },
+    "brand_fit_categories": [
+      "LLM Inference & GPU Cloud Infrastructure",
+      "Agentic AI & Workflow Orchestration",
+      "Vector Databases & Enterprise RAG",
+      "LLM Evaluation, Observability & Guardrails",
+      "Recommender & Search Systems",
+      "MLOps & Developer Productivity Tools",
+      "Technical EdTech & Developer Publishing"
+    ],
+    "deliverable_formats": [
+      "Sponsored LinkedIn Technical Deep-Dives & Custom Architecture Diagrams",
+      "Technical Whitepapers, GPU/LLM Benchmarks & Engineering Blog Features (with GitHub code)",
+      "Live Webinars, Fireside Chats & Product Launch Walkthroughs",
+      "Custom Developer Curricula, Video Courses & Enablement Modules"
+    ],
+    "sample_high_performing_posts": [
+      {
+        "topic": "Production Engineering Trade-Offs vs. Three-Week Rabbit Holes",
+        "impressions": 51037,
+        "engagements": 1310,
+        "url": "https://www.linkedin.com/posts/rishabhmisra33_i-watched-a-senior-engineer-spend-three-weeks-share-7426714414805876738-pJEf"
+      },
+      {
+        "topic": "90% of AI Engineers Chain API Calls - What Sets the Top 10% Apart",
+        "impressions": 20749,
+        "engagements": 413,
+        "url": "https://www.linkedin.com/posts/rishabhmisra33_90-of-ai-engineers-can-chain-api-calls-share-7434300395277070337-M8_l"
+      },
+      {
+        "topic": "Architecting Modern Recommender & Generative Personalization Systems",
+        "impressions": 10348,
+        "engagements": 359,
+        "url": "https://www.linkedin.com/posts/rishabhmisra33_recsys-share-7449679192377458689-_8Ep"
+      }
     ]
   },
   "articles": [

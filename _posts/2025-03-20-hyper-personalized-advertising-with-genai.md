@@ -9,7 +9,7 @@ image: "/images/features/attentive-genai.jpg"
 show_hero: true
 ---
 
-In the fiercely competitive digital advertising landscape, capturing and retaining user attention is harder than ever. Consumers are bombarded with generic marketing messages, leading to "ad fatigue" and plummeting conversion rates. For years, the industry standard for combating this was **segmentation**—grouping users into broad, demographic or behavioral buckets.
+In the fiercely competitive digital advertising landscape, capturing and retaining user attention is harder than ever. Consumers are bombarded with generic marketing messages, leading to "ad fatigue" and plummeting conversion rates. For years, the industry standard for combating this was **segmentation** - grouping users into broad, demographic or behavioral buckets.
 
 However, segmentation is no longer sufficient. Treating a 25-year-old tech enthusiast from New York exactly the same as another 25-year-old tech enthusiast ignores the massive variance in individual intent, context, and visual preference. The future of marketing lies in **hyper-personalization**, and Generative AI (GenAI) is the technological catalyst unlocking it at an unprecedented scale.
 

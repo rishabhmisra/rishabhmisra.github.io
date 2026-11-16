@@ -35,12 +35,12 @@ $ \implies L(w) = \sum_{i=1}^N log\left[\sigma(w.x_i)^{y_i} . \sigma(-w.x_i)^{1 
 where we've written $P(Y = y_i | X = x_i)$ in a general form such that it is $\sigma(w.x_i)$ when $y_i = 1$ else $\sigma(-w.x_i)$. Upon further simplification, we can write the log likelihood as:
 <br/>
 <center>
-$L(w) = \sum_{i=1}^N \left[ y_i. log\left(\sigma(w.x_i)\right) + (1 - y_i). log\left(\sigma(-w.x_i)\right) \right]$ --- (A)
+$L(w) = \sum_{i=1}^N \left[ y_i. log\left(\sigma(w.x_i)\right) + (1 - y_i). log\left(\sigma(-w.x_i)\right) \right]$ - (A)
 </center>
 
 At this point, we should note that log-likelihood $L(w)$ breaks down conveniently into per-instance form. Since there's no coupling between the parameters, optimization can be done easily and we'll see later why this is a good thing. Since $L(w)$ is a function of $w$, we don't have any closed-form solution to equation (A). Thus, we would have to use iterative optimization methods like gradient ascent or Newton's method to find $w$. An update for the gradient ascent method would look like:
 <center>
-$w = w + \eta.\left( \sum_{i=1}^N [y_i - \sigma(w.x_i)].x_i \right)$ --- (B)
+$w = w + \eta.\left( \sum_{i=1}^N [y_i - \sigma(w.x_i)].x_i \right)$ - (B)
 </center>
 where $\eta$ is an appropriate learning rate. We repeat (B) until convergence. The final value of $w$ we opt for is called maximum likelihood estimate.
 
@@ -54,7 +54,7 @@ $L(w) = log P(\text{data}) = log \Pi_{i=1}^N P(Y_i | V_i) = \sum_{i=1}^N log P(Y
 </center>
 This can be written in form of conditional probabilities as following:
 <center>
-$L(w) = \sum_{i=1}^N log \sum_{h \in Z_i} \Pi_{j} P(X_j | \text{Pa}(X_j))$ --- (C)
+$L(w) = \sum_{i=1}^N log \sum_{h \in Z_i} \Pi_{j} P(X_j | \text{Pa}(X_j))$ - (C)
 </center>
 where $X_j \in \\{V_i, Z_i\\}$ and $\text{Pa}(X_j)$ represents parent of $X_j$ in [belief network](http://artint.info/html/ArtInt_148.html) of the model. Comparing (A) with (C), we can see that in the latter case, the parameters are coupled with each other because of summation inside the log. Because of this, the optimization using gradient descent or Newton's method is not straightforward. To estimate the parameters in these situations we use EM algorithm which is composed of two iterative steps both of which try to maximize the objective.
 

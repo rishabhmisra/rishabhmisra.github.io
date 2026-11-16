@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Professional Experience
-description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Afterdays (Founder — AI Consulting & Education, partnering with AI Aspire by Andrew Ng, Udacity & LinkedIn Learning), Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
+description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Afterdays (Founder - AI Consulting & Education, partnering with AI Aspire by Andrew Ng, Udacity & LinkedIn Learning), Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
 permalink: /experience/
 ---
 
@@ -28,7 +28,7 @@ permalink: /experience/
       </div>
       <ul>
         <li>Defining and driving long-term technical strategy and <b>0→1 architecture for Generative RecSys &amp; Foundation Models</b> across multiple product surfaces, providing technical leadership across <b>20+ engineers</b></li>
-        <li>Leading <b>Natural Language Personalization for Search &amp; Chat</b> — combining LLMs, user preferences, behavioral signals, and contextual understanding to personalize query suggestions and responses across surfaces serving <b>millions of enterprise users</b></li>
+        <li>Leading <b>Natural Language Personalization for Search &amp; Chat</b> - combining LLMs, user preferences, behavioral signals, and contextual understanding to personalize query suggestions and responses across surfaces serving <b>millions of enterprise users</b></li>
         <li>Contributing to <b>Agentic AI architecture</b> through LLM/SLM pre-training and post-training (fine-tuning, preference alignment, intent &amp; query-complexity understanding) to enable intelligent routing and handling in Rovo Agents</li>
       </ul>
       <div class="tech-pills">
@@ -50,15 +50,15 @@ permalink: /experience/
         <img src="{{ site.baseurl }}/images/logos/afterdays.png" alt="" width="44" height="44" decoding="async" class="org-logo">
         <div class="te-title-group">
           <h2 class="te-company">Afterdays</h2>
-          <span class="te-role">Founder — AI Consulting, Enterprise Enablement &amp; Technical Education</span>
+          <span class="te-role">Founder - AI Consulting, Enterprise Enablement &amp; Technical Education</span>
         </div>
       </div>
       <ul>
-        <li><b>Afterdays × AI Aspire (by Andrew Ng) Partnership</b>: Closely partnering with <a href="https://aiaspire.ai/" target="_blank" rel="noopener">AI Aspire</a>, Andrew Ng's AI education organization (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/" target="_blank" rel="noopener">announcement</a>), to help enterprises move beyond experimentation and put applied ML &amp; AI engineering to work — including delivering a <b>2-week corporate AI training program for Morgan Stanley</b> in New York, NY</li>
+        <li><b>Afterdays × AI Aspire (by Andrew Ng) Partnership</b>: Closely partnering with <a href="https://aiaspire.ai/" target="_blank" rel="noopener">AI Aspire</a>, Andrew Ng's AI education organization (<a href="https://www.linkedin.com/feed/update/urn:li:activity:7515804869455278080/" target="_blank" rel="noopener">announcement</a>), to help enterprises move beyond experimentation and put applied ML &amp; AI engineering to work - including delivering a <b>2-week corporate AI training program for Morgan Stanley</b> in New York, NY</li>
         <li><b>Enterprise AI Consulting &amp; Advisory</b>: Led <b>50+ high-impact consulting and advisory engagements</b> with leaders across Google, Meta, Microsoft, NVIDIA, AWS, Morgan Stanley, Airtable, Glean, Salesforce, and Datadog; certified <b>Top Mentor (5.0 / 5.0, 54+ verified reviews)</b> coaching engineers into Senior+/FAANG ML &amp; GenAI roles</li>
         <li><b>Udacity Partnership</b>: Authored <a href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank" rel="noopener"><em>Advanced LLM Inference Optimization Techniques</em></a> (KV-cache mechanics, quantization, speculative decoding, model parallelism, DeepSpeed, TensorRT-LLM, Triton) and <a href="https://www.udacity.com/course/java-developer-nanodegree--nd035" target="_blank" rel="noopener"><em>Intelligent Backends with RAG &amp; Chat Models</em></a> (Spring AI, LangChain4j, modular RAG pipelines, HNSW &amp; HyDE vector search)</li>
-        <li><b>LinkedIn Learning Partnership</b>: Authored <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank" rel="noopener"><em>Building LLM-Powered Recommendation Systems</em></a> (<a href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214" target="_blank" rel="noopener">GitHub</a>) — production-ready recommender systems using GenAI; featured in the <a href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/" target="_blank" rel="noopener">University of Florida Career Hub</a></li>
-        <li><b>Interview Kickstart &amp; Brand Partnerships</b>: Featured Instructor for <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank" rel="noopener"><em>Applied Agentic AI</em></a>, <a href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank" rel="noopener"><em>Building Vertical AI Agents</em></a>, <a href="https://interviewkickstart.com/masterclass/retail-ai-agent" target="_blank" rel="noopener"><em>Building AI Agent for Retail</em></a>, and <a href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank" rel="noopener"><em>Agentic RAG</em></a>; technical creator with <b>193K+ annual LinkedIn impressions</b> across <b>8.2K+ followers (66% Senior+)</b></li>
+        <li><b>LinkedIn Learning Partnership</b>: Authored <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank" rel="noopener"><em>Building LLM-Powered Recommendation Systems</em></a> (<a href="https://github.com/LinkedInLearning/hands-on-AI-building-LLM-powered-recommendation-systems-4014214" target="_blank" rel="noopener">GitHub</a>) - production-ready recommender systems using GenAI; featured in the <a href="https://careerhub.ufl.edu/classes/building-llm-powered-recommendation-systems/" target="_blank" rel="noopener">University of Florida Career Hub</a></li>
+        <li><b>Interview Kickstart &amp; Technical Creator Partnerships</b>: Featured Instructor for <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank" rel="noopener"><em>Applied Agentic AI</em></a>, <a href="https://interviewkickstart.com/masterclass/vertical-ai-agents-impact" target="_blank" rel="noopener"><em>Building Vertical AI Agents</em></a>, <a href="https://interviewkickstart.com/masterclass/retail-ai-agent" target="_blank" rel="noopener"><em>Building AI Agent for Retail</em></a>, and <a href="https://interviewkickstart.com/ai-glossary/agentic-rag" target="_blank" rel="noopener"><em>Agentic RAG</em></a>; B2B AI/DevTools creator (<a href="https://naano.com/creators/rishabh-misra" target="_blank" rel="noopener">Naano</a>) with <b>193K+ annual LinkedIn impressions</b> across <b>8.2K+ followers (66% Senior+)</b> and <b>135K+ Towards Data Science views</b></li>
       </ul>
       <div class="tech-pills">
         <span class="tag-badge">Enterprise AI Enablement</span>
@@ -142,7 +142,7 @@ permalink: /experience/
         <li>Built Deep Learning models in TensorFlow (shallow → deep → multi-task learning), driving <b>&gt;30% gains</b> in key engagement metrics</li>
         <li>Architected KubeFlow pipelines on GCP (DataFlow + BigQuery) to improve model training duration by <b>10x</b></li>
         <li>Shipped graph embeddings (Heterogeneous Information Network) and text embeddings (fine-tuned BERT), encoding user preferences and author affinity</li>
-        <li>Developed ML-powered explainable reply ranking feature — improved reply health and follows by <b>3–5%</b></li>
+        <li>Developed ML-powered explainable reply ranking feature - improved reply health and follows by <b>3–5%</b></li>
         <li>Architected low-latency Early Ranking system handling <b>tens of millions of candidates per second</b>; <b>20% improvement</b> in p9999 latency while improving health metrics by 5%</li>
         <li><b>Patent filed</b> based on reply ranking work</li>
         <li>Built roadmaps via data-backed analyses &amp; shipped measurement frameworks</li>

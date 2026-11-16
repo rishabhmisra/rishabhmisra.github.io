@@ -49,7 +49,7 @@ permalink: /features/
   <a href="https://www.the-sun.com/tech/8549579/ai-bots-doomsday-scenario-world-takeover/" target="_blank" rel="noopener" class="feature-article-card">
     <img src="{{ site.baseurl }}/images/features/sun-doomsday.jpg" alt="The Sun analysis piece on AI safety risks and responsible development" width="800" height="450" loading="lazy" decoding="async" class="fac-thumb">
     <span class="fac-outlet">The Sun</span>
-    <div class="fac-headline">AI Bots Doomsday Scenario — Expert Analysis</div>
+    <div class="fac-headline">AI Bots Doomsday Scenario - Expert Analysis</div>
     <p class="fac-excerpt">Thoughts on the risks and need for responsible AI development, published in a widely-read analysis piece.</p>
     <span class="fac-link">Read article ↗</span>
   </a>

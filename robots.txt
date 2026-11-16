@@ -1,5 +1,5 @@
 # =============================================================================
-# robots.txt — https://rishabhmisra.github.io/
+# robots.txt - https://rishabhmisra.github.io/
 # Standard: IETF RFC 9309 (Robots Exclusion Protocol)
 #
 # Entity: Rishabh Misra (https://rishabhmisra.github.io/#person)

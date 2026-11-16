@@ -45,7 +45,7 @@ In a traditional setup, the bottleneck is the Vector Database performing the Nea
 
 Furthermore, you face a hard mathematical constraint: you cannot autoregressively generate thousands of items in real-time within a 50ms latency budget. 
 
-However, the field is already engineering around this. Techniques like **Semantic IDs**—where items are mapped to a structured, hierarchical vocabulary rather than dense embeddings—allow models to generate recommendations much faster. 
+However, the field is already engineering around this. Techniques like **Semantic IDs** - where items are mapped to a structured, hierarchical vocabulary rather than dense embeddings - allow models to generate recommendations much faster. 
 
 ## Conclusion
 

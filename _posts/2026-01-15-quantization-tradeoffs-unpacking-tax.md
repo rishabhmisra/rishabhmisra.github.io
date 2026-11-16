@@ -31,7 +31,7 @@ Hardware accelerators like Nvidia GPUs do not natively compute matrix multiplica
 
 When you load those highly compressed 4-bit weights from the High Bandwidth Memory (HBM) into the GPU's local cache (SRAM) to perform the actual math, the GPU must first **dequantize** them back to a higher precision format (like FP16 or BF16). 
 
-This dequantization step—the unpacking tax—costs precious clock cycles. It requires compute overhead. 
+This dequantization step - the unpacking tax - costs precious clock cycles. It requires compute overhead. 
 
 ## The Batch Size Reality
 

@@ -48,13 +48,13 @@ However, all mistakes should not incur the same penalty. Data points on the wron
 Our objective now is to minimize following:
 
 <center>
-$L = \frac{1}{2} \|w\|^{2} + C \sum_{i} \xi_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)
+$L = \frac{1}{2} \|w\|^{2} + C \sum_{i} \xi_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)
 </center>
 
 which loosely translates to maximizing the margin while minimizing the number of mistakes. In this case, our constraint for optimization would also change to following:
 
 <center>
-$y_{i}(\vec{w}.\vec{x}_{i} + b) \ge 1 - \xi_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)
+$y_{i}(\vec{w}.\vec{x}_{i} + b) \ge 1 - \xi_{i}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)
 </center>
 
 The left-hand side of the inequality could be thought of like the confidence of classification. If it is $\ge$ 1, then we are a hundred percent confident that the point is correctly classified and value of the penalty ($\xi$) would be zero. If it is less than 1, we would incur a linear penalty and the value of $\xi$ would be proportional to how far away the point is from the margin.

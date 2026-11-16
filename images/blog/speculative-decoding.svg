@@ -23,7 +23,7 @@
   <path d="M 284 223 L 368 223" stroke="#0F172A" stroke-width="2.5" stroke-dasharray="5 4"/>
   <polygon points="374,223 364,217 364,229" fill="#0F172A"/>
   <rect x="384" y="108" width="352" height="230" rx="14" fill="#0F172A"/>
-  <text x="560" y="146" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">Target LLM (M_p) — 1 Forward Pass</text>
+  <text x="560" y="146" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">Target LLM (M_p) - 1 Forward Pass</text>
   <text x="560" y="170" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8" text-anchor="middle">Accept min(1, p(x)/q(x)) in parallel</text>
   <g transform="translate(418, 198)">
     <rect x="0" y="0" width="64" height="54" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="2"/><text x="32" y="25" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#A7F3D0" text-anchor="middle">t₁ ✓</text><text x="32" y="43" font-family="ui-monospace, monospace" font-size="10.5" fill="#6EE7B7" text-anchor="middle">α=0.92</text>
