@@ -3,6 +3,7 @@ layout: truncated_post
 title: Blog & Technical Articles
 description: "Technical articles by Rishabh Misra on LLM inference optimization (KV cache, PagedAttention, quantization, speculative decoding, GPU profiling), generative recommender systems, and machine learning."
 permalink: /blog/
+last_modified_at: 2026-11-17
 ---
 
 <section class="hero-split hero-page">
@@ -13,10 +14,10 @@ permalink: /blog/
   </div>
 </section>
 
-<aside class="creator-callout-bar" aria-label="Technical Content Partnerships">
+<aside class="creator-callout-bar" aria-label="AI Go-To-Market and Technical Content Partnerships">
   <div class="ccb-copy">
-    <span class="ccb-badge">Creator &amp; Brand Partnerships</span>
-    <span class="ccb-text">Building in <b>LLM Infrastructure, Agentic AI, RAG, or DevTools</b>? Partner on technical deep-dives, benchmarks &amp; launch walkthroughs reaching a <b>66% Senior+ engineering audience</b>.</span>
+    <span class="ccb-badge">AI GTM &amp; Creator Partnerships</span>
+    <span class="ccb-text">Running <b>B2B AI Go-To-Market (GTM) or developer marketing</b> in <b>LLM Infrastructure, Agentic AI, RAG, or DevTools</b>? Partner on LinkedIn/X launch campaigns, benchmarks &amp; technical deep-dives reaching a <b>66% Senior+ audience</b>.</span>
   </div>
   <a href="{{ site.baseurl }}/collaborate#media-kit" class="ccb-link">View Media Kit <span aria-hidden="true">→</span></a>
 </aside>

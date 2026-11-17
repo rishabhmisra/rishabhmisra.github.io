@@ -7,6 +7,7 @@ mathjax: true
 summary: "Traditional Retrieve-and-Rank models treat user history like a grocery list. Learn why the industry is shifting toward 'Encode and Generate' paradigms to capture temporal user intent."
 image: "/images/blog/encode-vs-generate.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 Your team probably built the wrong recommender system. It is likely not wrong because the mathematical modeling is flawed, or because your engineers chose the wrong hyperparameters. It is wrong because of the fundamental assumption baked into the core architecture.
@@ -45,7 +46,42 @@ In a traditional setup, the bottleneck is the Vector Database performing the Nea
 
 Furthermore, you face a hard mathematical constraint: you cannot autoregressively generate thousands of items in real-time within a 50ms latency budget. 
 
-However, the field is already engineering around this. Techniques like **Semantic IDs** - where items are mapped to a structured, hierarchical vocabulary rather than dense embeddings - allow models to generate recommendations much faster. 
+However, the field is already engineering around this. Techniques like **Semantic IDs** - where items are mapped to a structured, hierarchical vocabulary rather than dense embeddings - allow models to generate recommendations much faster.
+
+<div tabindex="0" role="region" aria-labelledby="recsys-shift-caption" class="table-wrapper">
+  <table>
+    <caption id="recsys-shift-caption" class="visually-hidden">Comparison of Retrieve-and-Rank vs. Generative Encode-and-Generate Recommenders</caption>
+    <thead>
+      <tr>
+        <th scope="col">Architectural Dimension</th>
+        <th scope="col">Classic Retrieve-and-Rank (Two-Tower)</th>
+        <th scope="col">Generative RecSys (Encode &amp; Generate)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">User History Representation</th>
+        <td>Order-blind aggregated embedding ("bag of clicks")</td>
+        <td>Chronological interaction sequence via Transformer self-attention</td>
+      </tr>
+      <tr>
+        <th scope="row">Candidate Scoring</th>
+        <td>Independent point-wise dot product + MLP ranker</td>
+        <td>Autoregressive / list-aware generation over Semantic IDs</td>
+      </tr>
+      <tr>
+        <th scope="row">Primary Infrastructure Bottleneck</th>
+        <td>Vector DB Approximate Nearest Neighbor (ANN) lookup</td>
+        <td>GPU Transformer inference within strict 50ms SLA</td>
+      </tr>
+      <tr>
+        <th scope="row">Temporal Intent Capture</th>
+        <td>Weak (treats A→B and B→A identically)</td>
+        <td>Strong (captures sequential intent &amp; session evolution)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

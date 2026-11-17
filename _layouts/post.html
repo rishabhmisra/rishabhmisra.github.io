@@ -12,7 +12,11 @@ layout: default
 
   <header class="post-header">
     <div class="post-meta-bar">
+      <span>By <a href="{{ site.baseurl }}/aboutme/" rel="author" class="post-byline-author">{{ site.name }}</a></span>
+      <span class="meta-sep" aria-hidden="true">·</span>
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.last_modified_at %}<span class="meta-sep" aria-hidden="true">·</span>
+      <span>Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %Y" }}</time></span>{% endif %}
       <span class="meta-sep" aria-hidden="true">·</span>
       <span>{{ read_minutes }} min read</span>
     </div>

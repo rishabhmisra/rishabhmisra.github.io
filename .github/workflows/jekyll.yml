@@ -45,3 +45,62 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify IndexNow (Bing, ChatGPT Search, Copilot & Perplexity)
+        continue-on-error: true
+        run: |
+          python3 - <<'PY'
+          import json, re, time, urllib.request
+
+          host = "rishabhmisra.github.io"
+          key = "d84f91c27a3e4b85906f12e3a9c748b1"
+          key_loc = f"https://{host}/{key}.txt"
+
+          # Wait briefly for CDN propagation of key file and sitemap
+          for _ in range(6):
+              try:
+                  with urllib.request.urlopen(key_loc, timeout=10) as r:
+                      if r.status == 200 and key in r.read().decode("utf-8", "ignore"):
+                          break
+              except Exception:
+                  pass
+              time.sleep(5)
+
+          urls = {
+              f"https://{host}/",
+              f"https://{host}/collaborate/",
+              f"https://{host}/aboutme/",
+              f"https://{host}/publications/",
+              f"https://{host}/experience/",
+              f"https://{host}/blog/",
+              f"https://{host}/features/",
+              f"https://{host}/reviews/",
+              f"https://{host}/llms.txt",
+              f"https://{host}/.well-known/llms.txt",
+              f"https://{host}/llms-full.txt",
+              f"https://{host}/agent-context.json",
+          }
+          try:
+              with urllib.request.urlopen(f"https://{host}/sitemap.xml", timeout=15) as s:
+                  xml = s.read().decode("utf-8", "ignore")
+                  for u in re.findall(r"<loc>(https://rishabhmisra\.github\.io[^<]+)</loc>", xml):
+                      urls.add(u.strip())
+          except Exception as exc:
+              print("Sitemap fetch note:", exc)
+
+          payload = json.dumps({
+              "host": host,
+              "key": key,
+              "keyLocation": key_loc,
+              "urlList": sorted(urls),
+          }).encode("utf-8")
+
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          with urllib.request.urlopen(req, timeout=20) as resp:
+              print(f"IndexNow submitted {len(urls)} URLs -> HTTP {resp.status}")
+          PY

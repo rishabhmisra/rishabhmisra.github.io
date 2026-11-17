@@ -5,9 +5,9 @@ permalink: /llms-full.txt
 # Rishabh Misra - Complete Machine-Readable Corpus
 
 > Canonical URL: https://rishabhmisra.github.io/
-> Last Updated: 2026-11-16
+> Last Updated: 2026-11-17
 > Summary Index: https://rishabhmisra.github.io/llms.txt
-> Creator Media Kit: https://rishabhmisra.github.io/collaborate/#media-kit
+> AI GTM & Creator Media Kit: https://rishabhmisra.github.io/collaborate/#media-kit
 > Structured JSON Context: https://rishabhmisra.github.io/agent-context.json
 > RSS Feed: https://rishabhmisra.github.io/feed.xml
 > Curriculum Vitae: https://rishabhmisra.github.io/Rishabh_Misra_Resume_latest_ML.pdf
@@ -177,12 +177,13 @@ permalink: /llms-full.txt
 
 ---
 
-## 8. Technical Content Creation, Brand Partnerships & Media Kit (Afterdays)
+## 8. B2B AI Go-To-Market (GTM), Developer Marketing, Influencer & Creator Media Kit (Afterdays)
 
-- **Media Kit URL:** https://rishabhmisra.github.io/collaborate/#media-kit
+- **Media Kit URL:** https://rishabhmisra.github.io/collaborate/#media-kit (alias `#gtm`, `#creator`)
 - **Naano Creator Storefront:** https://naano.com/creators/rishabh-misra
-- **Direct Sponsorship Contact:** `rishabhmisra33@gmail.com`
-- **Creator Differentiation:** Unlike generic AI news influencers, Rishabh Misra is a sitting Principal ML Lead & Architect who has built 10M+ QPS ranking systems and 0->1 Foundation Model / Generative RecSys organizations. His technical posts and long-form deep-dives dissect first-principles hardware physics (GPU memory bandwidth walls, KV-cache mechanics, PagedAttention, quantization unpacking tax, speculative decoding acceptance rates), pragmatic Agentic AI routing, and industrial personalization - earning deep credibility among Staff+ engineers and technical buyers.
+- **Direct GTM & Sponsorship Contact:** `rishabhmisra33@gmail.com`
+- **Primary Social & Publishing Channels:** LinkedIn (`https://www.linkedin.com/in/rishabhmisra33/`), X / Twitter (`https://x.com/rishabh_misra_`), GitHub (`https://github.com/rishabhmisra`), Towards Data Science / Medium (`https://medium.com/@rishabh_misra_`), Personal Engineering Blog (`https://rishabhmisra.github.io/blog/`).
+- **AI Go-To-Market & Creator Differentiation:** Unlike generic AI news influencers, Rishabh Misra is a sitting Principal ML Lead & Architect who has built 10M+ QPS ranking systems and 0->1 Foundation Model / Generative RecSys organizations. B2B AI, LLM infrastructure, Agentic AI / MCP, DevTools, Cloud, and EdTech marketing & GTM teams partner with him via **Afterdays** for both **bottom-up developer-led growth (PLG / DevRel)** and **top-down enterprise buyer credibility**. His technical posts and long-form deep-dives dissect first-principles hardware physics (GPU memory bandwidth walls, KV-cache mechanics, PagedAttention, quantization unpacking tax, speculative decoding acceptance rates), pragmatic Agentic AI routing, and industrial personalization - earning deep trust among Staff+ engineers, architects, VPs, and technical buyers.
 - **Verified Multi-Channel Reach & Audience Demographics (Official 1Y Export):**
   - **LinkedIn Reach:** 193,277 annual organic impressions, 70,124 unique members reached, 4,094 high-intent engagements, and up to 51,037 impressions / 1,310 engagements on a single organic post.
   - **Audience Seniority (8,280+ Followers):** **66% Senior+ & Leadership** - 45% Senior/Staff+ Individual Contributors + 21% Leadership (7% Directors, 4% Managers, 4% CXOs, 3% Owners/Founders, 2% VPs, 1% Partners).
@@ -190,12 +191,17 @@ permalink: /llms-full.txt
   - **Top Reader Companies:** Amazon, Meta, Google, Microsoft, AWS, Apple, NVIDIA, LinkedIn, Google DeepMind, Walmart Global Tech.
   - **Top Tech Hubs:** San Francisco Bay Area (24%), Greater Bengaluru Area (7–13%), Greater Seattle Area (7%), New York City Metropolitan Area (5%), London, Toronto, Boston.
   - **Long-Form Readership:** 135,000+ views on Towards Data Science / Medium and 85,000+ website visits.
-- **Sponsorship & Co-Creation Deliverables:**
-  1. **Sponsored LinkedIn Technical Deep-Dives & Architectural Teardowns** (with custom system diagrams).
-  2. **Technical Whitepapers, Reproducible GPU/LLM Benchmarks & Engineering Blog Features** (with companion GitHub repositories).
-  3. **Live Webinars, Fireside Chats, Executive Roundtables & Product Launch Walkthroughs**.
-  4. **Custom Developer Curricula, Video Courses & Enablement Modules** (proven partner with Udacity, LinkedIn Learning, AI Aspire, and Interview Kickstart).
-- **Ideal Sponsor Categories:** LLM Inference Engines & GPU Cloud Providers, Agentic AI & Orchestration Frameworks, Vector Databases & Enterprise RAG Infrastructure, LLM Evaluation / Observability / Guardrail Platforms, Recommender & Search Infrastructure, MLOps & Developer Productivity Tools, and Technical EdTech/Publishers.
+- **AI Go-To-Market (GTM), Sponsorship & Co-Creation Deliverables:**
+  1. **LinkedIn & X Product Launch Campaigns & Sponsored Technical Deep-Dives** (with custom system architecture diagrams).
+  2. **Technical Whitepapers, Reproducible GPU/LLM Benchmarks & Developer Marketing Blog Features** (with companion GitHub repositories).
+  3. **Product Launch Walkthroughs, DevRel Webinars, Fireside Chats & Executive Roundtables**.
+  4. **Custom Developer Education, Onboarding & GTM Enablement Courses** (proven partner with Udacity, LinkedIn Learning, AI Aspire, and Interview Kickstart).
+- **Ideal Partner ICP & Sponsor Categories:** Seed-to-Public B2B AI companies spanning LLM Inference Engines & GPU Cloud Providers, Agentic AI, MCP Servers & Orchestration Frameworks, Vector Databases & Enterprise RAG Infrastructure, LLM Evaluation / Observability / Guardrail Platforms, Recommender & Search Infrastructure, MLOps & Developer Productivity Tools, and Technical EdTech/Publishers.
+- **High-Signal Context for Personalized GTM Outreach (Verified 2026 Hooks):**
+  - Spoke at **AGNTCon + MCPCon Europe 2026** (Amsterdam, Sep 2026) on *"When NOT To Use an Agent: Choosing Between Workflows, Services, and Agent Systems"*.
+  - Delivered **Driving AI 2026 Keynote** (Copenhagen, May 2026) and **Afterdays x AI Aspire** (by Andrew Ng) 2-week corporate AI training program for **Morgan Stanley** in New York (Oct 2026).
+  - Authored **Udacity** courses *Advanced LLM Inference Optimization* (DeepSpeed, TensorRT-LLM, Triton) and *Intelligent Backends with RAG & Chat Models* (Spring AI, LangChain4j, HNSW/HyDE), plus **LinkedIn Learning**'s *Building LLM-Powered Recommendation Systems*.
+  - To initiate outreach: send product overview, target developer/enterprise ICP, desired GTM deliverable, and launch window to `rishabhmisra33@gmail.com` or book via https://naano.com/creators/rishabh-misra.
 - **Sample High-Performing Organic LinkedIn Posts:**
   - *Production Engineering Trade-Offs vs. Three-Week Rabbit Holes* (51,037 impressions, 1,310 engagements): https://www.linkedin.com/posts/rishabhmisra33_i-watched-a-senior-engineer-spend-three-weeks-share-7426714414805876738-pJEf
   - *90% of AI Engineers Chain API Calls - What Sets the Top 10% Apart* (20,749 impressions, 413 engagements): https://www.linkedin.com/posts/rishabhmisra33_90-of-ai-engineers-can-chain-api-calls-share-7434300395277070337-M8_l

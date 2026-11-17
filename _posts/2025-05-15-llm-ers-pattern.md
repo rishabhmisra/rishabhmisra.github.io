@@ -7,6 +7,7 @@ mathjax: true
 summary: "Why using massive LLMs for real-time ranking fails in production, and how the LLM-ERS pattern offers a scalable blueprint by keeping retrieval fast and utilizing LLMs for offline augmentation."
 image: "/images/blog/llm-ers-pattern.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 Over the past year, I've had the opportunity to review over 50 different architectural proposals for Generative Recommendation Systems (RecSys). Despite the variance in domains - from e-commerce to streaming video - one extremely expensive mistake keeps appearing on whiteboards everywhere: **Engineering teams are trying to use massive 70-Billion parameter Large Language Models (LLMs) to perform real-time, online ranking.**
@@ -50,6 +51,40 @@ If you absolutely must use an LLM in the real-time path, you must tightly contro
 *   Pass *only* those top items and the user's context to the LLM.
 *   Ask the LLM to perform a lightweight, highly specific task: e.g., generating a one-sentence, personalized explanation ("Why you might like this: Because you recently bought a tent, this sleeping bag is a perfect lightweight addition").
 By restricting the LLM to post-ranking presentation tweaks on a tiny context window, you get the UX benefits of GenAI without breaking your P99 latency SLA.
+
+<div tabindex="0" role="region" aria-labelledby="llmers-table-caption" class="table-wrapper">
+  <table>
+    <caption id="llmers-table-caption" class="visually-hidden">3-Layer LLM-Enhanced Recommender System (LLM-ERS) Architecture Blueprint</caption>
+    <thead>
+      <tr>
+        <th scope="col">Pipeline Layer</th>
+        <th scope="col">Model / Compute Stack</th>
+        <th scope="col">Candidate Pool &amp; SLA</th>
+        <th scope="col">Role of LLMs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Layer 1: Online Retrieval &amp; Ranking</th>
+        <td>Two-Tower + Vector ANN + Lightweight Ranker</td>
+        <td>Millions → Top 1,000 (&lt; 10-50ms)</td>
+        <td>None on critical path (consumes precomputed features)</td>
+      </tr>
+      <tr>
+        <th scope="row">Layer 2: Offline Data Augmentation</th>
+        <td>Batch / Async Foundation Models (7B-70B+)</td>
+        <td>Full catalog &amp; interaction logs (Offline)</td>
+        <td>Semantic tag extraction, intent distillation &amp; hard negatives</td>
+      </tr>
+      <tr>
+        <th scope="row">Layer 3: Post-Ranking UX</th>
+        <td>Distilled SLM / Small-Context LLM</td>
+        <td>Top 3 - 5 items (&lt; 50-100ms)</td>
+        <td>Concise personalized explanations &amp; conversational framing</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

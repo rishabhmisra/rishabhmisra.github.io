@@ -7,6 +7,7 @@ mathjax: true
 summary: "The KV Cache is the hidden memory tax causing your LLM applications to crash. Discover the math behind the bottleneck and how fragmentation eats your inference budget."
 image: "/images/blog/kv-cache-budget.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 If you have ever tried to scale a Generative AI application, you have likely encountered this scenario: your model works flawlessly in testing, but the moment you push a 10-page document into your "production-ready" Retrieval-Augmented Generation (RAG) system, the entire cluster crashes with an Out-Of-Memory (OOM) error.
@@ -39,9 +40,7 @@ The problem isn't just the raw size of the cache; it is how traditional systems 
 
 Historically, deep learning frameworks required contiguous blocks of memory for tensors. When a user submits a prompt, the system doesn't know if the LLM will generate a 5-token response or a 500-token response. To prevent crashing mid-generation, the system must aggressively over-allocate a maximum-length contiguous block "just in case."
 
-This turns your incredibly expensive H100 GPU memory into "Swiss Cheese" - riddled with holes and reserved, but ultimately empty, memory slots. You can end up in a situation where 50% of your VRAM is technically "free," but completely unusable because it is highly fragmented. 
-
-We are facing a systems engineering problem disguised as a machine learning problem.
+This turns your incredibly expensive H100 GPU memory into "Swiss Cheese" - riddled with holes and reserved, but ultimately empty, memory slots. You can end up in a situation where 50% of your VRAM is technically "free," but completely unusable because it is highly fragmented.
 
 ## Architectural Fixes
 
@@ -55,5 +54,40 @@ Instead of caching a unique Key and Value vector for every single Query head (Mu
 
 ### 3. Flash Attention
 Finally, we can optimize the attention mechanism's memory bandwidth usage through **Flash Attention**. Flash Attention rethinks the data flow by fusing operations and keeping data in the fast on-chip SRAM, minimizing expensive reads and writes to the main HBM memory. This results in faster computation, especially with longer context windows.
+
+<div tabindex="0" role="region" aria-labelledby="kv-cache-table-caption" class="table-wrapper">
+  <table>
+    <caption id="kv-cache-table-caption" class="visually-hidden">Comparison of KV Cache Memory and Attention Optimizations</caption>
+    <thead>
+      <tr>
+        <th scope="col">Architecture / Optimization</th>
+        <th scope="col">Primary Mechanism</th>
+        <th scope="col">Impact on VRAM &amp; Latency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Contiguous Multi-Head Attention (MHA)</th>
+        <td>Pre-allocates max-length contiguous KV tensors per head</td>
+        <td>Up to 50%+ VRAM wasted to fragmentation; early OOM under RAG</td>
+      </tr>
+      <tr>
+        <th scope="row">PagedAttention (vLLM)</th>
+        <td>Non-contiguous fixed-size KV pages mapped via a block table</td>
+        <td>Near-zero fragmentation; 2x - 3x higher concurrent batch size</td>
+      </tr>
+      <tr>
+        <th scope="row">Grouped-Query Attention (GQA)</th>
+        <td>Shares a single Key/Value projection across groups of Query heads</td>
+        <td>4x - 8x smaller KV-cache footprint with minimal quality loss</td>
+      </tr>
+      <tr>
+        <th scope="row">FlashAttention</th>
+        <td>Fuses attention kernels inside fast on-chip GPU SRAM</td>
+        <td>Cuts HBM memory traffic and accelerates long-context prefill</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 In the next post, we will dive deeper into exactly how PagedAttention rewrites the rules of GPU memory management.

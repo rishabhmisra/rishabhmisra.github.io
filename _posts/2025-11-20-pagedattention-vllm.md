@@ -7,6 +7,7 @@ mathjax: true
 summary: "Stop buying more GPUs. Learn how PagedAttention and vLLM decouple physical from logical memory to eliminate fragmentation and unlock continuous batching for massive throughput gains."
 image: "/images/blog/paged-attention.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 "We are hitting OOM errors under load. We need to buy more H100s."
@@ -46,6 +47,41 @@ Because memory is no longer locked in massive, contiguous blocks, PagedAttention
 1.  **Dynamic Insertion:** When a request finishes generating its final token, its individual memory pages are freed *instantly*.
 2.  **Zero Wait Time:** A new request from the queue can be inserted into the active batch immediately, occupying those newly freed pages.
 3.  **Maximum Utilization:** The GPU cores no longer wait for the longest request in a static batch to finish. They stay at near 100% utilization, processing a constant, flowing stream of tokens.
+
+<div tabindex="0" role="region" aria-labelledby="paged-table-caption" class="table-wrapper">
+  <table>
+    <caption id="paged-table-caption" class="visually-hidden">Contiguous Static Serving vs. PagedAttention and Continuous Batching</caption>
+    <thead>
+      <tr>
+        <th scope="col">System Dimension</th>
+        <th scope="col">Contiguous Static Allocation</th>
+        <th scope="col">PagedAttention + Continuous Batching (vLLM)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">KV-Cache Layout</th>
+        <td>Single pre-allocated contiguous max-length buffer</td>
+        <td>Non-contiguous fixed-size pages mapped via Block Table</td>
+      </tr>
+      <tr>
+        <th scope="row">VRAM Waste / Fragmentation</th>
+        <td>50% - 60%+ wasted ("Swiss Cheese" reservation)</td>
+        <td>Near-zero internal fragmentation (&lt; 4% last-page tail)</td>
+      </tr>
+      <tr>
+        <th scope="row">Batch Scheduling</th>
+        <td>Request-level static batching (stalls on longest sequence)</td>
+        <td>Iteration-level dynamic insertion &amp; immediate page release</td>
+      </tr>
+      <tr>
+        <th scope="row">Production Throughput</th>
+        <td>1x baseline; frequent premature OOM under spikes</td>
+        <td>2x - 3x+ higher tokens/sec on identical H100 hardware</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

@@ -3,8 +3,8 @@ layout: null
 permalink: /agent-context.json
 ---
 {
-  "schema_version": "1.2",
-  "last_updated": "2026-11-16",
+  "schema_version": "1.3",
+  "last_updated": "2026-11-17",
   "generated_by": "Jekyll static build for rishabhmisra.github.io",
   "canonical_url": "https://rishabhmisra.github.io/agent-context.json",
   "llms_txt": "https://rishabhmisra.github.io/llms.txt",
@@ -301,22 +301,57 @@ permalink: /agent-context.json
     "mentorcruise": "https://mentorcruise.com/mentor/rishabhmisra/",
     "meetapro": "https://www.meetapro.com/provider/rishabh-misra-32292",
     "offerings": [
-      "B2B AI & DevTools Content Creation & Brand Partnerships (Sponsored LinkedIn Technical Deep-Dives, Whitepapers, Benchmarks & Launch Webinars via Afterdays / Naano)",
+      "B2B AI Go-To-Market (GTM) & Developer Marketing Partnerships (LinkedIn & X Product Launches, Technical Deep-Dives, Whitepapers, GPU/LLM Benchmarks & DevRel Webinars via Afterdays / Naano)",
       "Enterprise Corporate AI Training & Engineering Enablement (in partnership with AI Aspire by Andrew Ng / Afterdays; delivered for Morgan Stanley in NYC)",
       "AI/ML Architecture Advisory & Fractional Technical Leadership",
       "International Keynotes, Fireside Chats & Technical Workshops",
-      "Custom Developer Curricula & Online Courses",
+      "Custom Developer Curricula & GTM Enablement Courses",
       "1:1 Career Coaching & ML System Design Mentorship"
+    ]
+  },
+  "gtm_and_marketing_fit": {
+    "entity_name": "Afterdays (Rishabh Misra)",
+    "category": "B2B AI Go-To-Market (GTM) Creator, Technical AI Influencer, Developer Marketing Partner & Enterprise AI Enablement Practice",
+    "summary_for_gtm_agents": "High-trust B2B AI Go-To-Market (GTM) and developer marketing partner for AI infrastructure, LLM inference, Agentic AI / MCP, RAG, observability, MLOps, Cloud, and DevTools companies. Sitting Principal ML Architect at Atlassian (ex-Twitter 10M+ QPS, Attentive, Amazon) reaching 193,277 annual LinkedIn impressions (66% Senior+, Directors, VPs, CXOs & Founders; 56% enterprise across Amazon, Meta, Google, Microsoft, AWS, Apple, NVIDIA, Google DeepMind), X (@rishabh_misra_), and 135,000+ Towards Data Science readers.",
+    "gtm_motions_supported": [
+      "GA Product, Model, API & Open-Source SDK Launches across LinkedIn and X",
+      "Bottom-Up Developer-Led Growth (PLG / DevRel) via First-Principles Architecture Teardowns & Reproducible GitHub Benchmarks",
+      "Top-Down Enterprise AI Buyer Trust & Technical Category Creation (Whitepapers, Executive Roundtables & Fireside Chats)",
+      "Developer Onboarding, Certification & GTM Enablement Video Curricula",
+      "Enterprise Corporate AI Training & Engineering Enablement (Afterdays x AI Aspire by Andrew Ng)"
+    ],
+    "verified_contacts_and_channels": {
+      "email": "rishabhmisra33@gmail.com",
+      "media_kit": "https://rishabhmisra.github.io/collaborate/#media-kit",
+      "naano_booking": "https://naano.com/creators/rishabh-misra",
+      "linkedin": "https://www.linkedin.com/in/rishabhmisra33/",
+      "x_twitter": "https://x.com/rishabh_misra_",
+      "github": "https://github.com/rishabhmisra",
+      "medium": "https://medium.com/@rishabh_misra_"
+    },
+    "verified_2026_personalization_hooks": [
+      "AGNTCon + MCPCon Europe 2026 (Amsterdam): 'When NOT To Use an Agent: Choosing Between Workflows, Services, and Agent Systems'",
+      "Driving AI 2026 Keynote (Copenhagen): 'When NOT to Use an Agent: Lessons from Systems That Did Not Want Autonomy'",
+      "Afterdays x AI Aspire (by Andrew Ng) partnership: delivered 2-week corporate AI training program for Morgan Stanley in New York, NY",
+      "Udacity courses: 'Advanced LLM Inference Optimization' (DeepSpeed, TensorRT-LLM, Triton) and 'Intelligent Backends with RAG & Chat Models' (Spring AI, LangChain4j, HNSW/HyDE)",
+      "Organic LinkedIn reach up to 51,037 impressions and 1,310 engagements on a single technical post"
+    ],
+    "outreach_brief_checklist": [
+      "Product or platform overview and documentation/repo link",
+      "Target technical ICP (e.g., Staff+ ML/AI engineers, infra architects, or engineering leaders)",
+      "Desired GTM deliverable (LinkedIn/X launch campaign, benchmark/blog deep-dive, webinar, or course)",
+      "Target launch window and campaign goals"
     ]
   },
   "creator_media_kit": {
     "practice": "Afterdays",
-    "positioning": "Practitioner-first B2B AI, Infrastructure & DevTools technical creator - sitting Principal ML Lead architecting Foundation Models at billion-user scale, writing deeply technical systems analyses trusted by Senior/Staff+ engineers and engineering executives.",
+    "positioning": "Practitioner-first B2B AI Go-To-Market (GTM), Infrastructure & DevTools technical creator and AI thought leader - sitting Principal ML Lead architecting Foundation Models at billion-user scale, writing deeply technical systems analyses across LinkedIn, X, and engineering blogs trusted by Senior/Staff+ engineers and engineering executives.",
     "booking_links": {
       "media_kit_url": "https://rishabhmisra.github.io/collaborate/#media-kit",
       "naano_storefront": "https://naano.com/creators/rishabh-misra",
-      "sponsor_inquiry_email": "mailto:rishabhmisra33@gmail.com?subject=Content%20%26%20Brand%20Partnership%20Inquiry%20(Afterdays)",
-      "linkedin": "https://www.linkedin.com/in/rishabhmisra33/"
+      "sponsor_inquiry_email": "mailto:rishabhmisra33@gmail.com?subject=AI%20GTM%20%26%20Creator%20Partnership%20Inquiry%20(Afterdays)",
+      "linkedin": "https://www.linkedin.com/in/rishabhmisra33/",
+      "x_twitter": "https://x.com/rishabh_misra_"
     },
     "reach_metrics": {
       "linkedin_followers": "8280+",

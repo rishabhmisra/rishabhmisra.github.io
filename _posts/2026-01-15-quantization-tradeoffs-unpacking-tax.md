@@ -7,6 +7,7 @@ mathjax: true
 summary: "Quantizing an LLM to 4-bit doesn't guarantee faster latency. Understand the hidden 'Unpacking Tax' and learn how batch sizes dictate whether quantization helps or hurts your performance."
 image: "/images/blog/quantization-unpacking.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 Recently, I watched a brilliant senior engineer spend three weeks painstakingly quantizing a Large Language Model (LLM) down to 4-bit precision. The goal was to drastically reduce latency and compute costs. The result? The P99 latency actually got *worse*.
@@ -52,6 +53,46 @@ Within these paradigms, specific algorithms offer different tradeoffs:
 *   **GPTQ:** Effective for static weights and fast inference, but sensitive to outlier weights.
 *   **AWQ (Activation-aware Weight Quantization):** Preserves a small percentage of "critical" weights at higher precision, significantly improving quality.
 *   **GGUF:** Excellent for edge devices or Apple Silicon (Metal), but less relevant for massive H100 clusters.
+
+<div tabindex="0" role="region" aria-labelledby="quant-table-caption" class="table-wrapper">
+  <table>
+    <caption id="quant-table-caption" class="visually-hidden">Comparison of LLM Quantization Regimes, Unpacking Overhead, and Ideal Workloads</caption>
+    <thead>
+      <tr>
+        <th scope="col">Precision / Method</th>
+        <th scope="col">Dominant Hardware Factor</th>
+        <th scope="col">Latency &amp; Throughput Impact</th>
+        <th scope="col">Best Production Scenario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">FP16 / BF16 Baseline</th>
+        <td>HBM memory bandwidth (2 bytes/param)</td>
+        <td>Zero dequantization tax; high VRAM footprint</td>
+        <td>Quality-critical serving with ample GPU VRAM</td>
+      </tr>
+      <tr>
+        <th scope="row">INT4 Weight-Only (Batch = 1)</th>
+        <td>SRAM dequantization ("Unpacking Tax")</td>
+        <td>P99 single-stream latency can regress if compute-stalled</td>
+        <td>VRAM-constrained single-GPU fit; benchmark fused kernels first</td>
+      </tr>
+      <tr>
+        <th scope="row">INT4 AWQ / GPTQ (High Batch)</th>
+        <td>4x HBM bandwidth reduction amortized over batch</td>
+        <td>2x - 3x higher cluster throughput</td>
+        <td>High-concurrency multi-user APIs (AWQ protects salient weights)</td>
+      </tr>
+      <tr>
+        <th scope="row">Quantization-Aware Training (QAT)</th>
+        <td>Weights adapted to low precision during training</td>
+        <td>Highest accuracy retention at 4-bit</td>
+        <td>Core foundation models with training-pipeline access</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

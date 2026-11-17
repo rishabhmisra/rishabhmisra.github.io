@@ -9,15 +9,18 @@
 # Structured Agent JSON:     https://rishabhmisra.github.io/agent-context.json
 # Technical Writing Feed:    https://rishabhmisra.github.io/feed.xml
 # XML Sitemap:               https://rishabhmisra.github.io/sitemap.xml
+# IndexNow Key (Bing/OAI):   https://rishabhmisra.github.io/d84f91c27a3e4b85906f12e3a9c748b1.txt
 #
 # Policy: Open for web search, AI answer engines, real-time RAG/agent
 # retrieval, knowledge-graph extraction, and rich social previews.
 # =============================================================================
 
-# 1. Core Web, Image & Scholarly Search Engines
+# 1. Core Web, Image, Video & Scholarly Search Engines
 User-agent: Googlebot
 User-agent: Googlebot-Image
+User-agent: Googlebot-Video
 User-agent: Googlebot-News
+User-agent: Google-InspectionTool
 User-agent: GoogleOther
 User-agent: Bingbot
 User-agent: Applebot
@@ -33,15 +36,19 @@ Allow: /agent-context.json
 Allow: /feed.xml
 Allow: /sitemap.xml
 
-# 2. AI Search Engines, Live Grounding & User-Triggered Agent Fetchers (GEO)
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
+# 2. AI Search Engines, GTM Outreach Agents & Live Grounding Fetchers (GEO)
 User-agent: Claude-SearchBot
 User-agent: Claude-User
+User-agent: anthropic-ai
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Google-CloudVertexBot
+User-agent: Google-Agent
 User-agent: GoogleAgent
+User-agent: Google-GeminiNotebook
+User-agent: Google-NotebookLM
 User-agent: DuckAssistBot
 User-agent: Meta-ExternalFetcher
 User-agent: MistralAI-User
@@ -51,10 +58,16 @@ User-agent: Ai2Bot-Dolma
 User-agent: YouBot
 User-agent: PhindBot
 User-agent: ExaBot
+User-agent: TavilyBot
+User-agent: LinkupBot
+User-agent: ShapBot
+User-agent: FirecrawlAgent
+User-agent: ApifyBot
 User-agent: AndiBot
 User-agent: Timpibot
 User-agent: Amazonbot
 Allow: /
+Allow: /collaborate/
 Allow: /llms.txt
 Allow: /.well-known/llms.txt
 Allow: /llms-full.txt

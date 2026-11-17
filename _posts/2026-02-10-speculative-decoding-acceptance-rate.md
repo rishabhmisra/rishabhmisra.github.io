@@ -7,6 +7,7 @@ mathjax: true
 summary: "Speculative Decoding can make LLMs 3x faster - or slow them down. Master the mathematics of the Acceptance Rate to determine when and how to deploy this powerful optimization technique."
 image: "/images/blog/speculative-decoding.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 Speculative Decoding is currently the closest thing we have to "cheating physics" in Machine Learning inference. When implemented correctly, it can make Large Language Models (LLMs) 3x faster with zero degradation in output quality. 
@@ -52,5 +53,39 @@ The math is eye-opening:
 
 *   A generic 7B draft model at 35% $\alpha$ yields a ~1.2x speedup. The complexity is barely worth it.
 *   A custom 100M draft model at 75% $\alpha$ yields a ~2.8x speedup. This is a game-changer for your cloud bill.
+
+<div tabindex="0" role="region" aria-labelledby="spec-decode-table-caption" class="table-wrapper">
+  <table>
+    <caption id="spec-decode-table-caption" class="visually-hidden">Speculative Decoding Acceptance Rate and Production Speedup Comparison</caption>
+    <thead>
+      <tr>
+        <th scope="col">Draft Strategy &amp; Workload</th>
+        <th scope="col">Typical Acceptance Rate (α)</th>
+        <th scope="col">Observed Speedup</th>
+        <th scope="col">Production Recommendation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Open-Ended Creative Chat (Off-the-shelf Draft)</th>
+        <td>&lt; 30-40%</td>
+        <td>0.8x - 1.0x (Slower)</td>
+        <td>Disable speculative decoding; run target LLM directly</td>
+      </tr>
+      <tr>
+        <th scope="row">Generic 7B Draft on Standard Enterprise Prompts</th>
+        <td>~35%</td>
+        <td>~1.2x</td>
+        <td>Marginal ROI given dual-model serving complexity</td>
+      </tr>
+      <tr>
+        <th scope="row">Domain-Aligned 100M Draft (Code, JSON, SQL, Templates)</th>
+        <td>70% - 80%+</td>
+        <td>2.5x - 3.0x</td>
+        <td>Deploy in production; lossless output with major cost drop</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 I've seen custom models trained on just 50,000 examples beat off-the-shelf 7B models by 40 percentage points in $\alpha$. Before you deploy speculative decoding, profile your domain predictability and know your acceptance rate.

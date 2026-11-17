@@ -7,6 +7,7 @@ mathjax: true
 summary: "An overview of advanced LLM inference optimization techniques, detailing how model parallelism, Grouped-Query Attention, and specialized serving engines overcome the Memory Wall."
 image: "/images/work/udacity-llm-inference.jpg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 We have crossed a threshold in the Generative AI landscape. Large Language Models (LLMs) have transitioned from research novelties and experimental playgrounds into production-critical engines driving real enterprise value. 
@@ -45,6 +46,48 @@ You cannot run production inference on native, out-of-the-box PyTorch. To achiev
 *   **vLLM:** The open-source pioneer of PagedAttention. vLLM treats the KV cache exactly like virtual memory in a classic operating system, eliminating memory fragmentation and unlocking the ability to batch requests dynamically in real-time.
 *   **TensorRT-LLM:** NVIDIA's highly optimized, proprietary library. It compiles your LLM into a static execution engine specifically tailored for your exact GPU architecture, aggressively fusing operations to maximize tensor core utilization.
 *   **Triton Inference Server:** The orchestration layer that sits on top of engines like vLLM or TensorRT, handling complex routing, dynamic batching across multiple models, and graceful degradation under load.
+
+### Production LLM Optimization Comparison
+
+<div tabindex="0" role="region" aria-labelledby="llm-opt-table-caption" class="table-wrapper">
+  <table>
+    <caption id="llm-opt-table-caption" class="visually-hidden">Comparison of LLM Inference Parallelism, Attention, and Serving Engines</caption>
+    <thead>
+      <tr>
+        <th scope="col">Technique / Engine</th>
+        <th scope="col">Primary Bottleneck Solved</th>
+        <th scope="col">Best Hardware / Workload Fit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Tensor Parallelism (TP)</th>
+        <td>Single-GPU VRAM capacity &amp; HBM bandwidth</td>
+        <td>Single-node multi-GPU clusters with high-speed NVLink</td>
+      </tr>
+      <tr>
+        <th scope="row">Pipeline Parallelism (PP)</th>
+        <td>Multi-node model sharding without NVLink</td>
+        <td>Cross-node giant models using micro-batch scheduling</td>
+      </tr>
+      <tr>
+        <th scope="row">Grouped-Query Attention (GQA)</th>
+        <td>KV-cache VRAM bloat on long contexts</td>
+        <td>High-concurrency &amp; long-context production decoding</td>
+      </tr>
+      <tr>
+        <th scope="row">vLLM (PagedAttention)</th>
+        <td>KV-cache memory fragmentation (~50% waste)</td>
+        <td>Dynamic multi-tenant serving &amp; continuous batching</td>
+      </tr>
+      <tr>
+        <th scope="row">TensorRT-LLM + Triton</th>
+        <td>Kernel launch overhead &amp; multi-model routing</td>
+        <td>Latency-critical enterprise fleets pinned to NVIDIA GPUs</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

@@ -1,14 +1,15 @@
 ---
 layout: default
-title: Collaborate, Advisory, Speaking & Creator Media Kit
-description: "Partner with Rishabh Misra through Afterdays across four tracks: Enterprise AI Advisory & Training (with AI Aspire by Andrew Ng), B2B AI & DevTools Creator Partnerships (Naano), International Keynotes & Speaking, and 1:1 Mentorship."
+title: Collaborate - AI Go-To-Market (GTM), Creator Media Kit, Advisory & Speaking
+description: "Partner with Rishabh Misra via Afterdays across four tracks: B2B AI Go-To-Market (GTM) & Developer Marketing Creator Partnerships (LinkedIn, X, Naano), Enterprise AI Advisory & Training (with AI Aspire by Andrew Ng), Keynotes, and 1:1 Mentorship."
 permalink: /collaborate/
+last_modified_at: 2026-11-17
 ---
 
 <section class="collab-page-intro" aria-label="Collaboration Overview">
   <span class="eyebrow">Afterdays · Collaboration &amp; Partnerships</span>
   <h1 class="hero-headline">Ways to Work Together</h1>
-  <p class="collab-intro-text">Through <b>Afterdays</b>, my AI consulting, technical education, and creator practice, I collaborate across four focused tracks - grounded in over a decade of 0→1 ML leadership across <b>Atlassian</b>, <b>Attentive</b>, <b>Twitter</b>, and <b>Amazon</b>. Select a focus area below or reach out directly at <a href="mailto:rishabhmisra33@gmail.com?subject=Collaboration%20Inquiry%20(Afterdays)">rishabhmisra33@gmail.com</a>.</p>
+  <p class="collab-intro-text">Through <b>Afterdays</b>, my AI consulting, technical education, and B2B AI Go-To-Market (GTM) creator practice, I collaborate across four focused tracks - grounded in over a decade of 0→1 ML leadership across <b>Atlassian</b>, <b>Attentive</b>, <b>Twitter</b>, and <b>Amazon</b>. Select a focus area below or reach out directly at <a href="mailto:rishabhmisra33@gmail.com?subject=Collaboration%20Inquiry%20(Afterdays)">rishabhmisra33@gmail.com</a>.</p>
 
   <nav class="collab-explorer-grid" aria-label="Explore collaboration categories">
     <a href="#advisory" class="explorer-card">
@@ -29,10 +30,10 @@ permalink: /collaborate/
         <span class="ec-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
         </span>
-        <span class="ec-num">02 · Creator</span>
+        <span class="ec-num">02 · Creator &amp; GTM</span>
       </div>
-      <strong class="ec-title">Content &amp; Brand Kit</strong>
-      <p class="ec-desc">B2B AI &amp; DevTools deep-dives, GPU/LLM benchmarks, launch webinars, and developer courses.</p>
+      <strong class="ec-title">AI GTM &amp; Brand Kit</strong>
+      <p class="ec-desc">B2B AI Go-To-Market &amp; developer marketing: LinkedIn/X deep-dives, benchmarks, and product launches.</p>
       <span class="ec-proof">193K+ Reach · 66% Senior+</span>
       <span class="ec-cta">Explore Media Kit <span aria-hidden="true">↓</span></span>
     </a>
@@ -157,22 +158,23 @@ permalink: /collaborate/
 </section>
 
 <!-- ======================================================================= -->
-<!-- 02 · CREATOR & BRAND PARTNERSHIPS (MEDIA KIT)                           -->
+<!-- 02 · AI GO-TO-MARKET (GTM) & CREATOR PARTNERSHIPS (MEDIA KIT)           -->
 <!-- ======================================================================= -->
 <section id="media-kit" class="collab-section" aria-labelledby="media-kit-heading">
   <span id="creator" class="anchor-alias" aria-hidden="true"></span>
+  <span id="gtm" class="anchor-alias" aria-hidden="true"></span>
   <div class="cs-header">
     <div class="cs-head-row">
       <div class="cs-head-title">
-        <span class="cs-kicker">02 · Creator Media Kit · B2B AI, Infra &amp; DevTools</span>
-        <h2 id="media-kit-heading">Technical Content &amp; Brand Partnerships</h2>
+        <span class="cs-kicker">02 · Creator Media Kit · B2B AI Go-To-Market (GTM) &amp; DevTools</span>
+        <h2 id="media-kit-heading">AI Go-To-Market &amp; Creator Partnerships</h2>
       </div>
       <div class="cs-head-actions">
         <a href="https://naano.com/creators/rishabh-misra" target="_blank" rel="noopener" class="btn-solid">Partner via Naano ↗</a>
-        <a href="mailto:rishabhmisra33@gmail.com?subject=Content%20%26%20Brand%20Partnership%20Inquiry%20(Afterdays)" class="btn-outline">Direct Sponsor Inquiry</a>
+        <a href="mailto:rishabhmisra33@gmail.com?subject=AI%20GTM%20%26%20Creator%20Partnership%20Inquiry%20(Afterdays)" class="btn-outline">Direct Sponsor Inquiry</a>
       </div>
     </div>
-    <p class="cs-lead">Most AI creators summarize news headlines for general audiences. As a sitting <b>Principal ML Lead</b> architecting Foundation Models at billion-user scale, I partner selectively with <b>AI infrastructure, DevTools, Cloud, and EdTech</b> teams to produce first-principles technical content that Staff+ engineers, architects, and VPs read, bookmark, and trust.</p>
+    <p class="cs-lead">Most AI influencers summarize headlines for general audiences. As a sitting <b>Principal ML Lead</b> architecting Foundation Models at billion-user scale, I partner selectively with <b>B2B AI infrastructure, LLM/Agentic AI, DevTools, Cloud, and EdTech</b> Go-To-Market (GTM) and developer marketing teams across <b>LinkedIn, X (@rishabh_misra_), engineering blogs, and live launches</b> to produce first-principles technical content that Staff+ engineers, architects, and VPs actually read, bookmark, and trust.</p>
   </div>
 
   <dl class="cs-stats-strip" aria-label="Verified Creator Reach and Audience Metrics">
@@ -257,25 +259,25 @@ permalink: /collaborate/
 
     <div class="cs-panel">
       <div class="cs-panel-head">
-        <span class="cs-subkicker">Sponsorship &amp; Co-Creation Menu</span>
+        <span class="cs-subkicker">AI GTM, Sponsorship &amp; Co-Creation Menu</span>
         <h3 class="cs-panel-title">Deliverable Formats &amp; Brand Fit</h3>
       </div>
 
       <ul class="cs-bullet-list">
         <li>
-          <strong>Sponsored LinkedIn Technical Deep-Dives</strong>
-          <span>Practitioner-grade architectural breakdowns, custom system diagrams, and production trade-off analyses tailored to Staff+ engineers and technical buyers.</span>
+          <strong>LinkedIn &amp; X Launch Campaigns &amp; Technical Deep-Dives</strong>
+          <span>Practitioner-grade architectural breakdowns, custom system diagrams, and production trade-off analyses across LinkedIn &amp; X tailored to Staff+ engineers and technical buyers.</span>
         </li>
         <li>
-          <strong>Technical Whitepapers, Benchmarks &amp; Blog Features</strong>
-          <span>Reproducible GPU/LLM inference benchmarks, deep-dive engineering articles, and reference GitHub implementations that earn developer trust.</span>
+          <strong>Technical Whitepapers, Benchmarks &amp; Developer Marketing Assets</strong>
+          <span>Reproducible GPU/LLM inference benchmarks, deep-dive engineering articles, and reference GitHub implementations that drive bottom-up developer adoption.</span>
         </li>
         <li>
-          <strong>Live Webinars, Fireside Chats &amp; Launch Walkthroughs</strong>
-          <span>High-signal virtual keynotes, executive roundtables, and hands-on product demos for developer launches.</span>
+          <strong>Product Launch Walkthroughs, DevRel Webinars &amp; Fireside Chats</strong>
+          <span>High-signal virtual keynotes, executive roundtables, and hands-on product demos for GA launches, SDK/API releases, and category creation.</span>
         </li>
         <li>
-          <strong>Custom Developer Curricula &amp; Video Courses</strong>
+          <strong>Custom Developer Education &amp; GTM Enablement Courses</strong>
           <span>End-to-end production AI courses (proven partner with <a href="https://www.udacity.com/course/llm-inference-optimization--cd14455" target="_blank" rel="noopener"><b>Udacity</b></a>, <a href="https://www.linkedin.com/learning/building-llm-powered-recommendation-systems" target="_blank" rel="noopener"><b>LinkedIn Learning</b></a> &amp; <a href="https://interviewkickstart.com/courses/applied-agentic-ai-tech-pathway#instructors" target="_blank" rel="noopener"><b>Interview Kickstart</b></a>).</span>
         </li>
       </ul>
@@ -334,8 +336,15 @@ permalink: /collaborate/
   </div>
 
   <div id="sponsor-faq" class="cs-subblock">
-    <h3 id="sponsor-faq-heading" class="cs-panel-title cs-faq-heading">Brand &amp; Content Partnership FAQ</h3>
+    <h3 id="sponsor-faq-heading" class="cs-panel-title cs-faq-heading">AI Go-To-Market (GTM) &amp; Creator Partnership FAQ</h3>
     <div class="cs-accordion" aria-labelledby="sponsor-faq-heading">
+      <details class="cs-faq-item">
+        <summary>How do AI startups and enterprise GTM teams partner with you for Go-To-Market and product launches?</summary>
+        <div class="cs-faq-body">
+          <p>B2B AI, DevTools, and cloud marketing/GTM teams partner with me via <b>Afterdays</b> for both <b>bottom-up developer-led growth (PLG / DevRel)</b> and <b>top-down enterprise buyer credibility</b> (<b>66% Senior+ readership</b>, <b>21% Directors/VPs/CXOs/Founders</b>, <b>56% enterprise</b>). Common GTM motions include coordinated <b>GA product &amp; model launches</b> across LinkedIn (<code>in/rishabhmisra33</code>) and X (<code>@rishabh_misra_</code>), independent <b>GPU/LLM/RAG architecture teardowns &amp; reproducible GitHub benchmarks</b>, developer launch webinars, and custom onboarding courses.</p>
+        </div>
+      </details>
+
       <details class="cs-faq-item">
         <summary>What types of AI, DevTools, and technology brands do you partner with?</summary>
         <div class="cs-faq-body">

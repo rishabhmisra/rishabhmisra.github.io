@@ -7,6 +7,7 @@ mathjax: true
 summary: "Stop obsessing over prompts and start profiling GPUs. Master Arithmetic Intensity, KV Caching, and Scheduling to transition from an AI Enthusiast to an Inference Architect."
 image: "/images/blog/gpu-roofline.svg"
 show_hero: true
+last_modified_at: 2026-11-17
 ---
 
 Let's state a hard truth about the current AI landscape: 90% of engineers bearing the title "AI Engineer" today are simply chaining together API calls. Less than 10% actually possess the systems engineering depth required to keep a 70-Billion parameter model profitable and performant at scale.
@@ -42,6 +43,46 @@ A common pitfall is aggressively quantizing a model to 4-bit precision, assuming
 Can you implement advanced scheduling techniques like Chunked Prefill? 
 
 In a multimodal system, if one user uploads a massive image, processing that dense visual context can block the GPU for hundreds of milliseconds. If you lack Chunked Prefill, that one image upload will stall the generation of 1,000 other concurrent text-only users. Furthermore, do you know exactly when to disable Speculative Decoding because your acceptance rate has dropped below the break-even threshold?
+
+<div tabindex="0" role="region" aria-labelledby="gpu-prof-table-caption" class="table-wrapper">
+  <table>
+    <caption id="gpu-prof-table-caption" class="visually-hidden">4-Pillar LLM Inference Architect Diagnostic Matrix</caption>
+    <thead>
+      <tr>
+        <th scope="col">Diagnostic Pillar</th>
+        <th scope="col">Core Metric to Profile</th>
+        <th scope="col">Failure Symptom</th>
+        <th scope="col">Architectural Lever</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1. Physics (Roofline)</th>
+        <td>Arithmetic Intensity (FLOPs / Byte)</td>
+        <td>H100 compute cores idle ~80% during decode</td>
+        <td>Increase effective batch size; reduce HBM weight reads</td>
+      </tr>
+      <tr>
+        <th scope="row">2. Memory State</th>
+        <td>KV-cache VRAM allocation vs. active tokens</td>
+        <td>OOM crashes with 50%+ VRAM reserved-but-empty</td>
+        <td>PagedAttention virtual memory &amp; tuned <code>block_size</code></td>
+      </tr>
+      <tr>
+        <th scope="row">3. Precision</th>
+        <td>Dequantization kernel time vs. HBM savings</td>
+        <td>INT4 model runs slower than FP16 at Batch = 1</td>
+        <td>Match quantization (AWQ/FP8) to concurrency regime</td>
+      </tr>
+      <tr>
+        <th scope="row">4. Scheduling</th>
+        <td>Time-To-First-Token (TTFT) &amp; Inter-Token Latency</td>
+        <td>Long multimodal prefill stalls 1,000 text decodes</td>
+        <td>Chunked Prefill &amp; α-gated Speculative Decoding</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Conclusion
 

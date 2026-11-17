@@ -4,7 +4,7 @@
 {% else %}
   {% capture seo_title %}{{ site.name }} - Principal ML Architect, AI Educator & Strategic Advisor{% endcapture %}
 {% endif %}
-{% assign default_geo_desc = "Rishabh Misra is a Principal ML Lead at Atlassian (ex-Twitter, Attentive, Amazon), Founder of Afterdays (AI consulting & education partnering with AI Aspire by Andrew Ng across 50+ organizations), co-author of Sculpting Data for ML, and Top 1% cited researcher (1,290+ citations, 200K+ Kaggle downloads)." %}
+{% assign default_geo_desc = "Rishabh Misra is a Principal ML Lead at Atlassian (ex-Twitter, Attentive, Amazon), Founder of Afterdays (B2B AI Go-To-Market & developer marketing creator, enterprise AI training & advisory partnering with AI Aspire by Andrew Ng across 50+ organizations), co-author of Sculpting Data for ML, and Top 1% cited researcher (1,290+ citations, 200K+ Kaggle downloads)." %}
 {% if page.description %}
   {% assign raw_desc = page.description %}
 {% elsif page.summary %}
@@ -17,7 +17,11 @@
 {% assign seo_description = raw_desc | strip_html | strip_newlines | strip | truncate: 220 %}
 {% assign canonical_path = page.url | replace: "index.html", "" %}
 {% capture canonical_url %}{{ site.url }}{{ canonical_path }}{% endcapture %}
-{% capture seo_image %}{{ site.url }}/images/Headshot.jpg{% endcapture %}
+{% if page.image %}
+  {% capture seo_image %}{{ site.url }}{{ page.image }}{% endcapture %}
+{% else %}
+  {% capture seo_image %}{{ site.url }}/images/Headshot.jpg{% endcapture %}
+{% endif %}
 
   <title>{{ seo_title | escape }}</title>
   <meta name="description" content="{{ seo_description | escape }}">
@@ -48,6 +52,7 @@
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:image" content="{{ seo_image }}">
   {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
   <meta property="article:author" content="https://rishabhmisra.github.io/#person">{% endif %}
 
   <meta name="twitter:card" content="summary_large_image">
@@ -70,8 +75,8 @@
         "url": "https://rishabhmisra.github.io/",
         "image": "https://rishabhmisra.github.io/images/Headshot.jpg",
         "email": "mailto:rishabhmisra33@gmail.com",
-        "jobTitle": "Principal Machine Learning Engineer / Tech Lead & Founder, Afterdays (AI Consulting, Education & Technical Creator)",
-        "description": "Principal ML Architect & Tech Lead at Atlassian leading 20+ engineers on Foundation Models, Generative RecSys, and Natural Language Personalization. Founder of Afterdays - AI consulting, technical education, and B2B AI/DevTools creator practice closely partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, and 50+ organizations (193K+ annual LinkedIn impressions across a 66% Senior+ audience, 135K+ Towards Data Science views). Former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter (10M+ QPS ranking), and ML Engineer at Amazon. UC San Diego MS CS alumnus, US Government recognized (EB-1) researcher, and co-author of Sculpting Data for ML (1,290+ citations, h-index 13, 200K+ Kaggle downloads, 1.18M+ dataset views).",
+        "jobTitle": "Principal Machine Learning Engineer / Tech Lead & Founder, Afterdays (B2B AI Go-To-Market Creator, Enterprise AI Training & Advisory)",
+        "description": "Principal ML Architect & Tech Lead at Atlassian leading 20+ engineers on Foundation Models, Generative RecSys, and Natural Language Personalization. Founder of Afterdays - AI consulting, enterprise enablement, technical education, and B2B AI Go-To-Market (GTM) & developer marketing creator practice closely partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, Naano, and 50+ organizations (193K+ annual LinkedIn impressions across a 66% Senior+ audience, active on X @rishabh_misra_, 135K+ Towards Data Science views). Former Staff ML Tech Lead at Attentive, Senior ML Tech Lead at Twitter (10M+ QPS ranking), and ML Engineer at Amazon. UC San Diego MS CS alumnus, US Government recognized (EB-1) researcher, and co-author of Sculpting Data for ML (1,290+ citations, h-index 13, 200K+ Kaggle downloads, 1.18M+ dataset views).",
         "disambiguatingDescription": "Rishabh Misra (spelled M-i-s-r-a), Principal ML Engineer at Atlassian, Founder of Afterdays, ex-Attentive, ex-Twitter, ex-Amazon, UC San Diego M.S. CS alumnus (advised by Prof. Julian McAuley), and author of Sculpting Data for ML. Distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix.",
         "worksFor": [
           {
@@ -122,11 +127,12 @@
           "LLM Inference Optimization",
           "Generative Recommender Systems",
           "Personalization & Ranking Systems at Scale",
-          "Agentic AI & Retrieval-Augmented Generation (RAG)",
+          "Agentic AI, Model Context Protocol (MCP) & Retrieval-Augmented Generation (RAG)",
           "Natural Language Processing",
           "Dataset Curation & Data-Centric AI",
-          "B2B AI & DevTools Technical Content Creation",
-          "Developer Advocacy & Enterprise AI Training"
+          "B2B AI Go-To-Market (GTM) & Developer Marketing",
+          "B2B AI Influencer & Technical Creator Partnerships",
+          "Developer Advocacy, DevRel & Enterprise AI Training"
         ],
         "interactionStatistic": [
           {
@@ -180,10 +186,20 @@
         "name": "Afterdays",
         "url": "https://rishabhmisra.github.io/collaborate/",
         "logo": "https://rishabhmisra.github.io/images/logos/afterdays.png",
-        "description": "AI consulting, enterprise enablement, technical education, and B2B AI/DevTools creator practice founded by Rishabh Misra - closely partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, Naano, and 50+ organizations.",
+        "email": "rishabhmisra33@gmail.com",
+        "description": "B2B AI Go-To-Market (GTM) & developer marketing creator practice, AI architecture consulting, corporate AI training, and technical education firm founded by Rishabh Misra - partnering with AI Aspire (by Andrew Ng), Udacity, LinkedIn Learning, Interview Kickstart, Naano, and 50+ enterprise & AI startup teams.",
         "sameAs": [
-          "https://naano.com/creators/rishabh-misra"
+          "https://naano.com/creators/rishabh-misra",
+          "https://www.linkedin.com/in/rishabhmisra33/",
+          "https://x.com/rishabh_misra_"
         ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "B2B AI Go-To-Market (GTM), Creator Sponsorships, Enterprise AI Advisory & Speaking",
+          "email": "rishabhmisra33@gmail.com",
+          "url": "https://rishabhmisra.github.io/collaborate/#media-kit",
+          "availableLanguage": ["English"]
+        },
         "founder": {
           "@id": "https://rishabhmisra.github.io/#person"
         },
@@ -207,13 +223,15 @@
           "@id": "https://rishabhmisra.github.io/#person"
         }
       },
-      {% if page.date %}{
+      {% if page.date %}{% assign article_words = content | strip_html | number_of_words %}{
         "@type": "BlogPosting",
         "@id": {{ canonical_url | append: "#article" | jsonify }},
         "mainEntityOfPage": {{ canonical_url | jsonify }},
         "headline": {{ clean_page_title | jsonify }},
         "description": {{ seo_description | jsonify }},
         "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+        "wordCount": {{ article_words }},
         "inLanguage": "en-US",
         "image": {{ seo_image | jsonify }},
         "author": {
@@ -224,14 +242,42 @@
         },
         "isPartOf": {
           "@id": "https://rishabhmisra.github.io/#website"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".post-title", ".post-standfirst"]
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }},
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rishabhmisra.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog & Technical Articles",
+            "item": "https://rishabhmisra.github.io/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ clean_page_title | jsonify }},
+            "item": {{ canonical_url | jsonify }}
+          }
+        ]
       }{% elsif canonical_path == "/" or canonical_path == "/aboutme/" %}{
         "@type": "ProfilePage",
         "@id": {{ canonical_url | append: "#profilepage" | jsonify }},
         "url": {{ canonical_url | jsonify }},
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-17",
         "inLanguage": "en-US",
         "mainEntity": {
           "@id": "https://rishabhmisra.github.io/#person"
@@ -279,16 +325,113 @@
         "url": "https://www.linkedin.com/learning/building-llm-powered-recommendation-systems",
         "provider": { "@type": "Organization", "name": "LinkedIn Learning", "url": "https://www.linkedin.com/learning/" },
         "instructor": { "@id": "https://rishabhmisra.github.io/#person" }
-      }{% elsif canonical_path == "/publications/" %}{
+      }{% if canonical_path == "/" %},
+      {
+        "@type": "VideoObject",
+        "name": "AI Showdown: Open Source Tools for LLM Face-Offs",
+        "description": "Conference talk by Rishabh Misra and Jigyasa Grover at Linux Foundation AI_dev: Open Source GenAI & ML Summit Europe in Amsterdam evaluating open-source LLM evaluation, benchmarking, and red-teaming frameworks.",
+        "thumbnailUrl": "https://rishabhmisra.github.io/images/talks/aidev-europe-2025.jpg",
+        "uploadDate": "2025-09-02T00:00:00Z",
+        "contentUrl": "https://www.youtube.com/watch?v=0pm5LDV3k-M",
+        "embedUrl": "https://www.youtube.com/embed/0pm5LDV3k-M",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" }
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Guarding the LLM Galaxy: Security, Privacy, and Guardrails in the AI Era",
+        "description": "Conference talk by Rishabh Misra and Jigyasa Grover at Linux Foundation Open Source Summit North America in Denver covering production LLM guardrails, privacy-preserving ML, and enterprise AI safety.",
+        "thumbnailUrl": "https://rishabhmisra.github.io/images/talks/oss-summit-2025.jpg",
+        "uploadDate": "2025-07-01T00:00:00Z",
+        "contentUrl": "https://www.youtube.com/watch?v=q__B79sB5cw",
+        "embedUrl": "https://www.youtube.com/embed/q__B79sB5cw",
+        "creator": { "@id": "https://rishabhmisra.github.io/#person" }
+      },
+      {
+        "@type": "Event",
+        "name": "When NOT To Use an Agent: Choosing Between Workflows, Services, and Agent Systems (AGNTCon + MCPCon Europe 2026)",
+        "startDate": "2026-09-24",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Amsterdam, Netherlands",
+          "address": { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" }
+        },
+        "url": "https://agntconmcpconeu26.sched.com/event/2RB8V/when-not-to-use-an-agent-choosing-between-workflows-services-and-agent-systems-jigyasa-grover-uber-rishabh-misra-atlassian",
+        "image": "https://rishabhmisra.github.io/images/talks/agntcon-europe-2026.jpg",
+        "performer": { "@id": "https://rishabhmisra.github.io/#person" }
+      },
+      {
+        "@type": "Event",
+        "name": "When NOT to Use an Agent: Lessons from Systems That Didn't Want Autonomy (Driving AI 2026 Keynote)",
+        "startDate": "2026-05-19",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "IDA Conference, Copenhagen, Denmark",
+          "address": { "@type": "PostalAddress", "addressLocality": "Copenhagen", "addressCountry": "DK" }
+        },
+        "url": "https://ida.dk/driving-ai/talere-og-program/jigyasa-grover-rishabh-misra",
+        "image": "https://rishabhmisra.github.io/images/talks/driving-ai-2026.jpg",
+        "performer": { "@id": "https://rishabhmisra.github.io/#person" }
+      }{% elsif canonical_path == "/aboutme/" %},
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://rishabhmisra.github.io/aboutme/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rishabhmisra.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "About Rishabh Misra", "item": "https://rishabhmisra.github.io/aboutme/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rishabhmisra.github.io/aboutme/#about-faq-schema",
+        "url": "https://rishabhmisra.github.io/aboutme/#about-faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Rishabh Misra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rishabh Misra is a Principal Machine Learning Engineer and Tech Lead at Atlassian leading 20+ engineers on Generative Personalization, Search, and Foundation Models, and the Founder of Afterdays - an AI consulting, corporate AI training (partnering with AI Aspire by Andrew Ng), and B2B AI Go-To-Market (GTM) creator practice. Previously, he led Personalization ML at Attentive, architected 10M+ QPS ranking systems at Twitter, worked on ML at Amazon, earned his M.S. in Computer Science at UC San Diego under Prof. Julian McAuley, co-authored Sculpting Data for ML, and holds 1,290+ citations (Top 1% global impact) and US Government EB-1 recognition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Rishabh Misra (Atlassian & Afterdays) distinct from similarly named creators?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rishabh Misra (spelled M-i-s-r-a, online at rishabhmisra.github.io, LinkedIn in/rishabhmisra33, GitHub rishabhmisra, X @rishabh_misra_, and Kaggle rmisra) is the Principal ML Architect at Atlassian, Founder of Afterdays, UCSD MS CS alumnus, and author of Sculpting Data for ML and the News Category & Sarcasm Detection datasets. He is distinct from Rishabh Mishra (@RishabhMishraOfficial, data analytics YouTuber) and Rishabh Mishra at Whatfix."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can enterprises, conferences, and AI brands collaborate with Rishabh Misra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Through Afterdays, Rishabh Misra partners on four tracks: (1) Enterprise AI advisory and multi-week corporate AI engineering training (in partnership with AI Aspire by Andrew Ng, including Morgan Stanley NYC), (2) B2B AI Go-To-Market (GTM) and developer marketing campaigns across LinkedIn (193K+ annual impressions, 66% Senior+ audience) and X, (3) International conference keynotes and fireside chats, and (4) 1:1 ML system design and Staff+/FAANG mentorship (5.0/5.0 across 54+ verified reviews)."
+            }
+          }
+        ]
+      }{% endif %}{% elsif canonical_path == "/publications/" %}{
         "@type": "CollectionPage",
         "@id": "https://rishabhmisra.github.io/publications/#collection",
         "url": "https://rishabhmisra.github.io/publications/",
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-17",
         "inLanguage": "en-US",
         "about": { "@id": "https://rishabhmisra.github.io/#person" },
         "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://rishabhmisra.github.io/publications/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rishabhmisra.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Research & Publications", "item": "https://rishabhmisra.github.io/publications/" }
+        ]
       },
       {
         "@type": "ScholarlyArticle",
@@ -387,57 +530,72 @@
         "url": "https://rishabhmisra.github.io/collaborate/",
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-17",
         "inLanguage": "en-US",
         "about": { "@id": "https://rishabhmisra.github.io/#afterdays" },
         "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
       },
       {
+        "@type": "BreadcrumbList",
+        "@id": "https://rishabhmisra.github.io/collaborate/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rishabhmisra.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Collaborate & Media Kit", "item": "https://rishabhmisra.github.io/collaborate/" }
+        ]
+      },
+      {
         "@type": "Service",
         "@id": "https://rishabhmisra.github.io/collaborate/#service",
-        "name": "Afterdays - B2B AI Content Creation, Brand Partnerships, Enterprise Training & Advisory",
-        "description": "B2B AI & DevTools technical content creation and brand sponsorships (reaching 193K+ annual LinkedIn impressions across a 66% Senior+ engineering audience and 135K+ Towards Data Science views), enterprise corporate AI training (in partnership with AI Aspire by Andrew Ng, including Morgan Stanley NYC), AI architecture advisory across 50+ organizations, custom developer curricula, and international keynotes.",
+        "name": "Afterdays - B2B AI Go-To-Market (GTM), Creator Sponsorships, Enterprise AI Training & Advisory",
+        "serviceType": [
+          "B2B AI Go-To-Market (GTM) & Developer Marketing",
+          "B2B AI Influencer & Technical Creator Sponsorships (LinkedIn & X)",
+          "AI Product Launch Campaigns, Technical Whitepapers & GPU/LLM Benchmarks",
+          "Enterprise Corporate AI Training & Enablement",
+          "AI Architecture & Strategy Advisory"
+        ],
+        "description": "B2B AI Go-To-Market (GTM), developer marketing, and technical creator partnerships across LinkedIn (in/rishabhmisra33, 193K+ annual impressions, 66% Senior+ engineering & executive audience), X (@rishabh_misra_), and Towards Data Science (135K+ views), alongside enterprise corporate AI training (in partnership with AI Aspire by Andrew Ng, including Morgan Stanley NYC), AI architecture advisory across 50+ organizations, custom developer curricula, and international keynotes.",
         "provider": { "@id": "https://rishabhmisra.github.io/#afterdays" },
         "url": "https://rishabhmisra.github.io/collaborate/#media-kit",
         "sameAs": "https://naano.com/creators/rishabh-misra",
         "areaServed": "Worldwide",
         "audience": {
           "@type": "Audience",
-          "audienceType": "Senior+ Software & ML Engineers, AI Architects, Engineering Directors, VPs, CXOs, and Founders (66% Senior+)"
+          "audienceType": "AI & DevTools Go-To-Market (GTM) Teams, CMOs, Heads of Growth, DevRel Leaders, Senior+ Software & ML Engineers, AI Architects, VPs, CXOs, and Founders"
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Afterdays Creator, Advisory & Enterprise AI Offerings",
+          "name": "Afterdays AI Go-To-Market (GTM), Creator, Advisory & Enterprise AI Offerings",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Sponsored LinkedIn Technical Deep-Dives & Architectural Teardowns",
-                "description": "Practitioner-grade LinkedIn posts, custom architecture diagrams, and production trade-off breakdowns for AI infrastructure, LLM inference, Agentic AI, RAG, and DevTools brands."
+                "name": "LinkedIn & X Launch Campaigns & Sponsored Technical Deep-Dives",
+                "description": "Practitioner-grade LinkedIn and X (@rishabh_misra_) launch posts, custom architecture diagrams, and production trade-off breakdowns for B2B AI infrastructure, LLM inference, Agentic AI, MCP, RAG, and DevTools Go-To-Market teams."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Technical Whitepapers, GPU/LLM Benchmarks & Engineering Blog Features",
-                "description": "Reproducible benchmarks, deep-dive engineering articles, and companion GitHub reference implementations."
+                "name": "Technical Whitepapers, GPU/LLM Benchmarks & Developer Marketing Assets",
+                "description": "Reproducible benchmarks, deep-dive engineering articles, and companion GitHub reference implementations driving bottom-up developer adoption."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Developer Webinars, Fireside Chats & Product Launch Walkthroughs",
-                "description": "Live virtual keynotes, executive roundtables, and developer-facing launch demos."
+                "name": "Product Launch Walkthroughs, DevRel Webinars & Executive Fireside Chats",
+                "description": "Live virtual keynotes, executive roundtables, and hands-on developer demos for GA product launches and SDK/API releases."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Custom Developer Curricula & Online Courses",
+                "name": "Custom Developer Education & GTM Enablement Courses",
                 "description": "End-to-end production AI, LLM inference, RAG, and Agentic AI courses (proven across Udacity, LinkedIn Learning, AI Aspire, and Interview Kickstart)."
               }
             },
@@ -457,6 +615,14 @@
         "@id": "https://rishabhmisra.github.io/collaborate/#sponsor-faq-schema",
         "url": "https://rishabhmisra.github.io/collaborate/#sponsor-faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do AI startups and enterprise GTM teams partner with you for Go-To-Market and product launches?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "B2B AI, DevTools, and cloud marketing and Go-To-Market (GTM) teams partner with Rishabh Misra via Afterdays for both bottom-up developer-led growth (PLG / DevRel) and top-down enterprise buyer credibility (66% Senior+ readership, 21% Directors/VPs/CXOs/Founders, 56% enterprise). Common GTM motions include coordinated GA product and model launches across LinkedIn (in/rishabhmisra33) and X (@rishabh_misra_), independent GPU/LLM/RAG architecture teardowns and reproducible GitHub benchmarks, developer launch webinars, and custom onboarding courses."
+            }
+          },
           {
             "@type": "Question",
             "name": "What types of AI, DevTools, and technology brands do you partner with?",
@@ -496,11 +662,19 @@
         "url": {{ canonical_url | jsonify }},
         "name": {{ seo_title | jsonify }},
         "description": {{ seo_description | jsonify }},
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-17",
         "inLanguage": "en-US",
         "about": { "@id": "https://rishabhmisra.github.io/#person" },
         "isPartOf": { "@id": "https://rishabhmisra.github.io/#website" }
-      }{% endif %}
+      }{% if clean_page_title != "" %},
+      {
+        "@type": "BreadcrumbList",
+        "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }},
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rishabhmisra.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": {{ clean_page_title | jsonify }}, "item": {{ canonical_url | jsonify }} }
+        ]
+      }{% endif %}{% endif %}
     ]
   }
   </script>
@@ -510,13 +684,13 @@
         try {
           navigator.modelContext.registerTool({
             name: "get_rishabh_misra_context",
-            description: "Retrieve verified structured JSON information about Rishabh Misra (experience, research publications, datasets, courses, speaking, articles, and collaboration links).",
+            description: "Retrieve verified structured JSON information about Rishabh Misra and Afterdays (B2B AI Go-To-Market & developer marketing media kit, LinkedIn/X creator audience demographics, enterprise AI advisory & training, research publications, datasets, courses, speaking, and outreach contact details).",
             inputSchema: {
               type: "object",
               properties: {
                 section: {
                   type: "string",
-                  description: "Optional key to filter (entity, impact_metrics, experience, education, book, courses, selected_publications, datasets, collaboration, articles)."
+                  description: "Optional key to filter (entity, impact_metrics, creator_media_kit, gtm_and_marketing_fit, collaboration, experience, education, book, courses, selected_publications, datasets, articles)."
                 }
               }
             },

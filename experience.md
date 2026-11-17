@@ -3,6 +3,7 @@ layout: default
 title: Professional Experience
 description: "Career track record of Rishabh Misra across Atlassian (Principal ML Engineer), Afterdays (Founder - AI Consulting & Education, partnering with AI Aspire by Andrew Ng, Udacity & LinkedIn Learning), Attentive (Staff ML Tech Lead), Twitter (10M+ QPS ranking), Amazon, UC San Diego, and Arcesium."
 permalink: /experience/
+last_modified_at: 2026-11-17
 ---
 
 <section class="hero-split hero-page">

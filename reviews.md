@@ -3,6 +3,7 @@ layout: default
 title: Reviews & Testimonials
 description: "54+ verified 5.0/5.0 testimonials and reviews from engineers, researchers, and clients mentored or advised by Rishabh Misra on MentorCruise and MeetAPro."
 permalink: /reviews/
+last_modified_at: 2026-11-17
 ---
 
 <section class="hero-split hero-page">

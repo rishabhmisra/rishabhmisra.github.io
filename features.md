@@ -3,6 +3,7 @@ layout: default
 title: Media Features
 description: "Global media coverage and expert AI commentary featuring Rishabh Misra across TechCrunch, NBC, Gizmodo, The Sun, Times of India, Lifewire, BuiltIn, and Interesting Engineering."
 permalink: /features/
+last_modified_at: 2026-11-17
 ---
 
 <section class="hero-split hero-page">
