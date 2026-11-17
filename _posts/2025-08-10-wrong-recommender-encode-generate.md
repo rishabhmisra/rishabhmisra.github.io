@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Why Your Team Built the Wrong Recommender</center>"
+title: "Why Your Team Built the Wrong Recommender"
 comments: true
 mathjax: true
 summary: "Traditional Retrieve-and-Rank models treat user history like a grocery list. Learn why the industry is shifting toward 'Encode and Generate' paradigms to capture temporal user intent."

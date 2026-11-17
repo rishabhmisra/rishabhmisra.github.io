@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Speculative Decoding: The Mathematics of Acceptance Rate</center>"
+title: "Speculative Decoding: The Mathematics of Acceptance Rate"
 comments: true
 mathjax: true
 summary: "Speculative Decoding can make LLMs 3x faster - or slow them down. Master the mathematics of the Acceptance Rate to determine when and how to deploy this powerful optimization technique."

@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Text Prediction - Behind the Scenes</center>"
+title: "Text Prediction - Behind the Scenes"
 comments: true
 mathjax: true
 summary: "An inside look at how mobile keyboard applications use language models and smoothing techniques to predict your next word with increasing accuracy."

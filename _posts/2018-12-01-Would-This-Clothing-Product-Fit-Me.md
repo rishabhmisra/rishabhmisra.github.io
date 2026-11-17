@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Would this clothing product fit me?</center>"
+title: "Would this clothing product fit me?"
 comments: true
 mathjax: true
 summary: "An explanation of my RecSys paper addressing the challenge of providing accurate, personalized fit guidance in online fashion retail using advanced machine learning models."

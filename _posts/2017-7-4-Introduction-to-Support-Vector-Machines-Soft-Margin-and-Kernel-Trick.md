@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Introduction to Support Vector Machines - Soft Margin Formulation and Kernel Trick</center>"
+title: "Introduction to Support Vector Machines - Soft Margin Formulation and Kernel Trick"
 comments: true
 mathjax: true
 summary: "The second part of the SVM series, explaining how the Soft Margin formulation and the Kernel Trick allow models to elegantly handle noisy and linearly inseparable datasets."

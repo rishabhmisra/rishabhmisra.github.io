@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>The Visual Cold-Start Trap in Recommender Systems</center>"
+title: "The Visual Cold-Start Trap in Recommender Systems"
 comments: true
 mathjax: true
 summary: "Uncover the 'Visual Cold-Start Trap' in recommendation systems and learn how to use Contrastive Learning and Cross-Attention to ensure new products get the visibility they deserve."

@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Common Pitfalls in ML Interviews and How to Avoid Them</center>"
+title: "Common Pitfalls in ML Interviews and How to Avoid Them"
 comments: true
 mathjax: true
 summary: "Discover the five critical mistakes candidates make in Machine Learning interviews - from neglecting fundamentals to ignoring production reality - and learn how to overcome them."

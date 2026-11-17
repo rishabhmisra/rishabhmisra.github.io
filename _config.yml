@@ -27,8 +27,8 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus: rishabhmisra
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-63791734-1
+# Enter your Google Analytics 4 Measurement ID (e.g. G-XXXXXXXXXX) to activate tracking
+google_analytics: G-YGYF7337LW
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -85,6 +85,25 @@ plugins:
 include:
   - .well-known
 
+# Keep static PDFs downloadable at their URLs while reserving sitemap.xml crawl budget for canonical HTML pages & articles
+defaults:
+  - scope:
+      path: "missing_citations"
+    values:
+      sitemap: false
+  - scope:
+      path: "pdfs"
+    values:
+      sitemap: false
+  - scope:
+      path: "*.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "**/*.pdf"
+    values:
+      sitemap: false
+
 # Exclude these files from your production _site
 exclude:
   - vendor/
@@ -98,3 +117,13 @@ exclude:
   - Resume/
   - Resume
   - PERSONA.md
+  - bibliography.bib
+  - _plugins/readme.md
+  - missing_citations/readme.md
+  - pdfs/readme.md
+  - images/em/readme.md
+  - images/fit/readme.md
+  - images/mle/readme.md
+  - images/projects/readme.md
+  - "images/collecting datasets guide/README.md"
+  - images/collecting-datasets-guide/README.md

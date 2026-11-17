@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Inference using EM algorithm</center>"
+title: "Inference using EM algorithm"
 comments: true
 mathjax: true
 summary: "A deep dive into the mathematical derivation of the Expectation-Maximization (EM) algorithm, demonstrating how to tackle inference problems involving latent variables."

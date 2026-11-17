@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Building LLM-Powered Recommendation Systems: My LinkedIn Learning Course</center>"
+title: "Building LLM-Powered Recommendation Systems: My LinkedIn Learning Course"
 comments: true
 mathjax: true
 summary: "An exclusive sneak peek into my upcoming LinkedIn Learning course, which explores the paradigm shift of integrating Large Language Models into massive-scale personalization pipelines."

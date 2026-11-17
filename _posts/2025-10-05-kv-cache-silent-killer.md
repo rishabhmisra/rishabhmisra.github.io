@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>KV Cache: The Silent Killer of Your Inference Budget</center>"
+title: "KV Cache: The Silent Killer of Your Inference Budget"
 comments: true
 mathjax: true
 summary: "The KV Cache is the hidden memory tax causing your LLM applications to crash. Discover the math behind the bottleneck and how fragmentation eats your inference budget."

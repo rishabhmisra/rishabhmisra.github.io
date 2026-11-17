@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>What is Generative AI? Peeling the magic behind the buzz</center>"
+title: "What is Generative AI? Peeling the magic behind the buzz"
 comments: true
 mathjax: true
 summary: "A technical primer on Generative AI, breaking down the mechanics of Transformers and Diffusion models, and exploring how self-supervised learning is transforming the industry."

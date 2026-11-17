@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Advanced LLM Inference Optimization Techniques</center>"
+title: "Advanced LLM Inference Optimization Techniques"
 comments: true
 mathjax: true
 summary: "An overview of advanced LLM inference optimization techniques, detailing how model parallelism, Grouped-Query Attention, and specialized serving engines overcome the Memory Wall."

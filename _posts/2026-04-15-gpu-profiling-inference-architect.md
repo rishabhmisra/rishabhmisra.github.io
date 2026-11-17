@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>From AI Enthusiast to Inference Architect: Mastering GPU Profiling</center>"
+title: "From AI Enthusiast to Inference Architect: Mastering GPU Profiling"
 comments: true
 mathjax: true
 summary: "Stop obsessing over prompts and start profiling GPUs. Master Arithmetic Intensity, KV Caching, and Scheduling to transition from an AI Enthusiast to an Inference Architect."

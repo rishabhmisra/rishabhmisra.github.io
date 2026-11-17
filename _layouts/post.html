@@ -40,15 +40,108 @@ layout: default
     <img src="{{ site.baseurl }}/images/Headshot.jpg" alt="{{ site.name }}" width="56" height="56" class="post-author-avatar" />
     <div class="post-author-body">
       <div class="post-author-name">Written by {{ site.name }}</div>
-      <p class="post-author-bio">Principal ML Engineer &amp; Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), Founder of Afterdays (AI consulting &amp; education; partnering with AI Aspire by Andrew Ng), and co-author of <em>Sculpting Data for ML</em>.</p>
+      <p class="post-author-bio">Principal ML Engineer &amp; Tech Lead at Atlassian (ex-Attentive, Twitter, Amazon), Founder of Afterdays (AI consulting, enterprise training &amp; B2B AI Go-To-Market creator practice partnering with AI Aspire by Andrew Ng), and co-author of <em>Sculpting Data for ML</em>.</p>
       <div class="post-author-links">
         <a href="{{ site.baseurl }}/collaborate#media-kit">Brand &amp; Content Kit →</a>
         <a href="{{ site.baseurl }}/collaborate">Advisory &amp; Speaking →</a>
-        <a href="{{ site.baseurl }}/blog">More Articles →</a>
+        <a href="{{ site.baseurl }}/publications">Research &amp; Book →</a>
       </div>
     </div>
   </footer>
-
-  {% include disqus.html %}
-  {% include mathjax.html %}
 </article>
+
+{% assign current_slug = page.url | downcase %}
+{% if current_slug contains 'inference' or current_slug contains 'kv-cache' or current_slug contains 'pagedattention' or current_slug contains 'quantization' or current_slug contains 'speculative' or current_slug contains 'gpu-profiling' %}
+  {% assign current_cluster = 'inference' %}
+{% elsif current_slug contains 'llm-ers' or current_slug contains 'cold-start' or current_slug contains 'recommender' or current_slug contains 'linkedin-learning' or current_slug contains 'advertising' or current_slug contains 'clothing-product-fit' %}
+  {% assign current_cluster = 'recsys' %}
+{% else %}
+  {% assign current_cluster = 'foundations' %}
+{% endif %}
+
+<aside class="post-related-section" aria-labelledby="related-posts-heading">
+  <div class="section-heading-row">
+    <h2 id="related-posts-heading" class="section-kicker">Continue Reading · Related Technical Deep-Dives</h2>
+    <a href="{{ site.baseurl }}/blog/" class="archive-toggle-btn">View All 20 Articles →</a>
+  </div>
+
+  <div class="related-posts-grid">
+    {% assign picked = 0 %}
+    {% for rel in site.posts %}
+      {% if rel.url != page.url and picked < 3 %}
+        {% assign rel_slug = rel.url | downcase %}
+        {% if rel_slug contains 'inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
+          {% assign rel_cluster = 'inference' %}
+        {% elsif rel_slug contains 'llm-ers' or rel_slug contains 'cold-start' or rel_slug contains 'recommender' or rel_slug contains 'linkedin-learning' or rel_slug contains 'advertising' or rel_slug contains 'clothing-product-fit' %}
+          {% assign rel_cluster = 'recsys' %}
+        {% else %}
+          {% assign rel_cluster = 'foundations' %}
+        {% endif %}
+        {% if rel_cluster == current_cluster %}
+          {% assign picked = picked | plus: 1 %}
+          {% assign rel_words = rel.content | strip_html | number_of_words %}
+          {% assign rel_minutes = rel_words | divided_by: 200 | plus: 1 %}
+          <article class="related-post-card">
+            {% if rel.image %}
+            <img src="{{ site.baseurl }}{{ rel.image }}" alt="{{ rel.title | strip_html | escape }}" width="800" height="450" loading="lazy" decoding="async" class="rpc-thumb">
+            {% endif %}
+            <header class="rpc-header">
+              <div class="rpc-meta">
+                <time datetime="{{ rel.date | date_to_xmlschema }}">{{ rel.date | date: "%b %-d, %Y" }}</time>
+                <span class="meta-sep" aria-hidden="true">·</span>
+                <span>{{ rel_minutes }} min read</span>
+              </div>
+              <h3 class="rpc-title"><a href="{{ site.baseurl }}{{ rel.url }}" class="card-link">{{ rel.title | strip_html }}</a></h3>
+            </header>
+            <p class="rpc-excerpt">{% if rel.summary %}{{ rel.summary }}{% else %}{{ rel.excerpt | strip_html | truncate: 150 }}{% endif %}</p>
+            <footer class="rpc-footer">
+              <span class="rpc-cta" aria-hidden="true">Read article <span class="arrow-glyph">→</span></span>
+            </footer>
+          </article>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if picked < 3 %}
+      {% for rel in site.posts %}
+        {% if rel.url != page.url and picked < 3 %}
+          {% assign rel_slug = rel.url | downcase %}
+          {% if rel_slug contains 'inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
+            {% assign rel_cluster = 'inference' %}
+          {% elsif rel_slug contains 'llm-ers' or rel_slug contains 'cold-start' or rel_slug contains 'recommender' or rel_slug contains 'linkedin-learning' or rel_slug contains 'advertising' or rel_slug contains 'clothing-product-fit' %}
+            {% assign rel_cluster = 'recsys' %}
+          {% else %}
+            {% assign rel_cluster = 'foundations' %}
+          {% endif %}
+          {% if rel_cluster != current_cluster %}
+            {% assign picked = picked | plus: 1 %}
+            {% assign rel_words = rel.content | strip_html | number_of_words %}
+            {% assign rel_minutes = rel_words | divided_by: 200 | plus: 1 %}
+            <article class="related-post-card">
+              {% if rel.image %}
+              <img src="{{ site.baseurl }}{{ rel.image }}" alt="{{ rel.title | strip_html | escape }}" width="800" height="450" loading="lazy" decoding="async" class="rpc-thumb">
+              {% endif %}
+              <header class="rpc-header">
+                <div class="rpc-meta">
+                  <time datetime="{{ rel.date | date_to_xmlschema }}">{{ rel.date | date: "%b %-d, %Y" }}</time>
+                  <span class="meta-sep" aria-hidden="true">·</span>
+                  <span>{{ rel_minutes }} min read</span>
+                </div>
+                <h3 class="rpc-title"><a href="{{ site.baseurl }}{{ rel.url }}" class="card-link">{{ rel.title | strip_html }}</a></h3>
+              </header>
+              <p class="rpc-excerpt">{% if rel.summary %}{{ rel.summary }}{% else %}{{ rel.excerpt | strip_html | truncate: 150 }}{% endif %}</p>
+              <footer class="rpc-footer">
+                <span class="rpc-cta" aria-hidden="true">Read article <span class="arrow-glyph">→</span></span>
+              </footer>
+            </article>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</aside>
+
+<div class="post-comments-shell">
+  {% include disqus.html %}
+</div>
+{% include mathjax.html %}

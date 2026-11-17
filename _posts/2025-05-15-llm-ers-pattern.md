@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>The LLM-ERS Pattern: Where LLMs Actually Belong in RecSys</center>"
+title: "The LLM-ERS Pattern: Where LLMs Actually Belong in RecSys"
 comments: true
 mathjax: true
 summary: "Why using massive LLMs for real-time ranking fails in production, and how the LLM-ERS pattern offers a scalable blueprint by keeping retrieval fast and utilizing LLMs for offline augmentation."

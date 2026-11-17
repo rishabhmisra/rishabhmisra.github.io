@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Machine Learning Glossary</center>"
+title: "Machine Learning Glossary"
 comments: true
 mathjax: true
 summary: "A comprehensive, easy-to-digest glossary designed to quickly clarify popular concepts, evaluation metrics, and algorithms encountered in Machine Learning interviews and literature."

@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Introduction to Support Vector Machines - Motivation and Basics</center>"
+title: "Introduction to Support Vector Machines - Motivation and Basics"
 comments: true
 mathjax: true
 summary: "A foundational introduction to Support Vector Machines (SVM), covering the geometric intuition behind finding the optimal margin classifier for linearly separable data."

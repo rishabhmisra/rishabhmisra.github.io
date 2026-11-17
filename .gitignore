@@ -9,6 +9,7 @@ Gemfile.lock
 node_modules
 package.json
 .gitignore
+Resume/linkedin_posts
 Resume/investment_context.md
 Resume/Linkedin Profile.pdf
 Resume/resume.pdf
@@ -41,3 +42,4 @@ Resume/Rishabh_Misra_Resume_latest_ML/resume/services.tex
 Resume/Rishabh_Misra_Resume_latest_ML/resume/skills.tex
 Resume/Rishabh_Misra_Resume_latest_ML/resume/speaking.tex
 Resume/Rishabh_Misra_Resume_latest_ML/resume/teaching.tex
+PERSONA.md

@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Quantization Tradeoffs in LLMs: The Unpacking Tax</center>"
+title: "Quantization Tradeoffs in LLMs: The Unpacking Tax"
 comments: true
 mathjax: true
 summary: "Quantizing an LLM to 4-bit doesn't guarantee faster latency. Understand the hidden 'Unpacking Tax' and learn how batch sizes dictate whether quantization helps or hurts your performance."

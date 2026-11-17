@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Unlock Hyper-Personalized Advertising with Generative AI</center>"
+title: "Unlock Hyper-Personalized Advertising with Generative AI"
 comments: true
 mathjax: true
 summary: "Explore how Generative AI is moving digital marketing from broad segmentation to hyper-personalization by dynamically synthesizing visual and textual ad creatives in real-time."

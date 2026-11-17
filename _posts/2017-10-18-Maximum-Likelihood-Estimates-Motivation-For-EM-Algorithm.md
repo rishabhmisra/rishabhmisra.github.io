@@ -1,7 +1,7 @@
 ---
 layout: post
 type: blog
-title: "<center>Maximum Likelihood Estimates - Motivation for EM algorithm</center>"
+title: "Maximum Likelihood Estimates - Motivation for EM algorithm"
 comments: true
 mathjax: true
 summary: "Understand the core premise of Maximum Likelihood Estimates in Logistic Regression, and how this foundational concept motivates the powerful Expectation-Maximization (EM) algorithm."
