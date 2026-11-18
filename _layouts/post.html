@@ -36,6 +36,19 @@ layout: default
     {{ content }}
   </div>
 
+  {% capture post_full_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+  {% capture post_li_share_url %}{{ post_full_url }}?utm_source=linkedin&utm_medium=social_share{% endcapture %}
+  {% capture post_x_share_url %}{{ post_full_url }}?utm_source=x&utm_medium=social_share{% endcapture %}
+  {% assign post_clean_title = page.title | strip_html | strip %}
+  <div class="post-share-bar">
+    <span class="psb-label">Share this deep-dive:</span>
+    <div class="psb-actions">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ post_li_share_url | url_encode }}" target="_blank" rel="noopener" class="psb-btn" data-share-network="linkedin">Share on LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="https://x.com/intent/tweet?text={{ post_clean_title | url_encode }}&amp;url={{ post_x_share_url | url_encode }}&amp;via=rishabh_misra_" target="_blank" rel="noopener" class="psb-btn" data-share-network="x">Post on X <span aria-hidden="true">↗</span></a>
+      <button type="button" class="psb-btn post-share-copy" data-copy-url="{{ post_full_url | escape }}">Copy Link</button>
+    </div>
+  </div>
+
   <footer class="post-author-card">
     <img src="{{ site.baseurl }}/images/Headshot.jpg" alt="{{ site.name }}" width="56" height="56" class="post-author-avatar" />
     <div class="post-author-body">
@@ -51,7 +64,7 @@ layout: default
 </article>
 
 {% assign current_slug = page.url | downcase %}
-{% if current_slug contains 'inference' or current_slug contains 'kv-cache' or current_slug contains 'pagedattention' or current_slug contains 'quantization' or current_slug contains 'speculative' or current_slug contains 'gpu-profiling' %}
+{% if current_slug contains 'llm-inference' or current_slug contains 'kv-cache' or current_slug contains 'pagedattention' or current_slug contains 'quantization' or current_slug contains 'speculative' or current_slug contains 'gpu-profiling' %}
   {% assign current_cluster = 'inference' %}
 {% elsif current_slug contains 'llm-ers' or current_slug contains 'cold-start' or current_slug contains 'recommender' or current_slug contains 'linkedin-learning' or current_slug contains 'advertising' or current_slug contains 'clothing-product-fit' %}
   {% assign current_cluster = 'recsys' %}
@@ -70,7 +83,7 @@ layout: default
     {% for rel in site.posts %}
       {% if rel.url != page.url and picked < 3 %}
         {% assign rel_slug = rel.url | downcase %}
-        {% if rel_slug contains 'inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
+        {% if rel_slug contains 'llm-inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
           {% assign rel_cluster = 'inference' %}
         {% elsif rel_slug contains 'llm-ers' or rel_slug contains 'cold-start' or rel_slug contains 'recommender' or rel_slug contains 'linkedin-learning' or rel_slug contains 'advertising' or rel_slug contains 'clothing-product-fit' %}
           {% assign rel_cluster = 'recsys' %}
@@ -106,7 +119,7 @@ layout: default
       {% for rel in site.posts %}
         {% if rel.url != page.url and picked < 3 %}
           {% assign rel_slug = rel.url | downcase %}
-          {% if rel_slug contains 'inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
+          {% if rel_slug contains 'llm-inference' or rel_slug contains 'kv-cache' or rel_slug contains 'pagedattention' or rel_slug contains 'quantization' or rel_slug contains 'speculative' or rel_slug contains 'gpu-profiling' %}
             {% assign rel_cluster = 'inference' %}
           {% elsif rel_slug contains 'llm-ers' or rel_slug contains 'cold-start' or rel_slug contains 'recommender' or rel_slug contains 'linkedin-learning' or rel_slug contains 'advertising' or rel_slug contains 'clothing-product-fit' %}
             {% assign rel_cluster = 'recsys' %}
@@ -144,4 +157,16 @@ layout: default
 <div class="post-comments-shell">
   {% include disqus.html %}
 </div>
+<script fetchpriority="low">
+  document.addEventListener('click', function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest('.post-share-copy') : null;
+    if (!btn || !navigator.clipboard) return;
+    var url = btn.getAttribute('data-copy-url') || window.location.href;
+    navigator.clipboard.writeText(url).then(function () {
+      var prev = btn.textContent;
+      btn.textContent = 'Copied ✓';
+      setTimeout(function () { btn.textContent = prev; }, 1800);
+    });
+  });
+</script>
 {% include mathjax.html %}

@@ -1,7 +1,32 @@
 {% if site.google_analytics %}
 <!-- Google Analytics 4 (gtag.js) -->
-<script fetchpriority="low">
+<script
+  id="ga4-tracker"
+  fetchpriority="low"
+  data-measurement-id="{{ site.google_analytics | escape }}"
+  data-page-title="{{ page.title | strip_html | strip | default: site.name | escape }}"
+  data-is-404="{% if page.permalink == '/404.html' %}true{% else %}false{% endif %}">
   (function () {
+    var scriptEl = document.getElementById('ga4-tracker');
+    if (!scriptEl) return;
+
+    var measurementId = scriptEl.getAttribute('data-measurement-id') || '';
+    if (!measurementId) return;
+
+    // Persistent owner opt-out toggle: visit ?ga_optout=1 once on production to exclude your browser
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('ga_optout') === '1') {
+        window.localStorage.setItem('rm_ga_optout', '1');
+      } else if (params.get('ga_optout') === '0') {
+        window.localStorage.removeItem('rm_ga_optout');
+      }
+      if (window.localStorage.getItem('rm_ga_optout') === '1') {
+        window['ga-disable-' + measurementId] = true;
+        return;
+      }
+    } catch (_) {}
+
     var host = window.location.hostname || '';
     var isLocal =
       window.location.protocol === 'file:' ||
@@ -11,7 +36,9 @@
       host.endsWith('.local');
     if (isLocal) return;
 
-    var measurementId = {{ site.google_analytics | jsonify }};
+    var is404 = scriptEl.getAttribute('data-is-404') === 'true';
+    var pageTitle = scriptEl.getAttribute('data-page-title') || document.title;
+
     window.dataLayer = window.dataLayer || [];
     function gtag() { window.dataLayer.push(arguments); }
     window.gtag = gtag;
@@ -24,14 +51,77 @@
 
     gtag('js', new Date());
     gtag('config', measurementId, {
-      page_title: {{ page.title | strip_html | strip | default: site.name | jsonify }},
-      page_path: window.location.pathname
+      page_title: pageTitle,
+      page_path: is404 ? '/404.html' : window.location.pathname,
+      transport_type: 'beacon'
     });
 
-    // High-intent CTA & PDF conversion tracking (data-minimized: strips query strings & PII)
+    // Log exact broken URL on unrecovered 404s without polluting the main Pages report
+    if (is404) {
+      var refHost = '(direct)';
+      if (document.referrer) {
+        try { refHost = new URL(document.referrer).hostname || '(direct)'; } catch (_) {}
+      }
+      gtag('event', 'page_not_found', {
+        broken_path: window.location.pathname,
+        referrer_host: refHost
+      });
+    } else {
+      // Flush deferred telemetry from instant 404 recovery or legacy path redirects
+      try {
+        var recoveredFrom = window.sessionStorage.getItem('rm_404_recovered');
+        if (recoveredFrom) {
+          window.sessionStorage.removeItem('rm_404_recovered');
+          gtag('event', 'smart_404_redirect', {
+            from_path: recoveredFrom,
+            to_path: window.location.pathname
+          });
+        }
+        var legacyFrom = window.sessionStorage.getItem('rm_legacy_redirect');
+        if (legacyFrom) {
+          window.sessionStorage.removeItem('rm_legacy_redirect');
+          gtag('event', 'legacy_redirect_hit', {
+            from_path: legacyFrom,
+            to_path: window.location.pathname
+          });
+        }
+      } catch (_) {}
+    }
+
+    // Delegated high-intent CTA, PDF, BibTeX & Share conversion tracking (data-minimized: no PII)
     document.addEventListener('click', function (e) {
-      var link = e.target && e.target.closest ? e.target.closest('a[href]') : null;
-      if (!link || typeof window.gtag !== 'function') return;
+      if (typeof window.gtag !== 'function' || !e.target || !e.target.closest) return;
+
+      var copyBibBtn = e.target.closest('.copy-bibtex-btn');
+      if (copyBibBtn) {
+        var card = copyBibBtn.closest('.pub-card');
+        var heading = card ? card.querySelector('.pub-title') : null;
+        window.gtag('event', 'bibtex_copy', {
+          item_title: heading ? heading.textContent.trim().slice(0, 100) : 'publication',
+          source_page: window.location.pathname
+        });
+        return;
+      }
+
+      var copyShareBtn = e.target.closest('.post-share-copy');
+      if (copyShareBtn) {
+        window.gtag('event', 'share_click', {
+          method: 'copy_link',
+          source_page: window.location.pathname
+        });
+        return;
+      }
+
+      var filterBtn = e.target.closest('[data-blog-filter]');
+      if (filterBtn) {
+        window.gtag('event', 'blog_filter_select', {
+          topic_cluster: filterBtn.getAttribute('data-blog-filter') || 'all'
+        });
+        return;
+      }
+
+      var link = e.target.closest('a[href]');
+      if (!link) return;
 
       var rawHref = link.getAttribute('href') || '';
       if (!rawHref || rawHref.charAt(0) === '#') return;
@@ -53,6 +143,14 @@
 
       var cleanDest = parsed.origin + parsed.pathname;
       var lowerDest = cleanDest.toLowerCase();
+
+      if (link.hasAttribute('data-share-network')) {
+        window.gtag('event', 'share_click', {
+          method: link.getAttribute('data-share-network') || 'social',
+          source_page: window.location.pathname
+        });
+        return;
+      }
 
       if (lowerDest.slice(-4) === '.pdf') {
         var parts = parsed.pathname.split('/');

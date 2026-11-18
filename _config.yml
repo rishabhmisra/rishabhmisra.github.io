@@ -118,6 +118,8 @@ exclude:
   - Resume
   - PERSONA.md
   - bibliography.bib
+  - missing_citations/
+  - missing_citations
   - _plugins/readme.md
   - missing_citations/readme.md
   - pdfs/readme.md

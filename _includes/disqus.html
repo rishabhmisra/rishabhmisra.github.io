@@ -1,17 +1,47 @@
 {% if site.disqus %}
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
+<div class="comments" id="comments-section" data-disqus-shortname="{{ site.disqus | escape }}">
+  <div id="disqus_thread">
+    <button type="button" class="btn-outline disqus-load-btn" id="loadDisqusBtn">Load Discussion &amp; Comments</button>
+  </div>
+  <script fetchpriority="low">
+    (function () {
+      var container = document.getElementById('comments-section');
+      if (!container) return;
+      var shortname = container.getAttribute('data-disqus-shortname');
+      if (!shortname) return;
+      var loaded = false;
 
-	    var disqus_shortname = '{{ site.disqus }}';
+      function mountDisqus() {
+        if (loaded) return;
+        loaded = true;
+        var btn = document.getElementById('loadDisqusBtn');
+        if (btn) btn.remove();
+        var dsq = document.createElement('script');
+        dsq.async = true;
+        dsq.fetchPriority = 'low';
+        dsq.src = 'https://' + encodeURIComponent(shortname) + '.disqus.com/embed.js';
+        document.body.appendChild(dsq);
+      }
 
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
+      var manualBtn = document.getElementById('loadDisqusBtn');
+      if (manualBtn) {
+        manualBtn.addEventListener('click', mountDisqus);
+      }
 
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting) {
+              observer.disconnect();
+              mountDisqus();
+              break;
+            }
+          }
+        }, { rootMargin: '450px 0px' });
+        observer.observe(container);
+      }
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="noopener">comments powered by Disqus.</a></noscript>
 </div>
 {% endif %}

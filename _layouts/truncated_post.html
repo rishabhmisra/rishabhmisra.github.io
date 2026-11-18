@@ -4,11 +4,49 @@ layout: default
 
 {{ content }}
 
-<div class="blog-grid">
+{% assign count_all = site.posts | size %}
+{% assign count_inference = 0 %}
+{% assign count_recsys = 0 %}
+{% assign count_foundations = 0 %}
+{% for p in site.posts %}
+  {% assign p_slug = p.url | downcase %}
+  {% if p_slug contains 'llm-inference' or p_slug contains 'kv-cache' or p_slug contains 'pagedattention' or p_slug contains 'quantization' or p_slug contains 'speculative' or p_slug contains 'gpu-profiling' %}
+    {% assign count_inference = count_inference | plus: 1 %}
+  {% elsif p_slug contains 'llm-ers' or p_slug contains 'cold-start' or p_slug contains 'recommender' or p_slug contains 'linkedin-learning' or p_slug contains 'advertising' or p_slug contains 'clothing-product-fit' or p_slug contains 'generative-ai' %}
+    {% assign count_recsys = count_recsys | plus: 1 %}
+  {% else %}
+    {% assign count_foundations = count_foundations | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<div class="reviews-filter-tabs blog-filter-tabs">
+  <button type="button" class="filter-btn active" data-blog-filter="all" aria-pressed="true">
+    All Articles <span class="filter-count">{{ count_all }}</span>
+  </button>
+  <button type="button" class="filter-btn" data-blog-filter="inference" aria-pressed="false">
+    LLM Inference &amp; GPU Systems <span class="filter-count">{{ count_inference }}</span>
+  </button>
+  <button type="button" class="filter-btn" data-blog-filter="recsys" aria-pressed="false">
+    Generative RecSys &amp; GenAI <span class="filter-count">{{ count_recsys }}</span>
+  </button>
+  <button type="button" class="filter-btn" data-blog-filter="foundations" aria-pressed="false">
+    ML Foundations &amp; Interviews <span class="filter-count">{{ count_foundations }}</span>
+  </button>
+</div>
+
+<div class="blog-grid" id="blogGrid">
   {% for post in site.posts %}
   {% assign post_words = post.content | strip_html | number_of_words %}
   {% assign post_minutes = post_words | divided_by: 200 | plus: 1 %}
-  <a href="{{ site.baseurl }}{{ post.url }}" class="blog-card">
+  {% assign post_slug = post.url | downcase %}
+  {% if post_slug contains 'llm-inference' or post_slug contains 'kv-cache' or post_slug contains 'pagedattention' or post_slug contains 'quantization' or post_slug contains 'speculative' or post_slug contains 'gpu-profiling' %}
+    {% assign post_cat = 'inference' %}
+  {% elsif post_slug contains 'llm-ers' or post_slug contains 'cold-start' or post_slug contains 'recommender' or post_slug contains 'linkedin-learning' or post_slug contains 'advertising' or post_slug contains 'clothing-product-fit' or post_slug contains 'generative-ai' %}
+    {% assign post_cat = 'recsys' %}
+  {% else %}
+    {% assign post_cat = 'foundations' %}
+  {% endif %}
+  <a href="{{ site.baseurl }}{{ post.url }}" class="blog-card" data-category="{{ post_cat }}">
     {% if post.image %}
     <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title | strip_html | escape }}" width="800" height="450" {% if forloop.first %}fetchpriority="high" {% elsif forloop.index > 3 %}loading="lazy" {% endif %}decoding="async" class="bc-thumb">
     {% endif %}
@@ -29,3 +67,33 @@ layout: default
   </a>
   {% endfor %}
 </div>
+
+<script fetchpriority="low">
+  (function () {
+    var btns = document.querySelectorAll('[data-blog-filter]');
+    var cards = document.querySelectorAll('#blogGrid .blog-card');
+    if (!btns.length || !cards.length) return;
+
+    function applyFilter(topic) {
+      for (var i = 0; i < btns.length; i++) {
+        var active = btns[i].getAttribute('data-blog-filter') === topic;
+        btns[i].classList.toggle('active', active);
+        btns[i].setAttribute('aria-pressed', active ? 'true' : 'false');
+      }
+      for (var j = 0; j < cards.length; j++) {
+        var match = topic === 'all' || cards[j].getAttribute('data-category') === topic;
+        if (match) {
+          cards[j].removeAttribute('hidden');
+        } else {
+          cards[j].setAttribute('hidden', '');
+        }
+      }
+    }
+
+    for (var k = 0; k < btns.length; k++) {
+      btns[k].addEventListener('click', function () {
+        applyFilter(this.getAttribute('data-blog-filter') || 'all');
+      });
+    }
+  })();
+</script>

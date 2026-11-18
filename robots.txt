@@ -35,6 +35,8 @@ Allow: /llms-full.txt
 Allow: /agent-context.json
 Allow: /feed.xml
 Allow: /sitemap.xml
+Disallow: /missing_citations/
+Disallow: /404.html
 
 # 2. AI Search Engines, GTM Outreach Agents & Live Grounding Fetchers (GEO)
 User-agent: Claude-SearchBot
@@ -112,6 +114,8 @@ Allow: /llms-full.txt
 Allow: /agent-context.json
 Allow: /feed.xml
 Allow: /sitemap.xml
+Disallow: /missing_citations/
+Disallow: /404.html
 
 Sitemap: https://rishabhmisra.github.io/sitemap.xml
 

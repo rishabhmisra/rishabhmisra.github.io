@@ -9,10 +9,25 @@ layout: null
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="{{ site.url }}{{ page.redirect_to }}">
   <meta http-equiv="refresh" content="0; url={{ site.baseurl }}{{ page.redirect_to }}">
-  <script>window.location.replace({{ page.redirect_to | prepend: site.baseurl | jsonify }});</script>
+  <script data-redirect-to="{{ site.baseurl }}{{ page.redirect_to }}">
+    (function () {
+      var scriptEl = document.currentScript;
+      var baseDest = scriptEl ? scriptEl.getAttribute('data-redirect-to') : '';
+      if (!baseDest) return;
+      try {
+        window.sessionStorage.setItem('rm_legacy_redirect', window.location.pathname);
+      } catch (_) {}
+      var query = window.location.search || '';
+      var hash = baseDest.indexOf('#') === -1 ? (window.location.hash || '') : '';
+      var hashIdx = baseDest.indexOf('#');
+      var finalUrl = hashIdx === -1
+        ? baseDest + query + hash
+        : baseDest.slice(0, hashIdx) + query + baseDest.slice(hashIdx);
+      window.location.replace(finalUrl);
+    })();
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="{{ site.baseurl }}{{ page.redirect_to }}">{{ site.url }}{{ page.redirect_to }}</a>…</p>
+  <p>Redirecting to <a href="{{ site.baseurl }}{{ page.redirect_to }}">{{ site.url }}{{ page.redirect_to }}</a>...</p>
 </body>
 </html>
-
